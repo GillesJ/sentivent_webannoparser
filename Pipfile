@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+nltk = "*"
+spacy = "*"
+cassis = {git = "https://github.com/dkpro/dkpro-cassis"}
+sklearn = "*"
+pandas = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
