@@ -9,6 +9,7 @@ spacy = "*"
 cassis = {git = "https://github.com/dkpro/dkpro-cassis"}
 sklearn = "*"
 pandas = "*"
+preshed = "*"
 
 [dev-packages]
 

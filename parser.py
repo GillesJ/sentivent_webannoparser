@@ -18,6 +18,7 @@ import xml.dom.minidom as md
 import cassis
 import fnmatch
 import pickle
+import spacy
 from pathlib import Path
 from typing import List
 from util import flatten, count_avg
@@ -84,7 +85,7 @@ class Document:
 
     """
 
-    def __init__(self, xmi_content, path=""):
+    def __init__(self, xmi_content, path="", *args, **kwargs):
 
         self.path = path
         self.annotator_id = self.path.split("/")[-1].replace(".xmi", "")
@@ -447,16 +448,30 @@ class WebannoProject:
         with open(fp, "wb") as self_out:
             pickle.dump(self, self_out)
 
+    def process_spacy(self):
+
+
+        nlp = spacy.load('en_core_web_lg')
+
+        self.spacy_documents = []
+        for doc in self.documents:
+            print(f"{doc.title}: dep parsing, NER tagging, word vectorizing with Spacy.")
+            self.spacy_documents.append(nlp(doc.text))
+            # self.spacy_documents.append(spacy.tokens.Doc(nlp.vocab, words=[[t.text for t in doc.sentences]))
+            # self.spacy_documents.append(spacy.tokens.Doc(nlp.vocab, doc.text))
+
+
 if __name__ == "__main__":
 
     # ANNOTATION_DIRP = "../example_data"
-    project_dirp = "XMI_SENTiVENT-event-english-1_2018-10-04_1236"
+    project_dirp = "exports/XMI_SENTiVENT-event-english-1_2018-10-04_1236"
     opt_fp = "sentivent_en_webanno_project_my_obj.pickle"
     exclude_gilles = lambda x: "anno" in Path(x.path).stem
 
     event_project = WebannoProject(project_dirp)
     event_project.parse_annotation_project()
-    event_project.documents = list(filter(exclude_gilles, event_project.documents))
+    event_project.documents = list(filter(exclude_gilles, event_project.documents)) # filter empty invalid gilles docs
+    event_project.process_spacy()
     event_project.dump_pickle(opt_fp)
 
     avg_attribs = ["events", "sentences", "tokens", "participants", "fillers"]
