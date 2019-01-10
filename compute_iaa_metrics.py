@@ -71,8 +71,6 @@ class CustomAnnotationTask(AnnotationTask):
             self.I.add(item)
             self.data.append({'coder': coder, 'labels': labels, 'item': item})
 
-    def windowed_label_distance(self, label1, label2, window=1):
-        pass
 
     def compute_all(self, average="binary"):
         all_results = {}
@@ -108,7 +106,7 @@ class CustomAnnotationTask(AnnotationTask):
 
 if __name__ == "__main__":
 
-    FROM_SCRATCH = False
+    FROM_SCRATCH = True
     opt_fp = "sentivent_en_webanno_project_iaa.pickle"
 
     iaa_ids = [
@@ -159,12 +157,12 @@ if __name__ == "__main__":
             event_project = pickle.load(project_in)
 
     avg_attribs = ["events", "sentences", "tokens", "participants", "fillers"]
-    avg = {avg_attrib: count_avg(event_project.documents, avg_attrib, return_counts=True) for avg_attrib in avg_attribs}
+    avg = {avg_attrib: count_avg(event_project.annotation_documents, avg_attrib, return_counts=True) for avg_attrib in avg_attribs}
     print(avg)
 
     all_event_types = []
     all_event_subtypes = []
-    for doc in event_project.documents:
+    for doc in event_project.annotation_documents:
         for ev in doc.events:
             all_event_types.append(ev.event_type)
             all_event_subtypes.append(f"{ev.event_type}.{ev.event_subtype}")
@@ -181,7 +179,7 @@ if __name__ == "__main__":
     token_level_data = []
     token_level_label = {}
     extent_attribs = ["event_extent", "participant_extent", "filler_extent", "canonical_referent_extent"]
-    for doc in event_project.documents:
+    for doc in event_project.annotation_documents:
         doc_id = doc.title.split("_")[0]
         for token in doc.tokens:
             token_level_data.append((doc.annotator_id, f"{doc_id}_{token.index}"))

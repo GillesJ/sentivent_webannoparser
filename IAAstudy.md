@@ -3,15 +3,23 @@
 Metrics: pair-wise F1-score as with ACE and ERE
 
 Annotations to measure:
-- Event trigger detection: token-span for event triggers
-    - exact tokens: check if event mention detected on tokens
-    - discontiguous matching: check if 
-    
-- partial span scoring:
-    - span similarity score between 0 and 1
-    - pair of mentions (G, S) is represented as a set of token ids (Tg, Ts)
-    - 
-    - Dice coefficient is equivalent to F1-score
+- Event trigger detection: token-span for event triggers.
+    - discontiguous matching: capture discontiguous token spans with dice sim scoring.
+    - partial span scoring:
+        - corresponds with section 2.2 Partial span scoring of Liu et al. (2015)
+        - span similarity score between 0 and 1.
+        - pair of mentions (G, S) is represented as a set of token ids (Tg, Ts).
+        - Dice coefficient is equivalent to F1-score.
+    - Scores taken:
+        - Token-level event mention presence: using NLTK agreement object
+        - Token-level dice similarity score: method used in 2.2 Liu et al. (2015):
+            - for each pair of mentions: compute dice similarity.
+            TODO: this is important for comparison.
+        - 
+
+- Annotation mention mapping:
+    Attribute accuracy
+    - based on dice sim alone
     
 - Mention mapped attributes:
     - Type
@@ -34,7 +42,7 @@ year = {2015}
 }
 ```
 - Details the scoring used for TAC-KBP event nugget detection
-- 
+- This method is adapted for our purposes.
 
 ```latex
 @article{Mitamura2015,

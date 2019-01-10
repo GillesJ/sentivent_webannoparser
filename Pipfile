@@ -10,6 +10,16 @@ cassis = {git = "https://github.com/dkpro/dkpro-cassis"}
 sklearn = "*"
 pandas = "*"
 preshed = "*"
+iteration-utilities = "*"
+cairosvg = "*"
+squarify = "*"
+matplotlib = "*"
+seaborn = "*"
+statsmodels = "*"
+fuzzywuzzy = "*"
+pipenv = "*"
+python-levenshtein = "*"
+pygal = "*"
 
 [dev-packages]
 
