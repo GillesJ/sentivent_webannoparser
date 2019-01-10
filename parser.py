@@ -2,8 +2,8 @@
 """
 TODO: create a LinkFeature superclass for parsing the linked features to avoid code duplication and increase efficiency
 TODO: refactor current Document class into a Document class and an Annotation class:
-        Document contains the text, sentences, tokens, metadata and annotations.
-        Annotation contains all annotations and the parsing code.
+        Document contains the text, sentences, tokens, metadata and annotation_documents.
+        Annotation contains all annotation_documents and the parsing code.
     This allows for less duplication (text, tokens, sentences and metadata are all the same for the same doc).
 TODO: write generic parser for webanno features (Link, Slot, etc):
         cassis is slower than this prototype but more general
@@ -12,6 +12,7 @@ sentivent-webannoparser
 10/4/18
 Copyright (c) Gilles Jacobs. All rights reserved.
 """
+from __future__ import annotations
 from dataclasses import dataclass, field
 from zipfile import ZipFile
 import xml.dom.minidom as md
@@ -20,7 +21,7 @@ import fnmatch
 import pickle
 import spacy
 from pathlib import Path
-from typing import List
+from typing import List, Any
 from util import flatten, count_avg
 import os
 import json
@@ -28,29 +29,80 @@ import json
 @dataclass
 class Element:
     text: str
-    begin: int = field(repr=False)
-    end: int = field(repr=False)
-    element_id: int = field(repr=False)
+    begin: int = field(repr = False)
+    end: int = field(repr = False)
+    element_id: int = field(repr = False)
+    annotator_id: str
+    document_title: str
+    # match: None
+
+    def __hash__(self):
+        return hash((self.element_id, self.text, self.begin, self.end))
 
 @dataclass
 class Filler(Element):
     role: str
-    link_id: int = field(repr=False)
+    link_id: int = field(repr = False)
+    tokens: List = field(default = None, repr = False)
+
+    def __hash__(self):
+        return hash((self.element_id, self.text, self.begin, self.end))
 
 @dataclass
 class DiscontiguousTrigger(Element):
-    link_id: int = field(repr=False)
+    link_id: int = field(repr = False)
+    tokens: List = field(default = None, repr = False)
+
+    def __hash__(self):
+        return hash((self.element_id, self.text, self.begin, self.end))
 
 @dataclass
 class CanonicalReferent(Element):
-    pronom_id: int = field(repr=False)
+    pronom_id: int = field(repr = False)
     referent_id: int
+    tokens: List = field(default = None, repr = False)
+
+    def __hash__(self):
+        return hash((self.element_id, self.text, self.begin, self.end))
 
 @dataclass
 class Participant(Element):
     role: str
     canonical_referents: List[CanonicalReferent] = field(repr=False)
     link_id: int = field(repr=False)
+    tokens: List = field(default=None, repr=False)
+
+    def __hash__(self):
+        return hash((self.element_id, self.text, self.begin, self.end))
+
+class Sentence:
+    """
+    Class to represent a sentence
+
+    Variables:
+        id - number of this sentence in the text
+        begin - position of the sentence start in the original text
+        end - position of the sentecne end in the original text
+        frames - list of frames contained in this sentence
+    """
+
+    def __init__(self, element_id, begin, end, tokens, events):
+        self.element_id = element_id
+        self.begin = begin
+        self.end = end
+        self.tokens = tokens
+        self.events = events
+
+    def __eq__(self, other):
+        if self.begin == other.begin and self.end == other.end:
+            if [x for x in self.events if not x in other.events] == [] and [x for x in other.events if
+                                                                            not x in self.events] == []:
+                return True
+        return False
+
+    def __str__(self):
+        return " ".join(str(t) for t in self.tokens)
+
 
 @dataclass
 class Event(Element):
@@ -61,6 +113,30 @@ class Event(Element):
     fillers: List[Filler] = field(repr=False)
     polarity: str = field(repr=False)
     modality: str = field(repr=False)
+    tokens: List = field(default=None, repr=False)
+    in_sentence: List[Sentence] = field(default=None, repr=False)
+    coordination: List[Event] = field(default=None, repr=False)
+    coreferents: List[Event] = field(default=None)
+
+    def __hash__(self):
+        return hash((self.element_id, self.text, self.begin, self.end))
+
+    def get_coref_attrib(self, attrib):
+        if self.coreferents is not None:
+            coref_attribs = []
+            for coref in self.coreferents:
+                walk_attrib = coref.get_coref_attrib(attrib)
+                if walk_attrib is not None:
+                    coref_attribs.append(walk_attrib)
+                attrib_val = getattr(coref, attrib)
+                if attrib_val is not None:
+                    coref_attribs.append(attrib_val)
+
+            if coref_attribs:
+                return flatten(coref_attribs)
+            else: return None
+        else: return None
+
 
 @dataclass
 class Token(Element):
@@ -71,7 +147,22 @@ class Token(Element):
     canonical_referent_extent: List[CanonicalReferent] = field(repr=False)
     discontiguous_trigger_extent: List[DiscontiguousTrigger] = field(repr=False)
 
-class Document:
+    def __hash__(self):
+        return hash((self.element_id, self.text, self.begin, self.end))
+
+    def __str__(self):
+        return self.text
+
+
+class SourceDocument:
+    # TODO Finish this so NLP processing is done on only this shared object and annotation_documents are held in AnnotionDocument
+    def __init__(self, annotation_documents):
+        self.title = next(annotation_documents).title
+        self.text = next(annotation_documents).text
+        self.annotations = List[AnnotationDocument]
+
+
+class AnnotationDocument:
     """
     Class to represent a WebAnno Annotation in the XMI format
 
@@ -128,7 +219,7 @@ class Document:
         canonical_referents = []
         for pcr in pronomcanonref_xmidata:
             canonical_referents.append(
-                CanonicalReferent(*self.__extract_default_xmi(pcr), pcr["Governor"], pcr["Dependent"])
+                CanonicalReferent(*self.__extract_default_xmi(pcr), self.annotator_id, self.title, pcr["Governor"], pcr["Dependent"])
             )
         if canonical_referents: self.canonical_referents = canonical_referents
 
@@ -146,7 +237,7 @@ class Document:
             link_id = int(link[0]["xmi:id"]) if link else None
 
             participants.append(
-                Participant(text, begin, end, element_id, role, canonref, link_id)
+                Participant(text, begin, end, element_id, self.annotator_id, self.title, role, canonref, link_id)
             )
         if participants: self.participants = participants
 
@@ -160,7 +251,7 @@ class Document:
             link_id = int(link[0]["xmi:id"]) if link else None
 
             fillers.append(
-                Filler(text, begin, end, element_id, role, link_id)
+                Filler(text, begin, end, element_id, self.annotator_id, self.title, role, link_id)
             )
         if fillers: self.fillers = fillers
 
@@ -172,7 +263,7 @@ class Document:
             link_id = int(link[0]["xmi:id"]) if link else None
 
             discontiguous_triggers.append(
-                DiscontiguousTrigger(text, begin, end, element_id, link_id)
+                DiscontiguousTrigger(text, begin, end, element_id, self.annotator_id, self.title, link_id)
             )
         if discontiguous_triggers: self.discontiguous_triggers = discontiguous_triggers
 
@@ -227,7 +318,7 @@ class Document:
                     polarity = negativepolarity
 
                 events.append(
-                    Event(text, begin, end, element_id, event_type, event_subtype, discontiguous_triggers, participants,
+                    Event(text, begin, end, element_id, self.annotator_id, self.title, event_type, event_subtype, discontiguous_triggers, participants,
                           fillers, polarity, modality)
                 )
         if events: self.events = events
@@ -238,10 +329,21 @@ class Document:
             coref_to_id = int(coref["Dependent"])
             from_event = list(filter(lambda ev: ev.element_id == coref_from_id, self.events))[0]
             to_event = list(filter(lambda ev: ev.element_id == coref_to_id, self.events))[0]
-            if hasattr(from_event, "coreferents"):
+            if from_event.coreferents is not None:
                 from_event.coreferents.append(to_event)
             else:
                 from_event.coreferents = [to_event]
+
+        # resolve coordinated events: coordinated events are in the exact same begin and end position
+        from operator import attrgetter
+        from itertools import groupby
+        if self.events:
+            position_key = attrgetter("begin", "end")
+            evs = sorted(self.events, key=position_key)
+            coordinated = [g for g in [list(g) for k, g in groupby(evs, position_key)] if len(g) > 1]
+            for coord_event_group in coordinated:
+                for event in coord_event_group:
+                    event.coordination = coord_event_group
 
         # create token object
         self.tokens = []
@@ -260,9 +362,14 @@ class Document:
                     extent = None
                 extent_args.append(extent)
 
-            self.tokens.append(
-                Token(text, begin, end, element_id, i, *extent_args)
-            )
+            token = Token(text, begin, end, element_id, self.annotator_id, self.title, i, *extent_args)
+            self.tokens.append(token)
+            for ann_unit in extent_args: # match tokens to annotation_documents
+                if ann_unit is not None:
+                    for au in ann_unit:
+                        if au.tokens is not None:
+                            au.tokens.append(token)
+                        else: au.tokens = [token]
 
         # Create sentence objects
         self.sentences = []
@@ -273,11 +380,16 @@ class Document:
                 tokens = [token for token in self.tokens if token.begin >= begin and token.end <= end]
             if self.events:
                 sentence_events = [event for event in self.events if event.begin >= begin and event.end <= end]
-                self.sentences.append(Sentence(i, begin, end, tokens, sentence_events))
+                sentence = Sentence(i, begin, end, tokens, sentence_events)
+                for event in sentence_events: # append the sentence on in_sentence attrib of events
+                    if event.in_sentence is not None:
+                        event.in_sentence.append(sentence)
+                    else: event.in_sentence = [sentence]
+                self.sentences.append(sentence)
 
         if self.events and self.sentences and self.tokens:
             print(f"Parsed {len(self.events)} events in {len(self.sentences)} sentences ({len(self.tokens)} tokens).")
-        else: print(f"Warning: Empty document: No events or sentences or tokens in document.")
+        else: print(f"Warning: Empty document: Either no events or sentences or tokens in document.")
 
     @staticmethod
     def __convertAttributes__(xml_source):
@@ -307,30 +419,9 @@ class Document:
         end = int(xmidata["end"])
         return self.text[begin:end], begin, end, int(xmidata["xmi:id"])
 
-class Sentence:
-    """
-    Class to represent a sentence
+    def __str__(self):
+        return f"Document {self.title} by {self.annotator_id}"
 
-    Variables:
-        id - number of this sentence in the text
-        begin - position of the sentence start in the original text
-        end - position of the sentecne end in the original text
-        frames - list of frames contained in this sentence
-    """
-
-    def __init__(self, element_id, begin, end, tokens, events):
-        self.element_id = element_id
-        self.begin = begin
-        self.end = end
-        self.tokens = tokens
-        self.events = events
-
-    def __eq__(self, other):
-        if self.begin == other.begin and self.end == other.end:
-            if [x for x in self.events if not x in other.events] == [] and [x for x in other.events if
-                                                                            not x in self.events] == []:
-                return True
-        return False
 
 class WebannoProject:
 
@@ -361,11 +452,12 @@ class WebannoProject:
         else:
             self.annotation_dir = None
 
-        # TODO use the metadata for parsing and checking/enriching of document status
         with open(next(Path(self.project_dir).glob("./exportedproject*json")), 'r') as project_meta_in:
             self.project_metadata = json.load(project_meta_in)
 
         self.annotation_document_fps = self._get_annotation_document_fps()
+        self.annotation_documents = None
+        self.source_documents = None
         self.typesystem = self._get_typesystem()
 
     def _get_typesystem(self):
@@ -386,6 +478,7 @@ class WebannoProject:
     def _get_annotation_document_fps(self):
 
         annotation_document_titles = [fp.name for fp in Path(self.annotation_dir).iterdir()]
+        annotation_document_titles.sort()
 
         zipfile_fps = flatten([(Path(self.annotation_dir) / Path(docn)).glob("./*zip") for docn in annotation_document_titles])
         annotation_document_fps = []
@@ -409,18 +502,21 @@ class WebannoProject:
         return content
 
     def parse_annotation_project(self):
-        if not self._walked_documents:
-            self._get_annotation_document_fps()
 
         # unzip and parse the documents
         print(f"Parsing {len(self.annotation_document_fps)} documents.")
-        self.documents = []
+        annotation_documents = []
         for ann_doc_fp in self.annotation_document_fps:
-            self.documents.append(self._parse_doc_from_zip(ann_doc_fp))
+            annotation_documents.append(self._parse_doc_from_zip(ann_doc_fp))
+        if annotation_documents:
+            self.annotation_documents = annotation_documents
+            # source_documents = [] # todo create source documents
+            # for title, docs in itertools.groupby(self.annotation_documents, lambda x: x.title):
+            #     source_documents.append(SourceDocument(docs))
 
     def _parse_doc_from_zip(self, ann_doc_fp):
         xmicontent = self._unzip_content(ann_doc_fp)
-        return Document(xmicontent, path=ann_doc_fp)
+        return AnnotationDocument(xmicontent, path=ann_doc_fp)
 
     def _parse_cas_from_zip(self, ann_doc_fp):
         # this is much slower
@@ -450,11 +546,10 @@ class WebannoProject:
 
     def process_spacy(self):
 
-
         nlp = spacy.load('en_core_web_lg')
 
         self.spacy_documents = []
-        for doc in self.documents:
+        for doc in self.annotation_documents:
             print(f"{doc.title}: dep parsing, NER tagging, word vectorizing with Spacy.")
             self.spacy_documents.append(nlp(doc.text))
             # self.spacy_documents.append(spacy.tokens.Doc(nlp.vocab, words=[[t.text for t in doc.sentences]))
@@ -463,29 +558,14 @@ class WebannoProject:
 
 if __name__ == "__main__":
 
+
     # ANNOTATION_DIRP = "../example_data"
-    project_dirp = "exports/XMI_SENTiVENT-event-english-1_2018-10-04_1236"
-    opt_fp = "sentivent_en_webanno_project_my_obj.pickle"
+    project_dirp = "/home/gilles/00 sentivent fwosb doctoraat 2017-2020/00-event-annotation/webanno-project-export/XMI-corrected-SENTiVENT-event-english-1_2018-12-17_1552"
+    opt_fp = "sentivent_en_webanno_correction.pickle"
     exclude_gilles = lambda x: "anno" in Path(x.path).stem
 
     event_project = WebannoProject(project_dirp)
     event_project.parse_annotation_project()
-    event_project.documents = list(filter(exclude_gilles, event_project.documents)) # filter empty invalid gilles docs
-    event_project.process_spacy()
+    # event_project.annotation_documents = list(filter(exclude_gilles, event_project.annotation_documents)) # filter empty invalid gilles docs
+    # event_project.process_spacy()
     event_project.dump_pickle(opt_fp)
-
-    avg_attribs = ["events", "sentences", "tokens", "participants", "fillers"]
-    avg = {avg_attrib: count_avg(event_project.documents, avg_attrib, return_counts=True) for avg_attrib in avg_attribs}
-    print(avg)
-
-    all_event_types = []
-    all_event_subtypes = []
-    for doc in event_project.documents:
-        if doc.events:
-            for ev in doc.events:
-                all_event_types.append(ev.event_type)
-                all_event_subtypes.append(f"{ev.event_type}.{ev.event_subtype}")
-
-    from collections import Counter
-    print("Event types: ", Counter(all_event_types))
-    print("Event subtypes", Counter(all_event_subtypes))
