@@ -84,7 +84,10 @@ fully_corrected = [
     "ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt",
     "cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt",
     "nflx11_netflix-stock-seesaws-after-third-quarter-subscriber-beat.txt",
-
+    "nflx04_why-analysts-expect-netflix-s-global-membership-base-to-grow.txt",
+    "amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt",
+    "dis07_disney-joins-ar-fray-with-200-star-wars-ar-headset.txt",
+    "goog12_with-its-india-first-approach-google-is-trying-to-woo-the-comm.txt",
     ]
 
 def match_string(string, documents):
@@ -162,22 +165,22 @@ def check_typology(events, typology):
         # print(allowed_part)
         # print(allowed_fill)
         if event.event_type not in typology_maintypes:
-            print(f"TypeError on {event}")
-            event.typology_error.append(event.event_type)
+            # print(f"TypeError on {event}")
+            event.typology_error.append((event.event_type, "TypeError", event))
         if event.event_subtype not in typology_subtypes:
-            print(f"SubtypeError on {event}")
-            event.typology_error.append(event.event_subtype)
+            # print(f"SubtypeError on {event}")
+            event.typology_error.append((event.event_subtype, "SubtypeError", event))
         if event.participants:
             for p in event.participants:
                 role = p.role.split("_")[0]
                 if role not in allowed_part:
-                    print(f"ParticipantError on {event} | {event.event_type} {event.event_subtype}: {role} | {allowed_part}")
-                    event.typology_error.append(p)
+                    # print(f"ParticipantError on {event} | {event.event_type} {event.event_subtype}: {role} | {allowed_part}")
+                    event.typology_error.append((p.role, "ParticipantError", p))
         if event.fillers:
             for f in event.fillers:
                 if f.role not in allowed_fill:
-                    print(f"FILLERError on {event} | {event.event_type} {event.event_subtype}: {role} | {allowed_part}")
-                    event.typology_error.append(f)
+                    # print(f"FILLERError on {event} | {event.event_type} {event.event_subtype}: {role} | {allowed_part}")
+                    event.typology_error.append((f.role, "FILLERError", f))
 
 
 def clean_project(proj):
@@ -237,15 +240,18 @@ if __name__ == "__main__":
     print(f"{event_corrected_pct}% of events ({event_corrected_cnt}/{len(all_events)}) manually corrected in {len(fully_corrected)} documents")
     # collect and count typology violations
     check_typology(all_events, typology)
-    event_typology_errors = [ev for ev in all_events if ev.typology_error]
-    for ev in event_typology_errors: print("TypologyError: ", ev.typology_error, ev.document_title)
+    event_typology_errors = sorted([ev for ev in all_events if ev.typology_error], key=lambda x: (x.document_title, x.annotator_id))
+    for doc_title, evs in groupby(event_typology_errors, lambda x: (x.document_title, x.annotator_id)):
+        print("Typology Errors in", doc_title)
+        for ev in evs:
+            for err in ev.typology_error: print(f"\t{err[1]} for {err[0]} on {ev.event_type}.{ev.event_subtype} in {str(ev.in_sentence[0])[:50]}")
 
     # keyword check: check keywords for event types
     keywords = {
         "Profit/Loss": ["earnings", "profit", "loss", "income", "EPS", "earnings per share"],
         "Revenue": ["revenue",],
         "Expense": ["cost", "expense"],
-        "Product/Service": ["launch", "release", "trial",],
+        "Product/Service": ["launch", "release", "trial", "foray"],
         "SecurityValue": ["undervalue", "overvalue"],
         "Rating": ["underweight", "overweight"],
         "SalesVolume": ["sales"],

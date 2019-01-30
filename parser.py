@@ -560,12 +560,11 @@ if __name__ == "__main__":
 
 
     # ANNOTATION_DIRP = "../example_data"
-    project_dirp = "/home/gilles/00 sentivent fwosb doctoraat 2017-2020/00-event-annotation/webanno-project-export/XMI-corrected-SENTiVENT-event-english-1_2018-12-17_1552"
+    project_dirp = "/home/gilles/00-sentivent-fwosb-phd-2017-2020/00-event-annotation/webanno-project-export/XMI-corrected-SENTiVENT-event-english-1_2019-01-28_1341"
     opt_fp = "sentivent_en_webanno_correction.pickle"
     exclude_gilles = lambda x: "anno" in Path(x.path).stem
 
     event_project = WebannoProject(project_dirp)
     event_project.parse_annotation_project()
-    # event_project.annotation_documents = list(filter(exclude_gilles, event_project.annotation_documents)) # filter empty invalid gilles docs
     # event_project.process_spacy()
     event_project.dump_pickle(opt_fp)

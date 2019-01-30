@@ -13,7 +13,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import squarify  # pip install squarify (algorithm for treemap)
 from functools import partial
-from collections import Counter
+from collections import Counter, OrderedDict
 from itertools import groupby
 import pandas as pd
 import util
@@ -126,7 +126,8 @@ def clean_project(proj):
     return single_annotated_docs
 
 def clean_events(evs):
-    evs_to_clean = [deepcopy(ev) for ev in evs]
+    # evs_to_clean = [deepcopy(ev) for ev in evs]
+    evs_to_clean = evs
     type_replace = {"CapitalReturns": "Dividend", "FinancialResult": "FinancialReport"}
     clean_evs = []
 
@@ -145,6 +146,22 @@ def clean_events(evs):
 
     return clean_evs
 
+def collect_event_attribute(events, attribute_name):
+    '''
+
+    :param event:
+    :param attr:
+    :return:
+    '''
+    vals = []
+    for event in events:
+        if getattr(event, attribute_name):
+            for val in getattr(event, attribute_name):
+                if val not in vals:
+                    val.in_event = event
+                    vals.append(val)
+    return vals
+
 
 def plot_type_treemap_interactive(type_df, fp="type_treemap_pygal.svg"):
     # type treemap
@@ -159,6 +176,41 @@ def plot_type_treemap_interactive(type_df, fp="type_treemap_pygal.svg"):
         treemap.add(row.name, [row["pct"]])
 
     treemap.render_to_file(fp, print_values=False)
+
+def write_participant_stats(all_events_clean):
+
+
+    participants = collect_event_attribute(all_events_clean, "participants")
+    df_participants = pd.DataFrame({
+        "participant_role": [p.role for p in participants],
+        "on_typesubtype": [f"{p.in_event.event_type}.{p.in_event.event_subtype}" for p in participants],
+        "on_type": [p.in_event.event_type for p in participants],
+    })
+
+    df_participants["id_mainsub"] = df_participants["participant_role"].map(str) + "." + df_participants["on_typesubtype"].map(str)
+    df_participants["id_main"] = df_participants["participant_role"].map(str) + "." + df_participants["on_type"].map(str)
+
+    # participant ratios on main type
+    part_on_main_cnts = df_participants["id_main"].value_counts().to_dict()
+    maintype_cnts = df_participants["on_type"].value_counts().to_dict()
+    main_part_ratio = {}
+    for k, v in part_on_main_cnts.items():
+        k_maintype = k.split(".")[1]
+        main_part_ratio[k] = round(100 * v / maintype_cnts[k_maintype], 2)
+
+    df_participant_type_freq = pd.DataFrame({"n/n_type": main_part_ratio, "n": part_on_main_cnts}).sort_values(by=["n/n_type"])
+    print(df_participant_type_freq)
+
+    # participant ratios on subtypes
+    part_on_mainsub_cnts = df_participants["id_mainsub"].value_counts().to_dict()
+    mainsubtype_cnts = df_participants["on_typesubtype"].value_counts().to_dict()
+    mainsub_part_ratio = {}
+    for k, v in part_on_mainsub_cnts.items():
+        k_mainsubtype = ".".join(k.split(".")[1:])
+        mainsub_part_ratio[k] = round(100 * v / mainsubtype_cnts[k_mainsubtype], 2)
+
+    df_participant_subtype_freq = pd.DataFrame({"n/n_type.subtype": mainsub_part_ratio, "n": part_on_mainsub_cnts}).sort_values(by=["n/n_type.subtype"])
+    print(df_participant_subtype_freq)
 
 def plot_type_treemap_matplot(type_df, fp="type_treemap_matplot.png"):
 
@@ -198,17 +250,20 @@ if __name__ == "__main__":
 
     all_events_clean = clean_events(all_events)
 
+    # get participant frequencies
+    write_participant_stats(all_events_clean)
+
     avg_type_count = get_percentage_counter(Counter(ev.event_type for ev in all_events_clean))
-    avg_subtype_count = get_percentage_counter(Counter(ev.event_subtype for ev in all_events_clean))
-    for k, v in avg_subtype_count.items():
-        v["type"] = k[0]
-        v["subtype"] = k[1]
     print("Event types: ", avg_type_count)
+    avg_subtype_count = get_percentage_counter(Counter(f"{ev.event_type}.{ev.event_subtype}" for ev in all_events_clean))
     print("Event subtypes", avg_subtype_count)
+    for k, v in avg_subtype_count.items():
+        k_maintype = k.split(".")[0]
+        v["maintype_pct"] = v["n"] / avg_type_count[k_maintype]["n"]
     type_df = pd.DataFrame(avg_type_count).transpose().sort_values(by="pct", ascending=False)
 
     subtype_df = pd.DataFrame(avg_subtype_count).transpose().sort_values(by="pct")
-    subtype_df[["type", "subtype", "n"]].to_csv("subtype_data.csv", index=False)
+    subtype_df.to_csv("subtype_data.csv", index=False)
 
     plot_type_treemap_matplot(type_df)
 

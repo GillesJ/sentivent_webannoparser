@@ -58,43 +58,6 @@ Anno_03:
 V 1.1 changes:
 - add Marketshare subtype on Macroeconomics
 - add participants on financial metrics??? => too big an edit
-- 
-
-## Fully manually checked documents
-- aal04_american-airlines-backtracks-lrb-a-bit-rrb-on-its-legroom-re.txt
-- ba00_boeing-delivers-its-first-737-max-just-as-planned.txt
-- celg00_why-shares-of-biopharma-giant-celgene-lrb-celg-rrb-tumbled-t.txt
-- f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt
-- ge02_a-simple-ge-trade-for-long-suffering-investors.txt
-- kmi02_why-long-term-investors-should-prefer-kinder-morgan-inc-over-ene.txt
-- aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt
-- celg02_celgene-s-stock-may-be-incredibly-overvalued-right-now-here.txt
-- celg04_why-celgene-is-bucking-biotech-weakness-today.txt
-- f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt
-- ge01_ge-drops-after-immelt-predicts-challenges-to-hit-2018-targets.txt
-- ge04_ge-to-replace-jeff-immelt-with-ge-healthcare-exec-john-flannery.txt
-- kmi01_what-enterprise-products-could-offer-income-investors.txt
-- 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
-- 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt
-- 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
-- aal03_american-airlines-reports-load-factor-increase-in-may-shares-g.txt
-- dis01_this-hedge-fund-bought-250-million-of-disney-stock-should-yo.txt
-- ge00_what-s-behind-ge-s-move-from-the-connecticut-suburbs-to-boston.txt
-- nem01_inside-barrick-gold-s-production-growth.txt
-- nem02_newmont-mining-ready-to-shine.txt
-- nem03_newmont-s-lower-margins-understanding-the-analyst-predictions.txt
-- fox03_weekend-box-office-wonder-woman-opened-even-bigger-than-we.txt
-- cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt
-- ge13_ge-is-beating-some-headwinds-but-is-it-enough.txt
-- fb05_is-the-market-undervaluing-facebook-stock.txt
-- gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt
-- gm03_general-motors-cadillac-sales-are-booming-in-china.txt
-- nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt
-- dis02_disney-earnings-give-a-look-at-how-espn-is-facing-the-future.txt
-- gm01_is-gm-abandoning-its-future-for-short-term-profits.txt
-- dis10_stocks-in-red-that-might-produce-some-green.txt
-- fb09_facebook-pitches-brand-safety-ahead-of-video-ad-push.txt
-abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt
 
 
 # Discussion with Veronique (5/12/2018):
