@@ -8,12 +8,15 @@ We manually look at annotations and correct them.
 All:
 - MacroEconomics: remove MacroEconomics die niet over specifiek bedrijf of ligging in markt gaan.
     - verwijder macroeconomics zonder affectedcompany participants.
-- Split MacroEconomics: Marketshare (tbd van bedrijf/product?) en Competitie discussions zijn duidelijk de belangrijkste.
 - FinancialReport: kijk na of niet verward wordt met Profit/Loss, Expense, Revenue (vooral Anno_01)
+- Verwijzing naar Earnings-per-share: Profit/Loss of a company
+- "Stock multiple": metric for FinancialResult
 - TIME Filler participants not always tagged, wrongly tagged (not a specific temportal point/duration)
 - Earnings per share: Profit/Loss not FinancialReport of Revenue: check dit manual op string. Als token "earnings" gevonden: check of event of als event gevonden check dat type Profit/Loss is.
 - Under/Overvalued: SecurityValue: check this manually
-- Underweight/Overweight: analyst rating
+- Underweight / Overweight / Overbought / Underbought : analyst rating
+- `to grow`/`growth`/`decrease`/`increase`: growth terms are often used generically for several possible financial metrics such Revenue, Profit/Loss/Earnings, Sales, etc. They are often used anaphorically or the specific financial metric category is inferred from context. These events are particularly difficult to annotate due the reliance of contextual inference needed. Pay special attention to these terms. Do not confuse Revenue with SalesVolume: generically used Revenue , e.g., "services business will grow": Revenue.Increase type.
+- 
 
 Anno_01:
 - Annotated a lot of events without participants.

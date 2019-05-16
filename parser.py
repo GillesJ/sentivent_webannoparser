@@ -13,16 +13,18 @@ sentivent-webannoparser
 Copyright (c) Gilles Jacobs. All rights reserved.
 """
 from __future__ import annotations
+
+import settings
 from dataclasses import dataclass, field
 from zipfile import ZipFile
 import xml.dom.minidom as md
 import cassis
 import fnmatch
-import pickle
+import dill
 import spacy
 from pathlib import Path
 from typing import List, Any
-from util import flatten, count_avg
+from util import flatten, count_avg, pickle_webanno_project
 import os
 import json
 
@@ -34,6 +36,10 @@ class Element:
     element_id: int = field(repr = False)
     annotator_id: str
     document_title: str
+    # matched_to_gold = dict() # for matching when scoring
+    # match: dict()
+
+    # document: AnnotationDocument
     # match: None
 
     def __hash__(self):
@@ -113,6 +119,7 @@ class Event(Element):
     fillers: List[Filler] = field(repr=False)
     polarity: str = field(repr=False)
     modality: str = field(repr=False)
+    realis: str = field(repr=False)
     tokens: List = field(default=None, repr=False)
     in_sentence: List[Sentence] = field(default=None, repr=False)
     coordination: List[Event] = field(default=None, repr=False)
@@ -137,6 +144,36 @@ class Event(Element):
             else: return None
         else: return None
 
+    def get_sentence_text(self):
+        return " ".join(t.text for sen in self.in_sentence for t in sen.tokens)
+
+    def get_extent_tokens(self, extent=["discontiguous_triggers"], source_order=True):
+        '''
+        Get a list of token objects for the event extent.
+        The extent can be set to include discontiguous_triggers, participants, and/or fillers.
+        Setting this to an empty list will only return the original
+        In the definition of an event nugget we include all of these.
+        :param extent: a list of elements with which the event annotation span can be extended. Default: discontigious_triggers, allowed: ["discontiguous_triggers", "participants", "fillers"]
+        :param source_order: Maintain the word order of tokens in the source AnnotationDocument.
+        Setting to False preserves the order of the annotation process by the annotators.
+        This is an unreliable approximation of token span salience and cannot be recommended. Default: True
+        :return: List of tokens
+        '''
+        all_tokens = self.tokens
+
+        for ext in extent:
+            if getattr(self, ext):
+                all_tokens.extend(t for x in getattr(self, ext) for t in x.tokens)
+
+        all_tokens = list(set(all_tokens)) # this is necessary because trigger and participant spans can overlap
+        if source_order: # return tokens in the order they appear in source text
+                all_tokens.sort(key = lambda x: x.begin)
+
+        return all_tokens
+
+    def get_extent_text(self, extent=["discontiguous_triggers", "participants", "fillers"], source_order=True):
+        return " ".join(t.text for t in self.get_extent_tokens(extent=extent, source_order=source_order))
+
 
 @dataclass
 class Token(Element):
@@ -146,6 +183,14 @@ class Token(Element):
     filler_extent: List[Filler] = field(repr=False)
     canonical_referent_extent: List[CanonicalReferent] = field(repr=False)
     discontiguous_trigger_extent: List[DiscontiguousTrigger] = field(repr=False)
+
+
+    def get_token_id(self):
+        '''
+        Set token id based on document id + token position in text
+        :return:
+        '''
+        return f"{self.document_title}_{self.index}"
 
     def __hash__(self):
         return hash((self.element_id, self.text, self.begin, self.end))
@@ -186,6 +231,7 @@ class AnnotationDocument:
         dom = md.parseString(xmi_content)
         self.text = dom.getElementsByTagName('cas:Sofa')[0].getAttribute('sofaString')
         self.title = dom.getElementsByTagName("type2:DocumentMetaData")[0].getAttribute("documentTitle")
+        self.document_id = self.title.split("_")[0]
 
         self.events = None
         self.fillers = None
@@ -317,9 +363,14 @@ class AnnotationDocument:
                 else:
                     polarity = negativepolarity
 
+                if polarity == "positive" and modality == "certain":
+                    realis = "asserted"
+                else:
+                    realis = "other"
+
                 events.append(
                     Event(text, begin, end, element_id, self.annotator_id, self.title, event_type, event_subtype, discontiguous_triggers, participants,
-                          fillers, polarity, modality)
+                          fillers, polarity, modality, realis)
                 )
         if events: self.events = events
 
@@ -422,13 +473,19 @@ class AnnotationDocument:
     def __str__(self):
         return f"Document {self.title} by {self.annotator_id}"
 
+    def __repr__(self):
+        '''
+        Custom repr for easier debugging.
+        :return: repr string
+        '''
+        return f"{self.document_id} {self.annotator_id} <{type(self).__module__}.{type(self).__qualname__} {hex(id(x))}>"
 
 class WebannoProject:
 
     def __init__(self, project_dir, format="xmi"):
 
         # check format TODO add tsv3 support and calls
-        if format not in ["xmi", "tsv3"]:
+        if format not in ["xmi", "tsv3", "from_documents", "zip"]:
             raise ValueError("arg format can only \"xmi\" and \"tsv3\"")
         else: self.format = format
 
@@ -540,9 +597,13 @@ class WebannoProject:
         events = [e for e in cas.select('webanno.custom.A_Event')]
         print(len(events))
 
-    def dump_pickle(self, fp):
-        with open(fp, "wb") as self_out:
-            pickle.dump(self, self_out)
+    # def dump_pickle(self, fp):
+    #     '''
+    #     We use dill as a pickling/deserialization library as a more robust alternative to pickle.
+    #     :param fp: output path
+    #     '''
+    #     with open(fp, "wb") as self_out:
+    #         dill.dump(self, self_out)
 
     def process_spacy(self):
 
@@ -555,16 +616,51 @@ class WebannoProject:
             # self.spacy_documents.append(spacy.tokens.Doc(nlp.vocab, words=[[t.text for t in doc.sentences]))
             # self.spacy_documents.append(spacy.tokens.Doc(nlp.vocab, doc.text))
 
+def parse_main_iaa(main_dirp, iaa_dirp, opt_fp):
+    """
+    Parses the main corpus and IAA gold standard files and joins them in one WebAnnoProject.
+    :return:
+    """
+
+    # moderator_id = "gilles"
+    # exclude_moderator = lambda x: moderator_id not in Path(x.path).stem
+    # include_moderator = lambda x: moderator_id in Path(x.path).stem
+
+    main_project = WebannoProject(main_dirp)
+    # # exclude moderator and trial files which start with two digits
+    # main_anndocs_final = [p for p in main_project.annotation_document_fps
+    #                       if moderator_id not in Path(p).stem and not Path(p).parents[1].stem[0:1].isdigit()]
+    #
+    # iaa_project = WebannoProject(iaa_dirp)
+    # # exclude all annotators except moderator and trial files which start with two digits
+    # iaa_anndocs_final = [p for p in iaa_project.annotation_document_fps
+    #                      if moderator_id in Path(p).stem and not Path(p).parents[1].stem[0:1].isdigit()]
+
+    main_project.annotation_document_fps.extend(main_project.annotation_document_fps)
+
+    main_project.parse_annotation_project()
+
+    main_project.dump_pickle(opt_fp)
+    print(f"Written project object pickle to {opt_fp}")
+
+def parse_and_pickle(project_dirp, opt_fp):
+
+    project = WebannoProject(project_dirp)
+    project.parse_annotation_project()
+    pickle_webanno_project(project, opt_fp)
 
 if __name__ == "__main__":
 
+    parse_and_pickle(settings.IAA_XMI_DIRP, settings.IAA_PARSER_OPT)
+    parse_and_pickle(settings.MAIN_XMI_DIRP, settings.MAIN_PARSER_OPT)
 
-    # ANNOTATION_DIRP = "../example_data"
-    project_dirp = "/home/gilles/00-sentivent-fwosb-phd-2017-2020/00-event-annotation/webanno-project-export/XMI-corrected-SENTiVENT-event-english-1_2019-01-28_1341"
-    opt_fp = "sentivent_en_webanno_correction.pickle"
-    exclude_gilles = lambda x: "anno" in Path(x.path).stem
 
-    event_project = WebannoProject(project_dirp)
-    event_project.parse_annotation_project()
-    # event_project.process_spacy()
-    event_project.dump_pickle(opt_fp)
+    # # ANNOTATION_DIRP = "../example_data"
+    # project_dirp = "/home/gilles/00-sentivent-fwosb-phd-2017-2020/00-event-annotation/webanno-project-export/XMI-corrected-SENTiVENT-event-english-1_2019-01-28_1341"
+    # opt_fp = "sentivent_en_webanno_correction.pickle"
+    # exclude_gilles = lambda x: "anno" in Path(x.path).stem
+    #
+    # event_project = WebannoProject(project_dirp)
+    # event_project.parse_annotation_project()
+    # # event_project.process_spacy()
+    # event_project.dump_pickle(opt_fp)

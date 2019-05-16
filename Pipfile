@@ -21,6 +21,10 @@ pipenv = "*"
 python-levenshtein = "*"
 pygal = "*"
 import-from-github-com = "*"
+lexicalrichness = "*"
+textblob = "*"
+dill = "*"
+xlsxwriter = "*"
 
 [dev-packages]
 

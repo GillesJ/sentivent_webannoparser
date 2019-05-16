@@ -88,7 +88,7 @@ fully_corrected = [
     "amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt",
     "dis07_disney-joins-ar-fray-with-200-star-wars-ar-headset.txt",
     "goog12_with-its-india-first-approach-google-is-trying-to-woo-the-comm.txt",
-    ]
+]
 
 def match_string(string, documents):
     '''
@@ -217,17 +217,17 @@ def clean_project(proj):
 
     return single_annotated_docs
 
-if __name__ == "__main__":
+def old_main():
+    '''
+    Main function used in first inspection run.
+    '''
 
-    # ANNOTATION_DIRP = "../example_data"
-    project_dirp = "/home/gilles/00 sentivent fwosb doctoraat 2017-2020/00-event-annotation/webanno-project-export/XMI-corrected-SENTiVENT-event-english-1_2018-12-11_1725"
-    # opt_fp = "sentivent_en_webanno_project_my_obj.pickle"
-    opt_fp = "sentivent_en_webanno_correction.pickle"
-    typology_fp = "/home/gilles/00 sentivent fwosb doctoraat 2017-2020/00-event-annotation/webanno-event-implementation/scripts/sentivent_en_event_typology.json"
+    project_pickle_fp = settings.ALL_ANNOTATIONS_PARSER_OPT
+    typology_fp = settings.TYPOLOGY_FP
 
     exclude_gilles = lambda x: "anno" in Path(x.path).stem
 
-    with open(opt_fp, "rb") as project_in, open(typology_fp, "rt") as typology_in:
+    with open(project_pickle_fp, "rb") as project_in, open(typology_fp, "rt") as typology_in:
         event_project = pickle.load(project_in)
         typology = json.load(typology_in)
 
@@ -237,25 +237,31 @@ if __name__ == "__main__":
     # count pct of events that have already been fully corrected
     event_corrected_cnt = sum(1 for event in all_events if event.document_title in fully_corrected)
     event_corrected_pct = round(100 * event_corrected_cnt / len(all_events), 2)
-    print(f"{event_corrected_pct}% of events ({event_corrected_cnt}/{len(all_events)}) manually corrected in {len(fully_corrected)} documents")
+    print(f"{event_corrected_pct}% of events ({event_corrected_cnt}/{len(all_events)}) manually corrected in "
+          f"{len(fully_corrected)} documents")
     # collect and count typology violations
     check_typology(all_events, typology)
-    event_typology_errors = sorted([ev for ev in all_events if ev.typology_error], key=lambda x: (x.document_title, x.annotator_id))
+    event_typology_errors = sorted([ev for ev in all_events if ev.typology_error],
+                                   key=lambda x: (x.document_title, x.annotator_id))
     for doc_title, evs in groupby(event_typology_errors, lambda x: (x.document_title, x.annotator_id)):
         print("Typology Errors in", doc_title)
         for ev in evs:
-            for err in ev.typology_error: print(f"\t{err[1]} for {err[0]} on {ev.event_type}.{ev.event_subtype} in {str(ev.in_sentence[0])[:50]}")
+            for err in ev.typology_error: print(
+                f"\t{err[1]} for {err[0]} on {ev.event_type}.{ev.event_subtype} in {str(ev.in_sentence[0])[:50]}")
 
     # keyword check: check keywords for event types
     keywords = {
+        "Dividend": ["yield"],
         "Profit/Loss": ["earnings", "profit", "loss", "income", "EPS", "earnings per share"],
-        "Revenue": ["revenue",],
+        "Revenue": ["revenue", ],
         "Expense": ["cost", "expense"],
-        "Product/Service": ["launch", "release", "trial", "foray"],
-        "SecurityValue": ["undervalue", "overvalue"],
-        "Rating": ["underweight", "overweight"],
-        "SalesVolume": ["sales"],
-        "FinancialReport": ["guidance", "forecast"],
+        "Product/Service": ["launch", "release", "trial", "foray", "product", "production", "pricing"],
+        "SecurityValue": ["undervalue", "overvalue", "underweight", "overweight", "underbought", "overbought",
+                          "oversold", "undersold"],  # these are ambiguous terms that are a subjective measure of value
+        "Rating": ["rating", "undervalue", "overvalue", "underweight", "overweight", "underbought", "overbought",
+                   "oversold", "undersold"],
+        "SalesVolume": ["sales", "sold"],
+        "FinancialReport": ["guidance", "forecast", "projected", "E/P", "EP", "P/E", "PE"],
         "generic_event": ["generate", "report"],
     }
     cnt_keyword = retrieve_document_with_keyword(event_project.annotation_documents, keywords)
@@ -264,8 +270,8 @@ if __name__ == "__main__":
     # docs_events_lt_10 = {(doc.title, doc.annotator_id): {"ev": len(doc.events), "sen": len(doc.sentences), "tok": len(doc.tokens)} for doc in event_project.annotation_documents if len(doc.events) < 10} # was used for determining a cutoff
     docs_events_per_senttok = {
         (doc.title, doc.annotator_id): {
-            "sen/ev": len(doc.sentences)/len(doc.events),
-            "tok/ev": len(doc.tokens)/len(doc.events),
+            "sen/ev": len(doc.sentences) / len(doc.events),
+            "tok/ev": len(doc.tokens) / len(doc.events),
             "ev": len(doc.events),
             "sen": len(doc.sentences),
             "tok": len(doc.tokens),
@@ -275,19 +281,30 @@ if __name__ == "__main__":
     # cutoff of 5 sentences per event is intuitively reasonable for inspection
     docs_too_little_events = {k: v for k, v in docs_events_per_senttok.items() if v["sen/ev"] > 5}
 
-# issues on event level using event attributes counts
+    # issues on event level using event attributes counts
     # collect macroeconomic issues
     macroecon_no_part = list(filter(lambda x: x.event_type == "Macroeconomics" and not x.participants, all_events))
-    macroecon_no_affectedcompany = list(filter(lambda x: x.event_type == "Macroeconomics" and not corpus_stats_viz.check_role_in_participants(x, "AffectedCompany"), all_events))
+    macroecon_no_affectedcompany = list(filter(
+        lambda x: x.event_type == "Macroeconomics" and not corpus_stats_viz.check_role_in_participants(x,
+                                                                                                       "AffectedCompany"),
+        all_events))
     gkey = lambda x: (x.document_title, x.annotator_id)
 
     # other counters
-    cnt_typology_error = {k: Counter("typology_error" for ev in g) for k, g in groupby(sorted(event_typology_errors, key=gkey), key=gkey)}
-    cnt_no_part = {k: Counter("no_part" for ev in g) for k, g in groupby(sorted(list(filter(lambda x: not x.participants, all_events)), key=gkey), key=gkey)}
-    cnt_productservice_no_part = {k: Counter(ev.event_type+"_no_part" for ev in g) for k, g in groupby(sorted(list(filter(lambda x: not x.participants and x.event_type == "Product/Service", all_events)), key=gkey), key=gkey)}
-    cnt_macroecon_no_part = {k: Counter(ev.event_type + "_no_part" for ev in g) for k, g in groupby(sorted(macroecon_no_part, key=gkey), key=gkey)}
-    cnt_macroecon_no_affected = {k: Counter(ev.event_type + "_no_affcomp" for ev in g) for k, g in groupby(sorted(macroecon_no_affectedcompany, key=gkey), key=gkey)}
-    cnt_problem_type = {k: Counter(ev.event_type for ev in g) for k, g in groupby(sorted(list(filter(lambda x: x.event_type in ["Macroeconomics", "FinancialReport", "Revenue", "CSR/Brand", "Profit/Loss", "SalesVolume"], all_events)), key=gkey), key=gkey)}
+    cnt_typology_error = {k: Counter("typology_error" for ev in g) for k, g in
+                          groupby(sorted(event_typology_errors, key=gkey), key=gkey)}
+    cnt_no_part = {k: Counter("no_part" for ev in g) for k, g in
+                   groupby(sorted(list(filter(lambda x: not x.participants, all_events)), key=gkey), key=gkey)}
+    cnt_productservice_no_part = {k: Counter(ev.event_type + "_no_part" for ev in g) for k, g in groupby(
+        sorted(list(filter(lambda x: not x.participants and x.event_type == "Product/Service", all_events)), key=gkey),
+        key=gkey)}
+    cnt_macroecon_no_part = {k: Counter(ev.event_type + "_no_part" for ev in g) for k, g in
+                             groupby(sorted(macroecon_no_part, key=gkey), key=gkey)}
+    cnt_macroecon_no_affected = {k: Counter(ev.event_type + "_no_affcomp" for ev in g) for k, g in
+                                 groupby(sorted(macroecon_no_affectedcompany, key=gkey), key=gkey)}
+    cnt_problem_type = {k: Counter(ev.event_type for ev in g) for k, g in groupby(sorted(list(filter(
+        lambda x: x.event_type in ["Macroeconomics", "FinancialReport", "Revenue", "CSR/Brand", "Profit/Loss",
+                                   "SalesVolume"], all_events)), key=gkey), key=gkey)}
     cnt_all = util.dict_zip(
         cnt_typology_error,
         cnt_keyword,
@@ -305,7 +322,7 @@ if __name__ == "__main__":
     i = 0
     for k, cnt in sorted(cnt_all.items(), key=lambda x: sum(x[1].values()), reverse=True):
         (title, anno) = k
-        if title in single_annotated_titles and title not in fully_corrected: # because we have not yet completed selection of multiple annotated documents
+        if title in single_annotated_titles and title not in fully_corrected:  # because we have not yet completed selection of multiple annotated documents
             if k in docs_too_little_events:
                 print(i, title, anno, f"!!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {docs_too_little_events[k]}")
             else:
@@ -318,7 +335,7 @@ if __name__ == "__main__":
     i = 0
     for k, cnt in sorted(cnt_keyword.items(), key=lambda x: sum(x[1].values()), reverse=True):
         (title, anno) = k
-        if title in single_annotated_titles: # because we have not yet completed selection of multiple annotated documents
+        if title in single_annotated_titles:  # because we have not yet completed selection of multiple annotated documents
             if k in docs_too_little_events:
                 print(i, title, anno, f"!!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {docs_too_little_events[k]}")
             else:
@@ -333,4 +350,152 @@ if __name__ == "__main__":
             if doc.title in single_annotated_titles and doc.title not in fully_corrected:
                 print(doc.title, doc.annotator_id)
 
+def inspect_annotations(project, typology, events=None):
 
+    # collect all events
+    if events:
+        all_events = events
+    else:
+        all_events = [ev for d in project.annotation_documents if d.events for ev in d.events]
+
+    # collect and count typology violations
+    check_typology(all_events, typology)
+    event_typology_errors = sorted([ev for ev in all_events if ev.typology_error],
+                                   key=lambda x: (x.document_title, x.annotator_id))
+    for doc_title, evs in groupby(event_typology_errors, lambda x: (x.document_title, x.annotator_id)):
+        print("Typology Errors in", doc_title)
+        for ev in evs:
+            for err in ev.typology_error: print(
+                f"\t{err[1]} for {err[0]} on {ev.event_type}.{ev.event_subtype} in {str(ev.in_sentence[0])[:50]}")
+
+    # keyword check: check keywords for event types
+    keywords = {
+        "Dividend": ["yield"],
+        "Profit/Loss": ["earnings", "profit", "loss", "income", "EPS", "earnings per share"],
+        "Revenue": ["revenue", ],
+        "Expense": ["cost", "expense"],
+        "Product/Service": ["launch", "release", "trial", "foray", "product", "production", "pricing"],
+        "SecurityValue": ["undervalue", "overvalue", "underweight", "overweight", "underbought", "overbought",
+                          "oversold", "undersold"],  # these are ambiguous terms that are a subjective measure of value
+        "Rating": ["rating", "undervalue", "overvalue", "underweight", "overweight", "underbought", "overbought",
+                   "oversold", "undersold"],
+        "SalesVolume": ["sales", "sold"],
+        "FinancialReport": ["guidance", "forecast", "projected", "E/P", "EP", "P/E", "PE"],
+        "generic_event": ["generate", "report"],
+    }
+    cnt_keyword = retrieve_document_with_keyword(project.annotation_documents, keywords)
+
+    # issues on document level using document counts
+    # docs_events_lt_10 = {(doc.title, doc.annotator_id): {"ev": len(doc.events), "sen": len(doc.sentences), "tok": len(doc.tokens)} for doc in event_project.annotation_documents if len(doc.events) < 10} # was used for determining a cutoff
+    docs_events_per_senttok = {}
+    for doc in project.annotation_documents:
+        docs_events_per_senttok[(doc.title, doc.annotator_id)] = {}
+        n_sen = len(doc.sentences) if doc.sentences else 0.0
+        n_ev = len(doc.events) if doc.events else 0.0
+        n_tok = len(doc.tokens) if doc.tokens else 0.0
+        sen_ev = n_sen / n_ev if n_ev else 0.0
+        tok_ev = n_tok / n_ev if n_ev else 0.0
+
+        docs_events_per_senttok[(doc.title, doc.annotator_id)]["sen"] = n_sen
+        docs_events_per_senttok[(doc.title, doc.annotator_id)]["ev"] = n_ev
+        docs_events_per_senttok[(doc.title, doc.annotator_id)]["tok"] = n_tok
+        docs_events_per_senttok[(doc.title, doc.annotator_id)]["sen/ev"] = sen_ev
+        docs_events_per_senttok[(doc.title, doc.annotator_id)]["tok/ev"] = tok_ev
+
+    # cutoff of 5 sentences per event is intuitively reasonable for inspection
+    docs_too_little_events = {k: v for k, v in docs_events_per_senttok.items() if v["sen/ev"] > 5}
+
+    # issues on event level using event attributes counts
+    # collect macroeconomic issues
+    macroecon_no_part = list(filter(lambda x: x.event_type == "Macroeconomics" and not x.participants, all_events))
+    macroecon_no_affectedcompany = list(filter(
+        lambda x: x.event_type == "Macroeconomics" and not corpus_stats_viz.check_role_in_participants(x,
+                                                                                                       "AffectedCompany"),
+        all_events))
+    gkey = lambda x: (x.document_title, x.annotator_id)
+
+    # other counters
+    cnt_typology_error = {k: Counter("typology_error" for ev in g) for k, g in
+                          groupby(sorted(event_typology_errors, key=gkey), key=gkey)}
+    cnt_no_part = {k: Counter("no_part" for ev in g) for k, g in
+                   groupby(sorted(list(filter(lambda x: not x.participants, all_events)), key=gkey), key=gkey)}
+    cnt_productservice_no_part = {k: Counter(ev.event_type + "_no_part" for ev in g) for k, g in groupby(
+        sorted(list(filter(lambda x: not x.participants and x.event_type == "Product/Service", all_events)), key=gkey),
+        key=gkey)}
+    cnt_macroecon_no_part = {k: Counter(ev.event_type + "_no_part" for ev in g) for k, g in
+                             groupby(sorted(macroecon_no_part, key=gkey), key=gkey)}
+    cnt_macroecon_no_affected = {k: Counter(ev.event_type + "_no_affcomp" for ev in g) for k, g in
+                                 groupby(sorted(macroecon_no_affectedcompany, key=gkey), key=gkey)}
+    cnt_problem_type = {k: Counter(ev.event_type for ev in g) for k, g in groupby(sorted(list(filter(
+        lambda x: x.event_type in ["Macroeconomics", "FinancialReport", "Revenue", "CSR/Brand", "Profit/Loss",
+                                   "SalesVolume"], all_events)), key=gkey), key=gkey)}
+    cnt_all = util.dict_zip(
+        cnt_typology_error,
+        cnt_keyword,
+        cnt_productservice_no_part,
+        cnt_no_part,
+        cnt_macroecon_no_affected,
+        cnt_macroecon_no_part,
+        cnt_problem_type,
+        fillvalue=None
+    )
+    cnt_all = {k: sum_counters(v) for k, v in cnt_all.items()}
+    # single_annotated_titles = [d.title for d in single_annotated_docs]
+
+    print("+------------------------+\n|  DOCUMENTS TO INSPECT  |\n+------------------------+")
+    i = 0
+    for k, cnt in sorted(cnt_all.items(), key=lambda x: sum(x[1].values()), reverse=True):
+        (title, anno) = k
+        print(title, anno, cnt)
+        # if title in single_annotated_titles and title not in fully_corrected:  # because we have not yet completed selection of multiple annotated documents
+        #     if k in docs_too_little_events:
+        #         print(i, title, anno, f"!!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {docs_too_little_events[k]}")
+        #     else:
+        #         print(i, title, anno)
+        #     print(cnt)
+        #     i += 1
+
+    #
+    print("+------------------------+\n|  KEYWORDS DOCUMENTS TO INSPECT  |\n+------------------------+")
+    i = 0
+    for k, cnt in sorted(cnt_keyword.items(), key=lambda x: sum(x[1].values()), reverse=True):
+        (title, anno) = k
+        print(title, anno, cnt)
+        # if title in single_annotated_titles:  # because we have not yet completed selection of multiple annotated documents
+        #     if k in docs_too_little_events:
+        #         print(i, title, anno, f"!!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {docs_too_little_events[k]}")
+        #     else:
+        #         print(i, title, anno)
+        #     print(cnt)
+        #     i += 1
+
+    # check docs with more than 50 sentences due to Webanno settings that shows only 50 sentences
+    print("+------------------------+\n|  DOCUMENTS +50 SEN  |\n+------------------------+")
+    for doc in project.annotation_documents:
+        if len(doc.sentences) > 50:
+            # if doc.title in single_annotated_titles and doc.title not in fully_corrected:
+            print(doc.title, doc.annotator_id)
+
+if __name__ == "__main__":
+
+    # load typology for typology checking
+    with open(settings.TYPOLOGY_FP, "rt") as typology_in:
+        typology = json.load(typology_in)
+
+    # INSPECT IAA STUDY
+    iaa_project = util.unpickle_webanno_project(settings.IAA_PARSER_OPT)
+
+    # filter every file not from moderator_id
+    iaa_project.annotation_documents = [d for d in iaa_project.annotation_documents if d.annotator_id == settings.MOD_ID]
+
+    inspect_annotations(iaa_project, typology)
+
+    # INSPECT MAIN CORPUS
+    main_project = util.unpickle_webanno_project(settings.MAIN_PARSER_OPT)
+
+    # filter every file not from moderator_id
+    main_project.annotation_documents = [d for d in main_project.annotation_documents
+                                         if d.annotator_id != settings.MOD_ID
+                                         and not d.title[0:1].isdigit()]
+
+    inspect_annotations(main_project, typology)

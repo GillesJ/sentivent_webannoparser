@@ -88,10 +88,10 @@ class AgreementStudy:
             sys_ann = row[1]
             score= row[2]
             match = {"partial_token_sim": sys_ann, "position_dice_sim_score": score}
-            if gold_ann.match[system_annotator_id] is not None:
-                gold_ann.match[system_annotator_id].append(match)
+            if gold_ann.match_candidates[system_annotator_id] is not None:
+                gold_ann.match_candidates[system_annotator_id].append(match)
             else:
-                gold_ann.match[system_annotator_id] = [match]
+                gold_ann.match_candidates[system_annotator_id] = [match]
 
     def _match_by_type(self, gold_anns, system_anns, system_annotator_id):
 
@@ -113,10 +113,10 @@ class AgreementStudy:
                     "dice_sim_score": dice_sim_score,
                     "token_distance": token_distance,
                 }
-                if gold_ann.match[system_annotator_id] is not None:
-                    gold_ann.match[system_annotator_id].append(match)
+                if gold_ann.match_candidates[system_annotator_id] is not None:
+                    gold_ann.match_candidates[system_annotator_id].append(match)
                 else:
-                    gold_ann.match[system_annotator_id] = [match]
+                    gold_ann.match_candidates[system_annotator_id] = [match]
 
         for gold_ann in gold_anns:
 
@@ -158,8 +158,8 @@ class AgreementStudy:
                 # make an attrib for containing the system matches
                 for gold_ann in gold_anns:
                     if hasattr(gold_ann, "match"):
-                        gold_ann.match[system_doc.annotator_id] = None
-                    else: gold_ann.match = {system_doc.annotator_id: None}
+                        gold_ann.match_candidates[system_doc.annotator_id] = None
+                    else: gold_ann.match_candidates = {system_doc.annotator_id: None}
 
                 system_anns = getattr(system_doc, annotation_name)
 
@@ -413,7 +413,7 @@ class AgreementStudy:
             for gold_ann in gold_annotations:
                 gold_ann.selected_match = {} # dict for collected selected match
 
-                for system_anno_id, candidate_system_matches in gold_ann.match.items():
+                for system_anno_id, candidate_system_matches in gold_ann.match_candidates.items():
                     gold_ann.selected_match[system_anno_id] = None
                     already_matched.setdefault(system_anno_id, set())
 
@@ -456,17 +456,17 @@ class AgreementStudy:
         all_gold_annotations = self.collect_annotations_by_annotator(annotation_name)
         for gold_anno_id, gold_annotations in all_gold_annotations.items():
             for gold_ann in gold_annotations:
-                for other_anno_id, match in gold_ann.match.items():
+                for other_anno_id, match in gold_ann.match_candidates.items():
                     print(
                         f"\n{'-'*160}"
                         f"\nMATCH FROM {gold_anno_id} TO {other_anno_id} IN {gold_ann.document.title}"
                         f"\n{gold_ann} (with selection strat Liu)\n"
                     )
-                    if gold_ann.match[other_anno_id] is not None:
+                    if gold_ann.match_candidates[other_anno_id] is not None:
                         if gold_ann.selected_match[other_anno_id] is None:
                             print("No matched were selected from candidates.")
                         else:
-                            for match in gold_ann.match[other_anno_id]:
+                            for match in gold_ann.match_candidates[other_anno_id]:
                                 matched_to = self._get_annotation_from_match(match).matched_to_gold
                                 if match in gold_ann.selected_match[other_anno_id]:
                                     # print(f"\033[1m-> {match}\033[0m")
@@ -563,13 +563,14 @@ class AgreementStudy:
 
     def select_custom_match(self, annotation_name, strategy=["partial_token_sim", "in_window_sentence"]):
         all_gold_annotations = self.collect_annotations_by_annotator(annotation_name)
+
         for gold_anno_id, gold_annotations in all_gold_annotations.items():
             already_matched = {} # set for checking unique annotations
 
             for gold_ann in gold_annotations:
                 gold_ann.selected_match = {} # dict for collected selected match
 
-                for system_anno_id, candidate_system_matches in gold_ann.match.items():
+                for system_anno_id, candidate_system_matches in gold_ann.match_candidates.items():
                     gold_ann.selected_match[system_anno_id] = None
                     already_matched.setdefault(system_anno_id, set())
 

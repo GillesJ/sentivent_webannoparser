@@ -10,17 +10,19 @@ from parser import *
 import pygal
 import pickle
 import seaborn as sns
+import math
 import matplotlib.pyplot as plt
 import squarify  # pip install squarify (algorithm for treemap)
 from functools import partial
 from collections import Counter, OrderedDict
-from itertools import groupby
+from itertools import groupby, permutations
 import pandas as pd
 import util
 from copy import deepcopy
 import numpy as np
 from pprint import pprint
 from pygal.style import CleanStyle, DefaultStyle
+from iaa_nugget_metrics import AgreementStudy, score_document_ere
 
 pd.option_context('display.max_rows', None, 'display.max_columns', None)
 
@@ -87,6 +89,36 @@ def get_percentage_counter(counter):
     n = sum(counter.values())
     return {k: {"pct": round(100.0 * v / n, 2), "n": v} for k, v in counter.items()}
 
+def select_redundant_annotated_doc(docs, method="best_tuple_score"):
+    '''
+    From a list of the same source document with different annotations, select one annotated document.
+
+    :param docs: list of annotation documents.
+    :param method: Method for selecting annotation document.
+        "best_tuple_score": score docs pairwise on ERE nugget score, select highest scorers.
+        "most_events": largest event count document is
+        "median_events": median event count
+    :return: doc_selected: selected document
+    '''
+
+
+    if method == "most_events":
+        docs.sort(key=lambda x: len(x.events), reverse=True)
+        cnt = {d.annotator_id: len(d.events) for d in docs}
+        doc_selected = max(docs, key=lambda x: len(x.events))
+    elif method == "median_events":
+        docs.sort(key=lambda x: len(x.events), reverse=True)
+        cnt = {d.annotator_id: len(d.events) for d in docs}
+        doc_selected = docs[median_index([float(len(d.events)) for d in docs])]
+    elif method == "best_tuple_score":
+        for ref, gold in permutations(docs, 2):
+            results = score_document_ere(ref, gold)
+            pass
+
+    print(f"{title} selected {doc_average.annotator_id.upper()} by {method} {cnt}.")
+
+    return doc_selected
+
 def clean_project(proj):
     '''
     Clean the project from empty and redundant docs.
@@ -109,14 +141,9 @@ def clean_project(proj):
     for title, docgroup in groupby(proj.annotation_documents, key=lambda x: x.title):
         docs = list(docgroup)
         if len(docs) > 1:
-            docs.sort(key=lambda x: len(x.events), reverse=True)
-            cnt = {d.annotator_id: len(d.events) for d in docs}
-            # doc_most_events = max(docs, key=lambda x: len(x.events))
-            # keep_docs.append(doc_most_events)
-            # print(f"{title} selected {doc_most_events.annotator_id.upper()} {cnt}.")
-            doc_average = docs[median_index([float(len(d.events)) for d in docs])]
-            keep_docs.append(doc_average)
-            print(f"{title} selected {doc_average.annotator_id.upper()} {cnt}.")
+            selected_doc = select_redundant_annotated_doc(docs, method="best_tuple_score")
+            keep_docs.append(selected_doc)
+
         else:
             keep_docs.append(docs[0])
             single_annotated_docs.append(docs[0])
@@ -179,7 +206,6 @@ def plot_type_treemap_interactive(type_df, fp="type_treemap_pygal.svg"):
 
 def write_participant_stats(all_events_clean):
 
-
     participants = collect_event_attribute(all_events_clean, "participants")
     df_participants = pd.DataFrame({
         "participant_role": [p.role for p in participants],
@@ -214,7 +240,7 @@ def write_participant_stats(all_events_clean):
 
 def plot_type_treemap_matplot(type_df, fp="type_treemap_matplot.png"):
 
-    type_df["label"] = type_df.apply(lambda x: f"{x.name}\n{x['pct']}% (n={x['n'].astype('int')})", axis=1)
+    type_df["label"] = type_df.apply(lambda x: f"{x.name}\n{x['pct']:.1f}% (n={x['n'].astype('int')})", axis=1)
 
     figsize = [9, 5]
     plt.rcParams["figure.figsize"] = figsize
@@ -227,6 +253,126 @@ def plot_type_treemap_matplot(type_df, fp="type_treemap_matplot.png"):
     plt.axis('off', figure=fig)
     plt.show()
     fig.savefig(fp)
+
+def compute_lexical_richness(events, by=["event_type"], extent=["discontiguous_triggers"], preproc=None):
+    '''
+    Compute lexical richness measures of event attributes.
+    event_type extracts the mention tokens
+
+    :return:
+    :param events: list of Event objects
+    :param by: Group metric by attribute name. Used for grouping by event_type or subtype
+    :param extent: Extent of the text getter functions on Event. Default: Full even trigger with discont.,
+    :param preproc: list of preprocessing functions that take a string of text as input.
+    :return:
+    '''
+    from lexicalrichness import LexicalRichness
+    print(f"Computing lexical richness of {str(extent).upper()} grouped by {str(by).upper()} with preprocessing: {str(preproc)}")
+    # collect text by attribute
+    all_text = {}
+    for attrib_name, g in groupby(events, key = lambda x: (getattr(x, attrib_n) for attrib_n in by)):
+        attrib_name = ".".join(attrib_name)
+
+        for event in g:
+            text = event.get_extent_text(extent=extent)
+            if preproc:
+                for preproc_func in preproc:
+                    text = preproc_func(text)
+            all_text.setdefault(attrib_name, []).append(text)
+
+    # compute lexical diversity by attribute
+    d = []
+    for attrib_name, text in all_text.items():
+        # This was a bad idea because mention TTR is nearly always 1.
+        # # mean mention type-token ratio: variant of mean segment ttr (Johnsson 1944)
+        # # instead of fixed segments: annotation mentions
+        # mention_ttr = [LexicalRichness(t).ttr for t in text]
+        # mmttr = sum(mention_ttr) / len(text)
+        # print(mention_ttr)
+        # print(mmttr)
+
+        # Lexical entropy
+        p, lns = Counter(text), float(len(text))
+        entropy = -sum(count / lns * math.log(count / lns, 2) for count in p.values())
+
+        # metrics on all mentions together
+        text = " ".join(text)
+        lr = LexicalRichness(text)
+
+        d.append({
+            "annotation_type": attrib_name,
+            # "Mean mention TTR": mmttr, # this was a bad idea of mine
+            "cttr": lr.cttr,
+            "entropy": entropy,
+            "dugast": lr.Dugast,
+            "type_count": lr.terms,
+            "token_count": lr.words,
+            "herdan": lr.Herdan,
+            "somers": lr.Summer,
+            "maas": lr.Maas, #  low sensivitty
+            "ttr": lr.ttr,
+            "rttr": lr.rttr,
+            "mtld": lr.mtld(threshold=0.72), # length correct,  mid sensivitty
+            "msttr": lr.msttr(segment_window=25), # length correct, mid sensivity
+            "mattr": lr.mattr(window_size=25), # length correct, mid sensivitty
+            "hdd": lr.hdd(draws=42), # length correct, high sensitivity
+        })
+
+    df_lr = pd.DataFrame(d)
+    rec_metrics = ["maas", "hdd", "mtld"] # recommended metrics in McCarthy 2010
+    # rank
+    df_lr = util.rank_dataframe_column(df_lr, ascending=False) # add rank column for easy comparison
+    df_lr["maas_rank"] = df_lr["maas"].rank().astype(int) # Maas is inverted, lower score is more richness
+    df_lr = df_lr.drop(labels=["annotation_type_rank"], axis=1) # no need for index column ranking
+
+    # nicer output
+    df_lr = df_lr.sort_index(axis=1) # sort columns alphabetically
+    rank_cols = [c for c in df_lr if "_rank" in c and "_count" not in c]
+    df_lr["rank_all"] = df_lr[rank_cols].sum(axis=1).rank().astype(int) # sum every metric rank and rank inversely
+    df_lr["rank_maas_hdd_mtld"] = df_lr[[m + "_rank" for m in rec_metrics]].sum(axis=1).rank().astype(int) # combine recommended metrics
+    df_lr = df_lr.set_index("annotation_type")
+    df_lr = df_lr.sort_values(
+        by="rank_maas_hdd_mtld")  # sort values by conbination of recommended metrics in McCarthy 2010
+    return df_lr
+
+def plot_lexical_richness(events,
+                          csv_fp="lexical_richness_participant_filler_stemmed.csv",
+                          plot_fp="lexicalrichness.svg"):
+    # compute lexical richness in types
+    df_lr_trigger = compute_lexical_richness(events,
+                                     by=["event_type"],
+                                     extent=["discontiguous_triggers"],
+                                     preproc=[str.lower, util.filter_stopwords, util.stem_english])
+    df_lr_trigger.to_csv("lexical_richness_stemmed.csv")
+
+    df_lr_nugget = compute_lexical_richness(events,
+                                     by=["event_type"],
+                                     extent=["discontiguous_triggers", "participants", "fillers"],
+                                     preproc=[str.lower, util.filter_stopwords, util.stem_english])
+    df_lr_nugget.to_csv(csv_fp)
+
+    plot_rename = {
+        "annotation_type": "Event type",
+        "maas_trigger": "Maas (trigger)",
+        "hdd_trigger": "HDD (trigger)",
+        "mtld_trigger": "MTLD (trigger)",
+        "maas_nugget": "Maas (trigger + arguments)",
+        "hdd_nugget": "HDD (trigger + arguments)",
+        "mtld_nugget": "MTLD (trigger + arguments)",
+    }
+    df_lr_plot = df_lr_trigger[["maas", "hdd", "mtld"]].join(df_lr_nugget[["maas", "hdd", "mtld"]], lsuffix='_trigger', rsuffix='_nugget')
+    df_lr_plot = df_lr_plot.rename(columns=plot_rename)
+    df_lr_plot = df_lr_plot.sort_values(by=["HDD (trigger)"], ascending=False)
+    # df_lr_plot.plot(subplots=True, layout=(df_lr_plot.shape[1], 1), sharex=True,
+    #                 figsize=(7, 1.25 * df_lr_plot.shape[1]), marker=".")
+    df_lr_plot.plot(kind="bar", sharex=True,
+                    figsize=(7, 1.25*df_lr_plot.shape[1]))
+    labels = list(df_lr_plot.index.values)
+    ticks = list(range(len(labels)))
+    plt.xticks(ticks=ticks, labels=labels, rotation=75)
+    plt.savefig(plot_fp)
+    plt.show()
+
 
 if __name__ == "__main__":
 
@@ -250,6 +396,10 @@ if __name__ == "__main__":
 
     all_events_clean = clean_events(all_events)
 
+
+    write()
+    plot_lexical_richness(all_events_clean)
+
     # get participant frequencies
     write_participant_stats(all_events_clean)
 
@@ -263,7 +413,7 @@ if __name__ == "__main__":
     type_df = pd.DataFrame(avg_type_count).transpose().sort_values(by="pct", ascending=False)
 
     subtype_df = pd.DataFrame(avg_subtype_count).transpose().sort_values(by="pct")
-    subtype_df.to_csv("subtype_data.csv", index=False)
+    subtype_df.to_csv("subtype_data.csv")
 
     plot_type_treemap_matplot(type_df)
 

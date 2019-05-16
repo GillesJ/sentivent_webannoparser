@@ -12,8 +12,9 @@ from github_com.dkpro.cassis import *
 from pathlib import Path
 from glob import glob
 
-def get_annotation_filenames(dirp):
-    for zip_fp in glob(f"{}")
+
+# def get_annotation_filenames(dirp):
+#     for zip_fp in glob(f"{}")
 
 xmi_export_dirp = "example_data/t04_as-states-test-waters-att-hopes-to-catch-all-with-firstnet-fi.txt/webanno1468212693444888492export" # unzipped dir of WebAnno annotation export
 typesystem_fp = Path(xmi_export_dirp, "typesystem.xml")
