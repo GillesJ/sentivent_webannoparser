@@ -61,6 +61,7 @@ class MentionMapper:
     def match(self, gold, system, match_strategy="ere", select_criteria="ere"):
         '''
         Make
+
         :param system: System document.
         :param gold: Gold standard document.
         :param match_strategy:
@@ -71,7 +72,7 @@ class MentionMapper:
         matcher = get_matcher(match_strategy)
         candidates = matcher(gold, system) # gold annotations with mapped attribute
 
-        print_match_info(candidates, len(gold.events), len(system.events))
+        collect_match_metadata(candidates, len(gold.events), len(system.events))
 
         selector = get_selector(select_criteria)
         matches = selector(candidates)
@@ -86,14 +87,16 @@ class MentionMapper:
 
         return gold
 
-def print_match_info(mappings, n_gold, n_system):
+def collect_match_metadata(mappings, n_gold, n_system):
     # system annotation cannot be mapped to multiple gold, but 1 gold can be to multiple system (1_g-n_s)
     sys_l = [x[1] for x in mappings]
     gold_l = [x[0] for x in mappings]
     not_mapped_sys = n_system - len(sys_l)
     not_mapped_gold = n_gold - len(gold_l)
+
     print(f"{len(mappings)} mappings made between {n_gold} system and {n_system} gold annotations. "
           f"{not_mapped_sys} system and {not_mapped_gold} gold annotations not mapped.")
+
 
 def get_matcher(strategy):
 
@@ -108,6 +111,8 @@ def get_selector(criteria):
         return _select_ere
     else:
         raise ValueError(criteria)
+
+
 
 def _match_ere(gold, system):
     '''
@@ -134,6 +139,7 @@ def _match_ere(gold, system):
 
         gold_token_span = gold_event.get_extent_tokens()
         gold_token_ids = [t.element_id for t in gold_token_span]
+        gold_token_ids2 = gold_event.get_extent_token_ids()
 
         for system_event in system.events:
 
@@ -425,13 +431,12 @@ def _score_ere_nugget(gold_doc, system_doc, attributes=["event_type", "polarity"
 
         if gold_ev.ere_mapping:
             # [1] Algorithm 2 pp. 55: Compute span F1
-            sys_ev_max, max_dice_score = max(gold_ev.ere_mapping, key=lambda x:x[1]) # TODO match this better based on attrib
+            sys_ev_max, max_dice_score = max(gold_ev.ere_mapping, key=lambda x:x[1])
             metrics["tp"] += max_dice_score
             metrics["tp_relaxed"] += 1.0 # different from [1]: count every span overlap as tp: no penalty for long annotations.
 
             # [1] Algorithm 4 pp 55: Compute True Positive with attributes
             if all(is_attribute_match(gold_ev, sys_ev_max, attrib_n) for attrib_n in attributes): # [1] Algorithm 4 pp 55 line 3: Check if all attributes match for the max hit.
-                # TODO: not specified
                 metrics["tp_attrib"] += max_dice_score # increment dice score
                 metrics["tp_attrib_relaxed"] += 1.0 # deviation from [1] own relaxation
             else:
@@ -458,6 +463,14 @@ def _score_ere_nugget(gold_doc, system_doc, attributes=["event_type", "polarity"
 
     return metrics
 
+
+def find_exact_overlap_annotations(anns):
+    '''
+    In a list of annotations return the ones that exactly overlap and have the exact same boundaries e.g.:
+    "The [[report]] about oil prices comes in at."
+    :param anns:
+    :return:
+    '''
 
 if __name__ == "__main__":
 

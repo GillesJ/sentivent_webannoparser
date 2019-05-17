@@ -36,11 +36,6 @@ class Element:
     element_id: int = field(repr = False)
     annotator_id: str
     document_title: str
-    # matched_to_gold = dict() # for matching when scoring
-    # match: dict()
-
-    # document: AnnotationDocument
-    # match: None
 
     def __hash__(self):
         return hash((self.element_id, self.text, self.begin, self.end))
@@ -171,6 +166,17 @@ class Event(Element):
 
         return all_tokens
 
+    def get_extent_token_ids(self, **kwargs):
+        '''
+        Get a list of token ids for the event extent.
+        Relies on Event.get_extent_tokens() for fetching the tokens.
+        :param kwargs:
+        :return: a list of token ids of the event extent that are unique in the document.
+        '''
+        token_span = self.get_extent_tokens(**kwargs)
+        return [t.element_id for t in token_span]
+
+
     def get_extent_text(self, extent=["discontiguous_triggers", "participants", "fillers"], source_order=True):
         return " ".join(t.text for t in self.get_extent_tokens(extent=extent, source_order=source_order))
 
@@ -218,7 +224,6 @@ class AnnotationDocument:
         text - textual representation of the annotated text
         tagset - attributes used to describe a frame
         sentences - list of sentences this document consists of
-
     """
 
     def __init__(self, xmi_content, path="", *args, **kwargs):
@@ -652,8 +657,7 @@ def parse_and_pickle(project_dirp, opt_fp):
 if __name__ == "__main__":
 
     parse_and_pickle(settings.IAA_XMI_DIRP, settings.IAA_PARSER_OPT)
-    parse_and_pickle(settings.MAIN_XMI_DIRP, settings.MAIN_PARSER_OPT)
-
+    # parse_and_pickle(settings.MAIN_XMI_DIRP, settings.MAIN_PARSER_OPT)
 
     # # ANNOTATION_DIRP = "../example_data"
     # project_dirp = "/home/gilles/00-sentivent-fwosb-phd-2017-2020/00-event-annotation/webanno-project-export/XMI-corrected-SENTiVENT-event-english-1_2019-01-28_1341"

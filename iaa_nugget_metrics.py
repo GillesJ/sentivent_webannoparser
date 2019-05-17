@@ -5,9 +5,7 @@ webannoparser
 10/23/18
 Copyright (c) Gilles Jacobs. All rights reserved.
 
-
-
-
+DEPRECATED by nugget_scorer.py
 '''
 import numpy as np
 import itertools
