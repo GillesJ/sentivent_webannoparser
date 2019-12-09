@@ -1,7 +1,0 @@
-AMD , Nvidia stocks fall after analyst warns cryptocurrency market could become ` less meaningful '
-Shares of Advanced Micro Devices Inc. sank 3.6 % in morning trade Tuesday , after Mizuho warned that the cryptocurrency market could be `` much less meaningful '' to chip companies next year .
-Shares of Nvidia Corp. which has also benefited from demand for cryptocurrency miners , shed 1.0 % .
-Mizuho analyst Vijay Rakesh said that following meetings with cryptocurrency experts , he believes the use of graphics processing units GPUs to mine cryptocurrencies , like Ethereum , could decline significantly in the first half of 2018 as computing complexity increases .
-`` We believe 1H18 could see Ethereum move from current Proof of Work PoW protocol , which requires GPU mining , to Proof of Stake protocol , which does not need GPUs or mining , '' through a software upgrade , Rakesh wrote in a note to clients .
-Rakesh estimates that AMD 's exposure to cryptomining is about 10 % of revenue and Nvidia 's exposure is 6 % .
-AMD 's stock has shed 8.9 % over the past three months , while Nvidia shares have run up 28.5 % , the PHLX Semiconductor Index has rallied 22.2 % and the S&P 500 has gained 6.8 % .

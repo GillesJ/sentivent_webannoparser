@@ -1,6 +1,0 @@
-AMD 's stock surges on heavy volume as GPU product demand fuels investor optimism
-Shares of Advanced Micro Devices Inc. jumped 8.1 % in active afternoon trade Tuesday , adding to Monday 's 3.1 % surge , amid reports of a lack of supply of its graphic processing unit products ahead of the release of new offerings expected by the end of the month .
-Trading volume spiked to 88.2 million shares , above the full-day average of 68.8 million shares , and enough to make the stock the most actively traded on major U.S. exchanges .
-Separately , Apple Inc. said at its Worldwide Developers Conference on Monday that AMD 's GPU technology will be used in its new iMac Pro .
-Meanwhile , for crytocurrency miners , RBC Capital analyst Mitch Steves said he favored Nvidia 's GPU product to AMD 's offering , because Nvidia 's offering is faster and more energy efficient .
-AMD 's stock has gained 7.2 % year to date , while Nvidia shares have soared 39 % , the PHLX Semiconductor Index has run up 23 % and the S&P 500 has climbed 8.7 % .
