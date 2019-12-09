@@ -1,0 +1,1763 @@
+Removed 31 docs without event annotations.
+00_EXAMPLE_amazon-to-buy-whole-foods-for-13.7-billion.txt selected ANNO_02 {'anno_01': 19, 'gilles': 18, 'anno_02': 17, 'anno_03': 14}.
+01_amazon-expects-to-hire-at-least-1000-at-its-new-troutdale-facility--portland-business-journal.txt selected ANNO_02 {'gilles': 21, 'anno_02': 14, 'anno_03': 13, 'anno_01': 13}.
+02_how-safe-is-chevrons-dividend---the-motley-fool.txt selected ANNO_02 {'anno_01': 35, 'anno_02': 33, 'anno_03': 33, 'gilles': 1}.
+03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt selected ANNO_02 {'anno_01': 34, 'anno_03': 30, 'anno_02': 24, 'gilles': 1}.
+04_gms-fairfax-factory-earns-energy-star-certificate--kansas-city-business-journal.txt selected ANNO_02 {'gilles': 24, 'anno_02': 18, 'anno_01': 15, 'anno_03': 15}.
+05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt selected ANNO_02 {'anno_01': 97, 'anno_03': 88, 'anno_02': 79, 'gilles': 1}.
+aapl14_iphone-x-s-dangerous-choice-of-market-share-or-profit.txt selected ANNO_03 {'anno_01': 29, 'anno_03': 25, 'anno_02': 24}.
+aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt selected ANNO_02 {'anno_01': 56, 'anno_02': 49, 'anno_03': 47}.
+aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt selected ANNO_01 {'anno_03': 38, 'anno_01': 33, 'anno_02': 32}.
+amzn12_is-amazon-getting-into-the-pharmacy-business-this-is-what-you.txt selected ANNO_03 {'anno_01': 55, 'anno_03': 51, 'anno_02': 34}.
+amzn13_five-reasons-amazon-can-reach-1500.txt selected ANNO_02 {'anno_02': 25, 'anno_01': 25, 'anno_03': 22}.
+amzn14_amazon-sold-more-echo-dots-than-any-other-item-over-the-holidays.txt selected ANNO_02 {'anno_02': 14, 'anno_01': 14, 'anno_03': 8}.
+ba02_boeing-roundup-boeing-lands-deals-with-saudi-arabia.txt selected ANNO_01 {'anno_01': 24, 'anno_02': 18}.
+ba04_iran-confident-about-3-billion-boeing-deal-as-us-mulls-sanct.txt selected ANNO_03 {'anno_03': 30, 'anno_01': 14}.
+ba14_boeing-s-low-altitude-bid.txt selected ANNO_02 {'anno_01': 20, 'anno_02': 18, 'anno_03': 16}.
+ba15_should-boeing-buy-ge-aviation.txt selected ANNO_03 {'anno_03': 15, 'anno_01': 15, 'anno_02': 11}.
+ba16_boeing-s-stock-contributes-about-10-of-the-dow-s-1030-point.txt selected ANNO_02 {'anno_01': 11, 'anno_02': 8, 'anno_03': 7}.
+bac03_bank-of-america-s-latest-mobile-feature-a-tool-to-buy-a-car.txt selected ANNO_01 {'anno_01': 23, 'gilles': 1}.
+bac04_bank-of-america-earnings-hurt-by-tax-related-charge.txt selected ANNO_02 {'anno_01': 60, 'anno_02': 48, 'anno_03': 44}.
+bac05_bofa-includes-bitcoin-trust-in-broader-ban-on-investments.txt selected ANNO_02 {'anno_01': 10, 'anno_02': 8, 'anno_03': 1}.
+bac06_bank-of-america-hires-law-firm-to-help-probe-292-million-loss.txt selected ANNO_02 {'anno_01': 41, 'anno_02': 32, 'anno_03': 23}.
+cvx04_strong-crude-oil-no-help-for-chevron-exxon-mobil.txt selected ANNO_02 {'anno_03': 33, 'anno_02': 31, 'anno_01': 28}.
+cvx05_chevron-s-10-k-puts-the-permian-on-a-pedestal.txt selected ANNO_02 {'anno_03': 19, 'anno_02': 13, 'anno_01': 10}.
+cvx06_chevron-s-debt-fell-in-4q17-what-to-expect-in-2018.txt selected ANNO_03 {'anno_03': 34, 'anno_02': 34, 'anno_01': 34}.
+duk05_duke-energy-says-some-customers-may-be-affected-by-data-breach.txt selected ANNO_01 {'anno_02': 16, 'anno_01': 15, 'anno_03': 8}.
+duk06_like-many-of-its-peers-duk-is-trading-in-the-oversold-zone.txt selected ANNO_01 {'anno_01': 5, 'anno_02': 5, 'anno_03': 5}.
+duk07_duke-energy-stock-is-at-its-most-oversold-level-in-5-years.txt selected ANNO_02 {'anno_01': 18, 'anno_02': 16, 'anno_03': 13}.
+f04_forget-mexico-ford-moving-focus-production-from-us-to-china.txt selected ANNO_03 {'anno_01': 23, 'anno_03': 17, 'anno_02': 6}.
+f05_lucid-motors-is-mulling-sale-after-takeover-talks-with-ford.txt selected ANNO_01 {'anno_01': 23, 'anno_02': 19}.
+f06_is-ford-s-profit.txt selected ANNO_01 {'anno_01': 35, 'anno_02': 23}.
+f07_dhl-and-ford-unveil-a-jointly-made-electric-delivery-van.txt selected ANNO_01 {'anno_01': 11, 'anno_02': 5}.
+f08_how-ford-s-sales-in-china-disappointed-in-august.txt selected ANNO_02 {'anno_02': 13, 'anno_01': 8}.
+f13_ford-rolls-out-a-hot-rod-suv-as-drivers-abandon-performance-cars.txt selected ANNO_02 {'anno_01': 39, 'anno_02': 24, 'anno_03': 17}.
+f14_ford-is-the-next-ge-and-shorts-should-be-salivating.txt selected ANNO_02 {'anno_01': 37, 'anno_02': 23, 'anno_03': 18}.
+f15_ford-is-at-a-crossroad-of-danger-and-opportunity-in-china.txt selected ANNO_03 {'anno_01': 37, 'anno_03': 26, 'anno_02': 26}.
+jnj04_johnson-johnson-earnings-when-strong-is-nt-strong-enough.txt selected ANNO_02 {'anno_01': 25, 'anno_02': 17, 'anno_03': 16}.
+jnj05_where-s-the-tylenol-jj-disappoints-and-frustrates.txt selected ANNO_02 {'anno_01': 32, 'anno_02': 25, 'anno_03': 23}.
+jnj06_what-to-expect-from-johnson-johnson-in-2018.txt selected ANNO_03 {'anno_01': 22, 'anno_03': 20, 'anno_02': 20}.
+nem04_analyst-insight-is-newmont-mining-warming-up-for-a-good-2018.txt selected ANNO_02 {'anno_03': 23, 'anno_02': 22, 'anno_01': 22}.
+nem05_newmont-barrick-race-for-top-gold-crown-comes-down-to-a-decimal.txt selected ANNO_03 {'anno_01': 20, 'anno_03': 16, 'anno_02': 16}.
+nem06_newmont-mining-is-investors-gold-stock-to-buy.txt selected ANNO_02 {'anno_01': 22, 'anno_02': 20, 'anno_03': 16}.
+wmt05_walmart-stock-nears-key-support-after-earnings-miss.txt selected ANNO_03 {'anno_01': 27, 'anno_03': 20, 'anno_02': 20}.
+wmt06_goldman-expects-wal-mart-s-fortunes-to-improve-alongside-the-co.txt selected ANNO_03 {'anno_01': 24, 'anno_03': 16, 'anno_02': 16}.
+wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt selected ANNO_02 {'anno_01': 21, 'anno_02': 20, 'anno_03': 19}.
+Removed 87 duplicate annotated docs by keeping docs with most events.
+34.26% of events (1997/5829) manually corrected in 61 documents
+Checking annotated events for typology errors.
+TypeError on Event(text='dividend', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldStable', coreferents=None)
+SubtypeError on Event(text='dividend', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldStable', coreferents=None)
+ParticipantError on Event(text='dividend', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldStable', coreferents=None) | CapitalReturns DividendYieldStable: Returnee | []
+TypeError on Event(text='dividend payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='dividend payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='dividend payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='dividend increases', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='dividend increases', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='dividend increases', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='increases', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='increases', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='increases', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='dividend growth', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='dividend growth', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='dividend growth', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='payouts', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='dividend increase', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='dividend increase', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='dividend increase', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='paid', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendPayment', coreferents=None)
+SubtypeError on Event(text='paid', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendPayment', coreferents=None)
+ParticipantError on Event(text='paid', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendPayment', coreferents=None) | CapitalReturns DividendPayment: Returnee | []
+TypeError on Event(text='dividend increase', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='dividend increase', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='dividend increase', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='increases', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='increases', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+TypeError on Event(text='cover', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendPayment', coreferents=None)
+SubtypeError on Event(text='cover', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendPayment', coreferents=None)
+TypeError on Event(text='payout ratios', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='payout ratios', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='payout ratios', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: YieldRatio | []
+TypeError on Event(text='Overpaying dividends', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='Overpaying dividends', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+ParticipantError on Event(text='Overpaying dividends', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None) | CapitalReturns DividendYieldRaise: Returnee | []
+TypeError on Event(text='earnings', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldReduction', coreferents=None)
+SubtypeError on Event(text='earnings', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldReduction', coreferents=None)
+TypeError on Event(text='dividend growth', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='dividend growth', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendYieldRaise', coreferents=None)
+SubtypeError on Event(text='proxy fight', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='Employment', event_subtype='Problem', coreferents=None)
+ParticipantError on Event(text='proxy fight', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='Employment', event_subtype='Problem', coreferents=None) | Employment Problem: Employer | []
+TypeError on Event(text='results', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='FinancialResult', event_subtype='Miss', coreferents=None)
+ParticipantError on Event(text='results', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='FinancialResult', event_subtype='Miss', coreferents=None) | FinancialResult Miss: Reportee | []
+ParticipantError on Event(text='results', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='FinancialResult', event_subtype='Miss', coreferents=None) | FinancialResult Miss: Result | []
+ParticipantError on Event(text='results', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='FinancialResult', event_subtype='Miss', coreferents=None) | FinancialResult Miss: Result | []
+ParticipantError on Event(text='results', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='FinancialResult', event_subtype='Miss', coreferents=None) | FinancialResult Miss: Result | []
+TypeError on Event(text='cash returns', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendPayment', coreferents=None)
+SubtypeError on Event(text='cash returns', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendPayment', coreferents=None)
+ParticipantError on Event(text='cash returns', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='CapitalReturns', event_subtype='DividendPayment', coreferents=None) | CapitalReturns DividendPayment: Amount | []
+SubtypeError on Event(text='proxy fight', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='Employment', event_subtype='Problem', coreferents=None)
+ParticipantError on Event(text='proxy fight', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', event_type='Employment', event_subtype='Problem', coreferents=None) | Employment Problem: Employer | []
+SubtypeError on Event(text='comments', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='Employment', event_subtype='Problem', coreferents=None)
+ParticipantError on Event(text='comments', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='Employment', event_subtype='Problem', coreferents=None) | Employment Problem: Employee | []
+TypeError on Event(text='free cash flow', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Miss', coreferents=None)
+TypeError on Event(text='generated', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None)
+ParticipantError on Event(text='generated', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None) | FinancialResult Beat: Reportee | []
+ParticipantError on Event(text='generated', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None) | FinancialResult Beat: Result | []
+TypeError on Event(text='RRB', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None)
+TypeError on Event(text='offsets', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None)
+TypeError on Event(text='cash flow losses', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Miss', coreferents=None)
+TypeError on Event(text='invested capital', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None)
+ParticipantError on Event(text='invested capital', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None) | FinancialResult Beat: Reportee | []
+ParticipantError on Event(text='invested capital', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None) | FinancialResult Beat: Result | []
+TypeError on Event(text='valuation', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None)
+ParticipantError on Event(text='valuation', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None) | FinancialResult Beat: Reportee | []
+ParticipantError on Event(text='valuation', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=None) | FinancialResult Beat: Result | []
+ParticipantError on Event(text='inched', annotator_id='anno_01', document_title='aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt', event_type='Revenue', event_subtype='Increase_Revenue', coreferents=None) | Revenue Increase_Revenue: ProductService | ['Company', 'Amount', 'HistoricalAmount', 'IncreaseAmount']
+ParticipantError on Event(text='effort', annotator_id='anno_02', document_title='abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt', event_type='Legal', event_subtype='Conviction/Settlement', coreferents=None) | Legal Conviction/Settlement: Complainant | ['Defendant', 'Adjudicator']
+ParticipantError on Event(text='trading at an FY2 2019 earnings multiple', annotator_id='anno_01', document_title='celg04_why-celgene-is-bucking-biotech-weakness-today.txt', event_type='FinancialReport', event_subtype=None, coreferents=None) | FinancialReport None: Security | ['Reportee', 'Result', 'Reportee', 'Result', 'Reportee', 'Result', 'Reportee', 'Result']
+ParticipantError on Event(text='trading at an FY2 2019 earnings multiple', annotator_id='anno_01', document_title='celg04_why-celgene-is-bucking-biotech-weakness-today.txt', event_type='FinancialReport', event_subtype=None, coreferents=None) | FinancialReport None: Price | ['Reportee', 'Result', 'Reportee', 'Result', 'Reportee', 'Result', 'Reportee', 'Result']
+ParticipantError on Event(text='production', annotator_id='anno_01', document_title='cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt', event_type='Product/Service', event_subtype=None, coreferents=None) | Product/Service None: HistoricalAmount | ['ProductService', 'Producer', 'ProductService', 'Producer', 'ProductService', 'Producer', 'ProductService', 'Producer', 'Trialer']
+TypeError on Event(text='remains', annotator_id='anno_03', document_title='dis01_this-hedge-fund-bought-250-million-of-disney-stock-should-yo.txt', event_type=None, event_subtype=None, coreferents=None)
+TypeError on Event(text='boost', annotator_id='anno_01', document_title='f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=[Event(text='increase', annotator_id='anno_01', document_title='f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt', event_type='FinancialReport', event_subtype='Beat', coreferents=None)])
+ParticipantError on Event(text='boost', annotator_id='anno_01', document_title='f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt', event_type='FinancialResult', event_subtype='Beat', coreferents=[Event(text='increase', annotator_id='anno_01', document_title='f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt', event_type='FinancialReport', event_subtype='Beat', coreferents=None)]) | FinancialResult Beat: Result | []
+TypeError on Event(text='rose', annotator_id='anno_01', document_title='f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt', event_type=None, event_subtype=None, coreferents=None)
+ParticipantError on Event(text='selling', annotator_id='anno_02', document_title='f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt', event_type='SalesVolume', event_subtype=None, coreferents=None) | SalesVolume None: AffectedCompany | ['GoodsService', 'Seller', 'Buyer', 'Amount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount']
+ParticipantError on Event(text='selling', annotator_id='anno_02', document_title='f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt', event_type='SalesVolume', event_subtype=None, coreferents=None) | SalesVolume None: Sector | ['GoodsService', 'Seller', 'Buyer', 'Amount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount']
+ParticipantError on Event(text='selling', annotator_id='anno_02', document_title='f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt', event_type='SalesVolume', event_subtype=None, coreferents=None) | SalesVolume None: AffectedCompany | ['GoodsService', 'Seller', 'Buyer', 'Amount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount']
+SubtypeError on Event(text='Attracting talent', annotator_id='anno_03', document_title='ge00_what-s-behind-ge-s-move-from-the-connecticut-suburbs-to-boston.txt', event_type='Employment', event_subtype='Problem', coreferents=None)
+ParticipantError on Event(text='Attracting talent', annotator_id='anno_03', document_title='ge00_what-s-behind-ge-s-move-from-the-connecticut-suburbs-to-boston.txt', event_type='Employment', event_subtype='Problem', coreferents=None) | Employment Problem: Employee | []
+ParticipantError on Event(text='pays', annotator_id='anno_02', document_title='ge02_a-simple-ge-trade-for-long-suffering-investors.txt', event_type='Dividend', event_subtype='Payment', coreferents=None) | Dividend Payment: Returnee | ['Company', 'Amount', 'YieldRatio']
+TypeError on Event(text='improve', annotator_id='anno_01', document_title='ge04_ge-to-replace-jeff-immelt-with-ge-healthcare-exec-john-flannery.txt', event_type='FinancialResult', event_subtype=None, coreferents=None)
+ParticipantError on Event(text='improve', annotator_id='anno_01', document_title='ge04_ge-to-replace-jeff-immelt-with-ge-healthcare-exec-john-flannery.txt', event_type='FinancialResult', event_subtype=None, coreferents=None) | FinancialResult None: Reportee | []
+ParticipantError on Event(text='Volume', annotator_id='anno_01', document_title='ge11_ge-s-stock-bounces-sharply-to-pace-dow-gainers.txt', event_type='SalesVolume', event_subtype=None, coreferents=None) | SalesVolume None: Security | ['GoodsService', 'Seller', 'Buyer', 'Amount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount', 'GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount']
+ParticipantError on Event(text='Take A Hit', annotator_id='anno_02', document_title='gm09_will-gm-s-top-selling-suv-take-a-hit-from-canadian-strike.txt', event_type='SalesVolume', event_subtype='Decrease_SalesVolume', coreferents=None) | SalesVolume Decrease_SalesVolume: Employer | ['GoodsService', 'Seller', 'Buyer', 'Amount', 'HistoricalAmount']
+TypologyError:  ['CapitalReturns', 'DividendYieldStable', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='The integrated oil giant', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendPayment', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise'] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendPayment'] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='nearly 300 %', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='YieldRatio')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise', Participant(text='Chevron', annotator_id='anno_02', document_title='02_how-safe-is-chevrons-dividend---the-motley-fool.txt', role='Returnee')] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldReduction'] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendYieldRaise'] 02_how-safe-is-chevrons-dividend---the-motley-fool.txt
+TypologyError:  ['Problem', Participant(text='P&G', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', role='Employer')] 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt
+TypologyError:  ['FinancialResult', Participant(text='P&G', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', role='Reportee'), Participant(text='stock price underperformance', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', role='Result'), Participant(text='lost market share', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', role='Result'), Participant(text='excessive cost and bureaucracy', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', role='Result')] 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt
+TypologyError:  ['CapitalReturns', 'DividendPayment', Participant(text='massive', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', role='Amount_CapitalReturns')] 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt
+TypologyError:  ['Problem', Participant(text='it', annotator_id='anno_02', document_title='03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt', role='Employer')] 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt
+TypologyError:  ['Problem', Participant(text='executives', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', role='Employee')] 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
+TypologyError:  ['FinancialResult'] 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
+TypologyError:  ['FinancialResult', Participant(text='Netflix', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', role='Reportee'), Participant(text='positive FCF -LRB', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', role='Result')] 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
+TypologyError:  ['FinancialResult'] 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
+TypologyError:  ['FinancialResult'] 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
+TypologyError:  ['FinancialResult'] 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
+TypologyError:  ['FinancialResult', Participant(text='the company', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', role='Reportee'), Participant(text='grown on average $ 1.4 billion -LRB- 15 % of 2016 revenue -RRB- a year', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', role='Result')] 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
+TypologyError:  ['FinancialResult', Participant(text='Netflix', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', role='Reportee'), Participant(text='future cash flow stream that even the strongest of business models would be challenged to achieve', annotator_id='anno_02', document_title='05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt', role='Result')] 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt
+TypologyError:  [Participant(text='consolidated capacity or available seat miles/ASMs', annotator_id='anno_01', document_title='aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt', role='ProductService')] aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt
+TypologyError:  [Participant(text='Coherus', annotator_id='anno_02', document_title='abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt', role='Complainant')] abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt
+TypologyError:  [Participant(text='Celgene', annotator_id='anno_01', document_title='celg04_why-celgene-is-bucking-biotech-weakness-today.txt', role='Security_SecurityValue'), Participant(text='10.6 x', annotator_id='anno_01', document_title='celg04_why-celgene-is-bucking-biotech-weakness-today.txt', role='Price')] celg04_why-celgene-is-bucking-biotech-weakness-today.txt
+TypologyError:  [Participant(text='up about 35,000 barrels of oil-equivalent per day from the first quarter 2016 .', annotator_id='anno_01', document_title='cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt', role='HistoricalAmount_Revenue')] cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt
+TypologyError:  [None] dis01_this-hedge-fund-bought-250-million-of-disney-stock-should-yo.txt
+TypologyError:  ['FinancialResult', Participant(text="boost Ford 's overall average transaction price by $ 2,100", annotator_id='anno_01', document_title='f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt', role='Result')] f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt
+TypologyError:  [None] f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt
+TypologyError:  [Participant(text='Ford', annotator_id='anno_02', document_title='f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt', role='AffectedCompany'), Participant(text='vehicles', annotator_id='anno_02', document_title='f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt', role='Sector'), Participant(text='General Motors , the usual No. 1', annotator_id='anno_02', document_title='f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt', role='AffectedCompany')] f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt
+TypologyError:  ['Problem', Participant(text='talent', annotator_id='anno_03', document_title='ge00_what-s-behind-ge-s-move-from-the-connecticut-suburbs-to-boston.txt', role='Employee')] ge00_what-s-behind-ge-s-move-from-the-connecticut-suburbs-to-boston.txt
+TypologyError:  [Participant(text='The company', annotator_id='anno_02', document_title='ge02_a-simple-ge-trade-for-long-suffering-investors.txt', role='Returnee')] ge02_a-simple-ge-trade-for-long-suffering-investors.txt
+TypologyError:  ['FinancialResult', Participant(text='the company', annotator_id='anno_01', document_title='ge04_ge-to-replace-jeff-immelt-with-ge-healthcare-exec-john-flannery.txt', role='Reportee')] ge04_ge-to-replace-jeff-immelt-with-ge-healthcare-exec-john-flannery.txt
+TypologyError:  [Participant(text='the stock', annotator_id='anno_01', document_title='ge11_ge-s-stock-bounces-sharply-to-pace-dow-gainers.txt', role='Security_SecurityValue')] ge11_ge-s-stock-bounces-sharply-to-pace-dow-gainers.txt
+TypologyError:  [Participant(text='GM', annotator_id='anno_02', document_title='gm09_will-gm-s-top-selling-suv-take-a-hit-from-canadian-strike.txt', role='Employer')] gm09_will-gm-s-top-selling-suv-take-a-hit-from-canadian-strike.txt
+KeywordMissed: Profit/Loss on earnings in 02_how-safe-is-chevrons-dividend---the-motley-fool.txt anno_02
+KeywordMissed: Profit/Loss on earnings in 02_how-safe-is-chevrons-dividend---the-motley-fool.txt anno_02
+KeywordMissed: Profit/Loss on earnings in 02_how-safe-is-chevrons-dividend---the-motley-fool.txt anno_02
+KeywordMissed: Profit/Loss on earnings in 02_how-safe-is-chevrons-dividend---the-motley-fool.txt anno_02
+KeywordMissed: Profit/Loss on earnings in 02_how-safe-is-chevrons-dividend---the-motley-fool.txt anno_02
+KeywordMissed: Profit/Loss on earnings in 02_how-safe-is-chevrons-dividend---the-motley-fool.txt anno_02
+KeywordMissed: Profit/Loss on earnings in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Profit/Loss on earnings in aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt anno_01
+KeywordMissed: Profit/Loss on earnings in aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt anno_01
+KeywordMissed: Profit/Loss on earnings in aal07_american-airlines-stock-rallies-after-second-upgrade-in-two-da.txt anno_02
+KeywordMissed: Profit/Loss on earnings in aal10_american-airlines-marks-down-third-quarter-guidance.txt anno_01
+KeywordMissed: Profit/Loss on earnings in aapl01_here-are-the-six-dow-stocks-experts-say-have-the-most-upside.txt anno_01
+KeywordMissed: Profit/Loss on earnings in aapl05_did-apple-just-make-best-buy-a-better-buy.txt anno_03
+KeywordMissed: Profit/Loss on earnings in aapl09_tech-stocks-this-week-iphone-8-rumors-samsung-s-note-return.txt anno_01
+KeywordMissed: Profit/Loss on earnings in aapl10_apple-s-rain-of-cash-washes-away-debt-doubts.txt anno_01
+KeywordMissed: Profit/Loss on earnings in abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt anno_01
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Profit/Loss on Earnings in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Profit/Loss on earnings in abbv11_abbvie-overpromises.txt anno_03
+KeywordMissed: Profit/Loss on earnings in abbv13_the-hot-stock-biggest-loser-abbvie-wynn-resorts.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amd00_how-well-has-amd-delivered-on-their-2015-financial-analyst-day-p.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amd01_why-amd-investors-should-nt-lose-faith.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amd01_why-amd-investors-should-nt-lose-faith.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amd01_why-amd-investors-should-nt-lose-faith.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amd01_why-amd-investors-should-nt-lose-faith.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amd01_why-amd-investors-should-nt-lose-faith.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: Profit/Loss on earnings in amzn08_why-amazoncom-inc-stock-is-up-35-this-year.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amzn12_is-amazon-getting-into-the-pharmacy-business-this-is-what-you.txt anno_03
+KeywordMissed: Profit/Loss on earnings in amzn12_is-amazon-getting-into-the-pharmacy-business-this-is-what-you.txt anno_03
+KeywordMissed: Profit/Loss on earnings in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on earnings in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on earnings in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on earnings in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on earnings in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on earnings in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on earnings in ba10_reduce-holdings-on-boeing-and-3-other-defense-stocks-pre-earning.txt anno_03
+KeywordMissed: Profit/Loss on earnings in ba10_reduce-holdings-on-boeing-and-3-other-defense-stocks-pre-earning.txt anno_03
+KeywordMissed: Profit/Loss on earnings in bac01_what-to-expect-from-bac-and-peers-in-2017.txt anno_03
+KeywordMissed: Profit/Loss on earnings in bac06_bank-of-america-hires-law-firm-to-help-probe-292-million-loss.txt anno_02
+KeywordMissed: Profit/Loss on earnings in bac06_bank-of-america-hires-law-firm-to-help-probe-292-million-loss.txt anno_02
+KeywordMissed: Profit/Loss on earnings in celg04_why-celgene-is-bucking-biotech-weakness-today.txt anno_01
+KeywordMissed: Profit/Loss on earnings in chk00_was-the-merrill-lynch-downgrade-of-chesapeake-justified.txt anno_01
+KeywordMissed: Profit/Loss on earnings in cmg00_chipotle-cfo-says-we-were-losing-our-edge-even-before-ecoli.txt anno_03
+KeywordMissed: Profit/Loss on earnings in cmg02_why-you-re-smart-to-buy-chipotle.txt anno_03
+KeywordMissed: Profit/Loss on earnings in cmg02_why-you-re-smart-to-buy-chipotle.txt anno_03
+KeywordMissed: Profit/Loss on earnings in cmg04_chipotle-is-betting-on-digital.txt anno_03
+KeywordMissed: Profit/Loss on earnings in cmg04_chipotle-is-betting-on-digital.txt anno_03
+KeywordMissed: Profit/Loss on earnings in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cost01_costco-adds-fresh-breads-from-bakery-spurned-by-starbucks.txt anno_02
+KeywordMissed: Profit/Loss on Earnings in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cvx04_strong-crude-oil-no-help-for-chevron-exxon-mobil.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cvx04_strong-crude-oil-no-help-for-chevron-exxon-mobil.txt anno_02
+KeywordMissed: Profit/Loss on earnings in cvx06_chevron-s-debt-fell-in-4q17-what-to-expect-in-2018.txt anno_03
+KeywordMissed: Profit/Loss on earnings in cvx06_chevron-s-debt-fell-in-4q17-what-to-expect-in-2018.txt anno_03
+KeywordMissed: Profit/Loss on earnings in dis02_disney-earnings-give-a-look-at-how-espn-is-facing-the-future.txt anno_03
+KeywordMissed: Profit/Loss on Earnings in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Profit/Loss on earnings in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Profit/Loss on earnings in dis10_stocks-in-red-that-might-produce-some-green.txt anno_01
+KeywordMissed: Profit/Loss on earnings in dis12_disney-s-fiscal-2017-in-review.txt anno_01
+KeywordMissed: Profit/Loss on earnings in dis12_disney-s-fiscal-2017-in-review.txt anno_01
+KeywordMissed: Profit/Loss on earnings in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on earnings in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on earnings in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on earnings in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on earnings in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on earnings in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on earnings in f00_ford-to-cut-1400-jobs-as-pressure-grows-on-profits.txt anno_02
+KeywordMissed: Profit/Loss on earnings in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: Profit/Loss on earnings in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: Profit/Loss on earnings in f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+KeywordMissed: Profit/Loss on earnings in f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+KeywordMissed: Profit/Loss on earnings in f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+KeywordMissed: Profit/Loss on earnings in f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+KeywordMissed: Profit/Loss on earnings in f14_ford-is-the-next-ge-and-shorts-should-be-salivating.txt anno_02
+KeywordMissed: Profit/Loss on earnings in f14_ford-is-the-next-ge-and-shorts-should-be-salivating.txt anno_02
+KeywordMissed: Profit/Loss on earnings in fb01_facebook-inc-s-instagram-wants-to-beat-snapchat-with-executi.txt anno_03
+KeywordMissed: Profit/Loss on earnings in fb01_facebook-inc-s-instagram-wants-to-beat-snapchat-with-executi.txt anno_03
+KeywordMissed: Profit/Loss on earnings in fb07_facebook-turns-to-original-tv-content-with-new-watch-tab.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb07_facebook-turns-to-original-tv-content-with-new-watch-tab.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on earnings in fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+KeywordMissed: Profit/Loss on earnings in ge01_ge-drops-after-immelt-predicts-challenges-to-hit-2018-targets.txt anno_01
+KeywordMissed: Profit/Loss on earnings in ge02_a-simple-ge-trade-for-long-suffering-investors.txt anno_02
+KeywordMissed: Profit/Loss on earnings in ge05_general-electric-can-aviation-make-it-fly.txt anno_02
+KeywordMissed: Profit/Loss on earnings in ge05_general-electric-can-aviation-make-it-fly.txt anno_02
+KeywordMissed: Profit/Loss on Earnings in ge07_pratt-s-10-billion-jet-engine-lags-ge-by-10-to-1-on-new-order.txt anno_02
+KeywordMissed: Profit/Loss on earnings in ge07_pratt-s-10-billion-jet-engine-lags-ge-by-10-to-1-on-new-order.txt anno_02
+KeywordMissed: Profit/Loss on earnings in ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt anno_01
+KeywordMissed: Profit/Loss on earnings in gm00_who-gets-a-for-leadership-tesla-or-gm.txt anno_03
+KeywordMissed: Profit/Loss on earnings in gm00_who-gets-a-for-leadership-tesla-or-gm.txt anno_03
+KeywordMissed: Profit/Loss on earnings in gm00_who-gets-a-for-leadership-tesla-or-gm.txt anno_03
+KeywordMissed: Profit/Loss on earnings in gm10_general-motors-this-ai-nt-the-autobahn.txt anno_02
+KeywordMissed: Profit/Loss on earnings in goog00_google-thinks-beyond-ads-at-annual-developer-conference.txt anno_02
+KeywordMissed: Profit/Loss on Earnings in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Profit/Loss on earnings in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Profit/Loss on earnings in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Profit/Loss on earnings in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Profit/Loss on earnings in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Profit/Loss on Earnings in goog11_earnings-preview-what-to-expect-from-alphabet-on-thursday.txt anno_03
+KeywordMissed: Profit/Loss on earnings in goog11_earnings-preview-what-to-expect-from-alphabet-on-thursday.txt anno_03
+KeywordMissed: Profit/Loss on earnings in goog11_earnings-preview-what-to-expect-from-alphabet-on-thursday.txt anno_03
+KeywordMissed: Profit/Loss on earnings in goog11_earnings-preview-what-to-expect-from-alphabet-on-thursday.txt anno_03
+KeywordMissed: Profit/Loss on Earnings in jnj04_johnson-johnson-earnings-when-strong-is-nt-strong-enough.txt anno_02
+KeywordMissed: Profit/Loss on earnings in jnj05_where-s-the-tylenol-jj-disappoints-and-frustrates.txt anno_02
+KeywordMissed: Profit/Loss on Earnings in nem00_are-gold-miners-on-track-to-achieve-2017-production-guidance.txt anno_01
+KeywordMissed: Profit/Loss on earnings in nem05_newmont-barrick-race-for-top-gold-crown-comes-down-to-a-decimal.txt anno_03
+KeywordMissed: Profit/Loss on earnings in nflx00_netflix-headed-to-90-million-users.txt anno_02
+KeywordMissed: Profit/Loss on earnings in nflx12_netflix-raising-16-billion-in-bond-market-to-fuel-content-acq.txt anno_02
+KeywordMissed: Profit/Loss on earnings in pg01_razor-wars-continue-gillette-cut-by-old-time-rival.txt anno_01
+KeywordMissed: Profit/Loss on earnings in t02_att-s-directv-now-went-flat-after-january-report-says.txt anno_03
+KeywordMissed: Profit/Loss on earnings in t06_att-inc-is-running-out-of-room-to-grow-what-s-next.txt anno_02
+KeywordMissed: Profit/Loss on earnings in t06_att-inc-is-running-out-of-room-to-grow-what-s-next.txt anno_02
+KeywordMissed: Profit/Loss on earnings in t06_att-inc-is-running-out-of-room-to-grow-what-s-next.txt anno_02
+KeywordMissed: Profit/Loss on Earnings in wmt01_a-look-at-walmart-s-valuation-after-fiscal-1q18-results.txt anno_01
+KeywordMissed: Profit/Loss on earnings in wmt04_here-s-why-the-best-is-yet-to-come-for-wal-mart-stores-inc.txt anno_01
+KeywordMissed: Profit/Loss on Earnings in wmt05_walmart-stock-nears-key-support-after-earnings-miss.txt anno_03
+KeywordMissed: Profit/Loss on earnings in wmt06_goldman-expects-wal-mart-s-fortunes-to-improve-alongside-the-co.txt anno_03
+KeywordMissed: Profit/Loss on profit in 02_how-safe-is-chevrons-dividend---the-motley-fool.txt anno_02
+KeywordMissed: Profit/Loss on profit in 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt anno_02
+KeywordMissed: Profit/Loss on profit in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Profit/Loss on profit in aapl13_stocks-mixed-this-california-builder-breaks-out-what-to-watc.txt anno_01
+KeywordMissed: Profit/Loss on profit in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: Profit/Loss on profit in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: Profit/Loss on profit in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Profit/Loss on profit in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Profit/Loss on profit in abbv10_abbvie-you-re-upgrading-it-now.txt anno_03
+KeywordMissed: Profit/Loss on profit in ba05_boeing-defense-to-cut-50-executive-jobs-in-management-shakeup.txt anno_01
+KeywordMissed: Profit/Loss on profit in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on profit in bac04_bank-of-america-earnings-hurt-by-tax-related-charge.txt anno_02
+KeywordMissed: Profit/Loss on profit in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Profit/Loss on profit in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Profit/Loss on profit in dis11_disney-earnings-buying-fox-would-nt-a-bad-idea.txt anno_01
+KeywordMissed: Profit/Loss on profit in f00_ford-to-cut-1400-jobs-as-pressure-grows-on-profits.txt anno_02
+KeywordMissed: Profit/Loss on profit in f00_ford-to-cut-1400-jobs-as-pressure-grows-on-profits.txt anno_02
+KeywordMissed: Profit/Loss on profit in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: Profit/Loss on profit in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: Profit/Loss on Profit in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: Profit/Loss on profit in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: Profit/Loss on profit in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: Profit/Loss on profit in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: Profit/Loss on profit in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: Profit/Loss on profit in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: Profit/Loss on profit in f15_ford-is-at-a-crossroad-of-danger-and-opportunity-in-china.txt anno_03
+KeywordMissed: Profit/Loss on profit in fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+KeywordMissed: Profit/Loss on profit in fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+KeywordMissed: Profit/Loss on profit in ge01_ge-drops-after-immelt-predicts-challenges-to-hit-2018-targets.txt anno_01
+KeywordMissed: Profit/Loss on profit in ge05_general-electric-can-aviation-make-it-fly.txt anno_02
+KeywordMissed: Profit/Loss on profit in ge13_ge-is-beating-some-headwinds-but-is-it-enough.txt anno_01
+KeywordMissed: Profit/Loss on profit in ge13_ge-is-beating-some-headwinds-but-is-it-enough.txt anno_01
+KeywordMissed: Profit/Loss on profit in jnj05_where-s-the-tylenol-jj-disappoints-and-frustrates.txt anno_02
+KeywordMissed: Profit/Loss on profit in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Profit/Loss on profit in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Profit/Loss on profit in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Profit/Loss on profit in wfc00_wells-fargo-found-liable-in-abusive-tax-shelter-scheme.txt anno_02
+KeywordMissed: Profit/Loss on loss in aapl11_disappointing-new-iphones-reveal-a-scared-and-greedy-apple.txt anno_01
+KeywordMissed: Profit/Loss on loss in abbv03_the-2-best-dividend-stocks-in-marijuana.txt anno_03
+KeywordMissed: Profit/Loss on loss in abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt anno_01
+KeywordMissed: Profit/Loss on loss in abbv05_abbvie-ordered-by-jury-to-pay-15-million-to-depakote-victim.txt anno_02
+KeywordMissed: Profit/Loss on loss in amzn02_3-reasons-why-amazon-is-scary-to-netflix.txt anno_02
+KeywordMissed: Profit/Loss on loss in amzn02_3-reasons-why-amazon-is-scary-to-netflix.txt anno_02
+KeywordMissed: Profit/Loss on loss in bac06_bank-of-america-hires-law-firm-to-help-probe-292-million-loss.txt anno_02
+KeywordMissed: Profit/Loss on loss in bac06_bank-of-america-hires-law-firm-to-help-probe-292-million-loss.txt anno_02
+KeywordMissed: Profit/Loss on loss in celg00_why-shares-of-biopharma-giant-celgene-lrb-celg-rrb-tumbled-t.txt anno_02
+KeywordMissed: Profit/Loss on loss in celg00_why-shares-of-biopharma-giant-celgene-lrb-celg-rrb-tumbled-t.txt anno_02
+KeywordMissed: Profit/Loss on loss in celg04_why-celgene-is-bucking-biotech-weakness-today.txt anno_01
+KeywordMissed: Profit/Loss on loss in dis02_disney-earnings-give-a-look-at-how-espn-is-facing-the-future.txt anno_03
+KeywordMissed: Profit/Loss on loss in dis10_stocks-in-red-that-might-produce-some-green.txt anno_01
+KeywordMissed: Profit/Loss on loss in dis10_stocks-in-red-that-might-produce-some-green.txt anno_01
+KeywordMissed: Profit/Loss on loss in f04_forget-mexico-ford-moving-focus-production-from-us-to-china.txt anno_03
+KeywordMissed: Profit/Loss on loss in f04_forget-mexico-ford-moving-focus-production-from-us-to-china.txt anno_03
+KeywordMissed: Profit/Loss on loss in f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+KeywordMissed: Profit/Loss on loss in ge10_ge-s-stock-tumbles-toward-second-6-session-losing-streak-this-m.txt anno_01
+KeywordMissed: Profit/Loss on loss in jnj03_johnson-johnson-s-type-2-diabetes-drug-is-stellar-in-cardiova.txt anno_02
+KeywordMissed: Profit/Loss on loss in jnj03_johnson-johnson-s-type-2-diabetes-drug-is-stellar-in-cardiova.txt anno_02
+KeywordMissed: Profit/Loss on income in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on income in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on income in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Profit/Loss on income in bac00_bank-of-america-wants-to-make-it-easier-for-you-to-get-a-mortgag.txt anno_01
+KeywordMissed: Profit/Loss on income in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: Profit/Loss on income in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Profit/Loss on income in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Profit/Loss on income in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Profit/Loss on income in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Profit/Loss on income in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: Profit/Loss on income in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: Profit/Loss on income in dis02_disney-earnings-give-a-look-at-how-espn-is-facing-the-future.txt anno_03
+KeywordMissed: Profit/Loss on income in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Profit/Loss on income in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Profit/Loss on income in dis12_disney-s-fiscal-2017-in-review.txt anno_01
+KeywordMissed: Profit/Loss on income in dis12_disney-s-fiscal-2017-in-review.txt anno_01
+KeywordMissed: Profit/Loss on income in dis12_disney-s-fiscal-2017-in-review.txt anno_01
+KeywordMissed: Profit/Loss on income in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on income in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on income in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Profit/Loss on income in ge08_will-general-electric-sell-more-assets-to-maintain-its-dividend.txt anno_02
+KeywordMissed: Profit/Loss on income in ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt anno_01
+KeywordMissed: Profit/Loss on income in gm03_general-motors-cadillac-sales-are-booming-in-china.txt anno_03
+KeywordMissed: Profit/Loss on income in gm10_general-motors-this-ai-nt-the-autobahn.txt anno_02
+KeywordMissed: Profit/Loss on Income in jnj06_what-to-expect-from-johnson-johnson-in-2018.txt anno_03
+KeywordMissed: Profit/Loss on income in jnj06_what-to-expect-from-johnson-johnson-in-2018.txt anno_03
+KeywordMissed: Profit/Loss on Income in kmi01_what-enterprise-products-could-offer-income-investors.txt anno_01
+KeywordMissed: Profit/Loss on Income in kmi01_what-enterprise-products-could-offer-income-investors.txt anno_01
+KeywordMissed: Profit/Loss on income in kmi01_what-enterprise-products-could-offer-income-investors.txt anno_01
+KeywordMissed: Profit/Loss on income in kmi02_why-long-term-investors-should-prefer-kinder-morgan-inc-over-ene.txt anno_02
+KeywordMissed: Profit/Loss on income in kmi02_why-long-term-investors-should-prefer-kinder-morgan-inc-over-ene.txt anno_02
+KeywordMissed: Profit/Loss on income in t06_att-inc-is-running-out-of-room-to-grow-what-s-next.txt anno_02
+KeywordMissed: Profit/Loss on income in wfc00_wells-fargo-found-liable-in-abusive-tax-shelter-scheme.txt anno_02
+KeywordMissed: Profit/Loss on income in wmt02_walmart-taps-store-associates-for-last-mile-delivery-program.txt anno_01
+KeywordMissed: Profit/Loss on income in wmt02_walmart-taps-store-associates-for-last-mile-delivery-program.txt anno_01
+KeywordMissed: Profit/Loss on income in wmt06_goldman-expects-wal-mart-s-fortunes-to-improve-alongside-the-co.txt anno_03
+KeywordMissed: Profit/Loss on income in wmt06_goldman-expects-wal-mart-s-fortunes-to-improve-alongside-the-co.txt anno_03
+KeywordMissed: Profit/Loss on income in wmt06_goldman-expects-wal-mart-s-fortunes-to-improve-alongside-the-co.txt anno_03
+KeywordMissed: Profit/Loss on EPS in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Profit/Loss on EPS in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Profit/Loss on EPS in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: Profit/Loss on EPS in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: Profit/Loss on EPS in bac01_what-to-expect-from-bac-and-peers-in-2017.txt anno_03
+KeywordMissed: Profit/Loss on EPS in bac01_what-to-expect-from-bac-and-peers-in-2017.txt anno_03
+KeywordMissed: Profit/Loss on EPS in bac01_what-to-expect-from-bac-and-peers-in-2017.txt anno_03
+KeywordMissed: Profit/Loss on EPS in bac01_what-to-expect-from-bac-and-peers-in-2017.txt anno_03
+KeywordMissed: Profit/Loss on EPS in celg04_why-celgene-is-bucking-biotech-weakness-today.txt anno_01
+KeywordMissed: Profit/Loss on EPS in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Profit/Loss on EPS in f14_ford-is-the-next-ge-and-shorts-should-be-salivating.txt anno_02
+KeywordMissed: Profit/Loss on EPS in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on EPS in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on EPS in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Profit/Loss on EPS in gm00_who-gets-a-for-leadership-tesla-or-gm.txt anno_03
+KeywordMissed: Profit/Loss on EPS in gm00_who-gets-a-for-leadership-tesla-or-gm.txt anno_03
+KeywordMissed: Profit/Loss on EPS in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Profit/Loss on EPS in jnj05_where-s-the-tylenol-jj-disappoints-and-frustrates.txt anno_02
+KeywordMissed: Profit/Loss on EPS in wmt01_a-look-at-walmart-s-valuation-after-fiscal-1q18-results.txt anno_01
+KeywordMissed: Profit/Loss on earnings-per-share in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Profit/Loss on earnings-per-share in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: Profit/Loss on earnings-per-share in ge08_will-general-electric-sell-more-assets-to-maintain-its-dividend.txt anno_02
+KeywordMissed: Profit/Loss on earnings-per-share in nflx00_netflix-headed-to-90-million-users.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Revenue on revenue in aal03_american-airlines-reports-load-factor-increase-in-may-shares-g.txt anno_03
+KeywordMissed: Revenue on revenue in aal03_american-airlines-reports-load-factor-increase-in-may-shares-g.txt anno_03
+KeywordMissed: Revenue on revenue in aal07_american-airlines-stock-rallies-after-second-upgrade-in-two-da.txt anno_02
+KeywordMissed: Revenue on revenue in aal10_american-airlines-marks-down-third-quarter-guidance.txt anno_01
+KeywordMissed: Revenue on revenue in aal10_american-airlines-marks-down-third-quarter-guidance.txt anno_01
+KeywordMissed: Revenue on revenue in aal10_american-airlines-marks-down-third-quarter-guidance.txt anno_01
+KeywordMissed: Revenue on revenue in aal10_american-airlines-marks-down-third-quarter-guidance.txt anno_01
+KeywordMissed: Revenue on revenue in aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+KeywordMissed: Revenue on revenue in aapl11_disappointing-new-iphones-reveal-a-scared-and-greedy-apple.txt anno_01
+KeywordMissed: Revenue on revenue in aapl11_disappointing-new-iphones-reveal-a-scared-and-greedy-apple.txt anno_01
+KeywordMissed: Revenue on Revenue in aapl13_stocks-mixed-this-california-builder-breaks-out-what-to-watc.txt anno_01
+KeywordMissed: Revenue on Revenue in aapl13_stocks-mixed-this-california-builder-breaks-out-what-to-watc.txt anno_01
+KeywordMissed: Revenue on revenue in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: Revenue on revenue in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: Revenue on revenue in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: Revenue on Revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in aapl16_apple-s-app-store-generated-over-11-billion-in-revenue-for-th.txt anno_01
+KeywordMissed: Revenue on revenue in abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt anno_01
+KeywordMissed: Revenue on revenue in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Revenue on revenue in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Revenue on revenue in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Revenue on revenue in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Revenue on revenue in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Revenue on revenue in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Revenue on revenue in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Revenue on revenue in abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+KeywordMissed: Revenue on revenue in abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+KeywordMissed: Revenue on revenue in abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+KeywordMissed: Revenue on revenue in abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+KeywordMissed: Revenue on revenue in abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+KeywordMissed: Revenue on revenue in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Revenue on revenue in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Revenue on Revenue in abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+KeywordMissed: Revenue on revenue in abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+KeywordMissed: Revenue on revenue in abbv13_the-hot-stock-biggest-loser-abbvie-wynn-resorts.txt anno_03
+KeywordMissed: Revenue on revenue in amd04_what-impacted-advanced-micro-devices-stock-in-may-2017.txt anno_03
+KeywordMissed: Revenue on revenue in amd10_amd-radeon-vega-gets-company-back-into-high-value-gpu-markets-an.txt anno_02
+KeywordMissed: Revenue on revenue in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: Revenue on revenue in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: Revenue on revenue in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: Revenue on revenue in amd14_amd-nvidia-stocks-fall-after-analyst-warns-cryptocurrency-mark.txt anno_02
+KeywordMissed: Revenue on revenue in amzn03_amazon-will-be-a-top-5-grocer-in-the-us-with-whole-foods-a.txt anno_02
+KeywordMissed: Revenue on revenue in amzn04_3-reasons-amazon-is-nt-done-growing-yet.txt anno_02
+KeywordMissed: Revenue on revenue in amzn04_3-reasons-amazon-is-nt-done-growing-yet.txt anno_02
+KeywordMissed: Revenue on revenue in amzn04_3-reasons-amazon-is-nt-done-growing-yet.txt anno_02
+KeywordMissed: Revenue on revenue in amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+KeywordMissed: Revenue on revenue in amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+KeywordMissed: Revenue on revenue in amzn08_why-amazoncom-inc-stock-is-up-35-this-year.txt anno_03
+KeywordMissed: Revenue on Revenue in bac04_bank-of-america-earnings-hurt-by-tax-related-charge.txt anno_02
+KeywordMissed: Revenue on revenue in bac04_bank-of-america-earnings-hurt-by-tax-related-charge.txt anno_02
+KeywordMissed: Revenue on revenue in celg04_why-celgene-is-bucking-biotech-weakness-today.txt anno_01
+KeywordMissed: Revenue on revenue in cmg02_why-you-re-smart-to-buy-chipotle.txt anno_03
+KeywordMissed: Revenue on revenue in cmg02_why-you-re-smart-to-buy-chipotle.txt anno_03
+KeywordMissed: Revenue on revenue in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Revenue on revenue in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Revenue on revenue in cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt anno_01
+KeywordMissed: Revenue on revenue in dis04_disney-s-global-theme-parks-saw-attendance-decline-in-2016-bu.txt anno_02
+KeywordMissed: Revenue on revenue in dis04_disney-s-global-theme-parks-saw-attendance-decline-in-2016-bu.txt anno_02
+KeywordMissed: Revenue on revenue in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Revenue on revenue in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Revenue on revenue in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Revenue on revenue in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: Revenue on revenue in dis10_stocks-in-red-that-might-produce-some-green.txt anno_01
+KeywordMissed: Revenue on revenue in duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+KeywordMissed: Revenue on revenue in duk05_duke-energy-says-some-customers-may-be-affected-by-data-breach.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: Revenue on revenue in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: Revenue on revenue in fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+KeywordMissed: Revenue on revenue in fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+KeywordMissed: Revenue on Revenue in fox04_fox-to-sell-6-second-ads.txt anno_01
+KeywordMissed: Revenue on revenue in ge07_pratt-s-10-billion-jet-engine-lags-ge-by-10-to-1-on-new-order.txt anno_02
+KeywordMissed: Revenue on revenue in ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt anno_01
+KeywordMissed: Revenue on revenue in ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt anno_01
+KeywordMissed: Revenue on revenue in goog00_google-thinks-beyond-ads-at-annual-developer-conference.txt anno_02
+KeywordMissed: Revenue on revenue in goog00_google-thinks-beyond-ads-at-annual-developer-conference.txt anno_02
+KeywordMissed: Revenue on revenue in goog00_google-thinks-beyond-ads-at-annual-developer-conference.txt anno_02
+KeywordMissed: Revenue on revenue in goog00_google-thinks-beyond-ads-at-annual-developer-conference.txt anno_02
+KeywordMissed: Revenue on revenue in goog02_google-execs-hunker-down-for-summer-fight-with-eu-as-fines-loom.txt anno_02
+KeywordMissed: Revenue on revenue in goog02_google-execs-hunker-down-for-summer-fight-with-eu-as-fines-loom.txt anno_02
+KeywordMissed: Revenue on revenue in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Revenue on revenue in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Revenue on revenue in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Revenue on revenue in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Revenue on revenue in gs00_goldman-flexes-its-lending-muscles.txt anno_01
+KeywordMissed: Revenue on revenue in jnj06_what-to-expect-from-johnson-johnson-in-2018.txt anno_03
+KeywordMissed: Revenue on revenue in msft04_microsoft-ventures-a-look-at-redmond-s-latest-13-investments.txt anno_01
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Revenue on revenue in nflx11_netflix-stock-seesaws-after-third-quarter-subscriber-beat.txt anno_02
+KeywordMissed: Revenue on revenue in t06_att-inc-is-running-out-of-room-to-grow-what-s-next.txt anno_02
+KeywordMissed: Revenue on revenue in t06_att-inc-is-running-out-of-room-to-grow-what-s-next.txt anno_02
+KeywordMissed: Revenue on Revenue in wmt05_walmart-stock-nears-key-support-after-earnings-miss.txt anno_03
+KeywordMissed: Expense on cost in 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt anno_02
+KeywordMissed: Expense on cost in 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt anno_02
+KeywordMissed: Expense on cost in 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt anno_02
+KeywordMissed: Expense on cost in aal01_900m-investment-at-phl-to-bring-new-traffic-control-tower-re.txt anno_01
+KeywordMissed: Expense on cost in aapl10_apple-s-rain-of-cash-washes-away-debt-doubts.txt anno_01
+KeywordMissed: Expense on cost in amzn02_3-reasons-why-amazon-is-scary-to-netflix.txt anno_02
+KeywordMissed: Expense on cost in amzn02_3-reasons-why-amazon-is-scary-to-netflix.txt anno_02
+KeywordMissed: Expense on cost in amzn02_3-reasons-why-amazon-is-scary-to-netflix.txt anno_02
+KeywordMissed: Expense on cost in amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+KeywordMissed: Expense on cost in amzn11_22-million-amazon-echo-smart-speakers-to-be-sold-in-2017-drivi.txt anno_03
+KeywordMissed: Expense on cost in amzn12_is-amazon-getting-into-the-pharmacy-business-this-is-what-you.txt anno_03
+KeywordMissed: Expense on cost in amzn14_amazon-sold-more-echo-dots-than-any-other-item-over-the-holidays.txt anno_02
+KeywordMissed: Expense on cost in ba04_iran-confident-about-3-billion-boeing-deal-as-us-mulls-sanct.txt anno_03
+KeywordMissed: Expense on COST in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Expense on COST in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Expense on cost in cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt anno_01
+KeywordMissed: Expense on cost in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: Expense on cost in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: Expense on cost in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: Expense on cost in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: Expense on cost in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: Expense on cost in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: Expense on cost in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: Expense on cost in duk03_duke-posts-full-qa-from-controversial-online-only-shareholder-m.txt anno_02
+KeywordMissed: Expense on cost in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: Expense on cost in f04_forget-mexico-ford-moving-focus-production-from-us-to-china.txt anno_03
+KeywordMissed: Expense on cost in f05_lucid-motors-is-mulling-sale-after-takeover-talks-with-ford.txt anno_01
+KeywordMissed: Expense on cost in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: Expense on cost in ge00_what-s-behind-ge-s-move-from-the-connecticut-suburbs-to-boston.txt anno_03
+KeywordMissed: Expense on cost in ge00_what-s-behind-ge-s-move-from-the-connecticut-suburbs-to-boston.txt anno_03
+KeywordMissed: Expense on cost in ge13_ge-is-beating-some-headwinds-but-is-it-enough.txt anno_01
+KeywordMissed: Expense on cost in gm12_investors-impressed-by-general-motors-self-driving-car-but-m.txt anno_02
+KeywordMissed: Expense on cost in gm12_investors-impressed-by-general-motors-self-driving-car-but-m.txt anno_02
+KeywordMissed: Expense on cost in goog05_alphabet-s-nest-brings-smart-devices-to-australian-homes.txt anno_03
+KeywordMissed: Expense on cost in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Expense on cost in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Expense on cost in goog10_worse-than-krack-google-and-microsoft-hit-by-massive-5-ye.txt anno_03
+KeywordMissed: Expense on Cost in jnj02_jj-drug-prevents-heart-attacks-at-cost-of-amputated-toes.txt anno_01
+KeywordMissed: Expense on cost in msft02_microsoft-corp-expanding-its-sa-footprint-with-50m-new-constr.txt anno_03
+KeywordMissed: Expense on cost in msft02_microsoft-corp-expanding-its-sa-footprint-with-50m-new-constr.txt anno_03
+KeywordMissed: Expense on cost in msft03_microsoft-surprises-nobody-with-xbox-one-x-price.txt anno_03
+KeywordMissed: Expense on cost in nflx11_netflix-stock-seesaws-after-third-quarter-subscriber-beat.txt anno_02
+KeywordMissed: Expense on cost in pg01_razor-wars-continue-gillette-cut-by-old-time-rival.txt anno_01
+KeywordMissed: Expense on cost in pg04_pg-names-vice-chairman-promotes-two-other-top-executives.txt anno_03
+KeywordMissed: Expense on cost in t14_att-s-tax-cut-bonus-is-nt-just-a-gimmick.txt anno_03
+KeywordMissed: Expense on COST in wmt00_why-analysts-opinion-about-walmart-improved-after-1q18-results.txt anno_01
+KeywordMissed: Expense on COST in wmt01_a-look-at-walmart-s-valuation-after-fiscal-1q18-results.txt anno_01
+KeywordMissed: Expense on cost in wmt02_walmart-taps-store-associates-for-last-mile-delivery-program.txt anno_01
+KeywordMissed: Expense on expense in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: Expense on expense in bac00_bank-of-america-wants-to-make-it-easier-for-you-to-get-a-mortgag.txt anno_01
+KeywordMissed: Expense on expense in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: Expense on expense in fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+KeywordMissed: Expense on expense in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Product/Service on launch in aapl11_disappointing-new-iphones-reveal-a-scared-and-greedy-apple.txt anno_01
+KeywordMissed: Product/Service on launch in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Product/Service on launch in abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+KeywordMissed: Product/Service on launch in amd08_why-advanced-micro-devices-inc-shares-gained-115-in-june.txt anno_02
+KeywordMissed: Product/Service on launch in amd11_reviews-confirm-with-radeon-rx-vega-amd-re-enters-the-performa.txt anno_02
+KeywordMissed: Product/Service on launch in amd11_reviews-confirm-with-radeon-rx-vega-amd-re-enters-the-performa.txt anno_02
+KeywordMissed: Product/Service on launch in amd11_reviews-confirm-with-radeon-rx-vega-amd-re-enters-the-performa.txt anno_02
+KeywordMissed: Product/Service on launch in amd11_reviews-confirm-with-radeon-rx-vega-amd-re-enters-the-performa.txt anno_02
+KeywordMissed: Product/Service on launch in amd11_reviews-confirm-with-radeon-rx-vega-amd-re-enters-the-performa.txt anno_02
+KeywordMissed: Product/Service on launch in amd11_reviews-confirm-with-radeon-rx-vega-amd-re-enters-the-performa.txt anno_02
+KeywordMissed: Product/Service on launch in amd12_2-risks-amd-investors-should-nt-ignore.txt anno_02
+KeywordMissed: Product/Service on launch in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: Product/Service on launch in amzn04_3-reasons-amazon-is-nt-done-growing-yet.txt anno_02
+KeywordMissed: Product/Service on launch in ba00_boeing-delivers-its-first-737-max-just-as-planned.txt anno_02
+KeywordMissed: Product/Service on launch in ba00_boeing-delivers-its-first-737-max-just-as-planned.txt anno_02
+KeywordMissed: Product/Service on launch in ba03_boeing-wins-contract-to-build-darpa-xs-1-experimental-space-plan.txt anno_03
+KeywordMissed: Product/Service on launch in ba03_boeing-wins-contract-to-build-darpa-xs-1-experimental-space-plan.txt anno_03
+KeywordMissed: Product/Service on Launch in ba05_boeing-defense-to-cut-50-executive-jobs-in-management-shakeup.txt anno_01
+KeywordMissed: Product/Service on launch in f09_top-ford-execs-leaving-as-hackett-reshapes-the-automaker-for-the.txt anno_02
+KeywordMissed: Product/Service on launch in gm12_investors-impressed-by-general-motors-self-driving-car-but-m.txt anno_02
+KeywordMissed: Product/Service on launch in goog05_alphabet-s-nest-brings-smart-devices-to-australian-homes.txt anno_03
+KeywordMissed: Product/Service on launch in goog05_alphabet-s-nest-brings-smart-devices-to-australian-homes.txt anno_03
+KeywordMissed: Product/Service on launch in goog12_with-its-india-first-approach-google-is-trying-to-woo-the-comm.txt anno_02
+KeywordMissed: Product/Service on launch in goog12_with-its-india-first-approach-google-is-trying-to-woo-the-comm.txt anno_02
+KeywordMissed: Product/Service on launch in kmi02_why-long-term-investors-should-prefer-kinder-morgan-inc-over-ene.txt anno_02
+KeywordMissed: Product/Service on launch in pg03_pg-ceo-david-taylor-helps-launch-massive-diversity-initiative-i.txt anno_03
+KeywordMissed: Product/Service on launch in pg03_pg-ceo-david-taylor-helps-launch-massive-diversity-initiative-i.txt anno_03
+KeywordMissed: Product/Service on release in 04_gms-fairfax-factory-earns-energy-star-certificate--kansas-city-business-journal.txt anno_02
+KeywordMissed: Product/Service on release in aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt anno_01
+KeywordMissed: Product/Service on release in aapl09_tech-stocks-this-week-iphone-8-rumors-samsung-s-note-return.txt anno_01
+KeywordMissed: Product/Service on release in aapl09_tech-stocks-this-week-iphone-8-rumors-samsung-s-note-return.txt anno_01
+KeywordMissed: Product/Service on release in aapl12_apple-s-stock-jumps-after-keybanc-upgrade-to-buy-rating.txt anno_01
+KeywordMissed: Product/Service on release in abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+KeywordMissed: Product/Service on release in amd01_why-amd-investors-should-nt-lose-faith.txt anno_03
+KeywordMissed: Product/Service on release in amd07_amd-reveals-epyc-details-intel-vows-to-top-it.txt anno_02
+KeywordMissed: Product/Service on release in amzn02_3-reasons-why-amazon-is-scary-to-netflix.txt anno_02
+KeywordMissed: Product/Service on release in amzn14_amazon-sold-more-echo-dots-than-any-other-item-over-the-holidays.txt anno_02
+KeywordMissed: Product/Service on release in ba03_boeing-wins-contract-to-build-darpa-xs-1-experimental-space-plan.txt anno_03
+KeywordMissed: Product/Service on release in ba03_boeing-wins-contract-to-build-darpa-xs-1-experimental-space-plan.txt anno_03
+KeywordMissed: Product/Service on release in bac02_bank-of-america-still-lags-us-banking-peers-in-terms-of-core-c.txt anno_03
+KeywordMissed: Product/Service on release in cmg02_why-you-re-smart-to-buy-chipotle.txt anno_03
+KeywordMissed: Product/Service on release in cmg04_chipotle-is-betting-on-digital.txt anno_03
+KeywordMissed: Product/Service on release in cvx03_chevron-shielded-from-9-billion-verdict.txt anno_01
+KeywordMissed: Product/Service on release in dis05_euro-disney-dis-gains-control-plans-to-delist.txt anno_02
+KeywordMissed: Product/Service on release in dis07_disney-joins-ar-fray-with-200-star-wars-ar-headset.txt anno_02
+KeywordMissed: Product/Service on release in dis10_stocks-in-red-that-might-produce-some-green.txt anno_01
+KeywordMissed: Product/Service on release in dis10_stocks-in-red-that-might-produce-some-green.txt anno_01
+KeywordMissed: Product/Service on release in f04_forget-mexico-ford-moving-focus-production-from-us-to-china.txt anno_03
+KeywordMissed: Product/Service on release in fox03_weekend-box-office-wonder-woman-opened-even-bigger-than-we.txt anno_01
+KeywordMissed: Product/Service on release in goog03_google-leak-reveals-massive-pixel-2-cancellation.txt anno_02
+KeywordMissed: Product/Service on release in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: Product/Service on release in goog11_earnings-preview-what-to-expect-from-alphabet-on-thursday.txt anno_03
+KeywordMissed: Product/Service on release in gs00_goldman-flexes-its-lending-muscles.txt anno_01
+KeywordMissed: Product/Service on release in jnj02_jj-drug-prevents-heart-attacks-at-cost-of-amputated-toes.txt anno_01
+KeywordMissed: Product/Service on release in jnj03_johnson-johnson-s-type-2-diabetes-drug-is-stellar-in-cardiova.txt anno_02
+KeywordMissed: Product/Service on release in jnj03_johnson-johnson-s-type-2-diabetes-drug-is-stellar-in-cardiova.txt anno_02
+KeywordMissed: Product/Service on release in kmi02_why-long-term-investors-should-prefer-kinder-morgan-inc-over-ene.txt anno_02
+KeywordMissed: Product/Service on release in nflx12_netflix-raising-16-billion-in-bond-market-to-fuel-content-acq.txt anno_02
+KeywordMissed: Product/Service on release in nflx13_netflix-cuts-ties-with-kevin-spacey.txt anno_02
+KeywordMissed: Product/Service on release in t13_att-and-time-warner-would-expletive-deleted-competitors-s.txt anno_03
+KeywordMissed: Product/Service on release in t13_att-and-time-warner-would-expletive-deleted-competitors-s.txt anno_03
+KeywordMissed: Product/Service on release in t13_att-and-time-warner-would-expletive-deleted-competitors-s.txt anno_03
+KeywordMissed: Product/Service on release in wmt03_wal-mart-s-sam-s-club-reinvents-its-private-brand.txt anno_01
+KeywordMissed: Product/Service on trial in abbv00_abbvie-demonstrates-leadership-in-gastroenterology-and-hepatolog.txt anno_03
+KeywordMissed: Product/Service on trial in abbv05_abbvie-ordered-by-jury-to-pay-15-million-to-depakote-victim.txt anno_02
+KeywordMissed: Product/Service on trial in abbv05_abbvie-ordered-by-jury-to-pay-15-million-to-depakote-victim.txt anno_02
+KeywordMissed: Product/Service on trial in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: Product/Service on trial in abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+KeywordMissed: Product/Service on trial in abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+KeywordMissed: Product/Service on trial in celg01_i-still-ca-nt-believe-juno-therapeutics-spent-464-million-on.txt anno_02
+KeywordMissed: Product/Service on trial in jnj01_jj-s-zytiga-boosts-survival-in-new-severe-prostate-cancers.txt anno_03
+KeywordMissed: Product/Service on trial in wfc00_wells-fargo-found-liable-in-abusive-tax-shelter-scheme.txt anno_02
+KeywordMissed: SecurityValue on Undervalued in abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt anno_01
+KeywordMissed: SecurityValue on undervalued in abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt anno_01
+KeywordMissed: SecurityValue on undervalued in pg02_pg-ceo-says-it-is-in-ongoing-constructive-active-talks-wi.txt anno_03
+KeywordMissed: SecurityValue on overvalued in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: SecurityValue on Overvalued in celg02_celgene-s-stock-may-be-incredibly-overvalued-right-now-here.txt anno_01
+KeywordMissed: SecurityValue on overvalued in celg02_celgene-s-stock-may-be-incredibly-overvalued-right-now-here.txt anno_01
+KeywordMissed: SecurityValue on overvalued in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: SecurityValue on overvalued in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: SecurityValue on overvalued in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: Rating on Underweight in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: Rating on overweight in aapl12_apple-s-stock-jumps-after-keybanc-upgrade-to-buy-rating.txt anno_01
+KeywordMissed: Rating on overweight in ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+KeywordMissed: Rating on Overweights in dis06_disney-what-s-worth-more-than-a-movie-ticket.txt anno_02
+KeywordMissed: SalesVolume on sales in 00_EXAMPLE_amazon-to-buy-whole-foods-for-13.7-billion.txt anno_02
+KeywordMissed: SalesVolume on sales in 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt anno_02
+KeywordMissed: SalesVolume on sales in 03_procter--gamble-co.s-proxy-fight-what-investors-need-to-know---the-motley-fool.txt anno_02
+KeywordMissed: SalesVolume on Sales in aal11_us-airlines-are-still-too-darn-cheap-and-unpopular-to-boot.txt anno_01
+KeywordMissed: SalesVolume on Sales in aal11_us-airlines-are-still-too-darn-cheap-and-unpopular-to-boot.txt anno_01
+KeywordMissed: SalesVolume on sales in aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+KeywordMissed: SalesVolume on sales in aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+KeywordMissed: SalesVolume on sales in aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+KeywordMissed: SalesVolume on sales in aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+KeywordMissed: SalesVolume on sales in aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+KeywordMissed: SalesVolume on sales in aapl04_three-reasons-apple-s-shares-took-a-drubbing.txt anno_03
+KeywordMissed: SalesVolume on sales in aapl12_apple-s-stock-jumps-after-keybanc-upgrade-to-buy-rating.txt anno_01
+KeywordMissed: SalesVolume on sales in aapl12_apple-s-stock-jumps-after-keybanc-upgrade-to-buy-rating.txt anno_01
+KeywordMissed: SalesVolume on sales in aapl12_apple-s-stock-jumps-after-keybanc-upgrade-to-buy-rating.txt anno_01
+KeywordMissed: SalesVolume on Sales in aapl13_stocks-mixed-this-california-builder-breaks-out-what-to-watc.txt anno_01
+KeywordMissed: SalesVolume on sales in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: SalesVolume on sales in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: SalesVolume on sales in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: SalesVolume on sales in abbv02_neupogen-and-enbrel-could-see-falling-revenues-in-2017.txt anno_03
+KeywordMissed: SalesVolume on sales in abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt anno_01
+KeywordMissed: SalesVolume on sales in abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt anno_01
+KeywordMissed: SalesVolume on sales in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: SalesVolume on sales in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: SalesVolume on sales in abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+KeywordMissed: SalesVolume on sales in abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+KeywordMissed: SalesVolume on sales in abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+KeywordMissed: SalesVolume on sales in abbv10_abbvie-you-re-upgrading-it-now.txt anno_03
+KeywordMissed: SalesVolume on sales in amd00_how-well-has-amd-delivered-on-their-2015-financial-analyst-day-p.txt anno_03
+KeywordMissed: SalesVolume on sales in amd11_reviews-confirm-with-radeon-rx-vega-amd-re-enters-the-performa.txt anno_02
+KeywordMissed: SalesVolume on sales in amd12_2-risks-amd-investors-should-nt-ignore.txt anno_02
+KeywordMissed: SalesVolume on sales in amd12_2-risks-amd-investors-should-nt-ignore.txt anno_02
+KeywordMissed: SalesVolume on sales in amzn02_3-reasons-why-amazon-is-scary-to-netflix.txt anno_02
+KeywordMissed: SalesVolume on sales in amzn03_amazon-will-be-a-top-5-grocer-in-the-us-with-whole-foods-a.txt anno_02
+KeywordMissed: SalesVolume on sales in amzn04_3-reasons-amazon-is-nt-done-growing-yet.txt anno_02
+KeywordMissed: SalesVolume on sales in amzn06_amazon-to-buy-whole-foods-for-137-billion.txt anno_03
+KeywordMissed: SalesVolume on sales in amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+KeywordMissed: SalesVolume on sales in amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+KeywordMissed: SalesVolume on sales in amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+KeywordMissed: SalesVolume on sales in amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+KeywordMissed: SalesVolume on Sales in amzn08_why-amazoncom-inc-stock-is-up-35-this-year.txt anno_03
+KeywordMissed: SalesVolume on sales in amzn14_amazon-sold-more-echo-dots-than-any-other-item-over-the-holidays.txt anno_02
+KeywordMissed: SalesVolume on sales in ba02_boeing-roundup-boeing-lands-deals-with-saudi-arabia.txt anno_01
+KeywordMissed: SalesVolume on sales in celg02_celgene-s-stock-may-be-incredibly-overvalued-right-now-here.txt anno_01
+KeywordMissed: SalesVolume on sales in chk00_was-the-merrill-lynch-downgrade-of-chesapeake-justified.txt anno_01
+KeywordMissed: SalesVolume on sales in chk02_the-hot-stock-chesapeake-energy-jumps-43.txt anno_01
+KeywordMissed: SalesVolume on sales in cmg02_why-you-re-smart-to-buy-chipotle.txt anno_03
+KeywordMissed: SalesVolume on sales in cmg03_chipotle-removes-malware-after-breach-strikes-payment-systems.txt anno_03
+KeywordMissed: SalesVolume on sales in cmg03_chipotle-removes-malware-after-breach-strikes-payment-systems.txt anno_03
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on Sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+KeywordMissed: SalesVolume on sales in cost01_costco-adds-fresh-breads-from-bakery-spurned-by-starbucks.txt anno_02
+KeywordMissed: SalesVolume on sales in cost01_costco-adds-fresh-breads-from-bakery-spurned-by-starbucks.txt anno_02
+KeywordMissed: SalesVolume on sales in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: SalesVolume on Sales in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: SalesVolume on sales in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: SalesVolume on sales in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: SalesVolume on sales in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: SalesVolume on sales in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: SalesVolume on sales in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: SalesVolume on sales in cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+KeywordMissed: SalesVolume on sales in cvx01_has-chevron-s-trading-in-refined-products-surged.txt anno_01
+KeywordMissed: SalesVolume on sales in cvx01_has-chevron-s-trading-in-refined-products-surged.txt anno_01
+KeywordMissed: SalesVolume on sales in cvx01_has-chevron-s-trading-in-refined-products-surged.txt anno_01
+KeywordMissed: SalesVolume on sales in cvx01_has-chevron-s-trading-in-refined-products-surged.txt anno_01
+KeywordMissed: SalesVolume on sales in cvx01_has-chevron-s-trading-in-refined-products-surged.txt anno_01
+KeywordMissed: SalesVolume on sales in cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt anno_01
+KeywordMissed: SalesVolume on sales in cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt anno_01
+KeywordMissed: SalesVolume on sales in cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt anno_01
+KeywordMissed: SalesVolume on sales in cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt anno_01
+KeywordMissed: SalesVolume on sales in f00_ford-to-cut-1400-jobs-as-pressure-grows-on-profits.txt anno_02
+KeywordMissed: SalesVolume on sales in f00_ford-to-cut-1400-jobs-as-pressure-grows-on-profits.txt anno_02
+KeywordMissed: SalesVolume on sales in f01_how-hackett-will-manage-ford-as-he-tries-to-steer-the-automaker.txt anno_03
+KeywordMissed: SalesVolume on sales in f01_how-hackett-will-manage-ford-as-he-tries-to-steer-the-automaker.txt anno_03
+KeywordMissed: SalesVolume on sales in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: SalesVolume on Sales in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: SalesVolume on sales in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: SalesVolume on Sales in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: SalesVolume on sales in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: SalesVolume on sales in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: SalesVolume on sales in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: SalesVolume on sales in f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+KeywordMissed: SalesVolume on Sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on Sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on Sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+KeywordMissed: SalesVolume on sales in f04_forget-mexico-ford-moving-focus-production-from-us-to-china.txt anno_03
+KeywordMissed: SalesVolume on sales in f04_forget-mexico-ford-moving-focus-production-from-us-to-china.txt anno_03
+KeywordMissed: SalesVolume on sales in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: SalesVolume on sales in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: SalesVolume on sales in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: SalesVolume on Sales in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: SalesVolume on Sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on Sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: SalesVolume on sales in f09_top-ford-execs-leaving-as-hackett-reshapes-the-automaker-for-the.txt anno_02
+KeywordMissed: SalesVolume on sales in f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+KeywordMissed: SalesVolume on sales in f12_ford-increasing-electric-vehicle-investment-to-11-billion-by-2.txt anno_02
+KeywordMissed: SalesVolume on sales in f15_ford-is-at-a-crossroad-of-danger-and-opportunity-in-china.txt anno_03
+KeywordMissed: SalesVolume on Sales in f15_ford-is-at-a-crossroad-of-danger-and-opportunity-in-china.txt anno_03
+KeywordMissed: SalesVolume on sales in f15_ford-is-at-a-crossroad-of-danger-and-opportunity-in-china.txt anno_03
+KeywordMissed: SalesVolume on sales in f15_ford-is-at-a-crossroad-of-danger-and-opportunity-in-china.txt anno_03
+KeywordMissed: SalesVolume on sales in fb04_mark-zuckerberg-just-sold-425-million-of-facebook-stock.txt anno_03
+KeywordMissed: SalesVolume on sales in fox01_fox-sports-buys-impression-bolsters-naming-rights-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in fox01_fox-sports-buys-impression-bolsters-naming-rights-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in fox01_fox-sports-buys-impression-bolsters-naming-rights-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in ge07_pratt-s-10-billion-jet-engine-lags-ge-by-10-to-1-on-new-order.txt anno_02
+KeywordMissed: SalesVolume on sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on Sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on Sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on sales in gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+KeywordMissed: SalesVolume on Sales in gm03_general-motors-cadillac-sales-are-booming-in-china.txt anno_03
+KeywordMissed: SalesVolume on sales in gm03_general-motors-cadillac-sales-are-booming-in-china.txt anno_03
+KeywordMissed: SalesVolume on Sales in gm03_general-motors-cadillac-sales-are-booming-in-china.txt anno_03
+KeywordMissed: SalesVolume on sales in gm03_general-motors-cadillac-sales-are-booming-in-china.txt anno_03
+KeywordMissed: SalesVolume on Sales in gm03_general-motors-cadillac-sales-are-booming-in-china.txt anno_03
+KeywordMissed: SalesVolume on sales in gm03_general-motors-cadillac-sales-are-booming-in-china.txt anno_03
+KeywordMissed: SalesVolume on sales in gm04_gm-to-add-850-new-jobs-in-arlington-via-supplier-park.txt anno_01
+KeywordMissed: SalesVolume on sales in gm06_gm-doubles-down-on-diesel-as-2018-equinox-gets-39-mpg-rating-5.txt anno_01
+KeywordMissed: SalesVolume on Sales in gm06_gm-doubles-down-on-diesel-as-2018-equinox-gets-39-mpg-rating-5.txt anno_01
+KeywordMissed: SalesVolume on sales in gm06_gm-doubles-down-on-diesel-as-2018-equinox-gets-39-mpg-rating-5.txt anno_01
+KeywordMissed: SalesVolume on sales in gm06_gm-doubles-down-on-diesel-as-2018-equinox-gets-39-mpg-rating-5.txt anno_01
+KeywordMissed: SalesVolume on sales in gm09_will-gm-s-top-selling-suv-take-a-hit-from-canadian-strike.txt anno_02
+KeywordMissed: SalesVolume on sales in gm09_will-gm-s-top-selling-suv-take-a-hit-from-canadian-strike.txt anno_02
+KeywordMissed: SalesVolume on sales in goog02_google-execs-hunker-down-for-summer-fight-with-eu-as-fines-loom.txt anno_02
+KeywordMissed: SalesVolume on sales in goog02_google-execs-hunker-down-for-summer-fight-with-eu-as-fines-loom.txt anno_02
+KeywordMissed: SalesVolume on sales in goog02_google-execs-hunker-down-for-summer-fight-with-eu-as-fines-loom.txt anno_02
+KeywordMissed: SalesVolume on sales in gs00_goldman-flexes-its-lending-muscles.txt anno_01
+KeywordMissed: SalesVolume on sales in gs01_goldman-sachs-under-fire-for-venezuela-bond-deal-that-critics-sa.txt anno_01
+KeywordMissed: SalesVolume on Sales in gs04_goldman-sachs-goes-mr-roboto-on-debt-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in gs04_goldman-sachs-goes-mr-roboto-on-debt-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in gs04_goldman-sachs-goes-mr-roboto-on-debt-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in gs04_goldman-sachs-goes-mr-roboto-on-debt-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in gs04_goldman-sachs-goes-mr-roboto-on-debt-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in gs04_goldman-sachs-goes-mr-roboto-on-debt-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in gs04_goldman-sachs-goes-mr-roboto-on-debt-sales.txt anno_01
+KeywordMissed: SalesVolume on sales in jnj03_johnson-johnson-s-type-2-diabetes-drug-is-stellar-in-cardiova.txt anno_02
+KeywordMissed: SalesVolume on Sales in jnj03_johnson-johnson-s-type-2-diabetes-drug-is-stellar-in-cardiova.txt anno_02
+KeywordMissed: SalesVolume on Sales in jnj05_where-s-the-tylenol-jj-disappoints-and-frustrates.txt anno_02
+KeywordMissed: SalesVolume on sales in jnj05_where-s-the-tylenol-jj-disappoints-and-frustrates.txt anno_02
+KeywordMissed: SalesVolume on Sales in jnj05_where-s-the-tylenol-jj-disappoints-and-frustrates.txt anno_02
+KeywordMissed: SalesVolume on Sales in jnj05_where-s-the-tylenol-jj-disappoints-and-frustrates.txt anno_02
+KeywordMissed: SalesVolume on sales in msft04_microsoft-ventures-a-look-at-redmond-s-latest-13-investments.txt anno_01
+KeywordMissed: SalesVolume on sales in nem01_inside-barrick-gold-s-production-growth.txt anno_03
+KeywordMissed: SalesVolume on sales in t01_att-leapfrogs-exxon-mobil-as-largest-public-company-in-texas.txt anno_03
+KeywordMissed: SalesVolume on sales in t12_will-the-att-time-warner-deal-go-through.txt anno_03
+KeywordMissed: SalesVolume on sales in t14_att-s-tax-cut-bonus-is-nt-just-a-gimmick.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc01_new-york-city-bars-wells-fargo-from-banking-work-after-scandals.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc01_new-york-city-bars-wells-fargo-from-banking-work-after-scandals.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc02_wells-fargo-s-nyse-wfc-headaches-mount-as-justice.txt anno_01
+KeywordMissed: SalesVolume on sales in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: SalesVolume on sales in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: SalesVolume on sales in wmt01_a-look-at-walmart-s-valuation-after-fiscal-1q18-results.txt anno_01
+KeywordMissed: SalesVolume on sales in wmt01_a-look-at-walmart-s-valuation-after-fiscal-1q18-results.txt anno_01
+KeywordMissed: SalesVolume on sales in wmt01_a-look-at-walmart-s-valuation-after-fiscal-1q18-results.txt anno_01
+KeywordMissed: SalesVolume on sales in wmt02_walmart-taps-store-associates-for-last-mile-delivery-program.txt anno_01
+KeywordMissed: SalesVolume on sales in wmt04_here-s-why-the-best-is-yet-to-come-for-wal-mart-stores-inc.txt anno_01
+KeywordMissed: SalesVolume on sales in wmt04_here-s-why-the-best-is-yet-to-come-for-wal-mart-stores-inc.txt anno_01
+KeywordMissed: SalesVolume on sales in wmt05_walmart-stock-nears-key-support-after-earnings-miss.txt anno_03
+KeywordMissed: SalesVolume on sales in wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt anno_02
+KeywordMissed: generic_event on generate in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: generic_event on generate in 05_netflixs-stock-is-worth-only-about-onethird-of-where-it-trades-today.txt anno_02
+KeywordMissed: generic_event on generate in aal01_900m-investment-at-phl-to-bring-new-traffic-control-tower-re.txt anno_01
+KeywordMissed: generic_event on generate in aal08_airberlin-goes-bankrupt-soon-after-announcing-major-chicago-expa.txt anno_02
+KeywordMissed: generic_event on generate in aapl15_here-s-how-apple-gets-to-a-2-trillion-market-value.txt anno_02
+KeywordMissed: generic_event on generate in abbv03_the-2-best-dividend-stocks-in-marijuana.txt anno_03
+KeywordMissed: generic_event on generate in abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+KeywordMissed: generic_event on generate in abbv12_top-biotech-stock-near-buy-zone-shows-positive-drug-trial-resu.txt anno_03
+KeywordMissed: generic_event on generate in cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt anno_01
+KeywordMissed: generic_event on generate in f06_is-ford-s-profit.txt anno_01
+KeywordMissed: generic_event on generate in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: generic_event on generate in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: generic_event on generate in fb06_facebook-posts-strong-q2-as-arpu-grows-across-geographies.txt anno_01
+KeywordMissed: generic_event on generate in fb11_how-facebook-can-monetize-whatsapp.txt anno_02
+KeywordMissed: generic_event on generate in fb11_how-facebook-can-monetize-whatsapp.txt anno_02
+KeywordMissed: generic_event on generate in fox00_berkshire-cuts-21st-century-fox-stake-adjusts-airline-bets.txt anno_01
+KeywordMissed: generic_event on generate in ge01_ge-drops-after-immelt-predicts-challenges-to-hit-2018-targets.txt anno_01
+KeywordMissed: generic_event on generate in ge02_a-simple-ge-trade-for-long-suffering-investors.txt anno_02
+KeywordMissed: generic_event on generate in gm04_gm-to-add-850-new-jobs-in-arlington-via-supplier-park.txt anno_01
+KeywordMissed: generic_event on generate in goog00_google-thinks-beyond-ads-at-annual-developer-conference.txt anno_02
+KeywordMissed: generic_event on generate in goog10_worse-than-krack-google-and-microsoft-hit-by-massive-5-ye.txt anno_03
+KeywordMissed: generic_event on generate in kmi02_why-long-term-investors-should-prefer-kinder-morgan-inc-over-ene.txt anno_02
+KeywordMissed: generic_event on generate in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: generic_event on generate in nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+KeywordMissed: generic_event on report in aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt anno_01
+KeywordMissed: generic_event on report in aapl02_apple-is-following-google-into-making-a-custom-ai-chip.txt anno_03
+KeywordMissed: generic_event on report in aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+KeywordMissed: generic_event on report in aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+KeywordMissed: generic_event on report in aapl05_did-apple-just-make-best-buy-a-better-buy.txt anno_03
+KeywordMissed: generic_event on report in aapl13_stocks-mixed-this-california-builder-breaks-out-what-to-watc.txt anno_01
+KeywordMissed: generic_event on report in abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+KeywordMissed: generic_event on report in abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+KeywordMissed: generic_event on report in amd01_why-amd-investors-should-nt-lose-faith.txt anno_03
+KeywordMissed: generic_event on report in amd12_2-risks-amd-investors-should-nt-ignore.txt anno_02
+KeywordMissed: generic_event on report in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: generic_event on report in amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+KeywordMissed: generic_event on report in amzn08_why-amazoncom-inc-stock-is-up-35-this-year.txt anno_03
+KeywordMissed: generic_event on report in amzn08_why-amazoncom-inc-stock-is-up-35-this-year.txt anno_03
+KeywordMissed: generic_event on report in amzn08_why-amazoncom-inc-stock-is-up-35-this-year.txt anno_03
+KeywordMissed: generic_event on report in amzn12_is-amazon-getting-into-the-pharmacy-business-this-is-what-you.txt anno_03
+KeywordMissed: generic_event on report in amzn12_is-amazon-getting-into-the-pharmacy-business-this-is-what-you.txt anno_03
+KeywordMissed: generic_event on report in amzn12_is-amazon-getting-into-the-pharmacy-business-this-is-what-you.txt anno_03
+KeywordMissed: generic_event on report in amzn14_amazon-sold-more-echo-dots-than-any-other-item-over-the-holidays.txt anno_02
+KeywordMissed: generic_event on report in ba10_reduce-holdings-on-boeing-and-3-other-defense-stocks-pre-earning.txt anno_03
+KeywordMissed: generic_event on report in chk00_was-the-merrill-lynch-downgrade-of-chesapeake-justified.txt anno_01
+KeywordMissed: generic_event on report in cmg01_chipotle-names-scott-boatwright-chief-restaurant-officer.txt anno_03
+KeywordMissed: generic_event on report in cost02_costco-not-all-beats-are-created-equal.txt anno_02
+KeywordMissed: generic_event on report in cvx00_chevron-investors-back-off-from-climate-change-proposal.txt anno_01
+KeywordMissed: generic_event on report in cvx00_chevron-investors-back-off-from-climate-change-proposal.txt anno_01
+KeywordMissed: generic_event on report in cvx00_chevron-investors-back-off-from-climate-change-proposal.txt anno_01
+KeywordMissed: generic_event on report in cvx00_chevron-investors-back-off-from-climate-change-proposal.txt anno_01
+KeywordMissed: generic_event on report in cvx03_chevron-shielded-from-9-billion-verdict.txt anno_01
+KeywordMissed: generic_event on report in dis02_disney-earnings-give-a-look-at-how-espn-is-facing-the-future.txt anno_03
+KeywordMissed: generic_event on report in dis04_disney-s-global-theme-parks-saw-attendance-decline-in-2016-bu.txt anno_02
+KeywordMissed: generic_event on report in dis05_euro-disney-dis-gains-control-plans-to-delist.txt anno_02
+KeywordMissed: generic_event on report in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: generic_event on report in dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+KeywordMissed: generic_event on report in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: generic_event on report in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: generic_event on report in duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02
+KeywordMissed: generic_event on report in duk03_duke-posts-full-qa-from-controversial-online-only-shareholder-m.txt anno_02
+KeywordMissed: generic_event on report in duk06_like-many-of-its-peers-duk-is-trading-in-the-oversold-zone.txt anno_01
+KeywordMissed: generic_event on report in duk07_duke-energy-stock-is-at-its-most-oversold-level-in-5-years.txt anno_02
+KeywordMissed: generic_event on report in f01_how-hackett-will-manage-ford-as-he-tries-to-steer-the-automaker.txt anno_03
+KeywordMissed: generic_event on report in f08_how-ford-s-sales-in-china-disappointed-in-august.txt anno_02
+KeywordMissed: generic_event on report in f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+KeywordMissed: generic_event on report in fb02_a-look-at-facebook-s-fastest-growing-market.txt anno_03
+KeywordMissed: generic_event on report in fb03_facebook-says-controversial-data-sharing-policy-is-indispensab.txt anno_03
+KeywordMissed: generic_event on report in fb03_facebook-says-controversial-data-sharing-policy-is-indispensab.txt anno_03
+KeywordMissed: generic_event on report in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: generic_event on report in fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+KeywordMissed: generic_event on report in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: generic_event on report in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: generic_event on report in fb08_facebook-stock-offers-40-upside.txt anno_01
+KeywordMissed: generic_event on report in fb12_facebook-to-hire-800-new-workers-in-london.txt anno_02
+KeywordMissed: generic_event on report in fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+KeywordMissed: generic_event on report in fb14_facebook-s-wary-dance-with-the-beltway.txt anno_02
+KeywordMissed: generic_event on report in ge01_ge-drops-after-immelt-predicts-challenges-to-hit-2018-targets.txt anno_01
+KeywordMissed: generic_event on report in ge02_a-simple-ge-trade-for-long-suffering-investors.txt anno_02
+KeywordMissed: generic_event on report in ge02_a-simple-ge-trade-for-long-suffering-investors.txt anno_02
+KeywordMissed: generic_event on report in ge06_ge-stock-breaks-down-to-lower-channel-support.txt anno_02
+KeywordMissed: generic_event on report in ge07_pratt-s-10-billion-jet-engine-lags-ge-by-10-to-1-on-new-order.txt anno_02
+KeywordMissed: generic_event on report in ge08_will-general-electric-sell-more-assets-to-maintain-its-dividend.txt anno_02
+KeywordMissed: generic_event on report in ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt anno_01
+KeywordMissed: generic_event on report in ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt anno_01
+KeywordMissed: generic_event on Report in goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+KeywordMissed: generic_event on report in goog11_earnings-preview-what-to-expect-from-alphabet-on-thursday.txt anno_03
+KeywordMissed: generic_event on report in gs02_dow-s-late-afternoon-surge-into-record-territory-powered-by-gol.txt anno_01
+KeywordMissed: generic_event on report in nflx03_how-wall-street-analysts-view-netflix.txt anno_01
+KeywordMissed: generic_event on report in nflx04_why-analysts-expect-netflix-s-global-membership-base-to-grow.txt anno_01
+KeywordMissed: generic_event on report in nflx04_why-analysts-expect-netflix-s-global-membership-base-to-grow.txt anno_01
+KeywordMissed: generic_event on report in nflx04_why-analysts-expect-netflix-s-global-membership-base-to-grow.txt anno_01
+KeywordMissed: generic_event on report in nflx11_netflix-stock-seesaws-after-third-quarter-subscriber-beat.txt anno_02
+KeywordMissed: generic_event on report in nflx14_just-ca-nt-get-enough-netflix-subscriptions-could-grow-despit.txt anno_02
+KeywordMissed: generic_event on report in pg01_razor-wars-continue-gillette-cut-by-old-time-rival.txt anno_01
+KeywordMissed: generic_event on report in t02_att-s-directv-now-went-flat-after-january-report-says.txt anno_03
+KeywordMissed: generic_event on report in t02_att-s-directv-now-went-flat-after-january-report-says.txt anno_03
+KeywordMissed: generic_event on report in t05_how-att-s-acquisition-of-twx-could-provide-targeted-advertisin.txt anno_02
+KeywordMissed: generic_event on report in t14_att-s-tax-cut-bonus-is-nt-just-a-gimmick.txt anno_03
+KeywordMissed: generic_event on report in wfc02_wells-fargo-s-nyse-wfc-headaches-mount-as-justice.txt anno_01
+KeywordMissed: generic_event on report in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: generic_event on report in wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+KeywordMissed: generic_event on report in wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt anno_02
+KeywordMissed: generic_event on report in wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt anno_02
+KeywordMissed: generic_event on report in wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt anno_02
+KeywordMissed: generic_event on report in wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt anno_02
++------------------------+
+|  DOCUMENTS TO INSPECT  |
++------------------------+
+0 ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt anno_01
+Counter({'all': 25, 'no_part': 7, 'FinancialReport': 6, 'Profit/Loss': 5, 'Revenue': 4, 'kw_generic_event': 2, 'SalesVolume': 1})
+1 cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+Counter({'all': 25, 'kw_SalesVolume': 12, 'FinancialReport': 5, 'SalesVolume': 4, 'Profit/Loss': 3, 'Revenue': 1})
+2 nflx11_netflix-stock-seesaws-after-third-quarter-subscriber-beat.txt anno_02
+Counter({'all': 25, 'SalesVolume': 8, 'Macroeconomics': 4, 'no_part': 3, 'FinancialReport': 3, 'Profit/Loss': 3, 'CSR/Brand': 2, 'kw_generic_event': 1, 'Revenue': 1})
+3 nflx04_why-analysts-expect-netflix-s-global-membership-base-to-grow.txt anno_01
+Counter({'all': 24, 'SalesVolume': 11, 'Macroeconomics': 5, 'kw_generic_event': 3, 'no_part': 2, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1, 'CSR/Brand': 1})
+4 aapl10_apple-s-rain-of-cash-washes-away-debt-doubts.txt anno_01
+Counter({'all': 23, 'no_part': 7, 'FinancialReport': 6, 'Macroeconomics': 3, 'Revenue': 2, 'Profit/Loss': 2, 'kw_Expense': 1, 'SalesVolume': 1, 'CSR/Brand': 1})
+5 aapl09_tech-stocks-this-week-iphone-8-rumors-samsung-s-note-return.txt anno_01
+Counter({'all': 22, 'CSR/Brand': 7, 'Macroeconomics': 6, 'no_part': 4, 'kw_Product/Service': 2, 'Revenue': 2, 'Product/Service_no_part': 1})
+6 wmt01_a-look-at-walmart-s-valuation-after-fiscal-1q18-results.txt anno_01
+Counter({'all': 22, 'no_part': 5, 'FinancialReport': 4, 'kw_SalesVolume': 3, 'Macroeconomics': 3, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics_no_part': 2, 'SalesVolume': 2, 'Revenue': 1})
+7 wmt04_here-s-why-the-best-is-yet-to-come-for-wal-mart-stores-inc.txt anno_01
+Counter({'all': 22, 'Macroeconomics': 7, 'no_part': 5, 'CSR/Brand': 3, 'kw_SalesVolume': 2, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics_no_part': 1, 'FinancialReport': 1, 'Profit/Loss': 1})
+8 fb08_facebook-stock-offers-40-upside.txt anno_01
+Counter({'all': 21, 'FinancialReport': 11, 'no_part': 6, 'kw_generic_event': 3, 'Profit/Loss': 1})
+9 chk00_was-the-merrill-lynch-downgrade-of-chesapeake-justified.txt anno_01
+Counter({'all': 21, 'no_part': 10, 'Macroeconomics': 5, 'FinancialReport': 3, 'kw_generic_event': 1, 'Revenue': 1, 'CSR/Brand': 1})
+10 nflx02_netflix-can-break-hearts-too.txt anno_01
+Counter({'all': 21, 'CSR/Brand': 7, 'no_part': 6, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics': 2, 'SalesVolume': 2, 'Product/Service_no_part': 1, 'Macroeconomics_no_part': 1})
+11 amzn08_why-amazoncom-inc-stock-is-up-35-this-year.txt anno_03
+Counter({'all': 21, 'Macroeconomics': 4, 'kw_generic_event': 3, 'no_part': 3, 'SalesVolume': 3, 'FinancialReport': 3, 'Profit/Loss': 2, 'Revenue': 2, 'Macroeconomics_no_affcomp': 1})
+12 goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+Counter({'all': 20, 'FinancialReport': 10, 'Revenue': 5, 'Profit/Loss': 3, 'kw_generic_event': 1, 'Macroeconomics': 1})
+13 aal02_delta-air-lines-finds-competition-intense-in-may-on-time-arrival.txt anno_03
+Counter({'all': 20, 'Macroeconomics': 13, 'no_part': 2, 'CSR/Brand': 2, 'Product/Service_no_part': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1})
+14 aapl11_disappointing-new-iphones-reveal-a-scared-and-greedy-apple.txt anno_01
+Counter({'all': 20, 'Macroeconomics': 6, 'no_part': 4, 'CSR/Brand': 3, 'SalesVolume': 2, 'kw_Product/Service': 1, 'Product/Service_no_part': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1, 'Revenue': 1})
+15 pg01_razor-wars-continue-gillette-cut-by-old-time-rival.txt anno_01
+Counter({'all': 20, 'Macroeconomics': 13, 'Revenue': 2, 'kw_generic_event': 1, 'no_part': 1, 'Macroeconomics_no_affcomp': 1, 'CSR/Brand': 1, 'FinancialReport': 1})
+16 abbv03_the-2-best-dividend-stocks-in-marijuana.txt anno_03
+Counter({'all': 20, 'Macroeconomics': 8, 'Macroeconomics_no_affcomp': 3, 'Revenue': 3, 'no_part': 2, 'Profit/Loss': 2, 'kw_generic_event': 1, 'SalesVolume': 1})
+17 bac00_bank-of-america-wants-to-make-it-easier-for-you-to-get-a-mortgag.txt anno_01
+Counter({'all': 20, 'Macroeconomics_no_affcomp': 6, 'Macroeconomics': 6, 'no_part': 3, 'Macroeconomics_no_part': 3, 'kw_Expense': 1, 'Profit/Loss': 1})
+18 abbv02_neupogen-and-enbrel-could-see-falling-revenues-in-2017.txt anno_03
+Counter({'all': 20, 'SalesVolume': 8, 'Macroeconomics': 5, 'Revenue': 4, 'no_part': 2, 'kw_SalesVolume': 1})
+19 pg03_pg-ceo-david-taylor-helps-launch-massive-diversity-initiative-i.txt anno_03
+Counter({'all': 19, 'CSR/Brand': 11, 'no_part': 5, 'kw_Product/Service': 2, 'Macroeconomics': 1})
+20 aal10_american-airlines-marks-down-third-quarter-guidance.txt anno_01
+Counter({'all': 19, 'kw_Revenue': 4, 'Profit/Loss': 4, 'no_part': 2, 'Revenue': 2, 'FinancialReport': 2, 'Macroeconomics': 2, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1, 'CSR/Brand': 1})
+21 amd04_what-impacted-advanced-micro-devices-stock-in-may-2017.txt anno_03
+Counter({'all': 19, 'Revenue': 8, 'SalesVolume': 5, 'Profit/Loss': 2, 'kw_Revenue': 1, 'no_part': 1, 'FinancialReport': 1, 'Macroeconomics': 1})
+22 gm10_general-motors-this-ai-nt-the-autobahn.txt anno_02
+Counter({'all': 19, 'Macroeconomics_no_affcomp': 5, 'Macroeconomics': 5, 'no_part': 3, 'Macroeconomics_no_part': 3, 'kw_Profit/Loss': 2, 'Profit/Loss': 1})
+23 ge07_pratt-s-10-billion-jet-engine-lags-ge-by-10-to-1-on-new-order.txt anno_02
+Counter({'all': 19, 'Macroeconomics': 6, 'CSR/Brand': 6, 'no_part': 4, 'SalesVolume': 2, 'kw_generic_event': 1})
+24 t13_att-and-time-warner-would-expletive-deleted-competitors-s.txt anno_03
+Counter({'all': 19, 'no_part': 6, 'Macroeconomics': 6, 'kw_Product/Service': 3, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics_no_part': 1, 'Profit/Loss': 1})
+25 fb01_facebook-inc-s-instagram-wants-to-beat-snapchat-with-executi.txt anno_03
+Counter({'all': 18, 'Macroeconomics': 7, 'CSR/Brand': 5, 'SalesVolume': 3, 'kw_Profit/Loss': 2, 'no_part': 1})
+26 t05_how-att-s-acquisition-of-twx-could-provide-targeted-advertisin.txt anno_02
+Counter({'all': 18, 'Macroeconomics': 7, 'Macroeconomics_no_affcomp': 6, 'no_part': 2, 'kw_generic_event': 1, 'Macroeconomics_no_part': 1, 'CSR/Brand': 1})
+27 cmg04_chipotle-is-betting-on-digital.txt anno_03
+Counter({'all': 18, 'SalesVolume': 6, 'no_part': 5, 'CSR/Brand': 4, 'FinancialReport': 2, 'kw_Product/Service': 1})
+28 ge08_will-general-electric-sell-more-assets-to-maintain-its-dividend.txt anno_02
+Counter({'all': 18, 'Macroeconomics': 4, 'Macroeconomics_no_affcomp': 3, 'FinancialReport': 3, 'Profit/Loss': 3, 'SalesVolume': 2, 'kw_generic_event': 1, 'no_part': 1, 'Macroeconomics_no_part': 1})
+29 dis03_disney-world-and-universal-orlando-go-through-growing-pains.txt anno_01
+Counter({'all': 18, 'CSR/Brand': 11, 'no_part': 6, 'Revenue': 1})
+30 abbv01_which-big-pharma-is-the-best-dividend-stock.txt anno_03
+Counter({'all': 17, 'Macroeconomics': 10, 'SalesVolume': 3, 'no_part': 2, 'Revenue': 1, 'FinancialReport': 1})
+31 gm00_who-gets-a-for-leadership-tesla-or-gm.txt anno_03
+Counter({'all': 17, 'kw_Profit/Loss': 5, 'Macroeconomics': 4, 'Profit/Loss': 2, 'Revenue': 2, 'CSR/Brand': 2, 'no_part': 1, 'FinancialReport': 1})
+32 t02_att-s-directv-now-went-flat-after-january-report-says.txt anno_03
+Counter({'all': 17, 'SalesVolume': 8, 'no_part': 3, 'kw_generic_event': 2, 'Macroeconomics': 2, 'Macroeconomics_no_affcomp': 1, 'Revenue': 1})
+33 bac01_what-to-expect-from-bac-and-peers-in-2017.txt anno_03
+Counter({'all': 17, 'kw_Profit/Loss': 5, 'Revenue': 5, 'Macroeconomics': 3, 'no_part': 2, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1})
+34 fox00_berkshire-cuts-21st-century-fox-stake-adjusts-airline-bets.txt anno_01
+Counter({'all': 17, 'Macroeconomics': 5, 'Macroeconomics_no_affcomp': 3, 'FinancialReport': 2, 'CSR/Brand': 2, 'kw_generic_event': 1, 'no_part': 1, 'Macroeconomics_no_part': 1, 'Profit/Loss': 1, 'SalesVolume': 1})
+35 abbv10_abbvie-you-re-upgrading-it-now.txt anno_03
+Counter({'all': 17, 'no_part': 4, 'Macroeconomics': 4, 'SalesVolume': 4, 'Profit/Loss': 4, 'kw_SalesVolume': 1})
+36 cmg03_chipotle-removes-malware-after-breach-strikes-payment-systems.txt anno_03
+Counter({'all': 17, 'CSR/Brand': 9, 'no_part': 4, 'kw_SalesVolume': 2, 'SalesVolume': 2})
+37 nflx14_just-ca-nt-get-enough-netflix-subscriptions-could-grow-despit.txt anno_02
+Counter({'all': 17, 'SalesVolume': 6, 'FinancialReport': 5, 'no_part': 2, 'Revenue': 2, 'kw_generic_event': 1, 'Product/Service_no_part': 1})
+38 gs01_goldman-sachs-under-fire-for-venezuela-bond-deal-that-critics-sa.txt anno_01
+Counter({'all': 17, 'no_part': 5, 'CSR/Brand': 5, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics': 2, 'kw_SalesVolume': 1, 'Profit/Loss': 1, 'SalesVolume': 1})
+39 aal14_american-and-pilots-settle-issues-after-handshake-by-airline-and.txt anno_01
+Counter({'all': 16, 'no_part': 9, 'CSR/Brand': 7})
+40 fb07_facebook-turns-to-original-tv-content-with-new-watch-tab.txt anno_01
+Counter({'all': 16, 'Revenue': 4, 'no_part': 3, 'kw_Profit/Loss': 2, 'Profit/Loss': 2, 'FinancialReport': 2, 'Macroeconomics': 2, 'CSR/Brand': 1})
+41 wmt02_walmart-taps-store-associates-for-last-mile-delivery-program.txt anno_01
+Counter({'all': 16, 'Macroeconomics': 5, 'no_part': 4, 'Macroeconomics_no_affcomp': 2, 'CSR/Brand': 2, 'kw_SalesVolume': 1, 'Macroeconomics_no_part': 1, 'SalesVolume': 1})
+42 kmi03_kmi-launches-canada-ipo-amid-political-uncertainty-in-bc.txt anno_03
+Counter({'all': 16, 'Macroeconomics': 7, 'Macroeconomics_no_affcomp': 4, 'no_part': 3, 'Macroeconomics_no_part': 2})
+43 fb11_how-facebook-can-monetize-whatsapp.txt anno_02
+Counter({'all': 16, 'SalesVolume': 5, 'Macroeconomics': 4, 'kw_generic_event': 2, 'no_part': 2, 'Profit/Loss': 2, 'Revenue': 1})
+44 fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+Counter({'all': 16, 'CSR/Brand': 4, 'Profit/Loss': 3, 'no_part': 2, 'Macroeconomics': 2, 'SalesVolume': 2, 'kw_generic_event': 1, 'Revenue': 1, 'FinancialReport': 1})
+45 gm05_gm-selling-3b-in-bonds-related-to-pension-problem.txt anno_01
+Counter({'all': 15, 'no_part': 6, 'Macroeconomics': 4, 'Macroeconomics_no_affcomp': 3, 'Macroeconomics_no_part': 2})
+46 t01_att-leapfrogs-exxon-mobil-as-largest-public-company-in-texas.txt anno_03
+Counter({'all': 15, 'Macroeconomics': 10, 'no_part': 2, 'kw_SalesVolume': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1})
+47 t00_why-you-should-watch-att-s-costs-carefully.txt anno_03
+Counter({'all': 15, 'no_part': 8, 'Macroeconomics': 5, 'Revenue': 2})
+48 dis05_euro-disney-dis-gains-control-plans-to-delist.txt anno_02
+Counter({'all': 15, 'no_part': 4, 'Macroeconomics_no_affcomp': 3, 'CSR/Brand': 3, 'Macroeconomics': 3, 'kw_generic_event': 1, 'Macroeconomics_no_part': 1})
+49 aal01_900m-investment-at-phl-to-bring-new-traffic-control-tower-re.txt anno_01
+Counter({'all': 15, 'no_part': 6, 'Macroeconomics': 4, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics_no_part': 2, 'kw_generic_event': 1})
+50 amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+Counter({'all': 15, 'Macroeconomics': 7, 'kw_SalesVolume': 4, 'Revenue': 2, 'Macroeconomics_no_affcomp': 1, 'FinancialReport': 1})
+51 dis04_disney-s-global-theme-parks-saw-attendance-decline-in-2016-bu.txt anno_02
+Counter({'all': 15, 'SalesVolume': 9, 'Revenue': 2, 'FinancialReport': 2, 'kw_generic_event': 1, 'no_part': 1})
+52 f00_ford-to-cut-1400-jobs-as-pressure-grows-on-profits.txt anno_02
+Counter({'all': 14, 'CSR/Brand': 4, 'Macroeconomics': 3, 'kw_SalesVolume': 2, 'Macroeconomics_no_affcomp': 2, 'no_part': 1, 'SalesVolume': 1, 'Profit/Loss': 1})
+53 ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+Counter({'all': 13, 'FinancialReport': 4, 'no_part': 2, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics': 2, 'kw_Rating': 1, 'Macroeconomics_no_part': 1, 'Profit/Loss': 1})
+54 cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+Counter({'all': 13, 'kw_SalesVolume': 7, 'SalesVolume': 3, 'Profit/Loss': 2, 'FinancialReport': 1})
+55 abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+Counter({'all': 13, 'Revenue': 8, 'kw_Revenue': 3, 'no_part': 1, 'FinancialReport': 1})
+56 goog10_worse-than-krack-google-and-microsoft-hit-by-massive-5-ye.txt anno_03
+Counter({'all': 13, 'CSR/Brand': 9, 'no_part': 3, 'kw_generic_event': 1})
+57 gs00_goldman-flexes-its-lending-muscles.txt anno_01
+Counter({'all': 13, 'Macroeconomics': 9, 'CSR/Brand': 2, 'kw_SalesVolume': 1, 'Macroeconomics_no_affcomp': 1})
+58 wfc02_wells-fargo-s-nyse-wfc-headaches-mount-as-justice.txt anno_01
+Counter({'all': 13, 'no_part': 7, 'CSR/Brand': 2, 'kw_generic_event': 1, 'Macroeconomics_no_affcomp': 1, 'Profit/Loss': 1, 'Macroeconomics': 1})
+59 chk03_chesapeake-energy-was-the-sp-500-s-top-gainer-on-june-13.txt anno_01
+Counter({'all': 12, 'Macroeconomics': 7, 'Macroeconomics_no_affcomp': 4, 'SalesVolume': 1})
+60 t06_att-inc-is-running-out-of-room-to-grow-what-s-next.txt anno_02
+Counter({'all': 12, 'FinancialReport': 3, 'Macroeconomics': 3, 'kw_Revenue': 2, 'SalesVolume': 2, 'Revenue': 1, 'Profit/Loss': 1})
+61 aal11_us-airlines-are-still-too-darn-cheap-and-unpopular-to-boot.txt anno_01
+Counter({'all': 12, 'Macroeconomics': 5, 'Macroeconomics_no_affcomp': 3, 'kw_SalesVolume': 2, 'no_part': 1, 'Macroeconomics_no_part': 1})
+62 gs02_dow-s-late-afternoon-surge-into-record-territory-powered-by-gol.txt anno_01
+Counter({'all': 12, 'no_part': 3, 'Macroeconomics_no_affcomp': 3, 'Macroeconomics': 3, 'CSR/Brand': 2, 'kw_generic_event': 1})
+63 goog02_google-execs-hunker-down-for-summer-fight-with-eu-as-fines-loom.txt anno_02
+Counter({'all': 12, 'kw_SalesVolume': 3, 'Revenue': 3, 'Macroeconomics': 2, 'CSR/Brand': 2, 'no_part': 1, 'SalesVolume': 1})
+64 ba05_boeing-defense-to-cut-50-executive-jobs-in-management-shakeup.txt anno_01
+Counter({'all': 11, 'no_part': 7, 'kw_Product/Service': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics': 1, 'CSR/Brand': 1})
+65 amzn03_amazon-will-be-a-top-5-grocer-in-the-us-with-whole-foods-a.txt anno_02
+Counter({'all': 11, 'Macroeconomics': 7, 'kw_SalesVolume': 1, 'no_part': 1, 'Macroeconomics_no_affcomp': 1, 'Revenue': 1})
+66 abbv13_the-hot-stock-biggest-loser-abbvie-wynn-resorts.txt anno_03
+Counter({'all': 11, 'Profit/Loss': 5, 'kw_Revenue': 1, 'no_part': 1, 'Macroeconomics': 1, 'SalesVolume': 1, 'FinancialReport': 1, 'CSR/Brand': 1})
+67 aapl05_did-apple-just-make-best-buy-a-better-buy.txt anno_03
+Counter({'all': 11, 'Macroeconomics': 4, 'Revenue': 3, 'SalesVolume': 2, 'kw_generic_event': 1, 'no_part': 1})
+68 cost02_costco-not-all-beats-are-created-equal.txt anno_02
+Counter({'all': 11, 'Revenue': 3, 'SalesVolume': 2, 'Profit/Loss': 2, 'FinancialReport': 2, 'kw_generic_event': 1, 'Macroeconomics': 1})
+69 amzn00_the-world-s-largest-retailers-2017-amazon-alibaba-are-closi.txt anno_02
+Counter({'all': 11, 'Macroeconomics': 6, 'CSR/Brand': 2, 'no_part': 1, 'Macroeconomics_no_affcomp': 1, 'SalesVolume': 1})
+70 nflx03_how-wall-street-analysts-view-netflix.txt anno_01
+Counter({'all': 11, 'Macroeconomics': 4, 'kw_generic_event': 1, 'no_part': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1, 'CSR/Brand': 1, 'SalesVolume': 1, 'Profit/Loss': 1})
+71 goog12_with-its-india-first-approach-google-is-trying-to-woo-the-comm.txt anno_02
+Counter({'all': 10, 'SalesVolume': 4, 'kw_Product/Service': 2, 'Product/Service_no_part': 1, 'no_part': 1, 'Macroeconomics': 1, 'CSR/Brand': 1})
+72 ba10_reduce-holdings-on-boeing-and-3-other-defense-stocks-pre-earning.txt anno_03
+Counter({'all': 10, 'Profit/Loss': 4, 'FinancialReport': 3, 'kw_generic_event': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics': 1})
+73 ge06_ge-stock-breaks-down-to-lower-channel-support.txt anno_02
+Counter({'all': 10, 'FinancialReport': 4, 'no_part': 3, 'kw_generic_event': 1, 'Profit/Loss': 1, 'CSR/Brand': 1})
+74 gm12_investors-impressed-by-general-motors-self-driving-car-but-m.txt anno_02
+Counter({'all': 10, 'Macroeconomics': 5, 'kw_Product/Service': 1, 'no_part': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1, 'Profit/Loss': 1})
+75 kmi04_why-british-columbia-s-election-impacts-kinder-morgan.txt anno_01
+Counter({'all': 10, 'CSR/Brand': 5, 'no_part': 3, 'Revenue': 1, 'Profit/Loss': 1})
+76 dis06_disney-what-s-worth-more-than-a-movie-ticket.txt anno_02
+Counter({'all': 10, 'Macroeconomics': 5, 'Profit/Loss': 2, 'Revenue': 2, 'kw_Rating': 1})
+77 cmg00_chipotle-cfo-says-we-were-losing-our-edge-even-before-ecoli.txt anno_03
+Counter({'all': 9, 'CSR/Brand': 6, 'kw_Profit/Loss': 1, 'Revenue': 1, 'SalesVolume': 1})
+78 goog13_google-s-china-bid-wo-nt-end-well.txt anno_02
+Counter({'all': 9, 'CSR/Brand': 4, 'SalesVolume': 3, 'no_part': 1, 'Profit/Loss': 1})
+79 t04_as-states-test-waters-att-hopes-to-catch-all-with-firstnet-fi.txt anno_01
+Counter({'all': 9, 'Macroeconomics': 5, 'CSR/Brand': 3, 'no_part': 1})
+80 fb02_a-look-at-facebook-s-fastest-growing-market.txt anno_03
+Counter({'all': 9, 'Macroeconomics': 7, 'kw_generic_event': 1, 'SalesVolume': 1})
+81 fb03_facebook-says-controversial-data-sharing-policy-is-indispensab.txt anno_03
+Counter({'all': 9, 'CSR/Brand': 6, 'kw_generic_event': 2, 'no_part': 1})
+82 wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+Counter({'all': 9, 'CSR/Brand': 3, 'kw_generic_event': 2, 'Macroeconomics': 2, 'no_part': 1, 'Macroeconomics_no_affcomp': 1})
+83 gm11_gm-s-self-driving-cars-will-be-impressive-but-not-impressiv.txt anno_02
+Counter({'all': 9, 'Macroeconomics': 6, 'Macroeconomics_no_affcomp': 2, 'CSR/Brand': 1})
+84 cvx01_has-chevron-s-trading-in-refined-products-surged.txt anno_01
+Counter({'all': 9, 'kw_SalesVolume': 5, 'FinancialReport': 3, 'SalesVolume': 1})
+85 kmi00_kinder-morgan-s-canada-ipo-faces-a-challenge.txt anno_03
+Counter({'all': 9, 'Macroeconomics': 4, 'Macroeconomics_no_affcomp': 2, 'CSR/Brand': 2, 'no_part': 1})
+86 jnj03_johnson-johnson-s-type-2-diabetes-drug-is-stellar-in-cardiova.txt anno_02
+Counter({'all': 9, 'Macroeconomics': 5, 'kw_SalesVolume': 2, 'SalesVolume': 2})
+87 ge12_ge-s-credit-downgraded-at-fitch-outlook-remains-negative.txt anno_01
+Counter({'all': 9, 'no_part': 6, 'FinancialReport': 2, 'Macroeconomics': 1})
+88 gm04_gm-to-add-850-new-jobs-in-arlington-via-supplier-park.txt anno_01
+Counter({'all': 8, 'no_part': 3, 'kw_generic_event': 1, 'Macroeconomics_no_affcomp': 1, 'Profit/Loss': 1, 'SalesVolume': 1, 'Macroeconomics': 1})
+89 amzn04_3-reasons-amazon-is-nt-done-growing-yet.txt anno_02
+Counter({'all': 8, 'Macroeconomics': 3, 'Revenue': 3, 'kw_SalesVolume': 1, 'SalesVolume': 1})
+90 fox01_fox-sports-buys-impression-bolsters-naming-rights-sales.txt anno_01
+Counter({'all': 8, 'kw_SalesVolume': 3, 'Macroeconomics': 3, 'no_part': 1, 'CSR/Brand': 1})
+91 aal13_american-airlines-pilots-agree-on-solution-to-staff-december-f.txt anno_01
+Counter({'all': 8, 'no_part': 6, 'CSR/Brand': 2})
+92 amd12_2-risks-amd-investors-should-nt-ignore.txt anno_02
+Counter({'all': 8, 'Macroeconomics': 6, 'kw_generic_event': 1, 'CSR/Brand': 1})
+93 dis00_disney-world-s-big-transformation-is-10-days-away.txt anno_03
+Counter({'all': 8, 'CSR/Brand': 3, 'no_part': 2, 'Product/Service_no_part': 1, 'Macroeconomics': 1, 'SalesVolume': 1})
+94 f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+Counter({'all': 8, 'SalesVolume': 3, 'FinancialReport': 2, 'kw_generic_event': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics': 1})
+95 ge11_ge-s-stock-bounces-sharply-to-pace-dow-gainers.txt anno_01
+Counter({'all': 8, 'Macroeconomics': 3, 'no_part': 2, 'typology_error': 1, 'SalesVolume': 1, 'FinancialReport': 1})
+96 amzn06_amazon-to-buy-whole-foods-for-137-billion.txt anno_03
+Counter({'all': 8, 'Macroeconomics': 6, 'kw_SalesVolume': 1, 'Macroeconomics_no_affcomp': 1})
+97 bac02_bank-of-america-still-lags-us-banking-peers-in-terms-of-core-c.txt anno_03
+Counter({'all': 8, 'FinancialReport': 4, 'Macroeconomics': 2, 'kw_Product/Service': 1, 'Profit/Loss': 1})
+98 aapl02_apple-is-following-google-into-making-a-custom-ai-chip.txt anno_03
+Counter({'all': 8, 'Macroeconomics': 7, 'kw_generic_event': 1})
+99 fb10_facebook-s-workplace-is-gaining-ground-as-it-prepares-to-pounce.txt anno_02
+Counter({'all': 8, 'Macroeconomics': 5, 'SalesVolume': 2, 'Macroeconomics_no_affcomp': 1})
+100 abbv12_top-biotech-stock-near-buy-zone-shows-positive-drug-trial-resu.txt anno_03
+Counter({'all': 7, 'Macroeconomics': 2, 'Revenue': 2, 'kw_generic_event': 1, 'Macroeconomics_no_affcomp': 1, 'Profit/Loss': 1})
+101 goog00_google-thinks-beyond-ads-at-annual-developer-conference.txt anno_02
+Counter({'all': 7, 'Macroeconomics': 3, 'kw_generic_event': 1, 'no_part': 1, 'Revenue': 1, 'CSR/Brand': 1})
+102 f12_ford-increasing-electric-vehicle-investment-to-11-billion-by-2.txt anno_02
+Counter({'all': 7, 'CSR/Brand': 4, 'no_part': 2, 'kw_SalesVolume': 1})
+103 nflx00_netflix-headed-to-90-million-users.txt anno_02
+Counter({'all': 7, 'SalesVolume': 4, 'kw_Profit/Loss': 2, 'FinancialReport': 1})
+104 msft02_microsoft-corp-expanding-its-sa-footprint-with-50m-new-constr.txt anno_03
+Counter({'all': 7, 'no_part': 3, 'kw_Expense': 2, 'Product/Service_no_part': 1, 'Macroeconomics': 1})
+105 ba08_boeing-s-stock-may-have-flown-too-high.txt anno_01
+Counter({'all': 7, 'no_part': 2, 'Macroeconomics': 2, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1, 'FinancialReport': 1})
+106 celg03_waltham-based-dragonfly-inks-collaboration-with-celgene-bags.txt anno_03
+Counter({'all': 7, 'no_part': 2, 'Revenue': 2, 'Macroeconomics': 2, 'Product/Service_no_part': 1})
+107 goog11_earnings-preview-what-to-expect-from-alphabet-on-thursday.txt anno_03
+Counter({'all': 7, 'no_part': 2, 'FinancialReport': 2, 'kw_generic_event': 1, 'Profit/Loss': 1, 'Revenue': 1})
+108 msft03_microsoft-surprises-nobody-with-xbox-one-x-price.txt anno_03
+Counter({'all': 6, 'Macroeconomics': 3, 'kw_Expense': 1, 'CSR/Brand': 1, 'SalesVolume': 1})
+109 duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+Counter({'all': 6, 'Revenue': 3, 'Profit/Loss': 2, 'kw_Revenue': 1})
+110 amzn01_jeff-bezos-fortune-continues-to-soar-as-amazon-stock-reaches-n.txt anno_02
+Counter({'all': 6, 'no_part': 2, 'SalesVolume': 2, 'CSR/Brand': 2})
+111 amd08_why-advanced-micro-devices-inc-shares-gained-115-in-june.txt anno_02
+Counter({'all': 6, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics': 2, 'kw_Product/Service': 1, 'no_part': 1})
+112 celg01_i-still-ca-nt-believe-juno-therapeutics-spent-464-million-on.txt anno_02
+Counter({'all': 6, 'CSR/Brand': 2, 'kw_Product/Service': 1, 'no_part': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics': 1})
+113 amzn11_22-million-amazon-echo-smart-speakers-to-be-sold-in-2017-drivi.txt anno_03
+Counter({'all': 6, 'SalesVolume': 3, 'kw_Expense': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics': 1})
+114 wfc01_new-york-city-bars-wells-fargo-from-banking-work-after-scandals.txt anno_03
+Counter({'all': 6, 'CSR/Brand': 3, 'kw_SalesVolume': 2, 'no_part': 1})
+115 aapl04_three-reasons-apple-s-shares-took-a-drubbing.txt anno_03
+Counter({'all': 6, 'Macroeconomics': 3, 'kw_SalesVolume': 1, 'no_part': 1, 'Macroeconomics_no_affcomp': 1})
+116 dis09_disney-elects-gm-ceo-barra-to-board-amid-iger-succession-hunt.txt anno_01
+Counter({'all': 6, 'no_part': 3, 'Macroeconomics': 2, 'CSR/Brand': 1})
+117 amzn09_amazon-and-whole-foods-are-dropping-prices-this-will-change-gr.txt anno_03
+Counter({'all': 6, 'Macroeconomics': 3, 'no_part': 2, 'Product/Service_no_part': 1})
+118 fb00_facebook-to-be-fined-in-eu-probe-over-whatsapp-takeover.txt anno_03
+Counter({'all': 6, 'Macroeconomics': 3, 'no_part': 2, 'CSR/Brand': 1})
+119 ba09_boeing-787-production-increase-is-good-news-for-aerospace-but.txt anno_01
+Counter({'all': 6, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics': 2, 'Product/Service_no_part': 1, 'no_part': 1})
+120 ge10_ge-s-stock-tumbles-toward-second-6-session-losing-streak-this-m.txt anno_01
+Counter({'all': 6, 'no_part': 2, 'kw_Profit/Loss': 1, 'Macroeconomics_no_affcomp': 1, 'FinancialReport': 1, 'Macroeconomics': 1})
+121 aapl07_apple-leak-reveals-massive-iphone-8-cancellation.txt anno_03
+Counter({'all': 6, 'no_part': 2, 'CSR/Brand': 2, 'Product/Service_no_part': 1, 'SalesVolume': 1})
+122 t12_will-the-att-time-warner-deal-go-through.txt anno_03
+Counter({'all': 6, 'no_part': 5, 'kw_SalesVolume': 1})
+123 ba03_boeing-wins-contract-to-build-darpa-xs-1-experimental-space-plan.txt anno_03
+Counter({'all': 6, 'kw_Product/Service': 4, 'Macroeconomics': 2})
+124 pg00_companies-spurned-by-supreme-court-on-1-billion-michigan-tax-c.txt anno_03
+Counter({'all': 6, 'Macroeconomics': 3, 'no_part': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics_no_part': 1})
+125 chk02_the-hot-stock-chesapeake-energy-jumps-43.txt anno_01
+Counter({'all': 5, 'Macroeconomics': 2, 'kw_SalesVolume': 1, 'Macroeconomics_no_affcomp': 1, 'Profit/Loss': 1})
+126 jnj01_jj-s-zytiga-boosts-survival-in-new-severe-prostate-cancers.txt anno_03
+Counter({'all': 5, 'kw_Product/Service': 1, 'Product/Service_no_part': 1, 'no_part': 1, 'Revenue': 1, 'Macroeconomics': 1})
+127 amd07_amd-reveals-epyc-details-intel-vows-to-top-it.txt anno_02
+Counter({'all': 5, 'Macroeconomics': 3, 'kw_Product/Service': 1, 'CSR/Brand': 1})
+128 aal08_airberlin-goes-bankrupt-soon-after-announcing-major-chicago-expa.txt anno_02
+Counter({'all': 5, 'CSR/Brand': 2, 'kw_generic_event': 1, 'Product/Service_no_part': 1, 'no_part': 1})
+129 abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+Counter({'all': 5, 'kw_generic_event': 2, 'Revenue': 2, 'FinancialReport': 1})
+130 amd14_amd-nvidia-stocks-fall-after-analyst-warns-cryptocurrency-mark.txt anno_02
+Counter({'all': 5, 'Macroeconomics_no_affcomp': 2, 'Macroeconomics': 2, 'kw_Revenue': 1})
+131 amd10_amd-radeon-vega-gets-company-back-into-high-value-gpu-markets-an.txt anno_02
+Counter({'all': 5, 'Macroeconomics': 2, 'kw_Revenue': 1, 'Revenue': 1, 'SalesVolume': 1})
+132 ge05_general-electric-can-aviation-make-it-fly.txt anno_02
+Counter({'all': 5, 'kw_Profit/Loss': 3, 'Profit/Loss': 1, 'Revenue': 1})
+133 goog06_google-age-discrimination-lawsuit-nearly-300-people-have-signe.txt anno_03
+Counter({'no_part': 4, 'all': 4})
+134 amd02_amd-s-financial-analyst-day-2017-on-the-cusp-of-greatness-aga.txt anno_03
+Counter({'all': 4, 'no_part': 1, 'Profit/Loss': 1, 'Revenue': 1, 'Macroeconomics': 1})
+135 ba13_boeing-applauds-tax-bill-with-300-million-workforce-related-an.txt anno_03
+Counter({'all': 4, 'CSR/Brand': 3, 'no_part': 1})
+136 msft01_microsoft-revamped-skype-to-look-like-snapchat.txt anno_03
+Counter({'all': 4, 'Product/Service_no_part': 2, 'no_part': 2})
+137 aal05_underdog-brazilian-carrier-avianca-brasil-takes-on-american-on-m.txt anno_02
+Counter({'all': 4, 'Macroeconomics': 3, 'Revenue': 1})
+138 fb04_mark-zuckerberg-just-sold-425-million-of-facebook-stock.txt anno_03
+Counter({'all': 4, 'CSR/Brand': 3, 'kw_SalesVolume': 1})
+139 f01_how-hackett-will-manage-ford-as-he-tries-to-steer-the-automaker.txt anno_03
+Counter({'all': 4, 'Macroeconomics': 3, 'kw_generic_event': 1})
+140 goog09_good-news-for-google-s-legal-fight-with-the-eu.txt anno_03
+Counter({'all': 4, 'no_part': 3, 'Macroeconomics': 1})
+141 amd06_amd-s-stock-tumbles-bringing-win-streak-to-an-abrupt-end.txt anno_02
+Counter({'all': 4, 'no_part': 1, 'Macroeconomics_no_affcomp': 1, 'CSR/Brand': 1, 'Macroeconomics': 1})
+142 amd09_nvidia-and-amd-must-brace-for-competition-from-a-super-powerful.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 5.285714285714286, 'tok/ev': 79.28571428571429, 'ev': 7, 'sen': 37, 'tok': 555}
+Counter({'Macroeconomics': 4, 'all': 4})
+143 goog05_alphabet-s-nest-brings-smart-devices-to-australian-homes.txt anno_03
+Counter({'all': 4, 'kw_Product/Service': 2, 'no_part': 1, 'Macroeconomics': 1})
+144 fox04_fox-to-sell-6-second-ads.txt anno_01
+Counter({'all': 3, 'CSR/Brand': 2, 'kw_Revenue': 1})
+145 t14_att-s-tax-cut-bonus-is-nt-just-a-gimmick.txt anno_03
+Counter({'all': 3, 'kw_generic_event': 1, 'no_part': 1, 'Macroeconomics': 1})
+146 amd03_amd-s-stock-slumps-after-ceo-pooh-poohed-speculation-of-intel-l.txt anno_03
+Counter({'all': 3, 'Macroeconomics': 2, 'no_part': 1})
+147 abbv00_abbvie-demonstrates-leadership-in-gastroenterology-and-hepatolog.txt anno_03
+Counter({'all': 3, 'Macroeconomics': 2, 'kw_Product/Service': 1})
+148 duk02_duke-energy-doles-out-11-m-in-water-resources-grants.txt anno_02
+Counter({'all': 3, 'CSR/Brand': 2, 'no_part': 1})
+149 aapl00_apple-s-stock-price-target-gets-a-boost-on-increased-iphone-sal.txt anno_03
+Counter({'SalesVolume': 3, 'all': 3})
+150 pg02_pg-ceo-says-it-is-in-ongoing-constructive-active-talks-wi.txt anno_03
+Counter({'all': 3, 'Macroeconomics': 2, 'kw_SecurityValue': 1})
+151 aal06_american-airlines-name-affixed-to-a-new-wrigley-field-conferen.txt anno_02
+Counter({'CSR/Brand': 3, 'all': 3})
+152 abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+Counter({'all': 3, 'kw_SalesVolume': 2, 'SalesVolume': 1})
+153 dis07_disney-joins-ar-fray-with-200-star-wars-ar-headset.txt anno_02
+Counter({'all': 3, 'kw_Product/Service': 1, 'Macroeconomics_no_affcomp': 1, 'Macroeconomics': 1})
+154 jnj02_jj-drug-prevents-heart-attacks-at-cost-of-amputated-toes.txt anno_01
+Counter({'all': 3, 'kw_Product/Service': 1, 'CSR/Brand': 1, 'Macroeconomics': 1})
+155 wfc00_wells-fargo-found-liable-in-abusive-tax-shelter-scheme.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 8.75, 'tok/ev': 184.5, 'ev': 4, 'sen': 35, 'tok': 738}
+Counter({'all': 3, 'kw_Product/Service': 1, 'no_part': 1, 'CSR/Brand': 1})
+156 duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 8.6, 'tok/ev': 237.4, 'ev': 5, 'sen': 43, 'tok': 1187}
+Counter({'kw_generic_event': 3, 'all': 3})
+157 f09_top-ford-execs-leaving-as-hackett-reshapes-the-automaker-for-the.txt anno_02
+Counter({'all': 2, 'kw_SalesVolume': 1, 'Macroeconomics': 1})
+158 cost01_costco-adds-fresh-breads-from-bakery-spurned-by-starbucks.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 12.5, 'tok/ev': 267.5, 'ev': 2, 'sen': 25, 'tok': 535}
+Counter({'kw_SalesVolume': 2, 'all': 2})
+159 duk00_fuel-savings-and-improved-air-quality-highlight-duke-energy-s-t.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 10.5, 'tok/ev': 315.0, 'ev': 2, 'sen': 21, 'tok': 630}
+Counter({'CSR/Brand': 2, 'all': 2})
+160 amd05_amd-s-stock-surges-on-heavy-volume-as-gpu-product-demand-fuels.txt anno_02
+Counter({'SalesVolume': 2, 'all': 2})
+161 duk03_duke-posts-full-qa-from-controversial-online-only-shareholder-m.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 25.0, 'tok/ev': 556.0, 'ev': 2, 'sen': 50, 'tok': 1112}
+Counter({'all': 2, 'kw_generic_event': 1, 'CSR/Brand': 1})
+162 jnj00_johnson-johnson-plans-to-file-for-approval-10-potential-blockb.txt anno_02
+Counter({'all': 2, 'SalesVolume': 1, 'Macroeconomics': 1})
+163 amzn10_nokia-amazon-work-signals-public-cloud-telecom-takeover-says-w.txt anno_03
+Counter({'Macroeconomics': 2, 'all': 2})
+164 wmt00_why-analysts-opinion-about-walmart-improved-after-1q18-results.txt anno_01
+Counter({'all': 2, 'kw_Expense': 1, 'FinancialReport': 1})
+165 fb14_facebook-s-wary-dance-with-the-beltway.txt anno_02
+Counter({'all': 2, 'kw_generic_event': 1, 'SalesVolume': 1})
+166 abbv05_abbvie-ordered-by-jury-to-pay-15-million-to-depakote-victim.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 5.5, 'tok/ev': 125.0, 'ev': 4, 'sen': 22, 'tok': 500}
+Counter({'kw_Product/Service': 2, 'all': 2})
+167 amzn05_amazon-expects-to-hire-at-least-1000-at-its-new-troutdale-facil.txt anno_03
+Counter({'all': 2, 'no_part': 1, 'Macroeconomics': 1})
+168 goog08_google-begins-biggest-crackdown-on-extremist-youtube-videos.txt anno_03 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 8.666666666666666, 'tok/ev': 220.66666666666666, 'ev': 3, 'sen': 26, 'tok': 662}
+Counter({'CSR/Brand': 2, 'all': 2})
+169 fb12_facebook-to-hire-800-new-workers-in-london.txt anno_02
+Counter({'all': 2, 'kw_generic_event': 1, 'no_part': 1})
+170 cvx03_chevron-shielded-from-9-billion-verdict.txt anno_01
+Counter({'all': 2, 'kw_generic_event': 1, 'no_part': 1})
+171 aal09_american-airlines-flight-attendants-blast-pittsburgh-airport-pla.txt anno_02
+Counter({'all': 2, 'CSR/Brand': 1, 'Macroeconomics': 1})
+172 amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+Counter({'kw_generic_event': 2, 'all': 2})
+173 aapl08_apple-vs-qualcomm-the-itc-is-in-it.txt anno_03
+Counter({'all': 2, 'no_part': 1, 'Macroeconomics': 1})
+174 goog01_alphabet-s-waymo-adds-semi-trucks-to-its-driverless-vehicle-por.txt anno_02
+Counter({'Macroeconomics': 1, 'all': 1})
+175 aapl06_apple-aims-to-get-an-ipad-in-the-hands-of-every-hospital-patient.txt anno_03 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 12.5, 'tok/ev': 344.5, 'ev': 2, 'sen': 25, 'tok': 689}
+Counter({'CSR/Brand': 1, 'all': 1})
+176 nflx12_netflix-raising-16-billion-in-bond-market-to-fuel-content-acq.txt anno_02
+Counter({'kw_Product/Service': 1, 'all': 1})
+177 pg04_pg-names-vice-chairman-promotes-two-other-top-executives.txt anno_03
+Counter({'kw_Expense': 1, 'all': 1})
+178 ba12_underappreciated-why-boeing-s-astronomical-rise-might-not.txt anno_03
+Counter({'Macroeconomics': 1, 'all': 1})
+179 cmg01_chipotle-names-scott-boatwright-chief-restaurant-officer.txt anno_03
+Counter({'kw_generic_event': 1, 'all': 1})
+180 aal07_american-airlines-stock-rallies-after-second-upgrade-in-two-da.txt anno_02
+Counter({'kw_Revenue': 1, 'all': 1})
+181 goog03_google-leak-reveals-massive-pixel-2-cancellation.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 11.5, 'tok/ev': 301.5, 'ev': 2, 'sen': 23, 'tok': 603}
+Counter({'kw_Product/Service': 1, 'all': 1})
+182 msft04_microsoft-ventures-a-look-at-redmond-s-latest-13-investments.txt anno_01
+Counter({'kw_SalesVolume': 1, 'all': 1})
+183 nflx13_netflix-cuts-ties-with-kevin-spacey.txt anno_02
+Counter({'kw_Product/Service': 1, 'all': 1})
+184 chk01_what-are-the-short-interest-trends-in-chesapeake-energy-stock.txt anno_01
+Counter({'Macroeconomics': 1, 'all': 1})
+185 t03_att-acquisition-of-time-warner-will-not-be-blocked-by-trump-c.txt anno_03
+Counter({'no_part': 1, 'all': 1})
++------------------------+
+|  KEYWORDS DOCUMENTS TO INSPECT  |
++------------------------+
+0 f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt anno_02
+Counter({'kw_SalesVolume': 29})
+1 cost00_costco-makes-gains-despite-retailer-gloom-with-upbeat-earnings.txt anno_02
+Counter({'kw_SalesVolume': 12})
+2 gm02_general-motors-sales-slip-on-rental-fleet-cutbacks.txt anno_03
+Counter({'kw_SalesVolume': 10})
+3 f02_ford-ekes-out-a-sales-gain-on-pickups-and-fleet-deliveries.txt anno_01
+Counter({'kw_SalesVolume': 8})
+4 cost03_costco-exceeds-expectations-in-sales-and-earnings-will-open-1.txt anno_02
+Counter({'kw_SalesVolume': 7})
+5 gs04_goldman-sachs-goes-mr-roboto-on-debt-sales.txt anno_01
+Counter({'kw_SalesVolume': 7})
+6 gm03_general-motors-cadillac-sales-are-booming-in-china.txt anno_03
+Counter({'kw_SalesVolume': 6})
+7 bac01_what-to-expect-from-bac-and-peers-in-2017.txt anno_03
+Counter({'kw_Profit/Loss': 5})
+8 dis12_disney-s-fiscal-2017-in-review.txt anno_01
+Counter({'kw_Profit/Loss': 5})
+9 gm00_who-gets-a-for-leadership-tesla-or-gm.txt anno_03
+Counter({'kw_Profit/Loss': 5})
+10 cvx01_has-chevron-s-trading-in-refined-products-surged.txt anno_01
+Counter({'kw_SalesVolume': 5})
+11 aal10_american-airlines-marks-down-third-quarter-guidance.txt anno_01
+Counter({'kw_Revenue': 4})
+12 amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+Counter({'kw_SalesVolume': 4})
+13 fb05_is-the-market-undervaluing-facebook-stock.txt anno_01
+Counter({'kw_generic_event': 4})
+14 ba03_boeing-wins-contract-to-build-darpa-xs-1-experimental-space-plan.txt anno_03
+Counter({'kw_Product/Service': 4})
+15 gm06_gm-doubles-down-on-diesel-as-2018-equinox-gets-39-mpg-rating-5.txt anno_01
+Counter({'kw_SalesVolume': 4})
+16 cvx00_chevron-investors-back-off-from-climate-change-proposal.txt anno_01
+Counter({'kw_generic_event': 4})
+17 abbv08_abbvie-shares-surge-2-on-q2-profit-revenue-beats.txt anno_02
+Counter({'kw_Revenue': 3})
+18 amzn08_why-amazoncom-inc-stock-is-up-35-this-year.txt anno_03
+Counter({'kw_generic_event': 3})
+19 fb08_facebook-stock-offers-40-upside.txt anno_01
+Counter({'kw_generic_event': 3})
+20 ge02_a-simple-ge-trade-for-long-suffering-investors.txt anno_02
+Counter({'kw_generic_event': 3})
+21 ge05_general-electric-can-aviation-make-it-fly.txt anno_02
+Counter({'kw_Profit/Loss': 3})
+22 wmt01_a-look-at-walmart-s-valuation-after-fiscal-1q18-results.txt anno_01
+Counter({'kw_SalesVolume': 3})
+23 kmi01_what-enterprise-products-could-offer-income-investors.txt anno_01
+Counter({'kw_Profit/Loss': 3})
+24 goog02_google-execs-hunker-down-for-summer-fight-with-eu-as-fines-loom.txt anno_02
+Counter({'kw_SalesVolume': 3})
+25 duk01_regulators-to-duke-energy-do-you-still-want-the-lee-nuclear-pl.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 8.6, 'tok/ev': 237.4, 'ev': 5, 'sen': 43, 'tok': 1187}
+Counter({'kw_generic_event': 3})
+26 aapl12_apple-s-stock-jumps-after-keybanc-upgrade-to-buy-rating.txt anno_01
+Counter({'kw_SalesVolume': 3})
+27 t13_att-and-time-warner-would-expletive-deleted-competitors-s.txt anno_03
+Counter({'kw_Product/Service': 3})
+28 fox01_fox-sports-buys-impression-bolsters-naming-rights-sales.txt anno_01
+Counter({'kw_SalesVolume': 3})
+29 nflx04_why-analysts-expect-netflix-s-global-membership-base-to-grow.txt anno_01
+Counter({'kw_generic_event': 3})
+30 aapl09_tech-stocks-this-week-iphone-8-rumors-samsung-s-note-return.txt anno_01
+Counter({'kw_Product/Service': 2})
+31 abbv04_is-this-dividend-aristocrat-ridiculously-undervalued.txt anno_01
+Counter({'kw_SalesVolume': 2})
+32 amd13_advanced-micro-sell-says-morgan-stanley-expectations-too-h.txt anno_02
+Counter({'kw_generic_event': 2})
+33 cost01_costco-adds-fresh-breads-from-bakery-spurned-by-starbucks.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 12.5, 'tok/ev': 267.5, 'ev': 2, 'sen': 25, 'tok': 535}
+Counter({'kw_SalesVolume': 2})
+34 dis08_disney-stock-defies-ho-hum-earnings.txt anno_02
+Counter({'kw_generic_event': 2})
+35 dis10_stocks-in-red-that-might-produce-some-green.txt anno_01
+Counter({'kw_Product/Service': 2})
+36 f00_ford-to-cut-1400-jobs-as-pressure-grows-on-profits.txt anno_02
+Counter({'kw_SalesVolume': 2})
+37 fb01_facebook-inc-s-instagram-wants-to-beat-snapchat-with-executi.txt anno_03
+Counter({'kw_Profit/Loss': 2})
+38 fb07_facebook-turns-to-original-tv-content-with-new-watch-tab.txt anno_01
+Counter({'kw_Profit/Loss': 2})
+39 ge01_ge-drops-after-immelt-predicts-challenges-to-hit-2018-targets.txt anno_01
+Counter({'kw_generic_event': 2})
+40 ge09_ge-s-expected-q3-profit-surge-may-be-overshadowed-by-dividend-f.txt anno_01
+Counter({'kw_generic_event': 2})
+41 gm10_general-motors-this-ai-nt-the-autobahn.txt anno_02
+Counter({'kw_Profit/Loss': 2})
+42 nflx00_netflix-headed-to-90-million-users.txt anno_02
+Counter({'kw_Profit/Loss': 2})
+43 t02_att-s-directv-now-went-flat-after-january-report-says.txt anno_03
+Counter({'kw_generic_event': 2})
+44 t06_att-inc-is-running-out-of-room-to-grow-what-s-next.txt anno_02
+Counter({'kw_Revenue': 2})
+45 wmt04_here-s-why-the-best-is-yet-to-come-for-wal-mart-stores-inc.txt anno_01
+Counter({'kw_SalesVolume': 2})
+46 nflx01_netflix-s-stock-is-worth-only-about-one-third-of-where-it-trade.txt anno_02
+Counter({'kw_generic_event': 2})
+47 abbv05_abbvie-ordered-by-jury-to-pay-15-million-to-depakote-victim.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 5.5, 'tok/ev': 125.0, 'ev': 4, 'sen': 22, 'tok': 500}
+Counter({'kw_Product/Service': 2})
+48 celg00_why-shares-of-biopharma-giant-celgene-lrb-celg-rrb-tumbled-t.txt anno_02
+Counter({'kw_Profit/Loss': 2})
+49 jnj03_johnson-johnson-s-type-2-diabetes-drug-is-stellar-in-cardiova.txt anno_02
+Counter({'kw_SalesVolume': 2})
+50 aal03_american-airlines-reports-load-factor-increase-in-may-shares-g.txt anno_03
+Counter({'kw_Revenue': 2})
+51 aapl03_will-the-iphone-8-help-apple-boost-its-market-share.txt anno_03
+Counter({'kw_generic_event': 2})
+52 abbv07_abbvie-has-the-most-valuable-late-stage-pipeline-but-is-its-s.txt anno_02
+Counter({'kw_generic_event': 2})
+53 abbv09_abbvie-scores-2-wins-1-threatens-regeneron.txt anno_02
+Counter({'kw_SalesVolume': 2})
+54 ge00_what-s-behind-ge-s-move-from-the-connecticut-suburbs-to-boston.txt anno_03
+Counter({'kw_Expense': 2})
+55 goog05_alphabet-s-nest-brings-smart-devices-to-australian-homes.txt anno_03
+Counter({'kw_Product/Service': 2})
+56 msft02_microsoft-corp-expanding-its-sa-footprint-with-50m-new-constr.txt anno_03
+Counter({'kw_Expense': 2})
+57 ba00_boeing-delivers-its-first-737-max-just-as-planned.txt anno_02
+Counter({'kw_Product/Service': 2})
+58 goog12_with-its-india-first-approach-google-is-trying-to-woo-the-comm.txt anno_02
+Counter({'kw_Product/Service': 2})
+59 pg03_pg-ceo-david-taylor-helps-launch-massive-diversity-initiative-i.txt anno_03
+Counter({'kw_Product/Service': 2})
+60 aal11_us-airlines-are-still-too-darn-cheap-and-unpopular-to-boot.txt anno_01
+Counter({'kw_SalesVolume': 2})
+61 cmg03_chipotle-removes-malware-after-breach-strikes-payment-systems.txt anno_03
+Counter({'kw_SalesVolume': 2})
+62 gm09_will-gm-s-top-selling-suv-take-a-hit-from-canadian-strike.txt anno_02
+Counter({'kw_SalesVolume': 2})
+63 wfc01_new-york-city-bars-wells-fargo-from-banking-work-after-scandals.txt anno_03
+Counter({'kw_SalesVolume': 2})
+64 wfc03_wells-fargo-eliminates-management-roles-in-embattled-community-b.txt anno_03
+Counter({'kw_generic_event': 2})
+65 fb11_how-facebook-can-monetize-whatsapp.txt anno_02
+Counter({'kw_generic_event': 2})
+66 fb03_facebook-says-controversial-data-sharing-policy-is-indispensab.txt anno_03
+Counter({'kw_generic_event': 2})
+67 aal00_american-airlines-up-on-record-april-traffic-upbeat-q2-view.txt anno_01
+Counter({'kw_generic_event': 1})
+68 aal07_american-airlines-stock-rallies-after-second-upgrade-in-two-da.txt anno_02
+Counter({'kw_Revenue': 1})
+69 aapl01_here-are-the-six-dow-stocks-experts-say-have-the-most-upside.txt anno_01
+Counter({'kw_Profit/Loss': 1})
+70 aapl05_did-apple-just-make-best-buy-a-better-buy.txt anno_03
+Counter({'kw_generic_event': 1})
+71 aapl10_apple-s-rain-of-cash-washes-away-debt-doubts.txt anno_01
+Counter({'kw_Expense': 1})
+72 abbv06_abbvie-stock-just-hit-a-52-week-high-here-s-why-it-should-go.txt anno_02
+Counter({'kw_generic_event': 1})
+73 abbv11_abbvie-overpromises.txt anno_03
+Counter({'kw_Profit/Loss': 1})
+74 abbv13_the-hot-stock-biggest-loser-abbvie-wynn-resorts.txt anno_03
+Counter({'kw_Revenue': 1})
+75 amd00_how-well-has-amd-delivered-on-their-2015-financial-analyst-day-p.txt anno_03
+Counter({'kw_SalesVolume': 1})
+76 amd01_why-amd-investors-should-nt-lose-faith.txt anno_03
+Counter({'kw_generic_event': 1})
+77 ba07_at-more-than-200-a-share-is-boeing-still-a-buy-1-analyst-t.txt anno_01
+Counter({'kw_Rating': 1})
+78 ba10_reduce-holdings-on-boeing-and-3-other-defense-stocks-pre-earning.txt anno_03
+Counter({'kw_generic_event': 1})
+79 celg04_why-celgene-is-bucking-biotech-weakness-today.txt anno_01
+Counter({'kw_Revenue': 1})
+80 chk00_was-the-merrill-lynch-downgrade-of-chesapeake-justified.txt anno_01
+Counter({'kw_generic_event': 1})
+81 cmg00_chipotle-cfo-says-we-were-losing-our-edge-even-before-ecoli.txt anno_03
+Counter({'kw_Profit/Loss': 1})
+82 cmg02_why-you-re-smart-to-buy-chipotle.txt anno_03
+Counter({'kw_SalesVolume': 1})
+83 cmg04_chipotle-is-betting-on-digital.txt anno_03
+Counter({'kw_Product/Service': 1})
+84 dis02_disney-earnings-give-a-look-at-how-espn-is-facing-the-future.txt anno_03
+Counter({'kw_generic_event': 1})
+85 duk04_piedmont-natural-gas-a-money-maker-for-duke-energy-in-first-full.txt anno_02
+Counter({'kw_Revenue': 1})
+86 f10_these-3-auto-stocks-are-hovering-near-buy-points-but-gm-tesl.txt anno_02
+Counter({'kw_generic_event': 1})
+87 fb13_facebook-s-profit-rises-but-users-spend-less-time-on-network.txt anno_02
+Counter({'kw_generic_event': 1})
+88 ge07_pratt-s-10-billion-jet-engine-lags-ge-by-10-to-1-on-new-order.txt anno_02
+Counter({'kw_generic_event': 1})
+89 goog00_google-thinks-beyond-ads-at-annual-developer-conference.txt anno_02
+Counter({'kw_generic_event': 1})
+90 goog07_alphabet-s-dive-continues-after-a-weak-earnings-report.txt anno_03
+Counter({'kw_generic_event': 1})
+91 goog11_earnings-preview-what-to-expect-from-alphabet-on-thursday.txt anno_03
+Counter({'kw_generic_event': 1})
+92 nem00_are-gold-miners-on-track-to-achieve-2017-production-guidance.txt anno_01
+Counter({'kw_Profit/Loss': 1})
+93 nflx12_netflix-raising-16-billion-in-bond-market-to-fuel-content-acq.txt anno_02
+Counter({'kw_Product/Service': 1})
+94 pg01_razor-wars-continue-gillette-cut-by-old-time-rival.txt anno_01
+Counter({'kw_generic_event': 1})
+95 aapl13_stocks-mixed-this-california-builder-breaks-out-what-to-watc.txt anno_01
+Counter({'kw_generic_event': 1})
+96 abbv10_abbvie-you-re-upgrading-it-now.txt anno_03
+Counter({'kw_SalesVolume': 1})
+97 ba05_boeing-defense-to-cut-50-executive-jobs-in-management-shakeup.txt anno_01
+Counter({'kw_Product/Service': 1})
+98 dis11_disney-earnings-buying-fox-would-nt-a-bad-idea.txt anno_01
+Counter({'kw_Profit/Loss': 1})
+99 ge13_ge-is-beating-some-headwinds-but-is-it-enough.txt anno_01
+Counter({'kw_Expense': 1})
+100 wfc00_wells-fargo-found-liable-in-abusive-tax-shelter-scheme.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 8.75, 'tok/ev': 184.5, 'ev': 4, 'sen': 35, 'tok': 738}
+Counter({'kw_Product/Service': 1})
+101 aapl11_disappointing-new-iphones-reveal-a-scared-and-greedy-apple.txt anno_01
+Counter({'kw_Product/Service': 1})
+102 abbv03_the-2-best-dividend-stocks-in-marijuana.txt anno_03
+Counter({'kw_generic_event': 1})
+103 amzn02_3-reasons-why-amazon-is-scary-to-netflix.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 13.0, 'tok/ev': 253.66666666666666, 'ev': 3, 'sen': 39, 'tok': 761}
+Counter({'kw_SalesVolume': 1})
+104 ge10_ge-s-stock-tumbles-toward-second-6-session-losing-streak-this-m.txt anno_01
+Counter({'kw_Profit/Loss': 1})
+105 bac00_bank-of-america-wants-to-make-it-easier-for-you-to-get-a-mortgag.txt anno_01
+Counter({'kw_Expense': 1})
+106 cost02_costco-not-all-beats-are-created-equal.txt anno_02
+Counter({'kw_generic_event': 1})
+107 ge08_will-general-electric-sell-more-assets-to-maintain-its-dividend.txt anno_02
+Counter({'kw_generic_event': 1})
+108 kmi02_why-long-term-investors-should-prefer-kinder-morgan-inc-over-ene.txt anno_02
+Counter({'kw_generic_event': 1})
+109 wmt02_walmart-taps-store-associates-for-last-mile-delivery-program.txt anno_01
+Counter({'kw_SalesVolume': 1})
+110 amd04_what-impacted-advanced-micro-devices-stock-in-may-2017.txt anno_03
+Counter({'kw_Revenue': 1})
+111 amd10_amd-radeon-vega-gets-company-back-into-high-value-gpu-markets-an.txt anno_02
+Counter({'kw_Revenue': 1})
+112 amd14_amd-nvidia-stocks-fall-after-analyst-warns-cryptocurrency-mark.txt anno_02
+Counter({'kw_Revenue': 1})
+113 amzn03_amazon-will-be-a-top-5-grocer-in-the-us-with-whole-foods-a.txt anno_02
+Counter({'kw_SalesVolume': 1})
+114 amzn04_3-reasons-amazon-is-nt-done-growing-yet.txt anno_02
+Counter({'kw_SalesVolume': 1})
+115 cvx02_chevron-s-management-looks-like-it-s-changing-its-capital-spen.txt anno_01
+Counter({'kw_generic_event': 1})
+116 dis04_disney-s-global-theme-parks-saw-attendance-decline-in-2016-bu.txt anno_02
+Counter({'kw_generic_event': 1})
+117 fox04_fox-to-sell-6-second-ads.txt anno_01
+Counter({'kw_Revenue': 1})
+118 gs00_goldman-flexes-its-lending-muscles.txt anno_01
+Counter({'kw_SalesVolume': 1})
+119 msft04_microsoft-ventures-a-look-at-redmond-s-latest-13-investments.txt anno_01
+Counter({'kw_SalesVolume': 1})
+120 nflx11_netflix-stock-seesaws-after-third-quarter-subscriber-beat.txt anno_02
+Counter({'kw_generic_event': 1})
+121 aal01_900m-investment-at-phl-to-bring-new-traffic-control-tower-re.txt anno_01
+Counter({'kw_generic_event': 1})
+122 amzn11_22-million-amazon-echo-smart-speakers-to-be-sold-in-2017-drivi.txt anno_03
+Counter({'kw_Expense': 1})
+123 duk03_duke-posts-full-qa-from-controversial-online-only-shareholder-m.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 25.0, 'tok/ev': 556.0, 'ev': 2, 'sen': 50, 'tok': 1112}
+Counter({'kw_generic_event': 1})
+124 gm12_investors-impressed-by-general-motors-self-driving-car-but-m.txt anno_02
+Counter({'kw_Product/Service': 1})
+125 goog10_worse-than-krack-google-and-microsoft-hit-by-massive-5-ye.txt anno_03
+Counter({'kw_generic_event': 1})
+126 jnj02_jj-drug-prevents-heart-attacks-at-cost-of-amputated-toes.txt anno_01
+Counter({'kw_Product/Service': 1})
+127 msft03_microsoft-surprises-nobody-with-xbox-one-x-price.txt anno_03
+Counter({'kw_Expense': 1})
+128 pg04_pg-names-vice-chairman-promotes-two-other-top-executives.txt anno_03
+Counter({'kw_Expense': 1})
+129 t14_att-s-tax-cut-bonus-is-nt-just-a-gimmick.txt anno_03
+Counter({'kw_generic_event': 1})
+130 wmt00_why-analysts-opinion-about-walmart-improved-after-1q18-results.txt anno_01
+Counter({'kw_Expense': 1})
+131 amd08_why-advanced-micro-devices-inc-shares-gained-115-in-june.txt anno_02
+Counter({'kw_Product/Service': 1})
+132 amd11_reviews-confirm-with-radeon-rx-vega-amd-re-enters-the-performa.txt anno_02
+Counter({'kw_SalesVolume': 1})
+133 amd12_2-risks-amd-investors-should-nt-ignore.txt anno_02
+Counter({'kw_generic_event': 1})
+134 f09_top-ford-execs-leaving-as-hackett-reshapes-the-automaker-for-the.txt anno_02
+Counter({'kw_SalesVolume': 1})
+135 amd07_amd-reveals-epyc-details-intel-vows-to-top-it.txt anno_02
+Counter({'kw_Product/Service': 1})
+136 bac02_bank-of-america-still-lags-us-banking-peers-in-terms-of-core-c.txt anno_03
+Counter({'kw_Product/Service': 1})
+137 cvx03_chevron-shielded-from-9-billion-verdict.txt anno_01
+Counter({'kw_generic_event': 1})
+138 dis05_euro-disney-dis-gains-control-plans-to-delist.txt anno_02
+Counter({'kw_generic_event': 1})
+139 dis07_disney-joins-ar-fray-with-200-star-wars-ar-headset.txt anno_02
+Counter({'kw_Product/Service': 1})
+140 fox03_weekend-box-office-wonder-woman-opened-even-bigger-than-we.txt anno_01
+Counter({'kw_Product/Service': 1})
+141 goog03_google-leak-reveals-massive-pixel-2-cancellation.txt anno_02 !!!!!!!!!!! <= CHECK IF FULLY ANNOTATED {'sen/ev': 11.5, 'tok/ev': 301.5, 'ev': 2, 'sen': 23, 'tok': 603}
+Counter({'kw_Product/Service': 1})
+142 nflx13_netflix-cuts-ties-with-kevin-spacey.txt anno_02
+Counter({'kw_Product/Service': 1})
+143 wmt03_wal-mart-s-sam-s-club-reinvents-its-private-brand.txt anno_01
+Counter({'kw_Product/Service': 1})
+144 abbv00_abbvie-demonstrates-leadership-in-gastroenterology-and-hepatolog.txt anno_03
+Counter({'kw_Product/Service': 1})
+145 celg01_i-still-ca-nt-believe-juno-therapeutics-spent-464-million-on.txt anno_02
+Counter({'kw_Product/Service': 1})
+146 jnj01_jj-s-zytiga-boosts-survival-in-new-severe-prostate-cancers.txt anno_03
+Counter({'kw_Product/Service': 1})
+147 pg02_pg-ceo-says-it-is-in-ongoing-constructive-active-talks-wi.txt anno_03
+Counter({'kw_SecurityValue': 1})
+148 celg02_celgene-s-stock-may-be-incredibly-overvalued-right-now-here.txt anno_01
+Counter({'kw_SalesVolume': 1})
+149 dis06_disney-what-s-worth-more-than-a-movie-ticket.txt anno_02
+Counter({'kw_Rating': 1})
+150 aapl04_three-reasons-apple-s-shares-took-a-drubbing.txt anno_03
+Counter({'kw_SalesVolume': 1})
+151 abbv02_neupogen-and-enbrel-could-see-falling-revenues-in-2017.txt anno_03
+Counter({'kw_SalesVolume': 1})
+152 amzn06_amazon-to-buy-whole-foods-for-137-billion.txt anno_03
+Counter({'kw_SalesVolume': 1})
+153 chk02_the-hot-stock-chesapeake-energy-jumps-43.txt anno_01
+Counter({'kw_SalesVolume': 1})
+154 f01_how-hackett-will-manage-ford-as-he-tries-to-steer-the-automaker.txt anno_03
+Counter({'kw_generic_event': 1})
+155 f12_ford-increasing-electric-vehicle-investment-to-11-billion-by-2.txt anno_02
+Counter({'kw_SalesVolume': 1})
+156 fb04_mark-zuckerberg-just-sold-425-million-of-facebook-stock.txt anno_03
+Counter({'kw_SalesVolume': 1})
+157 gm04_gm-to-add-850-new-jobs-in-arlington-via-supplier-park.txt anno_01
+Counter({'kw_generic_event': 1})
+158 gs01_goldman-sachs-under-fire-for-venezuela-bond-deal-that-critics-sa.txt anno_01
+Counter({'kw_SalesVolume': 1})
+159 nem01_inside-barrick-gold-s-production-growth.txt anno_03
+Counter({'kw_SalesVolume': 1})
+160 t01_att-leapfrogs-exxon-mobil-as-largest-public-company-in-texas.txt anno_03
+Counter({'kw_SalesVolume': 1})
+161 t12_will-the-att-time-warner-deal-go-through.txt anno_03
+Counter({'kw_SalesVolume': 1})
+162 wfc02_wells-fargo-s-nyse-wfc-headaches-mount-as-justice.txt anno_01
+Counter({'kw_generic_event': 1})
+163 aal08_airberlin-goes-bankrupt-soon-after-announcing-major-chicago-expa.txt anno_02
+Counter({'kw_generic_event': 1})
+164 abbv12_top-biotech-stock-near-buy-zone-shows-positive-drug-trial-resu.txt anno_03
+Counter({'kw_generic_event': 1})
+165 fb06_facebook-posts-strong-q2-as-arpu-grows-across-geographies.txt anno_01
+Counter({'kw_generic_event': 1})
+166 fox00_berkshire-cuts-21st-century-fox-stake-adjusts-airline-bets.txt anno_01
+Counter({'kw_generic_event': 1})
+167 aapl02_apple-is-following-google-into-making-a-custom-ai-chip.txt anno_03
+Counter({'kw_generic_event': 1})
+168 cmg01_chipotle-names-scott-boatwright-chief-restaurant-officer.txt anno_03
+Counter({'kw_generic_event': 1})
+169 fb02_a-look-at-facebook-s-fastest-growing-market.txt anno_03
+Counter({'kw_generic_event': 1})
+170 fb12_facebook-to-hire-800-new-workers-in-london.txt anno_02
+Counter({'kw_generic_event': 1})
+171 fb14_facebook-s-wary-dance-with-the-beltway.txt anno_02
+Counter({'kw_generic_event': 1})
+172 ge06_ge-stock-breaks-down-to-lower-channel-support.txt anno_02
+Counter({'kw_generic_event': 1})
+173 gs02_dow-s-late-afternoon-surge-into-record-territory-powered-by-gol.txt anno_01
+Counter({'kw_generic_event': 1})
+174 nflx03_how-wall-street-analysts-view-netflix.txt anno_01
+Counter({'kw_generic_event': 1})
+175 nflx14_just-ca-nt-get-enough-netflix-subscriptions-could-grow-despit.txt anno_02
+Counter({'kw_generic_event': 1})
+176 t05_how-att-s-acquisition-of-twx-could-provide-targeted-advertisin.txt anno_02
+Counter({'kw_generic_event': 1})
++------------------------+
+|  DOCUMENTS +50 SEN  |
++------------------------+
+amzn07_amazoncom-just-crushed-department-store-stocks-again-with-prime.txt anno_02
+dis07_disney-joins-ar-fray-with-200-star-wars-ar-headset.txt anno_02
+goog12_with-its-india-first-approach-google-is-trying-to-woo-the-comm.txt anno_02
