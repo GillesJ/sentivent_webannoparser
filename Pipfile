@@ -25,6 +25,8 @@ lexicalrichness = "*"
 textblob = "*"
 dill = "*"
 xlsxwriter = "*"
+requests = "*"
+jupyter = "*"
 
 [dev-packages]
 
