@@ -1,0 +1,34 @@
+2 Risks AMD Investors Should n't Ignore
+NVIDIA and Intel can seize the initiative back from AMD .
+Advanced Micro Devices wowed investors with its second-quarter report in late July , thanks to market share gains in central processing units CPUs and strong graphics processing unit GPU sales that were driven by cryptocurrency-related demand .
+The company has done well so far to gain market share in areas dominated by NVIDIA and Intel , powered by a revamped product lineup targeting both high-end and mainstream PCs .
+But AMD management believes that the company is n't done yet , as its recently launched products , such as the EPYC server chips , have yet to show their true potential .
+Additionally , AMD still has n't launched chips for the notebook PC market , so there is a chance that it might continue gaining more market share .
+Now , it wo n't be surprising if AMD manages to make a deeper dent in its target markets .
+But this is n't going to be a cakewalk , as both NVIDIA and Intel are stepping up their game to ward off AMD 's threat .
+Intel is trying cut AMD to size in CPUs
+Intel has ceded some of its CPU market share to AMD lately , but Chipzilla has come up with a smart strategy to fight back .
+The first batch of Intel 's recently launched eighth-generation Core chips are aimed at the notebook PC market , while AMD 's consumer-grade Ryzen Mobile and commercial-grade mobile Ryzen PRO chips wo n't hit the market until early next year .
+This gives Intel a time advantage over AMD .
+What could hurt AMD even more is that the new eighth-generation chips will be used in more than 145 laptop and notebook designs from various manufacturers , with the first wave of devices hitting the market in September .
+This is n't surprising as original equipment manufacturers OEMs would ideally want to update their devices with the latest hardware before the onset of the holiday season , when sales are traditionally strong .
+Additionally , OEMs are also aware of the fact that over 450 million devices in circulation are older than five years .
+So , they did n't waste much time in committing to Intel 's latest generation chip , as it promises twice the performance of those old computers .
+AMD might have missed an opportunity here by waiting so long before bringing its notebook-centric CPUs to the market .
+This could bite AMD in the long run , as notebook PCs are estimated to account for 40.4 % of personal computing devices in four years ' time , while the share of desktop PCs will shrink to 36 % .
+Vega might not be good enough
+AMD has built a lot of hype around its Vega GPUs , promising that they have the potential to take on NVIDIA in the premium end of the market .
+This could be the icing on the cake for AMD after its aggressively priced Polaris GPUs managed to shake NVIDIA 's dominance in the mainstream market .
+But it turns out that AMD might not find similar success in the high-end market .
+AMD 's RX Vega 64 GPU , priced at $ 499 , is supposed to compete with NVIDIA 's GTX 1080 , which is priced the same .
+Though the performance of the GPUs is almost identical , as pointed out by my Foolish colleague Timothy Green , AMD 's card consumes a lot more power when compared to NVIDIA 's .
+Therefore , the RX Vega 64 will be costlier to run .
+Of course , AMD is offering a liquid-cooled version of the GPU , but this will increase the price by $ 200 .
+Moreover , investors should also note that the Vega is being compared to a NVIDIA graphics card that 's more than a year old .
+The GTX 1080 was launched in May last year , and NVIDIA followed it up with a refreshed GTX 1080 Ti this year that promises a 35 % performance boost .
+The refreshed NVIDIA GPU has a starting price of $ 699 , so it wo n't be surprising if consumers go for this card in place of the liquid-cooled RX Vega 64 that sells for an identical amount .
+What 's more , it is rumored that AMD is losing money on each RX Vega 64 GPU sold at its suggested price of $ 499 .
+The chipmaker is reportedly struggling because of higher component pricing due to availability issues of high bandwidth memory , which makes AMD a risky bet , as Vega 's success might not result in any bottom-line gain .
+The Foolish bottom line
+AMD seems to have handed over the initiative to NVIDIA with the Vega launch , while Intel has moved swiftly to capture the notebook PC market .
+This could hurt AMD 's growth in the upcoming quarters .

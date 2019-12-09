@@ -1,0 +1,19 @@
+As states test waters , AT&T hopes to catch all with FirstNet first responder network
+States have started exploring alternatives to the $ 40-billion nationwide first responder network in the works by AT&T , but the Dallas telco has no interest in letting them wiggle away .
+While state suitors push to make the opt-out process easier , AT&T is arguing to maintain standards it says are stringent for a reason , to protect the `` enormously high stakes '' of the issue at hand , according to a Federal Communication Commission filing .
+The opt out procedures are set to go before the FCC at its June open meeting , and AT&T and FirstNet will present their draft plans to the states around June 19 .
+The government-backed project FirstNet earlier this year awarded AT&T $ 6.5 billion plus 20 MHz of spectrum to support the buildout of a nationwide network for first responders , an initiative that has ties to the 9/11 Commission .
+The company pledges $ 40 billion over the life of the 25-year contract .
+While the network will on first priority be made available to first responders , it 's attractive from a business standpoint for its ability to serve AT&T 's commercial needs .
+As a part of the statute that created FirstNet , states are able to opt out of the nationwide network and fund their own comparable statewide networks .
+None have so far committed to doing so , but a handful of states have asked outside companies to submit proposals for alternative networks .
+`` Joining the FirstNet network is one of the most economical and technologically advanced decisions a leader can make for its state , '' said Chris Sambar , senior vice president for AT&T -- FirstNet , in a statement to the Dallas Business Journal .
+`` The sooner an opt-in decision is made , the sooner we can begin providing services to the state and its public safety community . ''
+Sambar said states that opt-in could start to see benefits of AT&T 's existing network for their first responders as soon as this year .
+On AT&T 's side is the process for opting out , which is both strenuous and complex .
+A state 's plan has to meet interoperability requirements and obtain Federal Communications Commission approval , as well as secure a lease for the required spectrum from the National Telecommunications and Information Administration .
+If the FCC denies the state 's plan , the state can appeal to the U.S. District Court in D.C. Companies seeking business from opt-out states -- including companies like Rivada Networks , which lost out on the FirstNet contract to AT&T -- are not happy with the stringent requirements , which they say are giving states pause .
+Points of contention range from whether states can operate their own core networks to the deadlines for FCC review .
+AT&T has outwardly maintained confidence that states will come around and that even the RFPs some have issued are n't reason for concern .
+`` I think once the states have an opportunity to evaluate in totality what it means to be in and what would be necessary to be out , I think it 's a very compelling proposition for the states to join , '' said John Donovan , who heads AT&T Technology and Operations , at a recent conference .
+`` We expect that most if not all will . ''

@@ -1,0 +1,17 @@
+Microsoft Corp. expanding its SA footprint with $ 50M new construction
+Microsoft Corp. continues to invest in its San Antonio data center clusters , including about $ 50 million for a new building near its Westover Hills computer server farm , according to state construction documents .
+The Redmond , Washington-based technology company is tapping Dallas-based Corgan Associates to design a cooling facility along Rogers Road , the same firm that has designed other local data center buildings for Microsoft in the past .
+The new cooling facility on the 5100 block of Rogers Road is expected to be completed in September .
+The facility is for cooling a 256,000 square foot data center in Westover Hills .
+It opened in 2015 and cost about $ 80 million to build , according to public documents .
+The central utility building will hold water cooled centrifugal chillers and other mechanical and electrical infrastructure so the existing data centers will have expanded cooling capacity .
+Microsoft has four data centers in San Antonio .
+Two are in Westover Hills and two new ones -- built in 2016 -- on the far West side inside the Texas Research Park just north of Highway 90 and south of Potranco Road .
+The assessed value of the far West San Antonio Microsoft data center operation in 2017 is $ 26.8 million for 95 acres .
+The pair of 159,000 square foot data centers with 17,000 square feet and 28,000 square feet of retail office space respectively opened in May on the far West side -- each data center cost about $ 90 million to construct .
+Microsoft has the sixth largest total of taxable property in Bexar County with $ 587 million in market value as of 2016 and $ 374 million in taxable value , records show .
+The difference is due to a significant tax abatement as part of economic incentive agreements with local government entities .
+Microsoft sells its own version of private cloud computing , called Microsoft Azure .
+In July 2015 , Rackspace Hosting Inc. signed an agreement with Microsoft that enables the San Antonio-based company to sell Microsoft Azure to customers and customer support for the migration and maintenance of those computer servers .
+It was not immediately clear how many customers the Microsoft data centers are currently supporting .
+Microsoft representatives did not respond to requests for comment for this story .

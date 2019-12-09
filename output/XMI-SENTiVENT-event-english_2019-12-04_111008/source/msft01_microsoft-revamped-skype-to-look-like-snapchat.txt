@@ -1,0 +1,10 @@
+Microsoft revamped Skype to look like Snapchat
+In the biggest upgrade since the service added video calling in 2006 , Microsoft has completely rebuilt Skype from the ground up `` to make experiencing life together , every day , simpler , '' the company said in a blog post .
+This next-generation Skype enables users to liven up their chats with personalized colors and reaction icons .
+Like Snapchat , the camera is a swipe away with the ability to add text , doodles , and stickers to photos and videos before sharing them with individuals or groups .
+And the service has introduced its very own Stories feature , though in this case it 's called Highlights , where users can share their everyday moments with followers .
+Highlights is a little different from Snapchat 's and Instagram 's and Facebook 's Stories in that the photos and videos stay up for a week rather than 24 hours , and they 're available to followers who specifically subscribe to your Highlights rather than your entire social network , reported TechCrunch .
+Followers can also react to Highlights with emojis .
+Other features on the all-new Skype include the ability to search across the app and pull add-ins and bots into conversations .
+For example , users chatting on Skype to plan a weekend getaway can tap the Expedia bot right in the group chat to check flight times and pricing .
+The new Skype is rolling out to Android devices over the coming weeks and will be available on iOS in about a month , with Windows and Mac desktop as well as Xbox coming this summer .

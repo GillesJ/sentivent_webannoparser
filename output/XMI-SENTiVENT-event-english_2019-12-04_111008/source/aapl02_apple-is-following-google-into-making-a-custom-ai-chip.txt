@@ -1,0 +1,26 @@
+Apple Is Following Google Into Making A Custom AI Chip
+Artificial intelligence has begun seeping its way into every tech product and service .
+Now , companies are changing the underlying hardware to accommodate this shift .
+Apple is the latest company creating a dedicated AI processing chip to speed up the AI algorithms and save battery life on its devices , according to Bloomberg .
+The Bloomberg report said the chip is internally known as the Apple Neural Engine and will be used to assist devices for facial and speech recognition tasks .
+The latest iPhone 7 runs some of its AI tasks related to photographer using the image signal processor and the graphics processing unit integrated on its A10 Fusion chip .
+But by having a more dedicated processor to more efficiently run those algorithms , Apple could speed up the image recognition as well as save reduce drain on the iPhone 's battery .
+Bloomberg said Apple plans on integrating the chip `` many of its devices '' and has tested the chip in prototypes of future iPhones .
+Apple wants to use the chip for tasks like facial recognition in the photos app , speech recognition and the predictive keyboard .
+Apple will also offer developers access to the chip for running various AI tasks on third-party iOS apps , Bloomberg said .
+The move is not surprising .
+Many tech companies are experimenting with various hardware approaches to optimize for deep learning , a popular branch of AI that involves training large networks on vast quantities of data to recognize patterns .
+Right now , graphics expert Nvidia is an early leader .
+Its GPUs , which are traditionally used for generating computer graphics , are the dominant platform for training deep learning algorithms .
+Google has been deploying a custom chip , called the Tensor Processing Unit , throughout its backend and will start offering it to outside companies through the Google Cloud with the second-generation chip , called the Cloud TPU .
+Most of these AI services are currently computing in the cloud .
+Voice-powered speakers made by Amazon and Google , for example , need to be connected to the internet in order to ship voice data to huge clusters of computers to run deep learning algorithms over the data .
+But increasingly , the deep learning algorithms need to start running what 's also known as `` inferencing '' on the devices themselves to reduce latency and improve privacy .
+`` Apple has to do more inferencing on the device to protect people 's privacy , '' said tech analyst Patrick Moorhead .
+In contrast , `` Google does everything up in the cloud . ''
+Qualcomm , a dominant chipmaker for Android smartphones , has begun optimizing its Snapdragon processors for various deep learning frameworks .
+Qualcomm runs these algorithms on a digital signal processor .
+Apple is regarded as lagging behind the progress rival techs giants like Google , Amazon and Microsoft have made in AI .
+For example , Apple was an early entry in the voice AI assistants when Siri was introduced in 2011 , but both Google and Amazon have jumped far ahead with voice assistant technology powering their AI-enabled speakers , Google Home and Amazon Echo .
+Apple is rumored to be working on its own Siri-enabled speaker .
+Apple did n't respond to a request for comment .

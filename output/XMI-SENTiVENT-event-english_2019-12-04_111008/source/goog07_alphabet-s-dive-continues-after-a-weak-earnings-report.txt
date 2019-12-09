@@ -1,0 +1,35 @@
+Alphabet 's Dive Continues After a Weak Earnings Report
+What was so bad in Alphabet 's earnings that it sent the giant company down a whole 3 % in one day ?
+Alphabet reported quarterly earnings last week , and even though earnings per share and revenue beat estimates , the stock dropped significantly on weak performance in some other key metrics .
+In this Industry Focus : Tech segment , host Dylan Lewis is joined by two summer interns to go over the most important numbers from the call , which metrics are trending in the wrong direction , and how worried investors should be about it .
+A full transcript follows the video .
+This video was recorded on July 28 , 2017 .
+Dylan Lewis : Why do n't we start out talking about what we saw from Alphabet this quarter ?
+This is Google 's parent , one of the first big tech names to release earnings this quarter .
+Looking at the results , the company posted $ 26 billion in revenue , up over 20 % and beating expectations by a few hundred million .
+EPS was a little fuzzier for the company .
+They had some one-time items that caused some issues with that metric .
+Excluding those , EPS came in at $ 8.90 per share , beating estimates .
+Of course , the company had to recognize that one-time item , the $ 2.7 billion charge after being fined by the European Commission for some antitrust practices which brought actual EPS down to $ 5 , also beating expectations .
+All that said -- all those great top-line and bottom-line numbers -- shares actually took a 3 % dip .
+What were some of the issues that the market was seeing in these results , guys ?
+Connor Lott : I think there 's a couple metrics that analysts were looking for to continually improve over the next couple quarters , and they were soft , a little bit .
+CPC , cost per click , which is an important metric that reflects how much Google gets for ads , was down 23 % year over year , and 6 % quarter over quarter .
+That was n't measuring up to what was expected .
+Additionally , traffic acquisition cost , or TAC , amounted to $ 5.09 billion , which was higher than analyst projections of $ 4.75 billion , which is up to 22 % of advertising revenue from 21 % a year ago .
+Basically , CPC , which should be up , went down ; and TAC , which should be down , went up .
+So , it 's not entirely worrisome right now for Alphabet , but analysts are looking a little bit down the road and saying this could impact the enormous revenues that are coming in from Google .
+Lewis : The CPC story is one that 's been playing out for a while .
+As the company , and really the world , transitions to mobile browsing rather than desktop browsing , we 've seen CPCs come down .
+I think analysts were expecting it to be somewhere in the teens as it dropped , and instead it came in at that 20 % figure .
+So , I think that 's why you see some of that reaction .
+The flip side of that , and why the company has been able to continue to grow that top line , is because more people are connected ; it 's easier to just have a phone or something like that , and be on the internet .
+The company has been able to make it up on volume for quite some time .
+Aneesh Susarla : I think you really characterized that perfectly .
+When more people are continuing to use mobile devices for browsing , Google is really going to have to figure out how it can continue to drive revenue growth and ensure that advertisers are best characterized with mobile revenue .
+Lewis : Yeah .
+So , I think some of those concerns are warranted .
+I am a believer that they will figure that out , as the ad giant , and probably one of the two biggest sources of digital ad spend .
+I 'm not too concerned about it , but definitely something to be mindful of .
+The reason that it 's such a concern is , looking at how Alphabet makes its money , $ 25.8 billion in revenue of that $ 26 billion figure -LSB- is -RSB- coming from Google and the internet properties .
+So , it 's understandable that people are a little worried about that CPC trend .

@@ -1,0 +1,20 @@
+AMD 's Financial Analyst Day 2017 : On The Cusp Of Greatness Again ?
+I attended Advanced Micro Devices ' Financial Analyst Day ( FAD ) last Tuesday at their headquarters in Sunnyvale , CA .
+While I am not a financial analyst , but rather an industry analyst , I am looking for different signals than that audience , but I have found the financial analyst conferences very informative .
+AMD has a history of making big announcements at their analyst events , it had n't had FAD in two years , it has been on a bit of a roll as of late , so I was n't going to miss it .
+I wrote about the degree at which AMD delivered on their promises from their last Financial Analyst Day in 2015 , which you can find here .
+For this column , I 'd like to spend some time here on AMD 's FAD announcements , their importance and my opinion .
+CEO Lisa Su kicks it off
+Lisa Su set the bar high , stressing AMD 's commitment to providing `` high performance '' technologies by setting ambitious goals for the company expanding all the way into 2020 .
+The year 2020 may seem like a long way , but it 's nothing in the chip business .
+Of note , do n't confuse `` high performance computing '' with `` HPC '' as what AMD is saying here is it has the plan to stay in the high-performance product tiers that have much higher prices and margins .
+AMD 's purpose of FAD was to unveil their plans for high performance computing , high performance PCs , Radeon graphics , and what they call the `` new era of the datacenter '' .
+Going forward , 2017 looks to be a huge product year for AMD as they plan to launch several new products in June which it hopes expand margins , revenue growth , and drive profitability .
+A few things stand in the way of AMD , companies like Intel and NVIDIA , who of course , have success plans of their own .
+Historically speaking , it 's dangerous to ignore AMD , and those who have , lived to regret it .
+I 'm seeing a different AMD right now , one who has the most goods I 've seen from them in a decade and they have confidence and clearly nothing to lose .
+`` High performance computing for the long haul ''
+CTO Mark Papermaster got on stage after Su to discuss AMD 's future building blocks and the glue that binds them .
+Papermaster reinforced the core of AMD lies in `` high performance computing '' whether it 's the cloud , gaming , or commercial markets and it all starts with the high-tech `` salad bar '' my words ingredients that need to be assembled into real products down the road .
+AMD released long-term CPU and GPU core roadmaps that expanded through 2020 and I believe these are much more than fantasy bullets on a slide , as Lisa Su is creating an execution machine .
+AMD for sure is on the guard against looking like a `` one hit wonder '' and will need to provide more roadmap insight than their competitors given their share status .

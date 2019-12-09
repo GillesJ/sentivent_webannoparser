@@ -1,0 +1,20 @@
+Microsoft 's Cloud Can Be as Big as Amazon 's , More Profitable , Says Bernstein
+A Bernstein survey shows Microsoft is eclipsing Amazon AWS in terms of use by enterprise CIOs .
+Microsoft ( MSFT ) has risen dramatically in two years among cloud computing customers , according to a report today by Bernstein 's Mark Moerdler , and its Azure unit may now have a higher customer count among enterprise users than does Amazon 's ( AMZN ) AWS service .
+The implication is that Azure may ultimately reach the same size in revenue as AWS , Moerdler thinks , while having better operating profit margin .
+Moerdler , who rates Microsoft stock Outperform , with a $ 100 price target , draws upon the work of his colleague Toni Sacconaghi , who follows Apple ( AAPL ) and other hardware names , and who yesterday released a survey he conducted in November of 105 chief information officers in the U.S. and Europe .
+The results of that survey are shown in the info-graphic displayed at the top of this post .
+Comparing how many CIOs use Azure shows a dramatic step up in usage percentage for Azure versus the same study two years earlier , writes Moerdler : 
+After being used by only 21 % of the CIOs surveyed in the May 2015 edition , Microsoft Azure has expanded to 59 % of CIOs surveyed in the most recent survey .
+This compares to AWS which had percentages of 31 % and 55 % , respectively .
+This suggests Azure 's customer count could be equal to or more than AWS among enterprise users .
+One implication is that Azure revenue will continue to rise by 90 % or so every quarter , year over year , for several quarters to come , he writes .
+Moerdler writes that he `` sees no reason to believe Azure or the Commercial Cloud overall will significantly decelerate . ''
+Another is that Microsoft probably can still wring lots more revenue from each customer :
+One argument we may hear : `` If Azure is already in 60 % of enterprises , how much longer is its runway for growth ? ''
+We would remind investors that while Azure may be used by more enterprises compared to AWS , AWS is still 3-4x the size of Azure from a revenue standpoint .
+This suggests the revenue per customer is still significantly higher at AWS ( at least among enterprises-level customers ) .
+We believe Azure has had success in driving customer adoption of the service and now has an opportunity to drive significant growth in revenue per customer while continuing to drive new customer growth .
+As a result of pulling more revenue from each customer , `` Azure revenue will grow toward Amazon AWS revenue , '' predicts Moerdler , and `` in the future their revenues could be similar . ''
+`` We would also argue that since a larger percentage of Azure revenue is PaaS than AWS as revenues converge , Microsoft could have potentially better margins . ''
+Microsoft shares today are up 38 cents , or half a percent , at $ 85.61 .

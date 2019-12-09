@@ -1,0 +1,45 @@
+Facebook 's Profit Rises , but Users Spend Less Time on Network
+Facebook Inc. 's dominance in digital advertising powered another surge in quarterly profit , though it said users were starting to shave back their time on its platform as it tries to address critics ' claims that the social network has harmful effects .
+The company said its profit , excluding a $ 3.19 billion tax charge , soared 61 % in the fourth quarter , typically the heaviest spending period for advertisers .
+About $ 2.27 billion of the charge stemmed from the U.S. tax overhaul .
+That financial momentum is now being challenged .
+In January , Chief Executive Mark Zuckerberg said he has resolved to fix problems that threaten to damage the company he co-founded in 2004 , even if it sacrifices profitability , including discouraging users from passively consuming content found in their news feed .
+Those changes -- including showing fewer viral videos in the latest quarter -- reduced the collective time Facebook users spend on the platform by about 5 % , or 50 million hours a day , in the three-month period , Mr. Zuckerberg said .
+That decline translates to a little more than two minutes a day on average for each of the company 's 1.4 billion daily users .
+Mr. Zuckerberg said he expects users are more likely to stick around for ads if they like what they are seeing .
+`` When you care about something , you 're willing to see ads to experience it , '' he said on a conference call with analysts .
+`` But if you just come across a viral video , then you 're more likely to skip over it if you see an ad . ''
+On Wednesday , Facebook 's stock fell about 5 % in after-hours trading shortly after the earnings report was released .
+But the stock recovered from those losses during the analyst call , and was up about 1.5 % to $ 189.70 .
+The shares have risen about 43 % over the past 12 months .
+Facebook acknowledged the first-ever quarter-to-quarter decline in the number of users who log in to the service daily in its most lucrative market , the U.S. and Canada .
+Facebook lost about 700,000 daily users in that market to total about 184 million , though it gained 33 million globally .
+David Wehner , Facebook 's financial chief , said he expects daily active users to fluctuate given the large numbers but said Facebook does n't `` see this as an ongoing trend . ''
+Still , Facebook 's revenue leapt 47 % to $ 12.97 billion , and it managed to extract nearly $ 6 more revenue per user in the latest three months , a 26 % increase .
+The average price per ad rose 43 % .
+The growth underscores Facebook 's still potent ability to attract new users and advertising dollars even as it confronts crises that have forced the company to rethink the way it feeds content to roughly a quarter of the world 's population .
+Critics of Facebook contend the company has allowed hate speech , violent live videos and fabricated news articles to spread on its platform , harming people 's mental health and enabling bad actors to sway political discourse .
+Several early Facebook employees and executives including venture capitalist Chamath Palihapitiya and former president Sean Parker have in recent months to expressed concern about social-media addiction .
+Salesforce.com Inc. Chief Executive Marc Benioff went so far as to liken social media to cigarettes .
+Some advertisers and ad agencies have joined the chorus in criticizing Facebook for failing to police its platform .
+They are also still wary of its video-ad products after the company disclosed a series of mistakes in the way it calculated advertising performance starting in the fall of 2016 .
+Facebook accounted for about 17 % of the global digital-ad market last year , behind Alphabet Inc. 's Google , which accounted for 32 % , according to data from eMarketer .
+The issues have compelled Facebook executives , including Mr. Zuckerberg , to look inward and acknowledge the platform needs to change .
+Facebook last fall outlined plans to double the number of employees and contractors who handle safety and security issues to 20,000 by the end of 2018 .
+And in January , Facebook said it would start favoring posts that sparked discussion among users at the expense of news , video and other types of content that typically perform well in its news feed but encourage the kind of passive use of Facebook 's platform that the company is trying to minimize .
+To improve news quality on its site , Facebook is starting to rank publisher posts in the U.S. based on user evaluations of trustworthiness .
+Facebook has said the change will benefit `` broadly trusted '' publications .
+On Wednesday , Mr. Zuckerberg referenced The Wall Street Journal and the New York Times as examples of publications that are both well-known and generally regarded as `` high-quality journalism . ''
+This type of sentiment typically signals content that is `` unlikely to be polarizing , that is unlikely to be false news , '' he said .
+It remains unclear whether these moves will help the company repair its image among users and advertisers as well as stave off further regulation .
+Analysts say many Facebook users in the U.S. are alreadystarting to spend less time on the site .
+The last time Facebook provided a global figure for time spent on the site , in April 2016 , it said users collectively spent 50 minutes a day on Facebook , its Instagram service and Messenger .
+According to a recent Pivotal Research analysis of Nielsen data , Facebook 's U.S. users spent 7 % less time on the site in August compared with a year ago and 4.7 % less time in September .
+Tech rivals , including Amazon.com Inc. , are starting to encroach on Facebook 's territory in digital advertising .
+And there are broader , more existential challenges .
+Last fall , several U.S. lawmakers raised the prospect of further regulating Facebook after the company disclosed that Russian-backed actors had used its tools to foment U.S. social divisions during and after the 2016 presidential election .
+Last week , at an event at the World Economic Forum in Davos , Switzerland , the billionaire George Soros said Facebook and Alphabet Inc. have far-reaching consequences for the health of democracy .
+Facebook itself acknowledged the risks in a blog post this month that noted social media amplified both good and bad intentions .
+For now , the intensifying debate over Facebook 's future does n't appear to have undercut the company 's financial performance .
+Facebook 's results surpassed analyst expectations of $ 1.94 per share , excluding the charge , and revenue of $ 12.55 billion , according to FactSet .
+During Wednesday 's call , Facebook executives said the average price per ad rose 43 % in the fourth quarter while total supply rose just 4 % .

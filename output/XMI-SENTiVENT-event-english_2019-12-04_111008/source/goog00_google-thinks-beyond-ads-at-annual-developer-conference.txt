@@ -1,0 +1,28 @@
+Google Thinks Beyond Ads at Annual Developer Conference
+- Google 's digital Assistant embraces voice-based ordering
+- A new chip feeds its cloud service , not the search business 
+Google has been trying to move beyond advertising for some time , with mixed results .
+At its annual I/O developer conference this year , the company multiplied efforts to make money in different ways .
+Google rarely mentions ads during its annual developer show .
+But products unveiled at past events usually fed that business , either directly or indirectly .
+This year , the most-important innovations support , or hint at , different revenue streams .
+Google got 87 percent of first-quarter revenue from ads , compared to almost 90 percent a year earlier .
+Google 's ad businesses keep growing , so its other revenue sources have to expand even faster .
+The first news Google Chief Executive Officer Sundar Pichai shared during his keynote on Wednesday was one of the company 's first chips designed in-house .
+A few years ago , that would have been used to improve online search results and generate more revenue from the text-based search ads that have been the company 's lifeblood .
+Instead , Pichai said the component will underpin new cloud-computing services that other companies will pay to rent .
+He also highlighted Google 's digital Assistant , saying the voice-based service is increasingly influencing how the company designs its search service .
+Later in the day , another Google executive , Valerie Nygaard , unveiled new features that let users order and pay for food and other items through the Assistant .
+That gives Google the chance to make money by taking a small cut of future voice-based transactions , rather than just relying on new types of ads .
+Indeed , Pichai said in a recent earnings conference call that business models for the Assistant `` will be different than what we have today . ''
+The company 's popular Photos app got its first revenue-generating feature at the event , and it also has nothing to do with ads .
+Users will be able to order physical books of their favorite albums , starting at $ 9.99 .
+Alphabet Inc. 's Google is pursuing different business models , in part because it has become so dominant in digital ads .
+That limits future growth opportunities .
+Online ads are prone to blocking technology , and can also be more sensitive to economic cycles than subscription offerings like cloud services .
+Looming over these initiatives is Amazon.com Inc. , which is grabbing more lucrative shopping searches from Google and is more experienced generating revenue from non-advertising businesses like e-commerce and cloud services .
+Amazon is a particularly potent rival in the emerging voice-based commerce business .
+The company 's Alexa digital assistant is already taking orders though Amazon Echo speakers .
+It also has existing digital payments systems , a network of warehouses and multiple delivery options to get purchased goods to shoppers .
+Google was n't built on an e-commerce foundation , Michael Facemire , an analyst at Forrester Research said .
+`` That holds them back . ''

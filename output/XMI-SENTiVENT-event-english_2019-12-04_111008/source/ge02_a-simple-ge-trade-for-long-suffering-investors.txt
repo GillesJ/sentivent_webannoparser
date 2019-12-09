@@ -1,0 +1,30 @@
+A Simple GE Trade for Long-Suffering Investors
+When GE gets into a funk , so do legions of investors .
+As one of America 's most-widely held stocks , General Electric 's ticker : GE recent drop below $ 30 to near a 52-week low is causing pain .
+Investors who have held the stock since its 2000 peak are in profound pain , as shares have tumbled more than 50 % since then . One way to deal with the latest weakness -- and it does seem the stock will be stuck near $ 28 for a while -- is to sell upside calls against shares .
+The strategy is called overwriting , an odd name that merely means someone owns a stock and sells calls against the position .
+This classic trading strategy is widely used to generate returns on moribund stocks .
+With GE at $ 28 , investors would sell the September $ 30 call for 26 cents .
+If the stock is below the call strike price at expiration , investors can keep the money received for selling the call .
+The company pays an annual dividend of 96 cents the stock yields 3.4 % so within that context the call premium is a meaningful number .
+If the trade is done four times a year , investors can collect a conditional dividend of $ 1.04 .
+What is the condition of the dividend-like payment ?
+A willingness to sell the stock at the strike price , and give up any potential gains .
+The trade has some key drawbacks .
+The amount of money received for selling the call is not huge .
+Some would say that the premium does not do enough to offset the risk that anyone who sells a call is obligated to sell the stock at the call 's strike price .
+If the stock trades at $ 30 or higher when the options expire , the stock will be exercised and sold .
+To prevent the exercise , investors can buy back the short call to close out the position .
+Though the stock has ranged over the past 52 weeks from $ 27.10 to $ 33 , and charts suggest shares could drop into a lower trading range , the stock has upside potential .
+The trade has some event risk .
+GE is scheduled to report second-quarter earnings on July 21 .
+A good report -- even though it may seem unlikely today -- could move the stock through the call strike price .
+The company also will participate in a series of bank conferences that provide ample opportunity for executives to say something that moves the stock .
+GE also has attracted an activist investor .
+Trian Fund Management is pressuring GE 's management to improve performance .
+Subsequently , GE has cut $ 2 billion of expenses .
+Still , the stock has dropped despite Trian 's interest , suggesting that the risk of selling calls is somewhat tempered as it is hard to imagine an activist investor , even one well respected like Trian , can do much to unlock value in a $ 242 billion international conglomerate that is confronting profitability pressures .
+Moreover , the analyst community is turning on GE .
+To be sure , it is hard to make a convincing bull thesis for why anyone would want to initiate a new position in GE -- a point that points back to managing existing positions with options to increase returns .
+It is perhaps possible that the stock price would jump if the company were broken up into a bunch of smaller , listed stocks , but who knows if that is even realistic .
+The facts are that the stock is behaving weakly , options trading patterns are mixed , and the sale of a well-placed call should help investors incrementally increase the returns of a stalled stock .

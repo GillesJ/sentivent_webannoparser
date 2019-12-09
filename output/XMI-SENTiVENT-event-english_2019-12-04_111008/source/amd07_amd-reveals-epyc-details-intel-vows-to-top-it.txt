@@ -1,0 +1,13 @@
+AMD Reveals ` Epyc ' Details ; Intel Vows to Top It
+Advanced Micro Devices released details about the performance of its server chip , named `` Epyc , '' as well as glowing comments from computer makers , cloud computing operators , and customers .
+Intel issued a statement vowing that its `` Xeon '' server chips will continue to best all competitors .
+Shares of Advanced Micro Devices AMD are up 16 cents , or 1.3 % , at $ 12.80 , in late trading , after the company released details of its `` Epyc '' server processor , first announced on May 16th .
+Intel issued a statement , distributed via email , saying that it would continue to top AMD 's efforts with Intel 's `` Xeon '' server processors .
+AMD 's press release is chockablock with statements of support from system makers , including Hewlett Packard Enterprise ( HPE ) and privately held Dell , as well as cloud computing operators , including Microsoft 's ( MSFT ) Azure unit and China 's Baidu ( BIDU ) , and also customers including Bloomberg and Dropbox .
+AMD touted a bunch of `` benchmark '' comparisons showing its chips beating others on the market : AMD EPYC 7601-based system scored 2360 on SPECint®_rate2006 , higher than any other two-socket system score1 .
+One-Socket Server AMD EPYC 7601-based system scored 1200 on SPECint_rate2006 , higher than any other mainstream one-socket x86-based system score .
+AMD EPYC 7601-based system scored 943 on SPECfp_rate2006 , higher than any other one-socket system score .
+In response , Intel said through a spokesperson , `` We take all competitors seriously , and while AMD is trying to re-enter the server market segment , Intel continues to deliver 20 + years of uninterrupted data center innovations while maintaining broad ecosystem investments .
+Our Xeon CPU architecture is proven and battle tested , delivering outstanding performance on a wide range of workloads and specifically designed to maximize data center performance , capabilities , reliability , and manageability .
+With our next-generation Xeon Scalable processors , we expect to continue offering the highest core and system performance versus AMD .
+AMD 's approach of stitching together 4 desktop die in a processor is expected to lead to inconsistent performance and other deployment complexities in the data center . ''

@@ -1,0 +1,21 @@
+Windows Phones : Why Microsoft Is Pulling the Plug
+Microsoft Corp. 's ( MSFT ) more than three-year foray into mobile phones ended Wednesday when the software giant killed support for its Windows Phone 8.1 operating system .
+The OS , which still powers millions of mobile devices , was supposed to be huge for the company and its smartphone ambitions given that it included Microsoft 's voice-activated digital assistant Cortana .
+Yet it failed to take off with consumers , just like its push to take on Apple Inc. ( AAPL ) and Alphabet Inc. 's ( GOOG ) Google in the smartphone market did n't work .
+An Also-Ran to Android, Apple
+The lack of support for Windows Phone 8.1 marks the end of the Windows Phone , which could be concerning to a large swath of consumers who own the Windows-powered devices .
+The Verge , citing AdDuplex , reported close to 80 % of all Windows phones use Windows Phone 7 , Windows Phone 8 or Windows Phone 8.1 .
+Roughly 20 % of the phones run Windows 10 Mobile OS and will still have support for now .
+The Verge noted that 99.6 % of all new mobile phones either use the Android operating system or Apple 's iOS .
+The demise of the Windows phone has been expected for a couple of years now after the company sold its phone unit to Foxconn for $ 350 million .
+Microsoft got into the smartphone market with its $ 7.2 billion purchase of Nokia 's ( NOK ) mobile phone business .
+In May of last year , the company cut 1,850 smartphone jobs and took a $ 950 million write-off .
+Many of the workforce reductions affected employees in Finland , where Nokia is based .
+Cloud Comes First
+Microsoft still has its Windows 10 Mobile but it 's not clear how long the company will support that down the road .
+In its upcoming Windows 10 Fall Creators Update , the company is adding a lot of features to the OS for computers , but , according to The Verge , it is n't testing the same services with its mobile OS .
+Rumors , noted the tech blog , imply the company wo n't do much with Windows 10 Mobile until that support ends next year .
+The move on the part of the software giant comes as it shifts its focus toward cloud computing .
+Earlier this month Microsoft announced a major overhaul in which it said the sales efforts will focus on businesses instead of going after specific industries or market segments like startups or public companies .
+An email sent by Judson Althoff , the executive vice president who pushes Microsoft 's technology , said the sales reorganization is designed to `` align the right resources for the right customer at the right time '' and noted he wants to increase the company 's `` technical depth and better align sales and services to solution areas . ''
+Since then , reports have surfaced that it will cut thousands of a jobs in the effort .

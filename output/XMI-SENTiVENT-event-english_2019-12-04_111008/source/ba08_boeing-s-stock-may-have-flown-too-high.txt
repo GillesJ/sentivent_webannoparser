@@ -1,0 +1,19 @@
+Boeing 's Stock May Have Flown Too High
+Shares of Boeing Co. BA have risen by more than 50 percent this year , about 45 percentage points higher than the S&P 500 during that period , but the stock has moved largely sideways after posting solid second quarter results on July 26 .
+Too High , Too Fast
+The aerospace company 's stock is trading at record highs of around $ 240 , but one can make the case that the shares have risen too high in such a short period : a technical analysis and the options market are emitting warning signs , suggesting a potential downside of roughly 10 percent , or $ 25 a share to $ 215 .
+We used a common tool of technical stock analysis , called the Bollinger Bands , along with the relative strength index RSI , to assess Boeing 's last push higher .
+It now looks like the stock has moved into overbought territory .
+The shares are trading well above the upper Bollinger Band , which is the measure of a two standard deviation moves from the stock 's 20-day moving average .
+The break above the top band is bearish for the stock , indicating the shares could fall and revert to the mean level of around $ 215 , as mentioned earlier .
+The relative strength index is also flashing an overbought indication with a reading currently at 93 .
+Readings on the index of more than 70 are a sign of a stock that is overbought .
+The index , coupled with the Bollinger Bands , offer a strong bearish indication .
+Options
+Looking out to January 2018 in the options market , we find that the volume of open interest is minimal above the stock 's current price of $ 240 .
+That suggests that few investors are betting the stock will rise further .
+Interactive Brokers
+The table below shows the strike prices for both puts and calls , with the largest open interest and most important the notional values of dollars committed .
+The large open interest made at the $ 220 level probably indicates that traders are not expecting the stock to fall below that level .
+Boeing has had an incredible run in 2017 .
+But the pullback may not be all that bad and , in fact , may give a momentary breather for a stock that 's risen so far so quickly .

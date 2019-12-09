@@ -1,0 +1,9 @@
+Nokia-Amazon Work Signals Public Cloud Telecom Takeover , Says William Blair
+Nokia 's ( NOK ) `` strategic collaboration '' with Amazon ( AMZN ) , announced yesterday , shows that Amazon AMZN is moving `` full speed ahead '' to put phone companies ' network infrastructure in its AWS public cloud , according to communications tech analyst Dmitry Netis of William Blair .
+Nokia said it would `` support service providers in their migration to AWS , '' through a variety of different measures .
+This could be a major transformation of telecom , as it gets absorbed in the cloud , writes Netis , and he thinks Amazon should consider buying Broadsoft BSFT to enhance Amazon 's offerings for telcos .
+Writes Netis , `` There should be little doubt at this point that Amazon AWS is full speed ahead on telecom network transformation . ''
+Netis argues that `` a ` telco cloud ' hosted on AWS is potentially the ultimate vision for Amazon , '' and that `` by hosting their telecom network infrastructure in AWS cloud , carriers would be able to be more agile in their battle with over-the-top operators and deliver next-generation connectivity services to their enterprise end-customers . ''
+He sees reasons for Amazon to consider buying Broadsoft : This , we believe , is yet another indication that the potential combination with BroadSoft would fill an important hole in AWS portfolio -- a carrier-grade voice and call routing engine i.e. , a cloud PBX service , which is built for public cloud , wireless VoLTE / VoWiFi , and wireline networks .
+Ultimately , service providers will be able to resell IP-based communication services hosted by AWS with applicability across many verticals and industrial use-cases , fitting the needs of their enterprise customers .
+Broadsoft shares today closed up 40 cents , or 0.8 % , at $ 53.90 , Nokia rose by 26 cents , or almost 5 % , to close at $ 6.08 , and Amazon stock closed down $ 3.70 , or 38 cents , at $ 982.91 .

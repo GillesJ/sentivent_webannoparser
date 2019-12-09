@@ -1,0 +1,33 @@
+Netflix 's Rising Debt Levels Are Cause for Concern
+A little bit of prudence would go a long way .
+Online video streamer Netflix has never shied away from using debt to fund its growing catalog of original content , which in turn has been helping drive subscriber gains .
+Shares soared to fresh all-time highs today following a strong earnings report .
+The company added 5.2 million net additions globally in the second quarter , easily beating its own forecast of 3.2 million , and expects to add approximately 3.65 million in the third quarter .
+There are a few reasons why Netflix 's rising debt levels are cause for concern for investors ( myself included ) .
+Interest expense is eating up profits
+For starters , Netflix 's long-term debt has now ballooned to $ 4.8 billion , following a 1.3 billion euro bond offering in May .
+Content costs are rising , which is burning up free cash flow at an alarming rate .
+Bloomberg Gadfly 's Shira Ovide notes that Netflix burns more free cash flow than Tesla , which operates in one of the most capital-intensive industries in the world .
+This is not a new revelation .
+Netflix frequently warns investors that negative free cash flow could persist for years , but points to strong subscriber figures as justification .
+There 's some validity in that argument , but at the same time Netflix is rather nonchalant about the direct costs .
+Interest expenses continue to march higher , coming in at $ 55.5 million ( 43 % of operating income ) last quarter .
+A poor theoretical justification
+It 's also disconcerting that Netflix justifies its debt strategy with a heavy reliance on financial theory .
+Specifically , the company referred to '' efficient capital structure theory '' in its Q1 letter , while noting that its `` debt to total cap ratio '' was less than 10 % at the time .
+While debt-to-equity ratio is a commonly used metric , Netflix is referring to its debt-to-market-cap ratio , which is somewhat misguided .
+A company 's market cap is determined by market forces and is not accounted for on the balance sheet in any way .
+In other words , Netflix uses its soaring stock price as justification for taking on increasing amounts of debt , even though the stock price does n't directly help pay for the costs associated with that debt .
+CEO Reed Hastings reaffirmed this justification on the earnings call last night ( emphasis added ) :
+`` And then there 's comfort with being able to finance it , and of course , our debt-to-market cap is incredibly low and conservative , so we 've got lots of room there .
+And I think that combination that it 's spent well and we can raise it is what makes us very excited .
+And the irony is the faster that we grow and the faster we grow the owned originals , the more drawn on free cash flow that we 'll be .
+So in some senses , negative free cash flow will be an indicator of enormous success . ''
+If anything , Netflix 's soaring stock price means that the company should at least consider the idea of raising equity capital , since it would get a lot of bang for its buck if it conducted a secondary offering at current prices , as dilution costs would be minimal .
+Netflix correctly points out that using debt capital reduces its weighted average cost of capital ( WACC ) , and using debt to fund growth is not fundamentally inappropriate in itself .
+Netflix just needs to be more prudent with its debt strategy .
+The most obvious flaw with using debt-to-market cap is that if share prices were to fall , the justification fails .
+At the same time , it 's hard to imagine Netflix putting the brakes on debt if its market cap were to pull back , which it implicitly should , given how it rationalizes debt .
+Netflix is a polarizing stock with a fair amount of short interest ( 7.5 % of float ) , and it trades at nearly 240 times earnings .
+A pullback is a very real possibility due to the growth expectations that are being priced in .
+If one occurs , Hastings will find that `` lots of room there '' can shrink rather quickly .

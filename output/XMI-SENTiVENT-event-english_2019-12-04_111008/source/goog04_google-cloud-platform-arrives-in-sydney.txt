@@ -1,0 +1,12 @@
+Google Cloud Platform arrives in Sydney
+Google has continued its Cloud Platform Asia-Pacific expansion with its first region in Australia .
+Google Sydney has become the latest location to be added to Google Cloud Platform GCP , the search giant announced on Wednesday .
+Not all GCP services are available , however , with BigQuery , App Engine , and Datastore the missing big ticket items .
+Across the Sydney location 's three zones , GCP users will have access to Compute Engine , Container Engine , Cloud Storage , Cloud Dataflow , Cloud Dataproc , Cloud SQL , Cloud DNS , and Cloud VPN .
+Google is touting a 40 percent to 80 percent reduction in round trip latency for applications served out of the Sydney location , instead of Google 's other Asian locations , for Australian and New Zealand users .
+Local customers already making use of GCP include Woolworths , Service NSW , Monash University , and Woodside .
+Last week , the search giant launched GCP in Singapore , saying it has seen 100 percent growth of paid customers in the region over the past year .
+Earlier this year , Google said it would also be investing in the Indigo subsea cable that will connect Sydney , Perth , Jakarta , and Singapore .
+Construction of the 9,000 km , 18Tbps submarine cable will be performed by Alcatel Submarine Networks , and is due to be completed by mid-2019 .
+Other investors in the cable include AARNet , Indosat Ooredoo , Singtel , SubPartners , and Telstra .
+Google is currently constructing its Mumbai region , which would take its total number of GCP locations in the Asia-Pacific region to five .

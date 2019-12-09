@@ -1,0 +1,13 @@
+Facebook 's Workplace is gaining ground as it prepares to pounce on Slack
+Messaging October 26 , 2017 Last year , Facebook started crawling into the last space in your life it did n't yet dominate -- the office .
+It announced its Workplace platform as a communication tool for companies , entering the crowded market of workplace chat services .
+From the beginning , Workplace elicited comparisons with the increasingly ubiquitous Slack , whose flutter-like notification gives many a tech or media employee a sting of anxiety .
+On Thursday Oct. 26 , one year after the launch of Workplace , Facebook said more than 30,000 businesses were using the platform .
+It introduced new features such as a standalone desktop chat app .
+This seems a lightning pace of growth , especially considering it took Slack three years to reach a similar number of what it calls `` paid teams . ''
+Turns out you ca n't fairly compare the two .
+Facebook , whose platform is generally cheaper than Slack 's , included in that 30,000 number businesses that use the free version of Workplace , which it launched in April .
+Facebook would n't provide Quartz with a breakdown of how many customers are paid and how many use the service for free .
+Facebook will have more competition to worry about .
+Atlassian 's Hipchat , one of the older messaging systems , introduced a re-vamped version in September .
+Microsoft Teams , which launched globally in March , announced it would replace the company 's Skype for Business platform next year .

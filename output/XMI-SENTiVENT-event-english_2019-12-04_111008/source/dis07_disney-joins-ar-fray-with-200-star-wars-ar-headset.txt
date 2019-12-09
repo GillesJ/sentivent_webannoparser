@@ -1,0 +1,58 @@
+Disney Joins AR Fray With $ 200 Star Wars AR Headset
+At its D23 fan event in Anaheim , CA on Sunday , July 16 , Disney announced that its LucasFilm subsidiary and Lenovo are developing a smartphone based augmented reality headset which will feature Star Wars games like Holo Chess , along with a peripheral Bluetooth Light Saber .
+The headset is essentially a light weight iPhone holder attached to a clear plastic visor .
+The cell phone 's images are reflected onto the visor , allowing digital images to mingle with the physical reality in often startlingly realistic ways .
+Disney 's VP of Advanced Development Mike Goslin revealed the project on stage and showed videos of several games-in-progress .
+The breathless crowd saw miniature rebels , Strom Troopers and Walkers battling on the rug , as well as a life-sized Storm Trooper presumably the opponent in a duel , and the famous circular Holo Chess board from the classic Star Wars movie , replete with animated pieces .
+The app will presumably support other AR as well , which would make the Disney/Lenovo Star Wars headset a much much bigger play .
+The most dramatic change AR enables is making the camera the primary interface .
+Instead of looking down at your handset , as we do now , you will be looking up and out your camera , which will combine physical reality with digital images .
+Your arm will get tired from holding your phone up like that .
+Really tired .
+Some people wo n't do it , but the benefits are going to be so great that many will .
+So what 's the solution ?
+A wearable smart phone .
+ODG is going to market in China this fall with a wearable Android computer , the unsexily named R8 .
+Google , Apple , Facebook and Snapchat all have AR headsets in the works .
+Google 's standalone Daydream VR headsets from Lenovo and HTC are in the $ 500 price range and are expected in time for the Holiday season .
+Disney is n't revealing a release date , or the final price or the price of the peripheral Light Saber but the teaser video strongly suggests Christmas , with Best Buy as the featured retail partner .
+Analysts suggest it will be in the $ 200 range .
+The demo shown by Goslin at D23 suggests the images seen through the Disney/Lenovo AR headset are compelling , but perhaps not yet up to Star Wars ' standards .
+`` If any IP can sell high-tech experiences at a premium price , Star Wars would be the one to do it , '' says Stephanie Llamas , VR of AR and VR Research at Superdata .
+Dual use standalone VR/AR headsets like the ones being made Daydream by Lenovo and HTC use an untethered not attached to a computer or smartphone occluded headset that uses a powerful chip that supports built in tracking and localization and has multiple inside out and depth sensing cameras .
+The Star Wars AR headset is decidedly simpler .
+Magic Leap , the secretive billion dollar start up led by entrepreneur and scientist Rony Abovitz , recently announced a breakthrough that will bring its stand alone smart glasses to consumers in 2018 .
+Magic Leap is backed by Google , Disney , Warner , China 's Alibaba .
+Excitement about an ultra cheap Facebook AR headset was stoked last week when Bloomberg revealed the project code name , `` Pacific '' .
+Facebook 's last public statement about an AR headset was in late 2016 , when the company said an announcement was not imminent .
+Facebook admits they are developing an AR headset , possibly for 2018 , but otherwise nothing is known publicly .
+Oculus Content VP Jason Rubin suggested in an interview on July 7th that VR is ready for prime time , while AR is `` starting from scratch five years behind VR , where now the now is great . ''
+He says Oculus is focused solely on the Rift , and said the Rift 's recent price cut was about gaining market share , and nothing else .
+`` Oculus is unaware and unconcerned about competition from AR inside or outside the company .
+It 's not going to happen anytime soon - if it happens at all , '' Rubin told me .
+Snapchat is also working on AR glasses , probably an expansion of its successful Specs , which are currently only capable of shooting short video clips .
+`` Facebook is not a company for the niche consumer -- their selling point is how accessible their services are to anyone , anywhere .
+So finding something with the potential for mass penetration is a priority , especially with Rift 's bumpy past .
+However , an untethered , self-contained device for $ 200 seems like either a loss-leader or a highly simplified VR experience . ''
+Llamas told me in an email Monday .
+By the end of Q4 2017 , it will be raining AR headsets .
+More are joining the fray .
+Yesterday , a new startup , Mira , introduced its Prism headset , which is remarkably similar to the Lenovo/Disney headset .
+Slide your smartphone into the slot on the head mounted display , fire up the Prism app , and play 3D chess and other games .
+The headset is light , and its visor is removable , attached by a magnet , making the Prism quite portable , which any mobile peripheral needs to be .
+Some of the demo games feature a multiplayer mode .
+The $ 99 Prism also includes a hand controller similar to Google Daydream 's .
+It feels like a simple version of the Hololens , but with a wider field of view .
+Mira was founded by Ben Taft , Matt Stern , and Montana Reed who met in the inaugural class of the University of Southern California 's Jimmy Iovine and Andre Young Academy for Arts , Technology , and the Business of Innovation .
+The three have taken leave while building the company with 1.5 M of seed funding from influential players that include Sequoia Capital , Troy Capital Partners , S-Cubed Capital , Salesforce CEO Marc Benioff , will.i.am , and Jaunt VR founder Jens Christensen .
+Mira will need these powerful friends to help arrange the kind of partnerships that will enable it to go head to head with the biggest tech companies in the world .
+The Mira Prism can be pre-ordered here .
+Similar to Mira is Zapbox , which wants to be the Google cardboard of AR , and is now shipping its much-anticipated cardboard AR headset , which is only $ 50 .
+Zapbox told me at AWE that they see their AR product as a platform , and developers are working on compatible apps .
+The company says it offers `` Magic Leap for super cheap '' .
+These are the kinds of developments that make disruptive VR and AR technology one of the great business stories of this century .
+The stakes are hundreds of billions of dollars over the next ten years .
+The players are the biggest tech companies in the world : Apple the world 's most valuable company , Microsoft , Google , and Facebook .
+The characters are larger than life .
+Not just Mark Zuckerberg , Tim Cook , and other industry leaders , but venture capitalists , entrepreneurs , producers , students , opportunists , and hustlers of every kind .
+There are shifting alliances , known unknowns , like Magic Leap , and unknown unknowns yet to be revealed .

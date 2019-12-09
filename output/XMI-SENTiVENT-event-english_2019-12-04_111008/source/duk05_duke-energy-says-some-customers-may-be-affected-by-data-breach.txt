@@ -1,0 +1,12 @@
+Duke Energy Says Some Customers May Be Affected by Data Breach
+Duke Energy Corp. said Tuesday some of its customers may have been affected by a data breach revealed by PayPal Holdings Inc. last week .
+On Friday , Tio Networks , which PayPal bought in July , said it had uncovered evidence of unauthorized access to its network that could have compromised personally identifiable information for roughly 1.6 million users .
+Among customer information possibly exposed , according to a PayPal spokesman , were names , addresses , bank account details , Social Security numbers and details of login information used to pay bills .
+Duke said some 374,000 Duke Energy Carolinas customers who paid a bill by check or cash at one of its 550 authorized walk-in payment processing centers from 2008 through this year may have been affected by the breach .
+Customers who paid by credit card were n't affected , Duke said .
+Last month , the payments firm suspended operations , pending a security review , of its TIO Networks unit .
+That company makes digital bill-payment tools for utilities and other firms and also operates a network of kiosks in physical retail stores .
+Lesley Quick , Duke Energy 's vice president of revenue services , said Tuesday the company has been in daily contact with the vendor since it `` abruptly and unexpectedly disabled their network on Nov. 10 for suspected ' security vulnerabilities .
+''' The company also said the breach could affect other companies using TIO Networks to process payments .
+Shares in Duke were down 0.8 % to $ 87.90 near the end of regular trading Tuesday .
+PayPal was up 0.4 % at $ 71.24 .

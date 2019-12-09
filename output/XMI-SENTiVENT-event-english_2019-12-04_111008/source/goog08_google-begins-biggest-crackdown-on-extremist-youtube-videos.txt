@@ -1,0 +1,26 @@
+Google Begins Biggest Crackdown on Extremist YouTube Videos
+- Selected videos will lose ads , comments and have new warnings
+- Policy changes announced in June to go into effect 
+Thursday Tech 's Dilemma
+When It Comes to Regulating Hate Starting on Thursday , Google will police YouTube like it never has before , adding warnings and disabling advertising on videos that the company determines crosses its new threshold for offensive content .
+YouTube is n't removing the selected videos , but is instead setting new restrictions on viewing , sharing and making money on them .
+A note detailing the changes will go to producers of the affected videos on Thursday , according to a spokeswoman for the Alphabet Inc. company .
+Google outlined these moves in June , but the implementation comes as debate about extremism and political speech is front-and-center in the national spotlight -- and when tech giants like Google and Facebook Inc. face deeper scrutiny over how they moderate information distributed through their digital services .
+`` These videos will have less engagement and be harder to find , '' Kent Walker , Google 's general counsel , wrote about the plans in a June blog post .
+`` This strikes the right balance between free expression and access to information without promoting extremely offensive viewpoints . ''
+A Google spokeswoman declined to comment further on the changes .
+The new restrictions , which target what Walker called `` inflammatory religious or supremacist content , '' are expected to hit a small fraction of videos , according to person familiar with the company .
+YouTube says it uploads over 400 hours of video a minute .
+Videos tagged by its new policy wo n't be able to run ads or have comments posted , and wo n't appear in any recommended lists on the video site .
+A warning screen will also appear before the videos , which will not be able to play when embedded on external websites .
+YouTube will let video creators contest the restrictions through an appeals process , a spokeswoman said .
+The world 's largest video service has changed its policies several times this year .
+In March , Google introduced new software and staffers to monitor videos after a slew of marketers pledged to pull YouTube spending over concern their ads were running alongside extremist content .
+Google added new features to restrict YouTube ads the following month .
+Executives claimed the number of impacted videos was minute , yet stressed that neither humans nor artificial intelligence systems could ensure YouTube is entirely free of controversial videos .
+A recent example of the challenge : YouTube recently reinstated thousands of videos documenting violence in Syria after civic groups criticized the company for pulling them earlier , arguing the footage could be used as documentation in war crime prosecutions .
+Earlier this month , YouTube said more than 75 percent of videos removed for violating its policies were flagged by its new software before human intervention .
+With its latest policy , YouTube is targeting trickier borderline content , such as videos that espouse Holocaust denial theories and clips from white supremacist David Duke .
+`` YouTube does n't allow hate speech or content that promotes or incites violence , '' the Thursday letter to YouTube creators reads , according to a copy viewed by Bloomberg News .
+`` In some cases , flagged videos that do not clearly breach the Community Guidelines but whose content is potentially controversial or offensive may remain up , but with some features disabled . ''
+In the wake of a white supremacist rally in Charlottesville , Virginia , earlier this month , several tech companies , including Google , Facebook and Airbnb Inc. , have taken steps to cut associated people and groups off their platforms .

@@ -1,0 +1,16 @@
+Facebook says controversial data-sharing policy is ` indispensable ' in fighting terrorism
+Facebook laid out a plan Thursday to combat terrorism on the platform .
+Facebook Inc. says it will use the sharing of data across its platforms , a move that has come under scrutiny from regulators and privacy advocates , to help fight against terrorism .
+As part of a Thursday report on combating terrorist activity , Facebook said it is using `` cross-platform collaboration '' -- in which Facebook uses shared data across Facebook , Instagram and WhatsApp -- to pinpoint language or images that may promote terrorism .
+This comes about a month after Facebook received a $ 122 million fine from regulators with the European Union for not disclosing that its accounts automatically linked to each other , according to The Wall Street Journal
+The fine came as result of Facebook 's acquisition of messaging service WhatsApp in 2014 , at which time Facebook told the EU it could not automatically link accounts , even though it could .
+Facebook later moved to have WhatsApp share phone numbers and data with Facebook as well as determine when someone was using Facebook and WhatsApp .
+Privacy advocates had been concerned about the sharing of data between WhatsApp and Facebook , as WhatsApp only required a phone number for sign up and was created with the `` goal of knowing as little about you as possible , '' the WSJ reported .
+Now , Facebook is cracking down on terrorism , saying it sees that `` the internet does play a role '' in the radicalization of members for ISIS and al Qaeda .
+`` Given the limited data some of our apps collect as part of their service , the ability to share data across the whole family is indispensable to our efforts to keep all our platforms safe , '' the company said in a blog post .
+The sharing of data also includes Facebook 's Instagram .
+Overall , Facebook said it is using artificial intelligence to target images matching a terrorist photo or video even before it is posted , identify inflammatory language , detect fake accounts and remove `` terrorist clusters . ''
+Facebook will also rely on humans to report and review content as well as respond to immediate request from law enforcement .
+The company has more than 150 people concentrated on counterrorism , including former prosecutors , former law enforcement agents and engineers .
+Shares of Facebook closed down less than 1 % Thursday .
+Facebook shares have gained 7 % in the past three months , compared with the S&P 500 index 's SPX gain of 2 % .

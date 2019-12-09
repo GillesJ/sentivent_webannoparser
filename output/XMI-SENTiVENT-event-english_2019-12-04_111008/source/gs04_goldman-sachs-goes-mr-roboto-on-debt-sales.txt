@@ -1,0 +1,27 @@
+Goldman Sachs Goes Mr. Roboto on Debt Sales
+Goldman Sachs wants to be a technology company , and it 's taking steps to be more like one even in some traditionally human-intensive businesses .
+As Bloomberg 's Dakin Campbell reported in an article on Tuesday , Goldman is seeking to automate aspects of underwriting initial public offerings and new corporate-debt sales , among other types of banking .
+This ostensibly is n't aimed at cutting jobs but rather allowing junior staff members to focus on more valuable tasks than , say , assembling spreadsheets or sending around legal documents and term sheets .
+While the types of automation Goldman is considering seem incremental , the effort signals a broader significant shift taking place .
+Let 's consider just one area Goldman is reviewing -- new corporate-bond sales .
+This has been a controversial area for some time , especially back in 2013 , when obtaining allocations of new debt issuances almost guaranteed investors a near-term profit .
+That year , after Verizon Communications Inc. sold its then record-setting $ 49 billion bond sale , investors complained that they were deprived of the chance to purchase some of the notes , which gained $ 2.54 billion in market value the day after the sale .
+At the time , even the Securities and Exchange Commission got involved , looking into whether big banks unfairly prioritized their larger clients over smaller ones when deciding how to distribute new bonds .
+Not much came of that .
+There 's less focus on the unfairness of new bond sales now , in large part because they have n't been as much of a gold mine for investors .
+But perhaps it 's also because a number of firms , including Goldman , are trying to figure out how to automate parts of these transactions to make them more predictable .
+Ipreo , for example , recently enabled a group of investors to access an online system on which they could receive documents for new bond sales from underwriters and submit orders .
+While this effort has been concentrated in Europe , Ipreo plans to expand the system to other countries , including the U.S. .
+Earlier this year , Overbond Ltd. , a Canadian company , announced that it was starting a service to allow companies to sell bonds digitally .
+The fact that Goldman is interested in this type of streamlining is telling .
+It shows there 's an economic interest for big investment banks to standardize lucrative processes , even if that means that eventually they 'll be less lucrative .
+And that is the implication .
+Typically , as banks use computers for classically human actions , they also end up shedding light on traditionally opaque businesses , leading to greater efficiency and lower fees .
+As Kevin McPartland , head of market structure and technology research at Greenwich Associates , said in a phone interview , `` The more electronic any process gets , the knock-on effect is more data , which leads to more transparency . ''
+As is , some of these traditionally lucrative fields are becoming less profitable .
+For example , the average fees to underwrite U.S. investment-grade bond sales have fallen to 0.44 percent of the issuance this year from 0.54 percent in 2010 .
+The rate on high-yield debt issuances has dropped to 1.28 percent from 1.7 percent in the period , according to data compiled by Bloomberg .
+Now , the focus for many banks is attracting the greatest volume of deals to offset the lower fees .
+A bank with more streamlined , automated systems is better positioned to attract a greater amount of business , even without hiring more people .
+Goldman 's efforts , and similar ones at other firms , will most likely expedite a shift to a more standardized approach to underwriting corporate bond sales and thus lower fees further .
+And they promise to eventually illuminate the mechanics of once-opaque parts of financial markets .

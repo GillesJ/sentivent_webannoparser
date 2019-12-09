@@ -1,0 +1,15 @@
+Windows 10 Mobile And Microsoft 's Smartphone Ambitions Have Not Died
+It may not be troubling the market share numbers , the percentage of smartphone users running the operating system may be low , but Windows 10 Mobile still has a place in the market as witnessed by its latest European handset .
+Alcatel 's Idol 4 Pro was released in the US late in 2016 , and the Windows 10 powered handset debuted in Europe late last month .
+Powered by a SnapDragon 820 system on chip , backed by 4 GB of RAM and 64 GB of internal storage ( plus microSD support ) , the handset sits comfortably in the mid-range bracket previously occupied by the Windows 10 variant of the Alcatel Idol 4S .
+It now takes the curious award of being the most recent Windows 10 Mobile device .
+Many people might consider this award to be tantamount to being the ` last ' Windows 10 smartphone , but as I 've argued before on Forbes , the devotion to Windows 10 from enterprise partners ( and potentially the ongoing guaranteed support for Windows 10 Mobile devices in enterprise contracts ) means that Windows 10 will remain an ongoing product line .
+The flagship handset manufacturers may not be drawn to it , but for smaller brands such as Alcatel , Windows 10 Mobile will be a small but guaranteed market that can be leveraged for a not-insignificant return .
+Windows 10 Mobile is not Microsoft 's only play in the mobile world ... it 's actually one of the smaller parts .
+there is a huge focus from Redmond to have people use Microsoft 's cloud no matter what platform they are using .
+Be it Windows 10 , macOS , iOS or Android , Microsoft 's cloud-based apps ( including Outlook , Office , OneNote and OneDrive ) are all available and are all bringing users into its cloud .
+Microsoft has acknowledged that the mobile OS war is effectively over .
+Android has the lions share of users , Apple has many of the high-value customers and there 's not much left for the competition .
+Instead , Microsoft has focused on building up its cloud-based strategy .
+As for Windows 10 Mobile , it is clearly a niche operating system for 2017 , but by bringing the mobile platform under the Windows 10 banner Microsoft can continue to work with hardware partners , support ongoing enterprise customers , work with mobile manufacturers and retain competency in mobile software development .
+It may not have the market share but Windows 10 Mobile continues to be of interest to Microsoft .

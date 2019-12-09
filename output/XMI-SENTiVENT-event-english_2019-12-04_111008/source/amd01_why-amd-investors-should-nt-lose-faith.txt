@@ -1,0 +1,29 @@
+Why AMD Investors Should n't Lose Faith
+The stock has fallen , but the company has catalysts .
+Advanced Micro Devices ' recent stock run-up came to an end after its shares dropped almost 25 % following the release of the company 's first-quarter earnings report on May 1 .
+What 's surprising is that AMD stock collapsed so spectacularly even though its results were roughly in line with analyst estimates and its second-quarter revenue guidance bested Wall Street expectations .
+This is an opportunity for savvy investors .
+The sell-off seems overdone
+Investors were possibly expecting better results and guidance from AMD than it delivered due to the Ryzen CPU launch last quarter and the Vega graphics processing unit ( GPU ) and the Naples server chip coming in the current quarter .
+Additionally , a gross margin forecast of 33 % , as compared to the first quarter 's 34 % , raised concerns about the profitability of the company 's new products .
+However , the sell-off seems overdone , as AMD 's performance did n't deviate much from expectations .
+Of course , it could be that the results and the accompanying guidance were n't exciting enough given the stock 's tremendous run over the past year , but the first quarter of the year is a seasonally weak one and the guidance was n't that disappointing .
+In fact , the margin guidance was lower because of an accounting change that led to the inclusion of certain manufacturing costs in the cost of goods sold .
+Additionally , investors should n't overlook the fact that AMD 's gross margin in the first quarter jumped 2 percentage points from last year thanks to the launch of the new Ryzen processors .
+What 's more , it will experience 2-percentage-point year-over-year gross margin growth in the current quarter if it hits the guidance .
+New products will act as catalysts
+Bears argue that AMD shares are priced for perfection .
+Goldman Sachs analysts , for example , believe that rising operating costs will weigh on its bottom line .
+But AMD has been ramping up its operating expenses thanks to higher research and development spending in its GPU and server businesses and these expenses should start bearing fruit later this year once its Vega GPUs and Naples server chips hit the market as AMD tries to take the game to NVIDIA and Intel with its latest products .
+AMD claims that the Naples architecture can perform significantly faster than Intel 's top-of-the-line two-socket Xeon chip , thanks to more cores and higher bandwidth memory .
+If independent tests corroborate AMD 's claims , then Intel will have a tough time defending its near-monopoly in the server market .
+Demand for high-performance server chips is going to take off , thanks to an increase in cloud workloads .
+Meanwhile , rumors indicate that AMD will launch its Vega GPUs before the end of June , challenging NVIDIA 's dominance in the space with a product that could match the performance of the latter 's latest GTX 1080Ti GPU .
+More importantly , AMD could try to undercut NVIDIA on pricing in a bid to win more market share .
+AMD 's earnings could grow rapidly
+In my opinion , investors should n't hit the sell button .
+AMD 's results were n't that bad , and the company 's margins are improving from the prior-year period .
+In fact , a good number of analysts still believe that AMD 's earnings will take off both this year and the next .
+For instance , in the past three months , earnings estimates for AMD for fiscal year 2017 have jumped from $ 0.06 per share to $ 0.08 per share .
+Moreover , its earnings are expected to jump to $ 0.31 per share in fiscal year 2018 , up from the $ 0.28 per share estimate 90 days ago .
+This is n't surprising , as AMD has substantially improved its business in recent quarters with market-share gains , and it could keep up the momentum once its new products are rolled out .
