@@ -9,10 +9,10 @@ Copyright (c) Gilles Jacobs. All rights reserved.
 """
 from pathlib import Path
 
-IAA_XMI_DIRP= "/home/gilles/sentivent-fwosb-phd-2017-2020/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-1.0-iaastudy_2019-12-03_1545" # IAA adjudicated gold-standard
-MAIN_XMI_DIRP = "/home/gilles/sentivent-fwosb-phd-2017-2020/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-1.0-main-corpus_2019-03-12_1759" # Main corpus DIRP"
-FINAL_XMI_DIRP = "/home/gilles/sentivent-fwosb-phd-2017-2020/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-final-1_2019-12-02_1529" # Final corpus
-TYPOLOGY_FP = "/home/gilles/sentivent-fwosb-phd-2017-2020/webanno-english-event-annotation-preparation-implementation/webanno-event-implementation/scripts/sentivent_en_event_typology.json"
+IAA_XMI_DIRP= "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-1.0-iaastudy_2019-12-03_1545" # IAA adjudicated gold-standard
+MAIN_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-1.0-main-corpus_2019-03-12_1759" # Main corpus DIRP"
+FINAL_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-final-1_2019-12-02_1529" # Final corpus
+TYPOLOGY_FP = "/home/gilles/sentivent-phd/webanno-english-event-annotation-preparation-implementation/webanno-event-implementation/scripts/sentivent_en_event_typology.json"
 
 MOD_ID = "gilles"  # annotator id of the judge who adjudicated for gold standard
 
