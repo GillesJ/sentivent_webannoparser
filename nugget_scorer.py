@@ -113,7 +113,6 @@ def get_selector(criteria):
         raise ValueError(criteria)
 
 
-
 def _match_ere(gold, system):
     '''
     ERE nugget scoring matching strategy as explained in "Liu, Z., Mitamura, T., & Hovy, E. (2015).

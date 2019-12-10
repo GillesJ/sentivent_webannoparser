@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 '''
 util.py
-sentivent-webannoparser
+sentivent_webannoparser
 10/10/18
 Copyright (c) Gilles Jacobs. All rights reserved.  
 '''
@@ -10,7 +10,6 @@ import dill
 from collections import abc, defaultdict
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
-
 
 def pickle_webanno_project(project_obj, pickle_fp):
     '''

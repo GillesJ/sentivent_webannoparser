@@ -8,7 +8,7 @@ TODO: refactor current Document class into a Document class and an Annotation cl
 TODO: write generic parser for webanno features (Link, Slot, etc):
         cassis is slower than this prototype but more general
 parser.py
-sentivent-webannoparser
+sentivent_webannoparser
 10/4/18
 Copyright (c) Gilles Jacobs. All rights reserved.
 """
@@ -18,7 +18,7 @@ import settings
 from dataclasses import dataclass, field
 from zipfile import ZipFile
 import xml.dom.minidom as md
-import cassis
+# import cassis
 import fnmatch
 import dill
 import spacy
@@ -26,6 +26,7 @@ from pathlib import Path
 from typing import List, Any
 from util import flatten, count_avg, pickle_webanno_project
 import os
+import multiprocessing
 import json
 
 @dataclass
@@ -483,7 +484,7 @@ class AnnotationDocument:
         Custom repr for easier debugging.
         :return: repr string
         '''
-        return f"{self.document_id} {self.annotator_id} <{type(self).__module__}.{type(self).__qualname__} {hex(id(x))}>"
+        return f"{self.document_id} {self.annotator_id}"
 
 class WebannoProject:
 
@@ -563,13 +564,18 @@ class WebannoProject:
 
         return content
 
-    def parse_annotation_project(self):
+    def parse_annotation_project(self, multiproc = True):
 
         # unzip and parse the documents
         print(f"Parsing {len(self.annotation_document_fps)} documents.")
-        annotation_documents = []
-        for ann_doc_fp in self.annotation_document_fps:
-            annotation_documents.append(self._parse_doc_from_zip(ann_doc_fp))
+
+        if multiproc:
+            with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
+                annotation_documents = pool.map(self._parse_doc_from_zip, self.annotation_document_fps)
+        else:
+            annotation_documents = []
+            for ann_doc_fp in self.annotation_document_fps:
+                annotation_documents.append(self._parse_doc_from_zip(ann_doc_fp))
         if annotation_documents:
             self.annotation_documents = annotation_documents
             # source_documents = [] # todo create source documents
@@ -580,27 +586,27 @@ class WebannoProject:
         xmicontent = self._unzip_content(ann_doc_fp)
         return AnnotationDocument(xmicontent, path=ann_doc_fp)
 
-    def _parse_cas_from_zip(self, ann_doc_fp):
-        # this is much slower
-
-        typesystem_fp = Path(self.typesystem_fp)
-        typesystem_filename = typesystem_fp.name
-        typesystem_zip_fp = typesystem_fp.parent
-
-        with ZipFile(typesystem_zip_fp) as z:
-            with z.open(typesystem_filename) as f:
-                typesystem = cassis.load_typesystem(f)
-
-        ann_doc_fp = Path(ann_doc_fp)
-        ann_doc_filename = ann_doc_fp.name
-        ann_doc_zip_fp = ann_doc_fp.parent
-
-        with ZipFile(ann_doc_zip_fp) as z:
-            with z.open(ann_doc_filename) as f:
-                cas = cassis.load_cas_from_xmi(f, typesystem=typesystem)
-
-        events = [e for e in cas.select('webanno.custom.A_Event')]
-        print(len(events))
+    # def _parse_cas_from_zip(self, ann_doc_fp):
+    #     # this is much slower
+    #
+    #     typesystem_fp = Path(self.typesystem_fp)
+    #     typesystem_filename = typesystem_fp.name
+    #     typesystem_zip_fp = typesystem_fp.parent
+    #
+    #     with ZipFile(typesystem_zip_fp) as z:
+    #         with z.open(typesystem_filename) as f:
+    #             typesystem = cassis.load_typesystem(f)
+    #
+    #     ann_doc_fp = Path(ann_doc_fp)
+    #     ann_doc_filename = ann_doc_fp.name
+    #     ann_doc_zip_fp = ann_doc_fp.parent
+    #
+    #     with ZipFile(ann_doc_zip_fp) as z:
+    #         with z.open(ann_doc_filename) as f:
+    #             cas = cassis.load_cas_from_xmi(f, typesystem=typesystem)
+    #
+    #     events = [e for e in cas.select('webanno.custom.A_Event')]
+    #     print(len(events))
 
     # def dump_pickle(self, fp):
     #     '''
@@ -648,11 +654,6 @@ def parse_main_iaa(main_dirp, iaa_dirp, opt_fp):
     main_project.dump_pickle(opt_fp)
     print(f"Written project object pickle to {opt_fp}")
 
-def parse_and_pickle(project_dirp, opt_fp):
-
-    project = WebannoProject(project_dirp)
-    project.parse_annotation_project()
-    pickle_webanno_project(project, opt_fp)
 
 if __name__ == "__main__":
 
