@@ -8,9 +8,12 @@ Copyright (c) Gilles Jacobs. All rights reserved.
 
 Calling script to parse a webanno project.
 '''
-from parser import WebannoProject
-import util
-import settings
+import sys
+sys.path.append("/home/gilles/repos/")
+
+from sentivent_webannoparser.parser import WebannoProject
+import sentivent_webannoparser.util as util
+import sentivent_webannoparser.settings as settings
 
 def parse_and_pickle(project_dirp, opt_fp):
 
