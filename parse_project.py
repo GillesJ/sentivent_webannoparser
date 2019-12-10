@@ -98,6 +98,7 @@ def parse_project(xmi_export_dirp):
     gold = []
     silver = []
     for doc in project.annotation_documents:
+        print(doc.title)
         if doc.title in settings.IA_IDS:
             if doc.annotator_id == settings.MOD_ID: # throw away any IAA study that is not gilles
                 gold.append(doc)
@@ -107,10 +108,10 @@ def parse_project(xmi_export_dirp):
     return {"silver": silver, "gold": gold}
 
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
 
     # Create full clean corpus
-
-
+    corpus = parse_project(settings.CLEAN_XMI_DIRP)
+    pass
     # corpus = combine_inspect_corpus(settings.IAA_XMI_DIRP, settings.MAIN_XMI_DIRP)
     # parse_and_pickle(settings.IAA_XMI_DIRP, settings.IAA_PARSER_OPT)
