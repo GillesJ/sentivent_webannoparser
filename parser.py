@@ -14,6 +14,9 @@ Copyright (c) Gilles Jacobs. All rights reserved.
 """
 from __future__ import annotations
 
+import sys
+sys.path.append("/home/gilles/repos/")
+
 import settings
 from dataclasses import dataclass, field
 from zipfile import ZipFile
