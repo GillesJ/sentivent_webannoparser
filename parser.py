@@ -20,7 +20,6 @@ from zipfile import ZipFile
 import xml.dom.minidom as md
 # import cassis
 import fnmatch
-import dill
 import spacy
 from pathlib import Path
 from typing import List, Any
