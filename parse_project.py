@@ -97,7 +97,7 @@ def parse_project(xmi_export_dirp):
 
     gold = []
     silver = []
-    for doc in docs:
+    for doc in project.annotation_documents:
         if doc.title in settings.IA_IDS:
             if doc.annotator_id == settings.MOD_ID: # throw away any IAA study that is not gilles
                 gold.append(doc)
