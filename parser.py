@@ -23,7 +23,7 @@ import fnmatch
 import spacy
 from pathlib import Path
 from typing import List, Any
-from util import flatten, count_avg, pickle_webanno_project
+from sentivent_webannoparser.util import flatten, count_avg, pickle_webanno_project
 import os
 import multiprocessing
 import json
