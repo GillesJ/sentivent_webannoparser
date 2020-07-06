@@ -436,7 +436,12 @@ def compute_lexical_richness(
 def plot_lexical_richness(
     lr_df,
     plot_metrics_as=OrderedDict(
-        [("hdd", "HDD"), ("maas_inv", "Maas (inverted)"), ("mtld", "MTLD"), ("entropy", "Entropy")]
+        [
+            ("hdd", "HDD"),
+            ("maas_inv", "Maas (inverted)"),
+            ("mtld", "MTLD"),
+            ("entropy", "Entropy"),
+        ]
     ),
     plot_name="lexical_richness.pdf",
 ):
@@ -482,7 +487,12 @@ def compute_plot_lexical_richness(events):
     # set which metrics to be plotted, in order of sorting in plot
     # Maas, HDD, MTLD are recommended metrics in McCarthy 2010
     plot_metrics = OrderedDict(
-        [("hdd", "HDD"), ("maas_inv", "Maas (inverted)"), ("mtld", "MTLD"), ("entropy", "Entropy")]
+        [
+            ("hdd", "HDD"),
+            ("maas_inv", "Maas (inverted)"),
+            ("mtld", "MTLD"),
+            ("entropy", "Entropy"),
+        ]
     )
     # for event trigger only
     df_lr_trigger = compute_lexical_richness(
