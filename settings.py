@@ -9,10 +9,16 @@ Copyright (c) Gilles Jacobs. All rights reserved.
 """
 from pathlib import Path
 
-IAA_XMI_DIRP= "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-1.0-iaastudy_2019-12-03_1545" # IAA adjudicated gold-standard
-MAIN_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-1.0-main-corpus_2019-03-12_1759" # Main corpus DIRP"
-PREFINAL_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-final-1_2019-12-02_1529" # PREFinal corpus
-CLEAN_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-1.0-clean_2019-12-10_1521"
+# SENTIMENT_IAA = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-iaa_project_2020-05-19_1028"
+SENTIMENT_IAA = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-iaa_project_2020-05-26_1450"
+SENTIMENT_ANNO = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-anno_project_2020-05-27_0931"
+
+IAA_XMI_DIRP = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-event-en/XMI-SENTiVENT-event-english-1.0-iaastudy_2019-12-03_1545"  # IAA adjudicated gold-standard
+MAIN_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-1.0-main-corpus_2019-03-12_1759"  # Main corpus DIRP"
+PREFINAL_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/sentivent-english-event-latest/XMI-SENTiVENT-event-english-final-1_2019-12-02_1529"  # PREFinal corpus
+CLEAN_XMI_DIRP = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-event-en/XMI-SENTiVENT-event-english-1.0-clean_2020-02-11_1354"  # clean project
+TEST_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/testing/TEST_SENTiVENT-event-english-1_2020-02-11_1150"
+
 TYPOLOGY_FP = "/home/gilles/sentivent-phd/webanno-english-event-annotation-preparation-implementation/webanno-event-implementation/scripts/sentivent_en_event_typology.json"
 
 MOD_ID = "gilles"  # annotator id of the judge who adjudicated for gold standard
@@ -59,4 +65,4 @@ IA_IDS = [
     "wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt",
 ]
 
-PARSER_MULTIPROC = True # set True to use faster multiprocessing for parsing files, False to parse iteratively
+PARSER_MULTIPROC = True  # set True to use faster multiprocessing for parsing files, False to parse iteratively

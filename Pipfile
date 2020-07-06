@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 nltk = "*"
 spacy = "*"
-cassis = {git = "https://github.com/dkpro/dkpro-cassis"}
 sklearn = "*"
 pandas = "*"
 preshed = "*"
@@ -27,6 +26,11 @@ dill = "*"
 xlsxwriter = "*"
 requests = "*"
 jupyter = "*"
+dkpro-cassis = "*"
+pycm = "*"
+sympy = "*"
+rpy2 = "*"
+intervaltree = "*"
 
 [dev-packages]
 

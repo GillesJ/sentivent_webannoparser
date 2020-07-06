@@ -268,7 +268,7 @@ class AgreementStudy:
         else:
             return False
 
-    def score_ere_nugget(self, all_gold_annotations, attributes=["event_type", "event_subtype", "polarity", "modality"]):
+    def score_ere_nugget(self, all_gold_annotations, attributes=["event_type", "event_subtype", "polarity_negation", "modality"]):
 
         if not self.ere_matched: raise ValueError("Types have not yet been matched.")
         # get the annotations which are matched
@@ -756,7 +756,7 @@ if __name__ == "__main__":
     iaa_study.match_candidate_annotations("events") # create all possible matches according to different criteria
     iaa_study.select_ere_matches("events") # select the partial span ere nugget match
     cnt = iaa_study.get_selected_match_counts("events")
-    all_attributes = ["event_type", "event_subtype", "polarity", "modality"] # TODO think about event participants
+    all_attributes = ["event_type", "event_subtype", "polarity_negation", "modality"] # TODO think about event participants
 
     # score ere nuggets
     all_gold_annotations = iaa_study.collect_annotations_by_annotator("events")
@@ -775,7 +775,7 @@ if __name__ == "__main__":
     ia_all_attrib_f1 = ere_nugget_results["avg_all_scores"]["f1_attrib_alt"]
     ia_type_f1 = separate_attributes_results["event_type"]["avg_all_scores"]["f1_attrib_alt"]
     ia_subtype_f1 = separate_attributes_results["event_subtype"]["avg_all_scores"]["f1_attrib_alt"]
-    ia_polarity_f1 = separate_attributes_results["polarity"]["avg_all_scores"]["f1_attrib_alt"]
+    ia_polarity_f1 = separate_attributes_results["polarity_negation"]["avg_all_scores"]["f1_attrib_alt"]
     ia_modality_f1 = separate_attributes_results["modality"]["avg_all_scores"]["f1_attrib_alt"]
     ia_type_acc = ere_nugget_results["avg_all_scores"]["event_type_acc"]
     ia_subtype_acc = ere_nugget_results["avg_all_scores"]["event_subtype_acc"]

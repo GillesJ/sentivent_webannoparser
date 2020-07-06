@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-'''
+"""
 to_spacy.py
 webannoparser 
 10/17/18
 Copyright (c) Gilles Jacobs. All rights reserved.  
-'''
+"""
 import spacy
 import pickle
 from parser import *
@@ -14,11 +14,11 @@ from itertools import zip_longest
 if __name__ == "__main__":
 
     FROM_SCRATCH = True
-    nlp = spacy.load('en_core_web_lg')
+    nlp = spacy.load("en_core_web_lg")
     project_fp = "sentivent_en_webanno_project_my_obj.pickle"
-    # opt_fp = "spacy_" + project_fp
+    # opt_dirp = "spacy_" + project_fp
 
-    # if not Path(opt_fp).is_file() or FROM_SCRATCH:
+    # if not Path(opt_dirp).is_file() or FROM_SCRATCH:
     #
     #     with open(project_fp, "rb") as project_in:
     #         project = pickle.load(project_in)
@@ -29,16 +29,18 @@ if __name__ == "__main__":
     #         setattr(sp_doc, "title", doc.title)
     #         project.spacy_documents.append(sp_doc)
     #
-    #     project.dump_pickle(opt_fp)
+    #     project.dump_pickle(opt_dirp)
     #
     # else:
     with open(project_fp, "rb") as project_in:
         project = pickle.load(project_in)
 
-    newline_filter = lambda x: x.text!=u"\n"
+    newline_filter = lambda x: x.text != u"\n"
 
     for i, doc in enumerate(project.spacy_documents[:2]):
-        for j, (doc_tok, spac_tok) in enumerate(zip_longest(project.documents[i].tokens, filter(newline_filter, doc))):
+        for j, (doc_tok, spac_tok) in enumerate(
+            zip_longest(project.documents[i].tokens, filter(newline_filter, doc))
+        ):
             # print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.shape_, token.is_alpha, token.is_stop)
             toktxt = doc_tok.text if doc_tok is not None else "NO TOKEN"
             sptxt = spac_tok.text if spac_tok is not None else "NO TOKEN"
