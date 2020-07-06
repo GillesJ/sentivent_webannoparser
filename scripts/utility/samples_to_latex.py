@@ -21,12 +21,16 @@ def to_latex(event, tag_type=True):
 
     return s
 
+
 def filter_example(ev):
-    if ev.event_subtype \
-        and ev.participants \
-        and len(ev.in_sentence[0].tokens) < 20 \
-        and ev.polarity_negation=="negative":
+    if (
+        ev.event_subtype
+        and ev.participants
+        and len(ev.in_sentence[0].tokens) < 20
+        and ev.polarity_negation == "negative"
+    ):
         return True
+
 
 if __name__ == "__main__":
     proj = parse_project(settings.CLEAN_XMI_DIRP)

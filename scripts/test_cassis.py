@@ -27,10 +27,14 @@ for zip_fp in Path(xmi_export_dirp).glob("annotation/*/*.zip"):
         for event in events:
 
             # get sentence
-            for sentence in cas.select_covering('de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence', event):
+            for sentence in cas.select_covering(
+                "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence", event
+            ):
                 print(sentence)
             # get tokens
-            for token in cas.select_covered('de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token', event):
+            for token in cas.select_covered(
+                "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token", event
+            ):
                 print(token)
 
             if not event.i_Polarity:

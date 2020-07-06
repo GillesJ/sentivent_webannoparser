@@ -18,6 +18,7 @@ from itertools import groupby
 from collections import Counter
 import pandas as pd
 
+
 def to_data(u):
     ud = u.__dict__
     to_add = {
@@ -30,38 +31,52 @@ def to_data(u):
 
 def print_dict_itemlist(d, level=0):
     for k, v in d.items():
-        indent = 2 * level * ' '
-        if not indent: # prettify top level
+        indent = 2 * level * " "
+        if not indent:  # prettify top level
             print("-------")
         if isinstance(v, dict):
             print(f"{indent}- {k}:")
-            print_dict_itemlist(v, level=level+1)
+            print_dict_itemlist(v, level=level + 1)
         else:
             print(f"{indent}- {k}: {', '.join(v)}")
+
 
 def add_issue(issues, unit, issue_descr):
     if not isinstance(unit, str):
         doc_id = " ".join(unit.friendly_id().split(" ")[:2])
-        u_id = unit.friendly_id().split(' ', 2)[-1].split("(", 1)[0]
+        u_id = unit.friendly_id().split(" ", 2)[-1].split("(", 1)[0]
     else:
         doc_id = unit.split("_")[0]
         u_id = unit.split("_")[1]
     issues.setdefault(doc_id, dict())
     issues[doc_id].setdefault(u_id, set()).add(issue_descr)
 
+
 if __name__ == "__main__":
 
     # Create full clean corpus
     # project = pp.parse_project(settings.SENTIMENT_IAA)
 
-
     project = pp.parse_project(settings.SENTIMENT_ANNO)
 
-    annotated_by_gilles_doc_ids = ["wfc00", "wfc01", "wfc02", "wfc03", "wmt03", "pg03", "pg04", "pg05"]
-    project.annotation_documents = [d for d in project.annotation_documents if d.annotator_id != "gilles" or d.document_id in annotated_by_gilles_doc_ids]
+    annotated_by_gilles_doc_ids = [
+        "wfc00",
+        "wfc01",
+        "wfc02",
+        "wfc03",
+        "wmt03",
+        "pg03",
+        "pg04",
+        "pg05",
+    ]
+    project.annotation_documents = [
+        d
+        for d in project.annotation_documents
+        if d.annotator_id != "gilles" or d.document_id in annotated_by_gilles_doc_ids
+    ]
 
     # dict for counting issues
-    issues = {} # {doc_id: anno_id: set(issues)}
+    issues = {}  # {doc_id: anno_id: set(issues)}
 
     all_se = list(project.get_sentiment_expressions())
     all_ev = list(project.get_events())
@@ -85,7 +100,7 @@ if __name__ == "__main__":
         n_sen = len(d.sentences)
         den = sum(cnt_u) / n_sen
         doc_id = f"{d.annotator_id} {d.document_id}"
-        if den <= 0.75: # threshold manually set (1.0 was too sensitive)
+        if den <= 0.75:  # threshold manually set (1.0 was too sensitive)
             t = f"{', '.join(f'{c} {u}' for u, c in zip(units, cnt_u))}, {n_sen} sentences._{round(den,2)})"
             add_issue(issues, f"{doc_id}_doc-level", t)
 
@@ -107,21 +122,8 @@ if __name__ == "__main__":
 
     # check common token-based mistakes: polarity label it should be > tokens
     token_issues = {
-        "positive": [
-            "oversold",
-            "hold",
-            "increase",
-            "benefit",
-            "advantage"
-        ],
-        "negative": [
-            "danger"
-            "overbought",
-            "sell",
-            "decrease",
-            "issue",
-            "problem"
-        ]
+        "positive": ["oversold", "hold", "increase", "benefit", "advantage"],
+        "negative": ["danger" "overbought", "sell", "decrease", "issue", "problem"],
     }
     for correct_pol, tokens in token_issues.items():
         filter_f = lambda x: x.polarity_sentiment_scoped != correct_pol
@@ -129,7 +131,9 @@ if __name__ == "__main__":
             expr_pol = x.polarity_sentiment
             text = x.get_extent_text(extent=[]).lower()
             if any(token in text for token in tokens) and correct_pol != expr_pol:
-                add_issue(issues, x, f"possible polarity mismatch: {expr_pol}>{correct_pol}")
+                add_issue(
+                    issues, x, f"possible polarity mismatch: {expr_pol}>{correct_pol}"
+                )
 
     # print summary:
     # sort dict

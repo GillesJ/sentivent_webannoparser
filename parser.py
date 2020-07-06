@@ -47,20 +47,24 @@ class Element:
         return hash((self.element_id, self.text, self.begin, self.end))
 
     def friendly_id(self):
-        '''
+        """
         Make a representation of object that is easy to find in corpus.
         :return:
-        '''
+        """
         id = f"{self.annotator_id} {self.document_title.split('_')[0]}"
 
-        try: # try making an sentence identifier if there is an in_sentence attrib
+        try:  # try making an sentence identifier if there is an in_sentence attrib
             sen_id = ",".join(str(se.element_id + 1) for se in self.in_sentence)
             id += f" s{sen_id}"
         except Exception as e:
             print(e)
             pass
 
-        text_ellips = (self.text[:15] + '..' + self.text[-15:]) if len(self.text) > 32 else self.text
+        text_ellips = (
+            (self.text[:15] + ".." + self.text[-15:])
+            if len(self.text) > 32
+            else self.text
+        )
         id += f" '{text_ellips}'"
         id += f" {repr(self)}"
         return id
@@ -142,8 +146,9 @@ class Sentence:
         :return: repr string
         """
         text = str(self)
-        text_ellips = (text[:31] + '..' + text[-31:]) if len(text) > 64 else text
+        text_ellips = (text[:31] + ".." + text[-31:]) if len(text) > 64 else text
         return f"{self.element_id}. {text_ellips}..."
+
 
 @dataclass
 class Event(Element):
@@ -233,6 +238,7 @@ class Event(Element):
             for t in self.get_extent_tokens(extent=extent, source_order=source_order)
         )
 
+
 @dataclass
 class SentimentExpression(Element):
     polarity_sentiment: str = field(repr=True)
@@ -273,14 +279,13 @@ class SentimentExpression(Element):
         return [f"{self.document_title.split('_')[0]}_{t.index}" for t in tokens]
 
     def get_extent_text(
-            self,
-            extent=["targets"],
-            source_order=True,
+        self, extent=["targets"], source_order=True,
     ):
         return " ".join(
             t.text
             for t in self.get_extent_tokens(extent=extent, source_order=source_order)
         )
+
 
 @dataclass
 class Token(Element):
@@ -577,7 +582,9 @@ class AnnotationDocument:
             else:
                 polarity_negation = negativepolarity
 
-            if polarity_negation == "positive" and modality == "certain":  # not the same as Liu
+            if (
+                polarity_negation == "positive" and modality == "certain"
+            ):  # not the same as Liu
                 realis = "asserted"
             else:
                 realis = "other"
@@ -595,7 +602,7 @@ class AnnotationDocument:
                 polarity_sentiment_scoped = "negative"
             elif polarity_sentiment == "negative" and polarity_negation == "negative":
                 polarity_sentiment_scoped = "positive"
-            else: # for neutral or not negated
+            else:  # for neutral or not negated
                 polarity_sentiment_scoped = polarity_sentiment
 
             events.append(
@@ -664,7 +671,12 @@ class AnnotationDocument:
         self.sentiment_expressions = []
         for sent in sentiment_xmidata:
 
-            sent_text, sent_begin, sent_end, sent_element_id = self.__extract_default_xmi(sent)
+            (
+                sent_text,
+                sent_begin,
+                sent_end,
+                sent_element_id,
+            ) = self.__extract_default_xmi(sent)
             sent_polarity = sent.get("e_Polarity", None)
             sent_uncertain = sent.get("c_Uncertain", None)
             sent_negation = sent.get("d_Negated", None)
@@ -681,21 +693,38 @@ class AnnotationDocument:
                 sent_polarity_scoped = "negative"
             elif sent_polarity == "negative" and sent_negation == "negative":
                 sent_polarity_scoped = "positive"
-            else: # keep same for neutral or not negated
+            else:  # keep same for neutral or not negated
                 sent_polarity_scoped = sent_polarity
-            
+
             # create Target Links both Entity and Event targets
             targets = []
             # parse sentiment target links which link participants to sentiment as a target
-            targetentity_link_id = sent.get("a_Target").split() # split is needed because multiple target ids are space seperated
+            targetentity_link_id = sent.get(
+                "a_Target"
+            ).split()  # split is needed because multiple target ids are space seperated
             for tentlink_id in targetentity_link_id:
-                targetentity_link = next((tlink for tlink in targetentity_xmidata if tlink["xmi:id"] == tentlink_id), None)
+                targetentity_link = next(
+                    (
+                        tlink
+                        for tlink in targetentity_xmidata
+                        if tlink["xmi:id"] == tentlink_id
+                    ),
+                    None,
+                )
                 target_entity_id = targetentity_link["target"]
                 try:
-                    target_participant = next(p for p in self.participants if str(p.element_id) == target_entity_id)
+                    target_participant = next(
+                        p
+                        for p in self.participants
+                        if str(p.element_id) == target_entity_id
+                    )
                 except StopIteration:
-                # target is not found in already parsed Event Participants, it is a new Participant annotation
-                    part_xmi = next(pxmi for pxmi in participant_xmidata if pxmi["xmi:id"] == target_entity_id)
+                    # target is not found in already parsed Event Participants, it is a new Participant annotation
+                    part_xmi = next(
+                        pxmi
+                        for pxmi in participant_xmidata
+                        if pxmi["xmi:id"] == target_entity_id
+                    )
                     text, begin, end, element_id = self.__extract_default_xmi(part_xmi)
                     target_participant = Participant(
                         text,
@@ -713,9 +742,18 @@ class AnnotationDocument:
             # parse event targets
             targetevent_link_id = sent.get("b_TargetEvent").split()
             for tevlink_id in targetevent_link_id:
-                targetevent_link = next((tlink for tlink in targeteventlink_xmidata if tlink["xmi:id"] == tevlink_id), None)
+                targetevent_link = next(
+                    (
+                        tlink
+                        for tlink in targeteventlink_xmidata
+                        if tlink["xmi:id"] == tevlink_id
+                    ),
+                    None,
+                )
                 target_event_id = targetevent_link["target"]
-                target_event = next(ev for ev in self.events if str(ev.element_id) == target_event_id)
+                target_event = next(
+                    ev for ev in self.events if str(ev.element_id) == target_event_id
+                )
                 targets.append(target_event)
 
             # make Sentiment Expression
@@ -803,30 +841,20 @@ class AnnotationDocument:
 
             sentence = Sentence(i, begin, end, tokens, sentence_events, sentence_se)
             # append the sentence on in_sentence attrib of events
-            for (
-                event
-            ) in (
-                sentence_events
-            ):
+            for event in sentence_events:
                 if event.in_sentence is not None:
                     event.in_sentence.append(sentence)
                 else:
                     event.in_sentence = [sentence]
 
             # and in_sentence for sentiment_expressions
-            for (
-                    se
-            ) in (
-                    sentence_se
-            ):
+            for se in sentence_se:
                 if se.in_sentence is not None:
                     se.in_sentence.append(sentence)
                 else:
                     se.in_sentence = [sentence]
 
-            self.sentences.append(sentence) # add sentence to document
-
-
+            self.sentences.append(sentence)  # add sentence to document
 
         if self.events and self.sentences and self.tokens:
             print(
@@ -875,12 +903,15 @@ class AnnotationDocument:
         """
         return f"{self.document_id} {self.annotator_id}"
 
+
 class WebannoProject:
     def __init__(self, project_dir, format="xmi"):
 
         # check format TODO add tsv3 support and calls
         if format not in ["xmi", "from_documents", "zip"]:
-            raise ValueError('The only project format is zipped or unzipped (UIMA XMI CAS) "xmi".')
+            raise ValueError(
+                'The only project format is zipped or unzipped (UIMA XMI CAS) "xmi".'
+            )
         else:
             self.format = format
 
