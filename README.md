@@ -28,5 +28,18 @@ DEPRECATED/Prototyping (do not use) for archival purposes:
 - `scripts/to_spacy.py`, `parser_tests.py`, `test_cassis.py`: unfinished testing and prototype code.
 
 ## TODO
-- link Spacy API.
-- implement general parser using [cassis](https://github.com/dkpro/dkpro-cassis): not feasible as a custom mapping to objects is still needed.
+-[ ] Clean and split this repo into multiple repos for IAA, corpus viz /stat analysis, etc.
+-[ ] Link Spacy API to document representation for parse trees.
+-[ ] ~~implement general parser using [cassis](https://github.com/dkpro/dkpro-cassis):~~ Not very useful as custom mapping code to objects is still needed, annotation edits and exports are not straight-forward.
+
+## Repo Mirrors
+LAN:
+- gillesLatitude: ~/repos
+- share: lt3_sentivent
+
+WAN:
+- https://github.com/GillesJ/sentivent_webannoparser
+
+## Contact
+- Gilles Jacobs: gilles@jacobsgill.es, gilles.jacobs@ugent.be
+- Veronique Hoste: veronique.hoste@ugent.be
