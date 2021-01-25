@@ -81,7 +81,7 @@ def combine_inspect_corpus(ia_dirp, main_dirp):
         if doc.title not in settings.IA_IDS
     ]
 
-    # 2. Remove documents with no event annotations
+    # 2. Remove documents with no unit annotations
     unclean_len = len(main_project.annotation_documents)
     silver_unclean = [d for d in silver_unclean if d.events]
     print(
@@ -123,9 +123,10 @@ def combine_inspect_corpus(ia_dirp, main_dirp):
     return corpus
 
 
-def parse_project(xmi_export_dirp, from_scratch=False):
+def parse_process_project(xmi_export_dirp, from_scratch=False):
     """
-    Init and parse a Webannoproject from export dir.
+    Init, parse, and Spacy NLP process a Webannoproject from export dir.
+
     :param xmi_export_dirp: dir containing unzipped WebAnno export
     :return: WebAnnoProject
     """
@@ -141,6 +142,63 @@ def parse_project(xmi_export_dirp, from_scratch=False):
         print(f"Parsing project from scratch.")
         project = WebannoProject(xmi_export_dirp)
         project.parse_annotation_project(multiproc=settings.PARSER_MULTIPROC)
+
+        # Split into dev silver and gold-standard adjudicated test
+        project.test = []
+        project.dev = []
+        for doc in project.annotation_documents:
+            if doc.title in settings.IA_IDS:
+                if (
+                    doc.annotator_id == settings.MOD_ID
+                ):  # throw away any IAA study that is not gilles
+                    project.test.append(doc)
+            else:
+                project.dev.append(doc)
+
+        # clean duplicate documents TODO clean these manually for export
+        project.clean_duplicate_documents()
+
+        # process with spacy NLP pipeline
+        project.process_spacy()
+
+        # pickle parsed and processed project
+        util.pickle_webanno_project(project, proj_pkl_fp)
+
+    return project
+
+
+def parse_project(xmi_export_dirp, from_scratch=False):
+    """
+    Init and parse a Webannoproject from export dir.
+
+    :param xmi_export_dirp: dir containing unzipped WebAnno export
+    :return: WebAnnoProject
+    """
+    # Load project and parse docs
+    hash = md5_dir(xmi_export_dirp)
+    proj_pkl_fp = Path(f"parsed_project-{hash}.pkl")
+    if (
+        not from_scratch and proj_pkl_fp.is_file()
+    ):  # if not from_scratch check if serialised parsed project exist and load
+        print(f"Loading project from pickle @ {proj_pkl_fp}.")
+        project = util.unpickle_webanno_project(proj_pkl_fp)
+    else:
+        print(f"Parsing project from scratch.")
+        project = WebannoProject(xmi_export_dirp)
+        project.parse_annotation_project(multiproc=settings.PARSER_MULTIPROC)
+
+        # Split into dev silver and gold-standard adjudicated test
+        project.test = []
+        project.dev = []
+        for doc in project.annotation_documents:
+            if doc.title in settings.IA_IDS:
+                if (
+                    doc.annotator_id == settings.MOD_ID
+                ):  # throw away any IAA study that is not gilles
+                    project.test.append(doc)
+            else:
+                project.dev.append(doc)
+
         util.pickle_webanno_project(project, proj_pkl_fp)
     return project
 

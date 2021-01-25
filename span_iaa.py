@@ -565,7 +565,7 @@ def write_agreestat_token(
                     anno = None
                 data[ext].setdefault(token.annotator_id, []).append(anno)
 
-    # join discontiguous and event extents into one trigger annotation
+    # join discontiguous and unit extents into one trigger annotation
     if "discontiguous_trigger_extent" in extents and "event_extent" in extents:
         data = join_extents(
             data,

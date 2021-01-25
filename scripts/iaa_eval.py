@@ -738,7 +738,7 @@ if __name__ == "__main__":
         "wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt",
     ]
 
-    project_dirp = "exports/XMI_SENTiVENT-event-english-1_2018-10-04_1236"
+    project_dirp = "exports/XMI_SENTiVENT-unit-english-1_2018-10-04_1236"
     iaa_filter_func = lambda x: Path(x).parts[3] in iaa_ids and "anno" in Path(x).stem
 
     if not Path(opt_fp).is_file() or FROM_SCRATCH:
@@ -756,7 +756,7 @@ if __name__ == "__main__":
     iaa_study.match_candidate_annotations("events") # create all possible matches according to different criteria
     iaa_study.select_ere_matches("events") # select the partial span ere nugget match
     cnt = iaa_study.get_selected_match_counts("events")
-    all_attributes = ["event_type", "event_subtype", "polarity_negation", "modality"] # TODO think about event participants
+    all_attributes = ["event_type", "event_subtype", "polarity_negation", "modality"] # TODO think about unit participants
 
     # score ere nuggets
     all_gold_annotations = iaa_study.collect_annotations_by_annotator("events")
@@ -782,7 +782,7 @@ if __name__ == "__main__":
     ia_polarity_acc = ere_nugget_results["avg_all_scores"]["polarity_acc"]
     ia_modality_acc = ere_nugget_results["avg_all_scores"]["modality_acc"]
 
-    # to get an idea of type difficulty: get f1 scores of gold annotations by event type
+    # to get an idea of type difficulty: get f1 scores of gold annotations by unit type
     all_event_types = []
     all_event_subtype = []
     for doc in event_project.annotation_documents:

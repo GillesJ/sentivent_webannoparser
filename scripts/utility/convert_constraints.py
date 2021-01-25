@@ -166,7 +166,7 @@ if __name__ == "__main__":
     }
     ]
 
-    constraints_fp = "/home/gilles/00 sentivent fwosb doctoraat 2017-2020/00-event-annotation/webanno-event-implementation/constraints/eventconstraints1.0.txt"
+    constraints_fp = "/home/gilles/00 sentivent fwosb doctoraat 2017-2020/00-unit-annotation/webanno-unit-implementation/constraints/eventconstraints1.0.txt"
 
     with open(constraints_fp, "rt") as constr_in:
         constraints_txt = constr_in.read()

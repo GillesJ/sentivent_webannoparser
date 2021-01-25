@@ -9,6 +9,9 @@ Copyright (c) Gilles Jacobs. All rights reserved.
 """
 from pathlib import Path
 
+MASTER_DIRP = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-final_project_2020-09-16_1116"
+MASTER_DIRP_BEFORE_SEPT = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-final_project_2020-07-03_1739/"
+
 # SENTIMENT_IAA = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-iaa_project_2020-05-19_1028"
 SENTIMENT_IAA = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-iaa_project_2020-05-26_1450"
 SENTIMENT_ANNO = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-anno_project_2020-05-27_0931"
@@ -19,8 +22,7 @@ PREFINAL_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/weba
 CLEAN_XMI_DIRP = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-event-en/XMI-SENTiVENT-event-english-1.0-clean_2020-02-11_1354"  # clean project
 TEST_XMI_DIRP = "/home/gilles/sentivent-phd/sentivent-resources-dataset/webanno-project-export/testing/TEST_SENTiVENT-event-english-1_2020-02-11_1150"
 
-TYPOLOGY_FP = "/home/gilles/sentivent-phd/webanno-english-event-annotation-preparation-implementation/webanno-event-implementation/scripts/sentivent_en_event_typology.json"
-
+TYPOLOGY_FP = "/home/gilles/sentivent-phd/annotation/event-annotation-preparation-implementation-webanno-english/webanno-event-implementation/scripts/sentivent_en_event_typology.json"
 MOD_ID = "gilles"  # annotator id of the judge who adjudicated for gold standard
 
 OPT_DIRP = "./output/"

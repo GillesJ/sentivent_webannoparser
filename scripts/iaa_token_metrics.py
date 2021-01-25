@@ -167,7 +167,7 @@ if __name__ == "__main__":
                 # elif attrib == ""
                 token_level_label.setdefault(attrib, []).append(label)
 
-    # event type label
+    # unit type label
 
     anns = ["anno_01", "anno_02", "anno_03"]
     # combo = list(combinations(anns, 2)) # for scoring anns against each other separately

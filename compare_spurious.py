@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-'''
+"""
 Script to compare spurious trigger errors due to single-token data transformation.
 
 
 
 compare_spurious.py in sentivent_webannoparser
 8/28/20 Copyright (c) Gilles Jacobs
-'''
+"""
 
 import pandas as pd
 from parse_project import parse_project
@@ -14,21 +14,40 @@ from parse_project import parse_project
 errors_fp = "/home/gilles/repos/dygiepp/scripts/analysis/errors_trigger.csv"
 project_fp = "/home/gilles/sentivent-phd/resources-dataset-guidelines/sentivent-webanno-project-export/sentivent-sentiment-en/XMI-SENTiVENT-sentiment-en-final_project_2020-07-03_1739/"
 
-df_err = pd.read_csv(errors_fp)
+# df_err = pd.read_csv(errors_fp)
 project = parse_project(project_fp, from_scratch=False)
+
+multiword_trigger_cnt = 0
+multiword_trigger_discont_cnt = 0
+singleword_trigger_cnt = 0
+for ev in project.get_events():
+    tokens_cont = ev.get_extent_tokens(extent=[])
+    tokens_discont = ev.get_extent_tokens()
+    if len(tokens_discont) > 1 and len(tokens_discont) > len(tokens_cont):
+        print(ev.get_extent_text(extent=["discontiguous_triggers"])) #collecting examples
+        multiword_trigger_discont_cnt += 1
+    if len(tokens_discont) > 1:
+        multiword_trigger_cnt += 1
+    elif len(tokens_discont) == 1:
+        singleword_trigger_cnt += 1
+
 
 ref_events = {}
 for doc in project.test:
     for sen in doc.sentences:
         id = f"{doc.document_id}_{sen.element_id}"
         if id in df_err["id"].values:
-            ref_events[id] = [(ev.get_extent_token_ids(), ev.event_type) for ev in sen.events]
+            ref_events[id] = [
+                (ev.get_extent_token_ids(), ev.event_type) for ev in sen.events
+            ]
     # lookup doc_id (docid_senix)
 
 spur_err = 0
 single_tok_errors = 0
 single_tok_error_type = []
-df_err_analy = pd.DataFrame(columns=list(df_err.columns) + ["1_tok_error", "1_tok_error_missclf"])
+df_err_analy = pd.DataFrame(
+    columns=list(df_err.columns) + ["1_tok_error", "1_tok_error_missclf"]
+)
 for i, row in df_err.iterrows():
     if row["error_type"] == "spurious":
         spur_err += 1
@@ -45,7 +64,11 @@ for i, row in df_err.iterrows():
     df_err_analy.loc[i] = row
 
 df_err_analy.to_csv(f"{errors_fp.split('.csv')[0]}_anno.csv", index=False)
-stok_pct =  round(100 * single_tok_errors / spur_err, 2)
+stok_pct = round(100 * single_tok_errors / spur_err, 2)
 misclf_pct = round(100 * len(single_tok_error_type) / single_tok_errors, 2)
-print(f"Spurious Errors due to single-token preprocessing: {single_tok_errors}/{len(df_err)} {stok_pct}%")
-print(f"Of which {len(single_tok_error_type)}/{single_tok_errors} {misclf_pct}% misclass.")
+print(
+    f"Spurious Errors due to single-token preprocessing: {single_tok_errors}/{len(df_err)} {stok_pct}%"
+)
+print(
+    f"Of which {len(single_tok_error_type)}/{single_tok_errors} {misclf_pct}% misclass."
+)

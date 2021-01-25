@@ -32,6 +32,8 @@ from sentivent_webannoparser.util import flatten, count_avg, pickle_webanno_proj
 import os
 import multiprocessing
 import json
+from itertools import groupby
+from copy import copy
 
 
 @dataclass
@@ -42,6 +44,7 @@ class Element:
     element_id: int = field(repr=False)
     annotator_id: str
     document_title: str
+    in_document: Any = field(repr=False)
 
     def __hash__(self):
         return hash((self.element_id, self.text, self.begin, self.end))
@@ -51,23 +54,152 @@ class Element:
         Make a representation of object that is easy to find in corpus.
         :return:
         """
-        id = f"{self.annotator_id} {self.document_title.split('_')[0]}"
+        id = f"{self.annotator_id}_{self.document_title.split('_')[0]}"
 
         try:  # try making an sentence identifier if there is an in_sentence attrib
             sen_id = ",".join(str(se.element_id + 1) for se in self.in_sentence)
-            id += f" s{sen_id}"
+            id += f"_s{sen_id}"
         except Exception as e:
             print(e)
             pass
+
+        if isinstance(self, Event):
+            id += f"_{self.event_fulltype}"
+        elif isinstance(self, Participant) or isinstance(self, Filler):
+            id += f"_{self.role}"
 
         text_ellips = (
             (self.text[:15] + ".." + self.text[-15:])
             if len(self.text) > 32
             else self.text
         )
-        id += f" '{text_ellips}'"
-        id += f" {repr(self)}"
+        id += f"-{text_ellips}"
         return id
+
+    def get_processed_sentence(self):
+        """
+        Return the Spacy processed sentences in which the element is positioned.
+        :return:
+        """
+
+        if not hasattr(self, "in_sentence"):
+            raise AttributeError(f"{self} does not have attribute 'in_sentence'.")
+
+        sen_ixs = [sen.element_id for sen in self.in_sentence]
+        sen_procs = [
+            s
+            for i, s in enumerate(self.in_document.sentences_processed)
+            if i in sen_ixs
+        ]
+        return sen_procs
+
+    def get_processed_tokens(self, **kwargs):
+
+        if hasattr(
+            self, "get_extent_tokens"
+        ):  # for events and sentimentexpr which have custom token getters
+            token_origs = self.get_extent_tokens(**kwargs)
+        else:
+            token_origs = self.tokens
+        sen_procs = self.get_processed_sentence()
+
+        # some annotation can exceptionally span multiple sentences (actually not the case in practice)
+        # groupby sentence to retrieve token corresponding to sentence
+        sen_key = lambda x: x.in_sentence.element_id
+        token_origs_by_sen = [
+            list(g) for k, g in groupby(sorted(token_origs, key=sen_key), sen_key)
+        ]
+
+        token_procs = []
+        for sen_tok_orig, sen_proc in zip(token_origs_by_sen, sen_procs):
+            sen_token_orig_ixs = [t.index_sentence for t in sen_tok_orig]
+            sen_token_procs = [
+                t_proc for i, t_proc in enumerate(sen_proc) if i in sen_token_orig_ixs
+            ]
+            token_procs.extend(sen_token_procs)
+
+        return token_procs
+
+    def check_pronominal(self):
+        """
+        Check if the annotation is pronominal by full parsed PoS tag.
+        All tokens should be pronominal (works best for anaphoric pronominal mentions as intended).
+        :return:
+        """
+        pronom_tags = ["PRP", "PRP$", "WDT", "WP", "WP$"]
+        token_procs = self.get_processed_tokens()
+        all_pronom = all(
+            t.tag_ in pronom_tags for t in token_procs
+        )  # True if all tokens are pronom_tags
+        # print(f"{' '.join(t.text + '.' + t.tag_ for t in token_procs)}: Pronominal = {all_pronom}")
+        return all_pronom
+
+    def replace_by_canonical_referent(self, cross_sentence=True):
+        """
+        Replace annotation unit by its Canonical referent.
+        :param cross_sentence: Set to False: Do not replace by CanonicalReferent if the link crosses sentence boundary.
+        :return:
+        """
+        # replace the participant in their containers
+        def replace_in_containers(myobj, replacing):
+            containers = {
+                "event": "participants",
+                "sentiment_expression": "targets",
+                "sentence": "participants",
+            }
+            for c_name, attrib_n in containers.items():
+                c_name = f"in_{c_name}"
+                if hasattr(myobj, c_name):
+                    for c in getattr(myobj, c_name):
+                        to_replace_in = getattr(c, attrib_n)
+                        to_replace_in.append(replacing)
+                        if myobj in to_replace_in:
+                            to_replace_in.remove(myobj)
+                        to_replace_in.sort(key=lambda x: x.begin)
+
+        if self.canonical_referents and self.canonical_referents != "from_canonref":
+            # sometimes there are multiple canonrefs tagged
+            # this can be a) annotation mistake or
+            # b) multiple reference to a group, e.g. "all" refers to three companies.
+            for canonref in self.canonical_referents:
+                # check whether canonical referent is in same sentence
+                same_sentence = [s.element_id for s in self.in_sentence] == [
+                    s.element_id for s in canonref.in_sentence
+                ]
+                # always replace when cross_sentence is true
+                # if cross_sentence is False (disallowed) only replace when canonref is in same sentence
+                if cross_sentence or same_sentence:
+                    # replace element
+                    replacing_participant = Participant(
+                        canonref.text,
+                        canonref.begin,
+                        canonref.end,
+                        canonref.element_id,
+                        canonref.annotator_id,
+                        canonref.document_title,
+                        canonref.in_document,
+                        self.role,
+                        "from_canonref",
+                        self.link_id,
+                        canonref.tokens,
+                    )
+                    replacing_participant.in_sentence = self.in_sentence
+                    replacing_participant.in_document = self.in_document
+                    if hasattr(self, "in_sentiment_expression"):
+                        replacing_participant.in_sentiment_expression = (
+                            self.in_sentiment_expression
+                        )
+                    replacing_participant.from_original_participant = copy(self)
+                    print(
+                        f"Replaced {self} with {canonref}. (in same sentence:{same_sentence})"
+                    )
+
+                    replace_in_containers(self, replacing_participant)
+
+                    # replace on document
+                    self.in_document.participants.append(replacing_participant)
+                    if self in self.in_document.participants:
+                        self.in_document.participants.remove(self)
 
 
 @dataclass
@@ -121,13 +253,29 @@ class Sentence:
         frames - list of frames contained in this sentence
     """
 
-    def __init__(self, element_id, begin, end, tokens, events, sentiment_expressions):
+    def __init__(
+        self,
+        element_id,
+        begin,
+        end,
+        tokens,
+        events,
+        sentiment_expressions,
+        participants,
+        fillers,
+        canonical_referents,
+        targets,
+    ):
         self.element_id = element_id
         self.begin = begin
         self.end = end
         self.tokens = tokens
         self.events = events
         self.sentiment_expressions = sentiment_expressions
+        self.participants = participants
+        self.fillers = fillers
+        self.canonical_referents = canonical_referents
+        self.targets = targets
 
     def __eq__(self, other):
         if self.begin == other.begin and self.end == other.end:
@@ -205,10 +353,11 @@ class Event(Element):
         :return: List of tokens
         """
         all_tokens = self.tokens.copy()
+        core_sen_idx = all_tokens[0].in_sentence.element_id # to ensure discont is in same sentence
 
         for ext in extent:
             if getattr(self, ext):
-                all_tokens.extend(t for x in getattr(self, ext) for t in x.tokens)
+                all_tokens.extend(t for x in getattr(self, ext) for t in x.tokens if t.in_sentence.element_id == core_sen_idx)
 
         all_tokens = list(
             set(all_tokens)
@@ -274,17 +423,12 @@ class SentimentExpression(Element):
 
         return all_tokens
 
-    def get_extent_token_ids(self, extent=[], source_order=True):
-        tokens = self.get_extent_tokens(extent=extent, source_order=source_order)
+    def get_extent_token_ids(self, **kwargs):
+        tokens = self.get_extent_tokens(**kwargs)
         return [f"{self.document_title.split('_')[0]}_{t.index}" for t in tokens]
 
-    def get_extent_text(
-        self, extent=["targets"], source_order=True,
-    ):
-        return " ".join(
-            t.text
-            for t in self.get_extent_tokens(extent=extent, source_order=source_order)
-        )
+    def get_extent_text(self, **kwargs):
+        return " ".join(t.text for t in self.get_extent_tokens(**kwargs))
 
 
 @dataclass
@@ -296,6 +440,7 @@ class Token(Element):
     canonical_referent_extent: List[CanonicalReferent] = field(repr=False)
     discontiguous_trigger_extent: List[DiscontiguousTrigger] = field(repr=False)
     sentiment_expression_extent: List[SentimentExpression] = field(repr=False)
+    target_extent: List[Participant] = field(repr=False)
 
     def get_token_id(self):
         """
@@ -420,6 +565,7 @@ class AnnotationDocument:
                     *self.__extract_default_xmi(pcr),
                     self.annotator_id,
                     self.title,
+                    self,
                     pcr["Governor"],
                     pcr["Dependent"],
                 )
@@ -444,7 +590,7 @@ class AnnotationDocument:
             if self.canonical_referents:
                 canonref = list(
                     filter(
-                        lambda canonref: canonref.pronom_id == element_id,
+                        lambda canonref: str(canonref.pronom_id) == str(element_id),
                         self.canonical_referents,
                     )
                 )
@@ -463,6 +609,7 @@ class AnnotationDocument:
                         element_id,
                         self.annotator_id,
                         self.title,
+                        self,
                         role,
                         canonref,
                         link_id,
@@ -494,6 +641,7 @@ class AnnotationDocument:
                         element_id,
                         self.annotator_id,
                         self.title,
+                        self,
                         role,
                         link_id,
                     )
@@ -515,7 +663,14 @@ class AnnotationDocument:
 
             discontiguous_triggers.append(
                 DiscontiguousTrigger(
-                    text, begin, end, element_id, self.annotator_id, self.title, link_id
+                    text,
+                    begin,
+                    end,
+                    element_id,
+                    self.annotator_id,
+                    self.title,
+                    self,
+                    link_id,
                 )
             )
         if discontiguous_triggers:
@@ -613,6 +768,7 @@ class AnnotationDocument:
                     element_id,
                     self.annotator_id,
                     self.title,
+                    self,
                     event_type,
                     event_subtype,
                     event_fulltype,
@@ -653,7 +809,6 @@ class AnnotationDocument:
 
         # resolve coordinated events: coordinated events are in the exact same begin and end position
         from operator import attrgetter
-        from itertools import groupby
 
         if self.events:
             position_key = attrgetter("begin", "end")
@@ -669,6 +824,7 @@ class AnnotationDocument:
 
         # create Sentiment Expression objects
         self.sentiment_expressions = []
+        self.targets = []
         for sent in sentiment_xmidata:
 
             (
@@ -733,6 +889,7 @@ class AnnotationDocument:
                         element_id,
                         self.annotator_id,
                         self.title,
+                        self,
                         "sentiment_target",
                         None,
                         None,
@@ -764,6 +921,7 @@ class AnnotationDocument:
                 sent_element_id,
                 self.annotator_id,
                 self.title,
+                self,
                 sent_polarity,
                 sent_polarity_scoped,
                 sent_uncertain,
@@ -771,6 +929,7 @@ class AnnotationDocument:
                 targets,
             )
             self.sentiment_expressions.append(se)
+            self.targets.extend(targets)
 
         # create token object
         self.tokens = []
@@ -785,6 +944,7 @@ class AnnotationDocument:
                 "canonical_referents",
                 "discontiguous_triggers",
                 "sentiment_expressions",
+                "targets",
             ]
 
             for attrib in extent_attribs:
@@ -806,11 +966,12 @@ class AnnotationDocument:
                 element_id,
                 self.annotator_id,
                 self.title,
+                self,
                 i,
                 *extent_args,
             )
             self.tokens.append(token)
-            for ann_unit in extent_args:  # match tokens to annotation_documents
+            for ann_unit in extent_args:  # match tokens to annotation units
                 if ann_unit is not None:
                     for au in ann_unit:
                         if au.tokens is not None:
@@ -823,36 +984,44 @@ class AnnotationDocument:
         for i, sentence in enumerate(sentences_xmidata):
             begin = int(sentence["begin"])
             end = int(sentence["end"])
-            tokens = [
-                token
-                for token in self.tokens
-                if token.begin >= begin and token.end <= end
-            ]
-            sentence_events = [
-                event
-                for event in self.events
-                if event.begin >= begin and event.end <= end
-            ]
-            sentence_se = [
-                se
-                for se in self.sentiment_expressions
-                if se.begin >= begin and se.end <= end
-            ]
 
-            sentence = Sentence(i, begin, end, tokens, sentence_events, sentence_se)
-            # append the sentence on in_sentence attrib of events
-            for event in sentence_events:
-                if event.in_sentence is not None:
-                    event.in_sentence.append(sentence)
-                else:
-                    event.in_sentence = [sentence]
+            units_in_sentence = {
+                "tokens": [],
+                "events": [],
+                "sentiment_expressions": [],
+                "participants": [],
+                "fillers": [],
+                "canonical_referents": [],
+                "targets": [],
+            }
 
-            # and in_sentence for sentiment_expressions
-            for se in sentence_se:
-                if se.in_sentence is not None:
-                    se.in_sentence.append(sentence)
+            for k in units_in_sentence:
+                if getattr(self, k) is not None:  # skip if None
+                    units_in_sentence[k] = [
+                        u for u in getattr(self, k) if u.begin >= begin and u.end <= end
+                    ]
+
+            sentence = Sentence(i, begin, end, *units_in_sentence.values())
+
+            # append the sentence on in_sentence attrib of events, sentiment_expressions, fillers, arguments in doc
+            for k, units in units_in_sentence.items():
+                if k != "tokens":
+                    for u in units:
+                        if not hasattr(u, "in_sentence"):
+                            u.in_sentence = [sentence]
+                        else:
+                            if (
+                                u.in_sentence is not None
+                                and sentence not in u.in_sentence
+                            ):
+                                u.in_sentence.append(sentence)
+                            else:
+                                u.in_sentence = [sentence]
                 else:
-                    se.in_sentence = [sentence]
+                    # set sentence_index on tokens for position in sentence and set in_sentence
+                    for i, token in enumerate(units):
+                        token.index_sentence = i
+                        token.in_sentence = sentence
 
             self.sentences.append(sentence)  # add sentence to document
 
@@ -864,6 +1033,29 @@ class AnnotationDocument:
             print(
                 f"Warning: Empty document: Either no events or sentences or tokens in document."
             )
+
+        # add in_event and in_sentiment_expression on participants:
+        def append_attribute(myobj, attrib_k, val):
+            """
+            Append value to attribute list, create the attribute list if does not exist.
+            """
+            vals = getattr(myobj, attrib_k, [])
+            if val not in vals:
+                vals.append(val)
+            setattr(myobj, attrib_k, vals)
+
+        for ev in self.events:
+            if ev.participants:
+                for p in ev.participants:
+                    append_attribute(p, "in_event", ev)
+            if ev.fillers:
+                for f in ev.fillers:
+                    append_attribute(f, "in_event", ev)
+
+        for se in self.sentiment_expressions:
+            if se.targets:
+                for t in se.targets:
+                    append_attribute(t, "in_sentiment_expression", se)
 
     @staticmethod
     def __convertAttributes__(xml_source):
@@ -1049,23 +1241,32 @@ class WebannoProject:
     #     with open(fp, "wb") as self_out:
     #         dill.dump(self, self_out)
 
-    def process_spacy(self):
-
-        nlp = spacy.load("en_core_web_lg")
-
-        self.spacy_documents = []
-        for doc in self.annotation_documents:
-            print(
-                f"{doc.title}: dep parsing, NER tagging, word vectorizing with Spacy."
-            )
-            self.spacy_documents.append(nlp(doc.text))
-            # self.spacy_documents.append(spacy.tokens.Doc(nlp.vocab, words=[[t.text for t in doc.sentences]))
-            # self.spacy_documents.append(spacy.tokens.Doc(nlp.vocab, doc.text))
-
-    def get_events(self):
-        for doc in self.annotation_documents:
+    def get_events(self, subset=None):
+        '''
+        Return all events in project or in subset of project.
+        :param subset: "dev" for events in devset "test" for test set events.
+        :return:
+        '''
+        if subset.lower() == "dev":
+            docs = self.dev
+        elif subset.lower() == "test":
+            docs = self.test
+        else:
+            docs = self.annotation_documents
+        for doc in docs:
             for ev in doc.events:
                 yield ev
+
+    def get_arguments(self, subset=None):
+        if subset.lower() == "dev":
+            docs = self.dev
+        elif subset.lower() == "test":
+            docs = self.test
+        else:
+            docs = self.annotation_documents
+        for doc in docs:
+            for arg in doc.participants + doc.fillers:
+                yield arg
 
     def get_sentiment_expressions(self):
         for doc in self.annotation_documents:
@@ -1076,6 +1277,88 @@ class WebannoProject:
         for doc in self.annotation_documents:
             for val in getattr(doc, anno_attrib_name):
                 yield val
+
+    def clean_duplicate_documents(self):
+        """
+        Clean duplicate docs that are a consequence of opening them in WebAnno.
+        :param docs:
+        :return:
+        """
+        title_k = lambda x: x.title
+        for k, g in groupby(sorted(self.annotation_documents, key=title_k), title_k):
+            g = list(g)
+            if len(g) > 1:
+                # check first if one is in test set
+                to_remove = [x for x in g if x not in self.test]
+                if (
+                    len(to_remove) > 1
+                ):  # if test is not matched, make subselection based on annotation unit count
+                    select_k = lambda x: (
+                        len(x.events) + len(x.sentiment_expressions),
+                        x.annotator_id != "gilles",
+                    )
+                    to_remove.sort(key=select_k, reverse=True)
+                    to_remove = to_remove[1:]
+                for docrm in to_remove:
+                    self.annotation_documents.remove(docrm)
+                    if docrm in self.dev:
+                        self.dev.remove(docrm)
+                    elif docrm in self.test:
+                        self.test.remove(docrm)
+                    print(f"Duplicate doc removed: {docrm}")
+
+    def process_spacy(self):
+        """
+        Run the Spacy processing pipeline on the annotation documents.
+        Add processed docs so they can be accessed.
+        :return: adds .nlp to each doc
+        """
+
+        def prevent_sentence_boundary_detection(doc):
+            for token in doc:
+                # This will entirely disable spaCy's sentence detection
+                token.is_sent_start = False
+            return doc
+
+        def process_sentence(sen_tokens):
+            doc = spacy.tokens.Doc(nlp.vocab, words=sen_tokens)
+            tagger(doc)
+            prevent_sbd(doc)
+            ner(doc)
+            parser(doc)
+            return doc
+
+        # setup spacy nlp pipeline
+        nlp = spacy.load("en_core_web_lg")
+        parser = nlp.get_pipe("parser")
+        nlp.add_pipe(
+            prevent_sentence_boundary_detection, name="prevent-sbd", before="parser"
+        )
+
+        tagger = nlp.get_pipe("tagger")
+        prevent_sbd = nlp.get_pipe("prevent-sbd")
+        parser = nlp.get_pipe("parser")
+        ner = nlp.get_pipe("ner")
+
+        for doc in self.annotation_documents:
+            doc.sentences_processed = []
+            for sen in doc.sentences:
+                sen_tokens = [t.text for t in sen.tokens]
+                sen_proc = process_sentence(sen_tokens)
+                # add processed sentence to doc
+                doc.sentences_processed.append(sen_proc)
+
+            print(f"Processed with Spacy: {doc.document_id}")
+
+    def replace_canonical_referents(self, **kwargs):
+        """
+        Replaces all participant arguments in project with canonical referent links.
+        :return:
+        """
+        for doc in self.annotation_documents:
+            for sen in doc.sentences:
+                for part in sen.participants:
+                    part.replace_by_canonical_referent(**kwargs)
 
 
 def parse_main_iaa(main_dirp, iaa_dirp, opt_fp):

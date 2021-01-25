@@ -13,7 +13,7 @@ import settings
 def to_latex(event, tag_type=True):
     """
     Format the sentence as LaTeX representation in which
-    event trigger = bold
+    unit trigger = bold
     full underline = participant
     dashed underline = filler
     :return:
@@ -33,8 +33,28 @@ def filter_example(ev):
 
 
 if __name__ == "__main__":
-    proj = parse_project(settings.CLEAN_XMI_DIRP)
+    proj = parse_project(settings.MASTER_DIRP, from_scratch=False)
 
+    n_sentimentexpr = 2
+    max_tokens = 24 # so I can use it in manuscript, too long is bad for typography
+    sentences_with_n_sentimentexpr = [sen for doc in proj.annotation_documents for sen in doc.sentences if \
+                                      len(sen.targets) >= 0 and \
+                                      len(sen.sentiment_expressions) >= n_sentimentexpr and \
+                                      len(sen.tokens) <= max_tokens]
+    # other approach for example filter by polarities for diverse sentiment in sentence
+    def get_polarities(sentence):
+        polarities = set()
+        for unit in sentence.events + sentence.sentiment_expressions:
+            polarities.add(unit.polarity_sentiment_scoped)
+        return polarities
+
+    sentences_sentiment_diverse = [sen for doc in proj.annotation_documents for sen in doc.sentences if \
+                                   len(get_polarities(sen)) >= 3 and \
+                                   len(sen.targets) >= 1 and \
+                                   len(sen.tokens) <= max_tokens
+                                   ]
+
+    # previously used on settings.CLEAN_DIRP
     example = list(filter(filter_example, proj.get_events()))
 
     docs = proj.annotation_documents

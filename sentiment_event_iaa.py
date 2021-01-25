@@ -271,7 +271,7 @@ if __name__ == "__main__":
     data_clean = []
     missed = (
         []
-    )  # in cvx05 jef accidentally deleted an event, messing up the ids. Disregard the mismatches
+    )  # in cvx05 jef accidentally deleted an unit, messing up the ids. Disregard the mismatches
     for k, g in groupby(data, key_func):
         g = list(g)
         if len(g) != len(anno_id_allowed):

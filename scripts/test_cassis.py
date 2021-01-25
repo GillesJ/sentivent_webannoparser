@@ -39,8 +39,8 @@ for zip_fp in Path(xmi_export_dirp).glob("annotation/*/*.zip"):
 
             if not event.i_Polarity:
                 print(event, " missing polarity_negation annotation")
-            # print(event.get_covered_text())
-            # for d in event.f_Discontiguous:
+            # print(unit.get_covered_text())
+            # for d in unit.f_Discontiguous:
             #     print("Discont.: ", d.target.get_covered_text())
         pass
 pass

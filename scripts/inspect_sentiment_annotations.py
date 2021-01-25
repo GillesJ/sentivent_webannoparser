@@ -110,7 +110,7 @@ if __name__ == "__main__":
     kf = lambda i: list(list(i[1].values())[0])[0].split("_")[-1]
     issues = {k: v for k, v in sorted(issues.items(), key=kf)}
     print_dict_itemlist(issues)
-    # check event and sentiment polarity annotation complete
+    # check unit and sentiment polarity annotation complete
     for x in all_inst:
         if not x.polarity_sentiment:
             add_issue(issues, x, "polarity_missing")

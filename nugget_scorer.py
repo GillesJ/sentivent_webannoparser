@@ -5,7 +5,7 @@ webannoparser
 4/5/19
 Copyright (c) Gilles Jacobs. All rights reserved.
 
-This code is an implementation of Liu et al. (2015) event nugget scorer.
+This code is an implementation of Liu et al. (2015) unit nugget scorer.
 It currently scores at the document-level and scores are macro-avg there.
 
 N.B: selecting match with maximum dice score is already done by Matcher:
@@ -82,7 +82,7 @@ class MentionMapper:
         selector = get_selector(select_criteria)
         matches = selector(candidates)
 
-        # set matched system event as attrib on gold event, simplifies calls
+        # set matched system unit as attrib on gold unit, simplifies calls
         for gold_ann in gold.events:
             gold_ann.ere_mapping = []
 
@@ -173,7 +173,7 @@ def _match_ere(gold, system):
 
     Note: Non-general search approach for map candidates
     This approach differs from our approaches because it considers all mention combinations at once in the full document.
-    On the other hand, our own custom mapper uses constraint search for each gold event.
+    On the other hand, our own custom mapper uses constraint search for each gold unit.
 
     :param gold:
     :param system:
@@ -258,7 +258,7 @@ def _argmax_dicescore(ann_score_list):
     """
     Selects all candidate matches with the highest dice span sim score.
     This is needed because same span can have multiple annotations in our implementation.
-    This is only the case for Liu et al. 2015 when gold event nuggets are mistakenly split up into multiple other nuggets of same length.
+    This is only the case for Liu et al. 2015 when gold unit nuggets are mistakenly split up into multiple other nuggets of same length.
     Default python max selects only the first item with max value, so cannot be used.
     :param ann_score_list: list of tuples (AnnotationObject, dice_similarity_score)
     :return: list of matches with the max sim score value
@@ -294,7 +294,7 @@ def _select_ere(candidates):
     selection = select_max(candidates)
 
     try:
-        # check that each system event is only matched once
+        # check that each system unit is only matched once
         if selection:
             c = Counter(m[1].element_id for m in selection)
             # print(c)
@@ -442,7 +442,7 @@ def _score_ere_nugget(
     into multiple annotations.
 
     Computes all variants mentioned in the above paper:
-    - f1: span (dice score) f1 of event triggers
+    - f1: span (dice score) f1 of unit triggers
     - f1_alt: Uses alternative Precision ("p_alt") as [1] pp.55 sec.2.4
     - f1_attrib_alt:
 
@@ -543,14 +543,14 @@ def find_exact_overlap(events):
     """
     In a list of annotations return the ones that exactly overlap and have the exact same boundaries e.g.:
     "The [[report]] about oil prices comes in at."
-    :param events: list of event annotation objects.
+    :param events: list of unit annotation objects.
     :return: list of lists of exactly overlapping events.
     """
     token_span_ids = [
         tuple(ev.get_extent_token_ids(extent=["discontiguous_triggers"]))
         for ev in events
     ]
-    # use counter to find overlapping spans: if token position ids are same, there is exact event trigger overlap.
+    # use counter to find overlapping spans: if token position ids are same, there is exact unit trigger overlap.
     counter = Counter(token_span_ids)
     overlap_token_span = [k for k, v in counter.items() if v > 1]
     if overlap_token_span:

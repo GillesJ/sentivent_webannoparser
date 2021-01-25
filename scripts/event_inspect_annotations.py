@@ -122,6 +122,10 @@ fully_corrected = [  # full manual correction and adjudication done on these doc
     "wmt07_walmart-s-meal-kits-are-not-the-solution-to-fight-amazon.txt",  # gold standard
     "bac04_bank-of-america-earnings-hurt-by-tax-related-charge.txt",
     "f03_may-auto-sales-results-reveal-a-new-leader-among-detroit-three.txt",
+    "aal10",  # 09/09/2020
+    "aapl01",  # 10/09/2020
+    "ge05",
+    "abbv00",
 ]
 
 
@@ -151,7 +155,7 @@ def match_string(string, documents):
 def retrieve_document_with_keyword(documents, keywords):
 
     docs = {}
-    # for each token match see if event exists and if it exists check the type
+    # for each token match see if unit exists and if it exists check the type
     for event_type, keywords in keywords.items():
         for keyword in keywords:
             for match, score in match_string(keyword, documents):
@@ -183,7 +187,7 @@ def sum_counters(cs):
 
 def check_typology(events, typology):
     """
-    Checks an parsed event annotation for typology compatibility.
+    Checks an parsed unit annotation for typology compatibility.
 
     :param events:
     :param typology:
@@ -228,21 +232,21 @@ def check_typology(events, typology):
         # print(allowed_part)
         # print(allowed_fill)
         if event.event_type not in typology_maintypes:
-            # print(f"TypeError on {event}")
+            # print(f"TypeError on {unit}")
             event.typology_error.append((event.event_type, "TypeError", event))
         if event.event_subtype not in typology_subtypes:
-            # print(f"SubtypeError on {event}")
+            # print(f"SubtypeError on {unit}")
             event.typology_error.append((event.event_subtype, "SubtypeError", event))
         if event.participants:
             for p in event.participants:
                 role = p.role.split("_")[0]
                 if role not in allowed_part:
-                    # print(f"ParticipantError on {event} | {event.event_type} {event.event_subtype}: {role} | {allowed_part}")
+                    # print(f"ParticipantError on {unit} | {unit.event_type} {unit.event_subtype}: {role} | {allowed_part}")
                     event.typology_error.append((p.role, "ParticipantError", p))
         if event.fillers:
             for f in event.fillers:
                 if f.role not in allowed_fill:
-                    # print(f"FILLERError on {event} | {event.event_type} {event.event_subtype}: {role} | {allowed_part}")
+                    # print(f"FILLERError on {unit} | {unit.event_type} {unit.event_subtype}: {role} | {allowed_part}")
                     event.typology_error.append((f.role, "FILLERError", f))
 
 
@@ -256,7 +260,7 @@ def clean_project(proj):
     unclean_len = len(proj.annotation_documents)
     proj.annotation_documents = [d for d in proj.annotation_documents if d.events]
     clean_len = len(proj.annotation_documents)
-    print(f"Removed {unclean_len - clean_len} docs without event annotations.")
+    print(f"Removed {unclean_len - clean_len} docs without unit annotations.")
 
     # check double titles (was an issue with opening documents to annotators in WebAnno interfaces)
     keep_docs = []
@@ -331,7 +335,7 @@ def old_main():
                     f"\t{err[1]} for {err[0]} on {ev.event_type}.{ev.event_subtype} in {str(ev.in_sentence[0])[:50]}"
                 )
 
-    # keyword check: check keywords for event types
+    # keyword check: check keywords for unit types
     keywords = {
         "Dividend": ["yield"],
         "Profit/Loss": [
@@ -342,7 +346,9 @@ def old_main():
             "EPS",
             "earnings per share",
         ],
-        "Revenue": ["revenue",],
+        "Revenue": [
+            "revenue",
+        ],
         "Expense": ["cost", "expense"],
         "Product/Service": [
             "launch",
@@ -403,12 +409,12 @@ def old_main():
         for doc in event_project.annotation_documents
     }
 
-    # cutoff of 5 sentences per event is intuitively reasonable for inspection
+    # cutoff of 5 sentences per unit is intuitively reasonable for inspection
     docs_too_little_events = {
         k: v for k, v in docs_events_per_senttok.items() if v["sen/ev"] > 5
     }
 
-    # issues on event level using event attributes counts
+    # issues on unit level using unit attributes counts
     # collect macroeconomic issues
     macroecon_no_part = list(
         filter(
@@ -594,7 +600,7 @@ def inspect_annotations(project, typology, events=None):
                     f"\t{err[1]} for {err[0]} on {ev.event_type}.{ev.event_subtype} in {str(ev.in_sentence[0])[:50]}"
                 )
 
-    # keyword check: check keywords for event types
+    # keyword check: check keywords for unit types
     keywords = {
         "Dividend": ["yield"],
         "Profit/Loss": [
@@ -605,7 +611,9 @@ def inspect_annotations(project, typology, events=None):
             "EPS",
             "earnings per share",
         ],
-        "Revenue": ["revenue",],
+        "Revenue": [
+            "revenue",
+        ],
         "Expense": ["cost", "expense"],
         "Product/Service": [
             "launch",
@@ -668,16 +676,17 @@ def inspect_annotations(project, typology, events=None):
         docs_events_per_senttok[(doc.title, doc.annotator_id)]["sen/ev"] = sen_ev
         docs_events_per_senttok[(doc.title, doc.annotator_id)]["tok/ev"] = tok_ev
 
-    # cutoff of 5 sentences per event is intuitively reasonable for inspection
+    # cutoff of 5 sentences per unit is intuitively reasonable for inspection
     docs_too_little_events = {
         k: v for k, v in docs_events_per_senttok.items() if v["sen/ev"] > 5
     }
 
-    # issues on event level using event attributes counts
+    # issues on unit level using unit attributes counts
     # collect macroeconomic issues
     csrbrand_no_part = list(
         filter(
-            lambda x: x.event_type == "CSR/Brand" and not x.participants, all_events,
+            lambda x: x.event_type == "CSR/Brand" and not x.participants,
+            all_events,
         )
     )
 
@@ -826,7 +835,7 @@ if __name__ == "__main__":
     with open(settings.TYPOLOGY_FP, "rt") as typology_in:
         typology = json.load(typology_in)
 
-    # Inspect SENTiVENT-english-event-1.0-clean
+    # Inspect SENTiVENT-english-unit-1.0-clean
     clean_project = parse_project(settings.CLEAN_XMI_DIRP)
     # remove empty docs
     clean_project.annotation_documents = [

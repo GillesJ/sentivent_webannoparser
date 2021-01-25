@@ -117,8 +117,8 @@ def select_redundant_annotated_doc(docs, method="best_tuple_score"):
     :param docs: list of annotation documents.
     :param method: Method for selecting annotation document.
         "best_tuple_score": score docs pairwise on ERE nugget score, select highest scorers.
-        "most_events": largest event count document is
-        "median_events": median event count
+        "most_events": largest unit count document is
+        "median_events": median unit count
     :return: doc_selected: selected document
     """
 
@@ -159,7 +159,7 @@ def clean_project(proj):
     proj.annotation_documents = [d for d in proj.annotation_documents if d.events]
     clean_len = len(proj.annotation_documents)
     print(
-        f"Removed {unclean_len - clean_len} silver-standard docs without event annotations. {unclean_len} remaining."
+        f"Removed {unclean_len - clean_len} silver-standard docs without unit annotations. {unclean_len} remaining."
     )
 
     # # manual check double titles (was an issue with opening documents to annotators in WebAnno interfaces)
@@ -216,7 +216,7 @@ def clean_events(evs):
 def collect_event_attribute(events, attribute_name):
     """
 
-    :param event:
+    :param unit:
     :param attr:
     :return:
     """
@@ -232,7 +232,10 @@ def collect_event_attribute(events, attribute_name):
 
 def plot_type_treemap_interactive(type_df, fp="type_treemap_pygal.pdf"):
     # type treemap
-    style = DefaultStyle(legend_font_size=12, tooltip_font_size=12,)
+    style = DefaultStyle(
+        legend_font_size=12,
+        tooltip_font_size=12,
+    )
     treemap = pygal.Treemap(style=style, margin=0)
     treemap.title = "Event Type"
 
@@ -297,6 +300,9 @@ def write_participant_stats(all_events_clean):
 def plot_type_treemap_matplot(type_df, fp="type_treemap_matplot.pdf"):
 
     type_df = type_df.rename(index={"Merger/Acquisition": "Merger/Acq."})
+    type_df = type_df.drop(labels=["None"], axis=0)
+    type_df = type_df.sort_values("n", ascending=True)
+
     type_df["label"] = type_df.apply(
         lambda x: r"$\bf{"
         + x.name
@@ -305,7 +311,9 @@ def plot_type_treemap_matplot(type_df, fp="type_treemap_matplot.pdf"):
         axis=1,
     )
 
-    figsize = [9, 5]
+    print(type_df)
+
+    figsize = [10, 5.63]
     plt.rcParams["figure.figsize"] = figsize
     cmap = plt.get_cmap("tab20", lut=len(type_df.index))
     # Change color
@@ -319,11 +327,11 @@ def plot_type_treemap_matplot(type_df, fp="type_treemap_matplot.pdf"):
         pad=True,
     )
     plt.title(
-        "Distribution of event categories in SENTiVENT English corpus.",
+        "Distribution of unit categories in SENTiVENT English corpus.",
         fontsize=12,
         figure=fig,
     )
-    plt.axis("off", figure=fig)
+    plt.axis("off")
     plt.show()
     fig.savefig(fp)
 
@@ -332,7 +340,7 @@ def compute_lexical_richness(
     events, by=["event_type"], extent=["discontiguous_triggers"], preproc=None
 ):
     """
-    Compute lexical richness measures of event attributes.
+    Compute lexical richness measures of unit attributes.
     event_type extracts the mention tokens
 
     :return:
@@ -352,7 +360,7 @@ def compute_lexical_richness(
     for attrib_name, g in groupby(
         events, key=lambda x: (getattr(x, attrib_n) for attrib_n in by)
     ):
-        attrib_name = ".".join(attrib_name)
+        attrib_name = ".".join(str(attrib_name))
 
         for event in g:
             text = event.get_extent_text(extent=extent)
@@ -494,7 +502,7 @@ def compute_plot_lexical_richness(events):
             ("entropy", "Entropy"),
         ]
     )
-    # for event trigger only
+    # for unit trigger only
     df_lr_trigger = compute_lexical_richness(
         events,
         by=["event_type"],
@@ -503,7 +511,9 @@ def compute_plot_lexical_richness(events):
     )
     df_lr_trigger.to_csv("lexical_richness_trigger_stemmed.csv")
     plot_lexical_richness(
-        df_lr_trigger, plot_metrics_as=plot_metrics, plot_name="trigger",
+        df_lr_trigger,
+        plot_metrics_as=plot_metrics,
+        plot_name="trigger",
     )
 
     # make full nugget lexical diversity plot
@@ -555,12 +565,12 @@ if __name__ == "__main__":
 
     # clean the corpus of redundantly annotated docs
     # single_annotated_docs = clean_project(iaa_project)
-    proj = parse_project(settings.CLEAN_XMI_DIRP)
+    proj = parse_project(settings.MASTER_DIRP_BEFORE_SEPT, from_scratch=False)
     # sent_proj = parse_project(settings.CLEAN_XMI_DIRP)
     all_docs = proj.annotation_documents
 
     # get general corpus stats: TODO add counts for multi-word triggers as in Liu 2015
-    avg_attribs = [
+    attribs = [
         "events",
         "sentences",
         "tokens",
@@ -570,12 +580,18 @@ if __name__ == "__main__":
         "canonical_referents",
         "coreferent_event_xmidata",
     ]
-    avg = {
-        avg_attrib: count_avg([d for d in all_docs], avg_attrib, return_counts=True)
-        for avg_attrib in avg_attribs
+    # compute avg attrib per doc + total
+    avg_total = {
+        attrib: count_avg(all_docs, attrib, return_counts=True) for attrib in attribs
+    }
+    avg_dev = {
+        attrib: count_avg(proj.dev, attrib, return_counts=True) for attrib in attribs
+    }
+    avg_test = {
+        attrib: count_avg(proj.test, attrib, return_counts=True) for attrib in attribs
     }
     general_corpus_stats_df = pd.DataFrame(
-        [x[1] for x in avg.values()], index=avg.keys()
+        [x[1] for x in avg_total.values()], index=avg_total.keys()
     )
     general_corpus_stats_df.loc["documents"] = len(all_docs)
     general_corpus_stats_df = general_corpus_stats_df.rename(
@@ -597,7 +613,7 @@ if __name__ == "__main__":
             all_events.append(ev)
 
     # plot lexical richness
-    compute_plot_lexical_richness(all_events)
+    # compute_plot_lexical_richness(all_events)
 
     # count subtype
     subtype_count = Counter(
@@ -627,7 +643,7 @@ if __name__ == "__main__":
     weak_cnt = len(weak_events)
     weak_types = Counter(ev.event_type for ev in weak_events)
 
-    # count event subtypes
+    # count unit subtypes
     avg_subtype_count = get_percentage_counter(
         Counter(
             f"{ev.event_type}.{ev.event_subtype}"
@@ -721,7 +737,7 @@ if __name__ == "__main__":
             ],
         }
     )
-    # create event dataframe
+    # create unit dataframe
     df_events = pd.DataFrame(
         {
             "event_type": [ev.event_type for ev in all_events],
@@ -789,13 +805,22 @@ if __name__ == "__main__":
 
     plot_type_treemap_matplot(type_df)
 
-    # create a list of event annotations that have changed and fix them
+    # create a list of unit annotations that have changed and fix them
 
-    event_getter = {"event_type": ["CapitalReturns", "FinancialResult",]}
+    event_getter = {
+        "event_type": [
+            "CapitalReturns",
+            "FinancialResult",
+        ]
+    }
     edits = [
         ev
         for ev in all_events
-        if ev.event_type in ["CapitalReturns", "FinancialResult",]
+        if ev.event_type
+        in [
+            "CapitalReturns",
+            "FinancialResult",
+        ]
     ]
     gkey = lambda x: (x.document_title, x.annotator_id)
     doc_replace_cnt = [
@@ -807,7 +832,7 @@ if __name__ == "__main__":
     # events with no participants
     cnt_no_participants = sum(1 for ev in all_events if not ev.participants)
     print(
-        f"{cnt_no_participants}/{len(all_events)} ({round(100*float(cnt_no_participants)/len(all_events), 2)}%) event without participants."
+        f"{cnt_no_participants}/{len(all_events)} ({round(100*float(cnt_no_participants)/len(all_events), 2)}%) unit without participants."
     )
     group_key = lambda x: x.annotator_id
     all_events_sorted = sorted(all_events, key=group_key)
@@ -818,7 +843,7 @@ if __name__ == "__main__":
             f"\t{anid} {cnt_no_participants}/{len(evs)} ({round(100 * float(cnt_no_participants) / len(evs),2)}%)"
         )
 
-    # parse histoplot of doc_length in sentences and words over amount of event annos
+    # parse histoplot of doc_length in sentences and words over amount of unit annos
     df_event_cnt = pd.DataFrame(
         {
             "title": [doc.title for doc in all_docs],
