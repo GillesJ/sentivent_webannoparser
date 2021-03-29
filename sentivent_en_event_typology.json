@@ -1,0 +1,2297 @@
+[
+    {
+        "description":"Corporate Social Responsibility (CSR) and Branding events take place when the company's effects on environmental and social well-being are assessed or when the brand image is affected.CSR involves ethical, ecological, environmental and social efforts (e.g. affirmative action, employee well-being, obtaining certifications) and on scandals violating responsibility such as sexism accusations, corruption, bribing, etc.Branding and marketing involves events improving or damaging image and credibility of the brand image, company image, or product image. This includes marketing, advertising campaigns, awards, affiliations, and sponsorships.Includes announcements, reports, quotations, and speculation on CSR and branding events.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"CSR/Brand",
+        "maintype_name":"CSR/Brand",
+        "participant":[
+            {
+                "description":"The company or brand directly associated with the CSR, branding, or marketing event.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Company_CSR/Brand",
+                "on_subtype":"",
+                "on_type":"CSR/Brand",
+                "is_target":true
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Deals and partnerships to cooperate with another company or entity.Two or more companies, organization or entities agree to jointly reach a goal.Examples of deals include service and product deals, licensing, contract bid, alliance, partnership, Memorandum of Understanding (MOU), pacts, joint ventures (two companies pool resources to accomplish a task), collaborations, contracts, agreements, development partnerships (usually public private partnerships for development projects), and affiliations.Includes announcements, reports, quotations, and speculation on deal events.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Deal",
+        "maintype_name":"Deal",
+        "participant":[
+            {
+                "description":"One of the partner in the deal. Taggability: A deal by definition has multiple partners so at least two or more Partner participants need to be tagged (if there is no violation of Event Mention Scope).",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Partner",
+                "on_subtype":"",
+                "on_type":"Deal",
+                "is_target":true
+            },
+            {
+                "description":"Goal and aims of the deal. Taggability: Only annotate non-sentential units as the annotation extent, full sentences are not taggable.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Goal",
+                "on_subtype":"",
+                "on_type":"Deal",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"A dividend is a distribution of a portion of a company's earnings, decided by the board of directors, paid to a class of its shareholders. Dividends can be issued as cash payments, as shares of stock, or other property. A dividend is a payment made by a corporation to its shareholders, usually as a distribution of profits. When a corporation earns a profit or surplus, the corporation is able to re-invest the profit in the business (called retained earnings) and pay a proportion of the profit as a dividend to shareholders. Distribution to shareholders may be in cash (usually a deposit into a bank account). Investors often view the company\u2019s dividend by its dividend yield which measures the dividend in terms of a percent of the current market price. The dividend rate can also be quoted in terms of the dollar amount each share receives (dividends per share, or DPS). Includes forecasts, reports, announcements, quotations and speculation on dividends.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Dividend",
+        "maintype_name":"Dividend",
+        "participant":[
+            {
+                "description":"The company giving out dividends.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Company_Dividend",
+                "on_subtype":"",
+                "on_type":"Dividend",
+                "is_target":true
+            },
+            {
+                "description":"The total amount of dividends payed-out in monetary amount or as count of dividends.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Amount_Dividend",
+                "on_subtype":"",
+                "on_type":"Dividend",
+                "is_target":false
+            },
+            {
+                "description":"The current dividend yield ratio in percentage.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"YieldRatio",
+                "on_subtype":"",
+                "on_type":"Dividend",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"A dividend is a payment made by a corporation to its shareholders, usually as a distribution of profits.When a corporation earns a profit or surplus, the corporation is able to re-invest the profit in the business (called retained earnings) and pay a proportion of the profit as a dividend to shareholders.Distribution to shareholders may be in cash (usually a deposit into a bank account).",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Dividend_Payment",
+        "maintype_name":"Dividend",
+        "participant":[
+            {
+                "description":"The company giving out dividends.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Dividend",
+                "on_subtype":"Payment",
+                "on_type":"Dividend",
+                "is_target":true
+            },
+            {
+                "description":"The total amount of dividends payed-out in monetary amount or as count of dividends.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Amount_Dividend",
+                "on_subtype":"Payment",
+                "on_type":"Dividend",
+                "is_target":false
+            },
+            {
+                "description":"The current dividend yield ratio in percentage.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"YieldRatio",
+                "on_subtype":"Payment",
+                "on_type":"Dividend",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Payment"
+    },
+    {
+        "description":"The dividend yield ratio has increased over a period and has changed substantially as a positive percentage increase compared to a historical trend.The dividend yield is a financial ratio that indicates how much a company pays out in dividends each year relative to its share price.Dividend yield is represented as a percentage and can be calculated by dividing the dollar value of dividends paid in a given year per share of stock held by the dollar value of one share of stock.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Dividend_YieldRaise",
+        "maintype_name":"Dividend",
+        "participant":[
+            {
+                "description":"The company giving out dividends.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Dividend",
+                "on_subtype":"YieldRaise",
+                "on_type":"Dividend",
+                "is_target":true
+            },
+            {
+                "description":"The total amount of dividends payed-out in monetary amount or as count of dividends.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Amount_Dividend",
+                "on_subtype":"YieldRaise",
+                "on_type":"Dividend",
+                "is_target":false
+            },
+            {
+                "description":"The current dividend yield ratio in percentage.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"YieldRatio",
+                "on_subtype":"YieldRaise",
+                "on_type":"Dividend",
+                "is_target":false
+            },
+            {
+                "description":"The dividend yield ratio in percentage compared to which the current yield ratio has increased.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"HistoricalYieldRatio",
+                "on_subtype":"YieldRaise",
+                "on_type":"Dividend",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"YieldRaise"
+    },
+    {
+        "description":"The dividend yield ratio has decreased over a period and has changed substantially as a negative percentage decrease compared to a historical trend.The dividend yield is a financial ratio that indicates how much a company pays out in dividends each year relative to its share price.Dividend yield is represented as a percentage and can be calculated by dividing the dollar value of dividends paid in a given year per share of stock held by the dollar value of one share of stock.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Dividend_YieldReduction",
+        "maintype_name":"Dividend",
+        "participant":[
+            {
+                "description":"The company giving out dividends.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Dividend",
+                "on_subtype":"YieldReduction",
+                "on_type":"Dividend",
+                "is_target":true
+            },
+            {
+                "description":"The total amount of dividends payed-out in monetary amount or as count of dividends.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Amount_Dividend",
+                "on_subtype":"YieldReduction",
+                "on_type":"Dividend",
+                "is_target":false
+            },
+            {
+                "description":"The current dividend yield ratio in percentage.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"YieldRatio",
+                "on_subtype":"YieldReduction",
+                "on_type":"Dividend",
+                "is_target":false
+            },
+            {
+                "description":"The dividend yield ratio in percentage compared to which the current yield ratio has decreased.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalYieldRatio",
+                "on_subtype":"YieldReduction",
+                "on_type":"Dividend",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"YieldReduction"
+    },
+    {
+        "description":"The dividend yield ratio has remained stable over a period and has not changed substantially compared to a historical trend.The dividend yield is a financial ratio that indicates how much a company pays out in dividends each year relative to its share price.Dividend yield is represented as a percentage and can be calculated by dividing the dollar value of dividends paid in a given year per share of stock held by the dollar value of one share of stock.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Dividend_YieldStable",
+        "maintype_name":"Dividend",
+        "participant":[
+            {
+                "description":"The company giving out dividends.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Dividend",
+                "on_subtype":"YieldStable",
+                "on_type":"Dividend",
+                "is_target":true
+            },
+            {
+                "description":"The total amount of dividends payed-out in monetary amount or as count of dividends.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Amount_Dividend",
+                "on_subtype":"YieldStable",
+                "on_type":"Dividend",
+                "is_target":false
+            },
+            {
+                "description":"The current dividend yield ratio in percentage.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"YieldRatio",
+                "on_subtype":"YieldStable",
+                "on_type":"Dividend",
+                "is_target":false
+            },
+            {
+                "description":"The dividend yield ratio in percentage compared to which the current yield ratio has remained stable.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalYieldRatio",
+                "on_subtype":"YieldStable",
+                "on_type":"Dividend",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"YieldStable"
+    },
+    {
+        "description":"Events regarding employment changes (firing and hiring), compensation, and issues regarding the workforce or other employees such as executives.Examples of this type are CEO changes, executive change, board change, executive compensation, employment issues, strikes, workforce increase, workforce decrease/firing.Includes announcements, reports, quotations, and speculation on employment events.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"The job title/position of the employee.",
+                "example_sentence":"FILLER example sentence with the argument highlighted",
+                "from_event":"Employment",
+                "name":"TITLE",
+                "on_subtype":"",
+                "on_type":"Employment",
+                "is_target":false
+            }
+        ],
+        "full_name":"Employment",
+        "maintype_name":"Employment",
+        "participant":[
+            {
+                "description":"Employee, group of employees, part of the workforce.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Employee",
+                "on_subtype":"",
+                "on_type":"Employment",
+                "is_target":true
+            },
+            {
+                "description":"Employer company or employing person.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Employer",
+                "on_subtype":"",
+                "on_type":"Employment",
+                "is_target":true
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"A person or group of people start a new job position at an employer (company or organization). Includes events, announcements, speculation, expectation, changes on hiring, CEO changes, executive change, board change, workforce increases.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"The job title/position of the starting Employee.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "from_event":"Employment_Start",
+                "name":"TITLE",
+                "on_subtype":"Start",
+                "on_type":"Employment",
+                "is_target":false
+            }
+        ],
+        "full_name":"Employment_Start",
+        "maintype_name":"Employment",
+        "participant":[
+            {
+                "description":"Employee, group of employees, part of the workforce starting a new position.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Employee",
+                "on_subtype":"Start",
+                "on_type":"Employment",
+                "is_target":true
+            },
+            {
+                "description":"Employer company or employing person.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Employer",
+                "on_subtype":"Start",
+                "on_type":"Employment",
+                "is_target":true
+            },
+            {
+                "description":"The person that the starting Employee replaces.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Replacing",
+                "on_subtype":"Start",
+                "on_type":"Employment",
+                "is_target":true
+            }
+        ],
+        "subtype_name":"Start"
+    },
+    {
+        "description":"The job position of a person or a group of people has ended with an employer (company or organization). Includes events, announcements, speculation, expectation, changes CEO change, executive change, board change, workforce decrease/firing, termination, death, illness, and any other form of ending a professional position.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"The job title/position of the terminated Employee.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "from_event":"Employment_End",
+                "name":"TITLE",
+                "on_subtype":"End",
+                "on_type":"Employment",
+                "is_target":false
+            }
+        ],
+        "full_name":"Employment_End",
+        "maintype_name":"Employment",
+        "participant":[
+            {
+                "description":"Employee, group of employees, part of the workforce being terminated/fired.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Employee",
+                "on_subtype":"End",
+                "on_type":"Employment",
+                "is_target":true
+            },
+            {
+                "description":"Employer company or employing person doing the firing.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Employer",
+                "on_subtype":"End",
+                "on_type":"Employment",
+                "is_target":true
+            },
+            {
+                "description":"The person that replaces the terminated Employee.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Replacer",
+                "on_subtype":"End",
+                "on_type":"Employment",
+                "is_target":true
+            }
+        ],
+        "subtype_name":"End"
+    },
+    {
+        "description":"Changes in compensation for employees. Executive compensation as equity, workforce pay-out, payment issues, or wage in/decreases.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"The job title/position of the terminated Employee.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "from_event":"Employment_Compensation",
+                "name":"TITLE",
+                "on_subtype":"Compensation",
+                "on_type":"Employment",
+                "is_target":false
+            }
+        ],
+        "full_name":"Employment_Compensation",
+        "maintype_name":"Employment",
+        "participant":[
+            {
+                "description":"Employee, group of employees, part of the workforce who's compensation is affected.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Employee",
+                "on_subtype":"Compensation",
+                "on_type":"Employment",
+                "is_target":true
+            },
+            {
+                "description":"Employer company or employing person.",
+                "example_sentence":"Argument example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Employer",
+                "on_subtype":"Compensation",
+                "on_type":"Employment",
+                "is_target":true
+            },
+            {
+                "description":"the monetary amount of compensation.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Amount_Employment",
+                "on_subtype":"Compensation",
+                "on_type":"Employment",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Compensation"
+    },
+    {
+        "description":"An expense is the cost that a business requires to operate on the short-term and long-term. An operating expense (OPEX) is a recurring expense a company incurs through its operations.Often abbreviated as OPEX, operating expenses include rent, equipment, inventory costs, marketing, payroll, insurance, and funds allocated for research and development.Revenue and capital expenses (CAPEX) are costs a company makes to maintain or upgrade existing assets made over a period of time. Includes announcements, reports, quotations, and speculation on operating, revenue and capital expenses.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Expense",
+        "maintype_name":"Expense",
+        "participant":[
+            {
+                "description":"Company making the expense.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Company_Expense",
+                "on_subtype":"",
+                "on_type":"Expense",
+                "is_target":true
+            },
+            {
+                "description":"The capital cost of the expense expressed as a monetary value.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Amount_Expense",
+                "on_subtype":"",
+                "on_type":"Expense",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Expenses and costs have increased compared to a historical trend. The company is expending more costs than before as a trend or on specific tangible (real-estate, rent, infrastructure) or intangible assets (intellectual property) assets.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Expense_Increase",
+        "maintype_name":"Expense",
+        "participant":[
+            {
+                "description":"Company making the expense.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Expense",
+                "on_subtype":"Increase",
+                "on_type":"Expense",
+                "is_target":true
+            },
+            {
+                "description":"The current capital cost of the expense expressed as a monetary value.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Amount_Expense",
+                "on_subtype":"Increase",
+                "on_type":"Expense",
+                "is_target":false
+            },
+            {
+                "description":"The historical capital cost compared to which the current amount is increased.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"HistoricalAmount_Expense",
+                "on_subtype":"Increase",
+                "on_type":"Expense",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Increase_Expense"
+    },
+    {
+        "description":"Expenses and costs have decreased compared to a historical trend. The company is expending less costs than before as a trend or on specific tangible (real-estate, rent, infrastructure) or intangible assets (intellectual property) assets. The company makes efficiency efforts in production or its operation saving capital.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Expense_Decrease",
+        "maintype_name":"Expense",
+        "participant":[
+            {
+                "description":"Company making the expense.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Expense",
+                "on_subtype":"Decrease",
+                "on_type":"Expense",
+                "is_target":true
+            },
+            {
+                "description":"The current capital cost of the expense expressed as a monetary value.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Amount_Expense",
+                "on_subtype":"Decrease",
+                "on_type":"Expense",
+                "is_target":false
+            },
+            {
+                "description":"The historical capital cost compared to which the current amount is decreased.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalAmount_Expense",
+                "on_subtype":"Decrease",
+                "on_type":"Expense",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Decrease_Expense"
+    },
+    {
+        "description":"Expenses and costs remain stable or have not changed significantly compared to a historical trend. The company is expending less costs than before as a trend or on specific tangible (real-estate, rent, infrastructure) or intangible assets (intellectual property) assets. The company makes efficiency efforts in production or its operation saving capital.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Expense_Stable",
+        "maintype_name":"Expense",
+        "participant":[
+            {
+                "description":"Company making the expense.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Expense",
+                "on_subtype":"Stable",
+                "on_type":"Expense",
+                "is_target":true
+            },
+            {
+                "description":"The current capital cost of the expense expressed as a monetary value.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Amount_Expense",
+                "on_subtype":"Stable",
+                "on_type":"Expense",
+                "is_target":false
+            },
+            {
+                "description":"The historical capital cost compared to which the current amount has remained stable.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalAmount_Expense",
+                "on_subtype":"Stable",
+                "on_type":"Expense",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Stable_Expense"
+    },
+    {
+        "description":"Events pertaining to a company's physical presence as facilities, factories, headquarters, warehouses, and other real-estate. Facilities opening, facilities closing, headquarters relocation, headquarters opening, headquarters closing. Facilities include headquarters, retail sites, production sites, logic centers, etc.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Facility",
+        "maintype_name":"Facility",
+        "participant":[
+            {
+                "description":"Facility, factory or headquarters.",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Facility",
+                "on_subtype":"",
+                "on_type":"Facility",
+                "is_target":true
+            },
+            {
+                "description":"Company that is owner of the facility or headquarters.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":true,
+                "name":"Company_Facility",
+                "on_subtype":"",
+                "on_type":"Facility",
+                "is_target":true
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Facilities opening, includes headquarters, factories, production sites, retail sites, etc.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Facility_Open",
+        "maintype_name":"Facility",
+        "participant":[
+            {
+                "description":"Facility or headquarters",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Facility",
+                "on_subtype":"Open",
+                "on_type":"Facility",
+                "is_target":true
+            },
+            {
+                "description":"Company opening facility or headquarters.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Facility",
+                "on_subtype":"Open",
+                "on_type":"Facility",
+                "is_target":true
+            }
+        ],
+        "subtype_name":"Open"
+    },
+    {
+        "description":"Facilities closing, includes headquarters, factories, production sites, retail sites, etc.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Facility_Close",
+        "maintype_name":"Facility",
+        "participant":[
+            {
+                "description":"Facility or headquarters",
+                "example_sentence":"Argument 2 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Facility",
+                "on_subtype":"Close",
+                "on_type":"Facility",
+                "is_target":true
+            },
+            {
+                "description":"Company opening facility or headquarters.",
+                "example_sentence":"Argument 1 example sentence with the argument highlighted",
+                "in_tagset":false,
+                "name":"Company_Facility",
+                "on_subtype":"Close",
+                "on_type":"Facility",
+                "is_target":true
+            }
+        ],
+        "subtype_name":"Close"
+    },
+    {
+        "description":"Financial results as discussed in reports published by the company or other instance (such as an rating firm, analyst, or fund).Quarterly and annual reports include key accounting and financial data for a company, including gross revenue, net profit, operational expenses and cash flow.We include all statements about cash flow that involves the incoming and outgoing transactions of a company (e.g., free cash flow (FCF)) and metrics derived thereof under this type.A quarterly report for a public company typically includes an income statement, balance sheet, and cash flow statement for the quarter and the year-to-date (YTD), as well as comparative results for the prior year.This event captures publishing, announcement or discussions of these reports and reported results within them.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"FinancialReport",
+        "maintype_name":"FinancialReport",
+        "participant":[
+            {
+                "description":"Company that is the topic of the financial report.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Reportee",
+                "on_subtype":"",
+                "on_type":"FinancialReport",
+                "is_target":true
+            },
+            {
+                "description":"The type of result with associated monetary amount that is reported on.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Result",
+                "on_subtype":"",
+                "on_type":"FinancialReport",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"A financial report shows that a company's financials are better than previous expectations or historical trends.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"FinancialReport_Beat",
+        "maintype_name":"FinancialReport",
+        "participant":[
+            {
+                "description":"Company that is the topic of the financial report.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Reportee",
+                "on_subtype":"Beat",
+                "on_type":"FinancialReport",
+                "is_target":true
+            },
+            {
+                "description":"The type of result with associated monetary amount that is reported on.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Result",
+                "on_subtype":"Beat",
+                "on_type":"FinancialReport",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Beat"
+    },
+    {
+        "description":"A financial report shows that a company's financials are worse than previous expectations or historical trends.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"FinancialReport_Miss",
+        "maintype_name":"FinancialReport",
+        "participant":[
+            {
+                "description":"Company that is the topic of the financial report.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Reportee",
+                "on_subtype":"Miss",
+                "on_type":"FinancialReport",
+                "is_target":true
+            },
+            {
+                "description":"The type of result with associated monetary amount that is reported on.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Result",
+                "on_subtype":"Miss",
+                "on_type":"FinancialReport",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Miss"
+    },
+    {
+        "description":"A financial report shows that a company's financials are stable or as expected w.r.t. previous expectations or historical trends.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"FinancialReport_Stable",
+        "maintype_name":"FinancialReport",
+        "participant":[
+            {
+                "description":"Company that is the topic of the financial report.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Reportee",
+                "on_subtype":"Stable",
+                "on_type":"FinancialReport",
+                "is_target":true
+            },
+            {
+                "description":"The type of result with associated monetary amount that is reported on.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Result",
+                "on_subtype":"Stable",
+                "on_type":"FinancialReport",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Stable_FinancialReport"
+    },
+    {
+        "description":"Financing of a company are ways in which it raises capital through debt and equity.Equity financing involves not just the sale of stocks, but also the sale of other equity or quasi-equity instruments such as preferred stock, convertible preferred stock and equity units that include common shares and warrants.These events focus on how a company raises equity through issuing shares in IPOs, stock splits, etc.Debt Financing refers to the way in which companies raise funds by taking on debt by issuing bonds or taking on loans. Debt financing occurs when a firm sells fixed income products, such as bonds, bills, or notes, to investors.The balance between equity and debt of a company is expressed as the weighted average cost of capital (WACC).Event mentions pertaining to company debt and debt ratios.Includes debt announcements, debt forecasts, debt increases, debt reductions, and debt and equity restructuring.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Financing",
+        "maintype_name":"Financing",
+        "participant":[
+            {
+                "description":"The company selling equity as shares or taking on debt by issuing bonds or taking out loans.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Financee",
+                "on_subtype":"",
+                "on_type":"Financing",
+                "is_target":true
+            },
+            {
+                "description":"The company, institution, or private entity investing in equity or giving out the loan.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Financer",
+                "on_subtype":"",
+                "on_type":"Financing",
+                "is_target":true
+            },
+            {
+                "description":"Amount of capital financed as debt or equity.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Amount_Financing",
+                "on_subtype":"",
+                "on_type":"Financing",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Investment takes place when an organization, company or entity allocates capital or time in expectation for some benefit/return in the future.We include corporate investment in other companies or subsidiaries as well as investments a company makes in infrastructure or products/services.Corporate capital investment involves one company investing in another company it owns as a subsidiary or does not control or own fully as in affiliate/associate companies.Corporate investments are often Capital Investments as part of a Corporate Finance strategy to strengthen the companies' portfolio.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Investment",
+        "maintype_name":"Investment",
+        "participant":[
+            {
+                "description":"Company or organization that makes the investment.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Investor",
+                "on_subtype":"",
+                "on_type":"Investment",
+                "is_target":true
+            },
+            {
+                "description":"Company being in which the Investor invests. Can also be a stock or other security.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Investee",
+                "on_subtype":"",
+                "on_type":"Investment",
+                "is_target":true
+            },
+            {
+                "description":"Amount of capital invested as a monetary expression.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"CapitalInvested",
+                "on_subtype":"",
+                "on_type":"Investment",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Events pertaining to governmental justice. Investigations. accusations, litigations, arrest charges, Fraud, Money Laundering, Bribing, Settlement, Judgement, Lawsuit, Legal issues, Regulatory issues, injunctions.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"Allegation or other formal/legal offence that is alleged against a Defendant.",
+                "example_sentence":"",
+                "from_event":"Legal",
+                "name":"ALLEGATION",
+                "on_subtype":"",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "full_name":"Legal",
+        "maintype_name":"Legal",
+        "participant":[
+            {
+                "description":"Entity, company, or person being alleged of a crime, under investigation, convicted, fined, etc.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Defendant",
+                "on_subtype":"",
+                "on_type":"Legal",
+                "is_target":true
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"A court proceeding has been initiated for a defendant accused of an allegation. Legal proceedings include trials, lawsuits, and hearings. Trials are state-initiated proceedings in a court. Hearing are state-initiated proceedings outside the court (e.g. in Senate). Lawsuits are proceedings between private parties. This also includes charges and indictments, i.e. formal accusations, and investigations.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"Allegation or other formal/legal offence that is alleged against a Defendant.",
+                "example_sentence":"",
+                "from_event":"Legal_Proceeding",
+                "name":"ALLEGATION",
+                "on_subtype":"Proceeding",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "full_name":"Legal_Proceeding",
+        "maintype_name":"Legal",
+        "participant":[
+            {
+                "description":"Entity being convicted, fined, etc.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Defendant",
+                "on_subtype":"Proceeding",
+                "on_type":"Legal",
+                "is_target":true
+            },
+            {
+                "description":"Entity filing suit or initiating the proceeding by accusation of the defendant. Governmental prosecutor, plaintiff, litigator, suer, petitioner.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Complainant",
+                "on_subtype":"Proceeding",
+                "on_type":"Legal",
+                "is_target":true
+            },
+            {
+                "description":"Judge or court. In case of investigation, the investigator either private by attorney or public police investigators.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Adjudicator",
+                "on_subtype":"Proceeding",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Proceeding"
+    },
+    {
+        "description":"A defendant has been found guilty of an allegation and is at the conclusion of a trial.The defendant is convicted to a sentence which can be jail-time, a fine, cease-and-desist, etc.Also applies where allegations are settled out of court.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"Sentence, fine, incarceration, or other punishment.",
+                "example_sentence":"",
+                "from_event":"Legal_Conviction/Settlement",
+                "name":"SENTENCE",
+                "on_subtype":"Conviction/Settlement",
+                "on_type":"Legal",
+                "is_target":false
+            },
+            {
+                "description":"Allegation or other formal/legal offence that is alleged against a Defendant.",
+                "example_sentence":"",
+                "from_event":"Legal_Conviction/Settlement",
+                "name":"ALLEGATION",
+                "on_subtype":"Conviction/Settlement",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "full_name":"Legal_Conviction/Settlement",
+        "maintype_name":"Legal",
+        "participant":[
+            {
+                "description":"Entity being convicted, fined, etc.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Defendant",
+                "on_subtype":"Conviction/Settlement",
+                "on_type":"Legal",
+                "is_target":true
+            },
+            {
+                "description":"Entity proclaiming the conviction.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Adjudicator",
+                "on_subtype":"Conviction/Settlement",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Conviction/Settlement"
+    },
+    {
+        "description":"A defendant has been found not guilty of an allegation at the conclusion of a trial. This is the opposite of conviction.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"Allegation or other formal/legal offence that is alleged against a Defendant.",
+                "example_sentence":"",
+                "from_event":"Legal_Acquit",
+                "name":"ALLEGATION",
+                "on_subtype":"Acquit",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "full_name":"Legal_Acquit",
+        "maintype_name":"Legal",
+        "participant":[
+            {
+                "description":"Entity being convicted, fined, etc.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Defendant",
+                "on_subtype":"Acquit",
+                "on_type":"Legal",
+                "is_target":true
+            },
+            {
+                "description":"Entity proclaiming the acquittal.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Adjudicator",
+                "on_subtype":"Acquit",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Acquit"
+    },
+    {
+        "description":"A court decision is taken to a higher court for review.",
+        "example_sentence":"example",
+        "filler":[
+            {
+                "description":"Allegation or other formal/legal offence that is alleged against a Defendant.",
+                "example_sentence":"",
+                "from_event":"Legal_Appeal",
+                "name":"ALLEGATION",
+                "on_subtype":"Appeal",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "full_name":"Legal_Appeal",
+        "maintype_name":"Legal",
+        "participant":[
+            {
+                "description":"Entity being convicted, fined, etc.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Defendant",
+                "on_subtype":"Appeal",
+                "on_type":"Legal",
+                "is_target":true
+            },
+            {
+                "description":"Entity filing suit or initiating the proceeding by accusation of the defendant. Governmental prosecutor, plaintiff, litigator, sue-er, petitioner.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Complainant",
+                "on_subtype":"Appeal",
+                "on_type":"Legal",
+                "is_target":true
+            },
+            {
+                "description":"Entity proclaiming the appeal.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Adjudicator",
+                "on_subtype":"Appeal",
+                "on_type":"Legal",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Appeal"
+    },
+    {
+        "description":"Macro-economic events are aggregated indicators such as sectorial trends, policy, GDP, unemployment rates, national income, price indices, and the interrelations among the different markets and sectors of the economy. Includes events, speculation, expectation, forecasts, announcements, changes on a company's position in the market, the state of the market, sector or country in general, headwinds, tailwinds, business trends, market share, consumer spending, etc.We include discussions on a company's position in the market (e.g. compared to competitors).",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Macroeconomics",
+        "maintype_name":"Macroeconomics",
+        "participant":[
+            {
+                "description":"Company, organization, or entity being affected by the macroeconomic event.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"AffectedCompany",
+                "on_subtype":"",
+                "on_type":"Macroeconomics",
+                "is_target":true
+            },
+            {
+                "description":"Sector, industry, market, state, geographical location where the event takes effect.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Sector",
+                "on_subtype":"",
+                "on_type":"Macroeconomics",
+                "is_target":true
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Consolidation of companies and assets involving at least two companies. A merger is a legal consolidation of two entities into one entity. An acquisition occurs when one entity takes ownership of another entity's stock, equity interests or assets.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Merger/Acquisition",
+        "maintype_name":"Merger/Acquisition",
+        "participant":[
+            {
+                "description":"Entity receiving the company or assets",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Acquirer",
+                "on_subtype":"",
+                "on_type":"Merger/Acquisition",
+                "is_target":true
+            },
+            {
+                "description":"Entity filing suit or initiating the proceeding by accusation of the defendant. Governmental prosecutor, plaintiff, litigator, suer, petitioner.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Target",
+                "on_subtype":"",
+                "on_type":"Merger/Acquisition",
+                "is_target":true
+            },
+            {
+                "description":"Cost of the merger or acquisition in monetary amount.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Cost",
+                "on_subtype":"",
+                "on_type":"Merger/Acquisition",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Events pertaining to a specific product or service. Includes announcements, launches, testing, changes, up/downgrades, updates, recalls, trial results, approvals, reviews, and other issues regarding products and services of a company. NOTE: General mentions of a product or service as belonging to a company are not tagged: the product has to be involved in a concrete event or issue.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Product/Service",
+        "maintype_name":"Product/Service",
+        "participant":[
+            {
+                "description":"The Product/Service in question.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"ProductService",
+                "on_subtype":"",
+                "on_type":"Product/Service",
+                "is_target":true
+            },
+            {
+                "description":"Company, organization, or entity that produces, delivers, or otherwise brings to market the product or service.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Producer",
+                "on_subtype":"",
+                "on_type":"Product/Service",
+                "is_target":true
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"A company brings a new product/service to market. Also applicable to product and service updates.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Product/Service_Launch",
+        "maintype_name":"Product/Service",
+        "participant":[
+            {
+                "description":"Product/Service being launched.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"ProductService",
+                "on_subtype":"Launch",
+                "on_type":"Product/Service",
+                "is_target":true
+            },
+            {
+                "description":"Company, organization, or entity that launches (or updates) a new product or service.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Producer",
+                "on_subtype":"Launch",
+                "on_type":"Product/Service",
+                "is_target":true
+            }
+        ],
+        "subtype_name":"Launch"
+    },
+    {
+        "description":"A company recalls a product or cancels a product/service.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Product/Service_Cancellation/Recall",
+        "maintype_name":"Product/Service",
+        "participant":[
+            {
+                "description":"Product/service being launched",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"ProductService",
+                "on_subtype":"Cancellation/Recall",
+                "on_type":"Product/Service",
+                "is_target":true
+            },
+            {
+                "description":"Company, organization, or entity that recalls or cancels a product or service.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Producer",
+                "on_subtype":"Cancellation/Recall",
+                "on_type":"Product/Service",
+                "is_target":true
+            }
+        ],
+        "subtype_name":"Cancellation/Recall"
+    },
+    {
+        "description":"A product or service is being tested or trialed either by a company or regulatory body.This includes testing runs of prototypes, and approval or disapproval after trial by regulatory agents or governments.This type is typical for reporting on bio-technology and pharmaceutical industries which require trial by a regulatory body. Technology and consumers products/services are also often trialed before being brought to market.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Product/Service_Trial",
+        "maintype_name":"Product/Service",
+        "participant":[
+            {
+                "description":"Product/service being launched",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"ProductService",
+                "on_subtype":"Trial",
+                "on_type":"Product/Service",
+                "is_target":true
+            },
+            {
+                "description":"Company, organization, or entity that is testing the product/service.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Producer",
+                "on_subtype":"Trial",
+                "on_type":"Product/Service",
+                "is_target":true
+            },
+            {
+                "description":"Governmental or private regulator, organization, or other entity overseeing the trial.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Trialer",
+                "on_subtype":"Trial",
+                "on_type":"Product/Service",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Trial"
+    },
+    {
+        "description":"Net income or earnings are the profits/losses realized by a business (commonly called \"the bottom line\").Profits are financial benefits that are realized when the amount of revenue exceeds expenses and costs. Inversely, losses happen when the expense exceeds the revenue.Net income is the difference between revenue and the cost of making a product or providing a service, before deducting overheads, payroll, taxation, and interest payments.We also include operating profit (earnings before interest and taxes (EBIT)).We include declarations and forecasts of profit/loss, positive and negative (losses) profit, lower than, higher than, as expected, increased, decreased, and stable profits.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Profit/Loss",
+        "maintype_name":"Profit/Loss",
+        "participant":[
+            {
+                "description":"Company, organization, or entity turning a profit or loss.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Profiteer",
+                "on_subtype":"",
+                "on_type":"Profit/Loss",
+                "is_target":true
+            },
+            {
+                "description":"The amount of money won/lost.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Amount_Profit/Loss",
+                "on_subtype":"",
+                "on_type":"Profit/Loss",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Profit or Loss has increased compared to a historical trend. We do not differentiate between Profit and Loss: this event applies to whichever is the topic of the event.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Profit/Loss_Increase",
+        "maintype_name":"Profit/Loss",
+        "participant":[
+            {
+                "description":"Company, organization, or entity turning a profit or loss.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Profiteer",
+                "on_subtype":"Increase",
+                "on_type":"Profit/Loss",
+                "is_target":true
+            },
+            {
+                "description":"The current amount of money won/lost.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_Profit/Loss",
+                "on_subtype":"Increase",
+                "on_type":"Profit/Loss",
+                "is_target":false
+            },
+            {
+                "description":"The historical amount of money won or lost compared to which the current amount is higher.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"HistoricalAmount_Profit/Loss",
+                "on_subtype":"Increase",
+                "on_type":"Profit/Loss",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Increase_Profit/Loss"
+    },
+    {
+        "description":"Profit or Loss has decreased compared to a historical trend. We do not differentiate between Profit and Loss: this event applies to whichever is the topic of the event.Overlap with Revenue}:",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Profit/Loss_Decrease",
+        "maintype_name":"Profit/Loss",
+        "participant":[
+            {
+                "description":"Company, organization, or entity turning a profit or loss.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Profiteer",
+                "on_subtype":"Decrease",
+                "on_type":"Profit/Loss",
+                "is_target":true
+            },
+            {
+                "description":"The current amount of money won/lost.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_Profit/Loss",
+                "on_subtype":"Decrease",
+                "on_type":"Profit/Loss",
+                "is_target":false
+            },
+            {
+                "description":"The historical amount of money won or lost compared to which the current amount is lower.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalAmount_Profit/Loss",
+                "on_subtype":"Decrease",
+                "on_type":"Profit/Loss",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Decrease_Profit/Loss"
+    },
+    {
+        "description":"Profit or Loss has remained stable or there is no significant change compared to a historical trend. We do not differentiate between Profit and Loss: this event applies to whichever is the topic of the event.Overlap with Revenue}:",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Profit/Loss_Stable",
+        "maintype_name":"Profit/Loss",
+        "participant":[
+            {
+                "description":"Company, organization, or entity turning a profit or loss.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Profiteer",
+                "on_subtype":"Stable",
+                "on_type":"Profit/Loss",
+                "is_target":true
+            },
+            {
+                "description":"The current amount of money won/lost.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_Profit/Loss",
+                "on_subtype":"Stable",
+                "on_type":"Profit/Loss",
+                "is_target":false
+            },
+            {
+                "description":"The historical amount of money won or lost compared to which the current amount remained stable.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalAmount_Profit/Loss",
+                "on_subtype":"Stable",
+                "on_type":"Profit/Loss",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Stable_Profit/Loss"
+    },
+    {
+        "description":"Analyst ratings and advice on securities such as stocks but also credit and debt ratings. Includes announcements, forecasts, speculation, expectation, reports, etc. on analyst ratings, analyst advice, analysts setting Price targets, analysts credit-debt ratings, changes in rating agency listing, or buy/sell/hold and upgrade/downgrade/maintain advice.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security or company's debt being rated.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Security_Rating",
+                "on_subtype":"",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing the rating.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Analyst",
+                "on_subtype":"",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Analyst advises to buy a security. \"Outperform\" signals an analyst recommendation a stock is expected to do slightly better than the market return. Buy and outperform can also be expressed as \"overweight\", \"moderate buy\", \"accumulate\", \"add\", \"buy\" and \"strong buy\" advice.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating_BuyOutperform",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security being rated.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_Rating",
+                "on_subtype":"BuyOutperform",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing the rating.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Analyst",
+                "on_subtype":"BuyOutperform",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"BuyOutperform"
+    },
+    {
+        "description":"Analyst advises to sell a security or liquidate an asset. \"Underperform\" signals a recommendation that a stock is expected to do slightly worse than the overall stock market return. Sell or underperform can also be expressed as \"moderate sell,\" \"weak hold\" and \"underweight.\". Includes \"underweight\", \"underperform\", \"moderate sell\", and \"sell\" and \"strong sell\" advice.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating_SellUnderperform",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security being rated.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_Rating",
+                "on_subtype":"SellUnderperform",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing the rating.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Analyst",
+                "on_subtype":"SellUnderperform",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"SellUnderperform"
+    },
+    {
+        "description":"Analyst advises to hold a security. A hold recommendation signals a security is expected to perform at the same pace as comparable companies or in-line with the market. Includes \"hold\" and \"neutral\" advice.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating_Hold",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security being rated.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_Rating",
+                "on_subtype":"Hold",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing the rating.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Analyst",
+                "on_subtype":"Hold",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Hold"
+    },
+    {
+        "description":"Analyst ratings, credit rating or advice are upgraded from an (implied) previous rating.For stocks, a \"hold\" advice can be upgrade to a \"buy\" advice.A \"sell\" advice can be upgraded to a \"hold\" or \"buy\" advice.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating_Upgrade",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security being rated.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_Rating",
+                "on_subtype":"Upgrade",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing the rating.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Analyst",
+                "on_subtype":"Upgrade",
+                "on_type":"Rating",
+                "is_target":false
+            },
+            {
+                "description":"The previous rating from which the security is upgraded.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"HistoricalRating",
+                "on_subtype":"Upgrade",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Upgrade"
+    },
+    {
+        "description":"Analyst ratings, credit rating or advice are upgraded from an (implied) previous rating.For stocks, a \"buy\" advice can be downgraded to a \"hold\" or a \"sell\" advice.A \"hold\" advice can be downgraded to a \"sell\" advice.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating_Downgrade",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security being rated.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_Rating",
+                "on_subtype":"Downgrade",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing out the rating.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Analyst",
+                "on_subtype":"Downgrade",
+                "on_type":"Rating",
+                "is_target":false
+            },
+            {
+                "description":"The previous rating from which the security is downgraded.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalRating",
+                "on_subtype":"Downgrade",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Downgrade"
+    },
+    {
+        "description":"Analyst security ratings, credit rating or advice remain in the same category from an (implied) previous rating.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating_Maintain",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security being rated.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_Rating",
+                "on_subtype":"Maintain",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing the rating.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Analyst",
+                "on_subtype":"Maintain",
+                "on_type":"Rating",
+                "is_target":false
+            },
+            {
+                "description":"The previous rating from which the security remains stable.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalRating",
+                "on_subtype":"Maintain",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Maintain"
+    },
+    {
+        "description":"Analyst projects a price target for a security.A price target is the projected price level of a financial security stated by an investment analyst or advisor and includes assumptions of future activity.It represents a security's price that, if achieved, results in a trader recognizing the best possible outcome for his investment.This is the price at which the trader or investor wants to exit his existing position so he can realize the most reward.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating_PriceTarget",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security being rated.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_Rating",
+                "on_subtype":"PriceTarget",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing the rating.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Analyst",
+                "on_subtype":"PriceTarget",
+                "on_type":"Rating",
+                "is_target":false
+            },
+            {
+                "description":"The target price or value of a security as a range or singular price expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"TargetPrice",
+                "on_subtype":"PriceTarget",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"PriceTarget"
+    },
+    {
+        "description":"Analyst credit or debt rating for a company or organization.A corporate credit rating is an opinion of an independent agency regarding the likelihood that a corporation will fully meet its financial obligations as they come due.A company\u2019s corporate credit rating indicates its relative ability to pay its creditors and gives investors an idea of how the company\u2019s debt securities should be priced in term of yields.Credit assessment and evaluation for companies and governments is generally done by a credit rating agency such as Standard & Poor\u2019s (S&P), Moody\u2019s, or Fitch.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Rating_Credit/Debt",
+        "maintype_name":"Rating",
+        "participant":[
+            {
+                "description":"Security being rated.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_Rating",
+                "on_subtype":"Credit/Debt",
+                "on_type":"Rating",
+                "is_target":true
+            },
+            {
+                "description":"Rater, advisor or analyst publishing the rating.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Analyst",
+                "on_subtype":"Credit/Debt",
+                "on_type":"Rating",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Credit/Debt"
+    },
+    {
+        "description":"Revenue is the total amount of income generated its diverse range of activities before any expenses.Events regarding operating revenue is revenue generated from a company's primary business activities.Non-operating revenue is revenue generated by activities outside of a company's primary operations; this revenue tends to be infrequent and oftentimes unusual.We include both revenue types.Revenue refers to both gross and net revenue (i.e. the revenue after revenue expenses: the cost made to obtain revenue, (e.g., returns, delivery, etc.)).",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Revenue",
+        "maintype_name":"Revenue",
+        "participant":[
+            {
+                "description":"Company responsible for the revenue.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Company_Revenue",
+                "on_subtype":"",
+                "on_type":"Revenue",
+                "is_target":true
+            },
+            {
+                "description":"Amount of gross revenue expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Amount_Revenue",
+                "on_subtype":"",
+                "on_type":"Revenue",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Revenue has increased compared to a historical trend.Overlap with SalesVolume}: Sales are a part of the revenue and are considered almost identical to operating revenue in some industries.However, if explicit mention of sales volume or amount is made a SalesVolume event should be tagged.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Revenue_Increase",
+        "maintype_name":"Revenue",
+        "participant":[
+            {
+                "description":"Company responsible for the revenue.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Company_Revenue",
+                "on_subtype":"Increase",
+                "on_type":"Revenue",
+                "is_target":true
+            },
+            {
+                "description":"Current amount of gross revenue expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_Revenue",
+                "on_subtype":"Increase",
+                "on_type":"Revenue",
+                "is_target":false
+            },
+            {
+                "description":"The historical revenue amount compared to which the current amount is higher.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"HistoricalAmount_Revenue",
+                "on_subtype":"Increase",
+                "on_type":"Revenue",
+                "is_target":false
+            },
+            {
+                "description":"Relative or nominal capital increase in revenue as monetary amount or percentage.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"IncreaseAmount_Revenue",
+                "on_subtype":"Increase",
+                "on_type":"Revenue",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Increase_Revenue"
+    },
+    {
+        "description":"Revenue has decreased compared to a historical trend.Overlap with SalesVolume}: Sales are a part of the revenue and are considered almost identical to operating revenue in some industries.However, if explicit mention of sales volume or amount is made a SalesVolume event should be tagged.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Revenue_Decrease",
+        "maintype_name":"Revenue",
+        "participant":[
+            {
+                "description":"Company responsible for the revenue.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Company_Revenue",
+                "on_subtype":"Decrease",
+                "on_type":"Revenue",
+                "is_target":true
+            },
+            {
+                "description":"Current amount of gross revenue expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_Revenue",
+                "on_subtype":"Decrease",
+                "on_type":"Revenue",
+                "is_target":false
+            },
+            {
+                "description":"The historical revenue amount compared to which the current amount is lower.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalAmount_Revenue",
+                "on_subtype":"Decrease",
+                "on_type":"Revenue",
+                "is_target":false
+            },
+            {
+                "description":"Relative or nominal capital decrease in revenue as monetary amount or percentage.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"DecreaseAmount_Revenue",
+                "on_subtype":"Decrease",
+                "on_type":"Revenue",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Decrease_Revenue"
+    },
+    {
+        "description":"Revenue has remained stable or there is no significant change compared to a historical trend.Overlap with SalesVolume}: Sales are a part of the revenue and are considered almost identical to operating revenue in some industries.However, if explicit mention of sales volume or amount is made a SalesVolume event should be tagged.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"Revenue_Stable",
+        "maintype_name":"Revenue",
+        "participant":[
+            {
+                "description":"Company responsible for the revenue.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Company_Revenue",
+                "on_subtype":"Stable",
+                "on_type":"Revenue",
+                "is_target":true
+            },
+            {
+                "description":"Current amount of gross revenue expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_Revenue",
+                "on_subtype":"Stable",
+                "on_type":"Revenue",
+                "is_target":false
+            },
+            {
+                "description":"The historical revenue amount compared to which the current amount has remained stable.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalAmount_Revenue",
+                "on_subtype":"Stable",
+                "on_type":"Revenue",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Stable_Revenue"
+    },
+    {
+        "description":"The quantity of goods and services sold over a certain period. This quantity can be expressed by a gross amount of money or . We include changes, announcements, declarations and forecasts of sales volume figures, increased, decreased, stable. Has conceptual overlap with Revenue and FinancialReport.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"SalesVolume",
+        "maintype_name":"SalesVolume",
+        "participant":[
+            {
+                "description":"The product, goods or services that makes up the sales volume",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"GoodsService",
+                "on_subtype":"",
+                "on_type":"SalesVolume",
+                "is_target":true
+            },
+            {
+                "description":"The company, organization or entity selling the goods or services.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Seller",
+                "on_subtype":"",
+                "on_type":"SalesVolume",
+                "is_target":true
+            },
+            {
+                "description":"The buyer, group of buyers, or target market to which the change in sales volume can be attributed.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Buyer",
+                "on_subtype":"",
+                "on_type":"SalesVolume",
+                "is_target":false
+            },
+            {
+                "description":"Current amount of goods and services sold, expressed as monetary expression or as amount of units.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Amount_SalesVolume",
+                "on_subtype":"",
+                "on_type":"SalesVolume",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"The quantity of goods and services sold over a certain period. We include changes, announcements, declarations and forecasts of sales volume figures, increased, decreased, stable. Has conceptual overlap with Revenue and FinancialReport.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"SalesVolume_Increase",
+        "maintype_name":"SalesVolume",
+        "participant":[
+            {
+                "description":"The product, goods or services that makes up the sales volume",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"GoodsService",
+                "on_subtype":"Increase",
+                "on_type":"SalesVolume",
+                "is_target":true
+            },
+            {
+                "description":"The company, organization or entity selling the goods or services.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Seller",
+                "on_subtype":"Increase",
+                "on_type":"SalesVolume",
+                "is_target":true
+            },
+            {
+                "description":"The buyer, group of buyers, or target market to which the change in sales volume can be attributed.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Buyer",
+                "on_subtype":"Increase",
+                "on_type":"SalesVolume",
+                "is_target":false
+            },
+            {
+                "description":"Current amount of goods and services sold, expressed as monetary expression or as amount of units.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_SalesVolume",
+                "on_subtype":"Increase",
+                "on_type":"SalesVolume",
+                "is_target":false
+            },
+            {
+                "description":"The historical sales volume amount compared to which the current amount is higher.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"HistoricalAmount_SalesVolume",
+                "on_subtype":"Increase",
+                "on_type":"SalesVolume",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Increase_SalesVolume"
+    },
+    {
+        "description":"The quantity of goods and services sold over a certain period. We include changes, announcements, declarations and forecasts of sales volume figures, increased, decreased, stable. Has conceptual overlap with Revenue and FinancialReport.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"SalesVolume_Decrease",
+        "maintype_name":"SalesVolume",
+        "participant":[
+            {
+                "description":"The product, goods or services that makes up the sales volume",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"GoodsService",
+                "on_subtype":"Decrease",
+                "on_type":"SalesVolume",
+                "is_target":true
+            },
+            {
+                "description":"The company, organization or entity selling the goods or services.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Seller",
+                "on_subtype":"Decrease",
+                "on_type":"SalesVolume",
+                "is_target":true
+            },
+            {
+                "description":"The buyer, group of buyers, or target market to which the change in sales volume can be attributed.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Buyer",
+                "on_subtype":"Decrease",
+                "on_type":"SalesVolume",
+                "is_target":false
+            },
+            {
+                "description":"Current amount of goods and services sold, expressed as monetary expression or as amount of units.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_SalesVolume",
+                "on_subtype":"Decrease",
+                "on_type":"SalesVolume",
+                "is_target":false
+            },
+            {
+                "description":"The historical sales volume amount compared to which the current amount is lower.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalAmount_SalesVolume",
+                "on_subtype":"Decrease",
+                "on_type":"SalesVolume",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Decrease_SalesVolume"
+    },
+    {
+        "description":"The quantity of goods and services sold over a certain period. We include changes, announcements, declarations and forecasts of sales volume figures, increased, decreased, stable. Has conceptual overlap with Revenue and FinancialReport.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"SalesVolume_Stable",
+        "maintype_name":"SalesVolume",
+        "participant":[
+            {
+                "description":"The product, goods or services that makes up the sales volume.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"GoodsService",
+                "on_subtype":"Stable",
+                "on_type":"SalesVolume",
+                "is_target":true
+            },
+            {
+                "description":"The company, organization or entity selling the goods or services.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Seller",
+                "on_subtype":"Stable",
+                "on_type":"SalesVolume",
+                "is_target":true
+            },
+            {
+                "description":"The buyer, group of buyers, or target market to which the change in sales volume can be attributed.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Buyer",
+                "on_subtype":"Stable",
+                "on_type":"SalesVolume",
+                "is_target":false
+            },
+            {
+                "description":"Current amount of goods and services sold expressed as monetary expression or as amount of units.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Amount_SalesVolume",
+                "on_subtype":"Stable",
+                "on_type":"SalesVolume",
+                "is_target":false
+            },
+            {
+                "description":"The historical sales volume amount compared to which the current amount is stable.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalAmount_SalesVolume",
+                "on_subtype":"Stable",
+                "on_type":"SalesVolume",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Stable_SalesVolume"
+    },
+    {
+        "description":"Events describing the value/price or change in value/price of a share, stock, derivative or any tradable financial asset. We also includes groupings of securities as in Exchange Traded Funds of market indices (This includes when descriptions and growth/decline/stability in a market index is discussed). We include announcements, forecasts, speculation, expectation, reports, etc. on price increase/decrease/stability or plain value/price descriptions that do not compare to a historical trend.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"SecurityValue",
+        "maintype_name":"SecurityValue",
+        "participant":[
+            {
+                "description":"The security in question.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Security_SecurityValue",
+                "on_subtype":"",
+                "on_type":"SecurityValue",
+                "is_target":true
+            },
+            {
+                "description":"The current price of a single security. Expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"Price",
+                "on_subtype":"",
+                "on_type":"SecurityValue",
+                "is_target":false
+            }
+        ],
+        "subtype_name":""
+    },
+    {
+        "description":"Events describing an increase or positive percentage growth in value/price a share, stock, derivative or any tradable financial asset compared to a historical trend. We also includes groupings of securities as in Exchange Traded Funds of market indices (this includes when growth in a market index is discussed). Includes announcements, forecasts, speculation, expectation, reports, etc. on price increase.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"SecurityValue_Increase",
+        "maintype_name":"SecurityValue",
+        "participant":[
+            {
+                "description":"The security in question.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_SecurityValue",
+                "on_subtype":"Increase",
+                "on_type":"SecurityValue",
+                "is_target":true
+            },
+            {
+                "description":"The current price of a single security up to which the historical price increased. Expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Price",
+                "on_subtype":"Increase",
+                "on_type":"SecurityValue",
+                "is_target":false
+            },
+            {
+                "description":"The historical unit price of the security compared to which to current price is an increase. Expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"HistoricalPrice",
+                "on_subtype":"Increase",
+                "on_type":"SecurityValue",
+                "is_target":false
+            },
+            {
+                "description":"Relative or nominal price increase as monetary amount or percentage.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"IncreaseAmount_SecurityValue",
+                "on_subtype":"Increase",
+                "on_type":"SecurityValue",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Increase_SecurityValue"
+    },
+    {
+        "description":"Events describing a decrease or negative percentage decline in value/price a share, stock, derivative or any tradable financial asset compared to a historical trend. We also includes groupings of securities as in Exchange Traded Funds of market indices (This includes when decline in a market index is discussed). Includes announcements, forecasts, speculation, expectation, reports, etc. on price reduction.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"SecurityValue_Decrease",
+        "maintype_name":"SecurityValue",
+        "participant":[
+            {
+                "description":"The security in question.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_SecurityValue",
+                "on_subtype":"Decrease",
+                "on_type":"SecurityValue",
+                "is_target":true
+            },
+            {
+                "description":"The current price of a single security. Expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Price",
+                "on_subtype":"Decrease",
+                "on_type":"SecurityValue",
+                "is_target":false
+            },
+            {
+                "description":"The historical unit price of the security compared to which to current price is a decrease. Expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalPrice",
+                "on_subtype":"Decrease",
+                "on_type":"SecurityValue",
+                "is_target":false
+            },
+            {
+                "description":"Relative or nominal price decrease as monetary amount or percentage.",
+                "example_sentence":"",
+                "in_tagset":true,
+                "name":"DecreaseAmount_SecurityValue",
+                "on_subtype":"Decrease",
+                "on_type":"SecurityValue",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Decrease_SecurityValue"
+    },
+    {
+        "description":"Events describing stability or no significant percentage change in value/price a share, stock, derivative or any tradable financial asset compared to a historical trend. We also includes groupings of securities as in Exchange Traded Funds of market indices (This includes when decline in a market index is discussed). Includes announcements, forecasts, speculation, expectation, reports, etc. on price stability.",
+        "example_sentence":"example",
+        "filler":[
+
+        ],
+        "full_name":"SecurityValue_Stable",
+        "maintype_name":"SecurityValue",
+        "participant":[
+            {
+                "description":"The security in question.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Security_SecurityValue",
+                "on_subtype":"Stable",
+                "on_type":"SecurityValue",
+                "is_target":true
+            },
+            {
+                "description":"The current price of a single security up to which the historical price remained stable. Expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"Price",
+                "on_subtype":"Stable",
+                "on_type":"SecurityValue",
+                "is_target":false
+            },
+            {
+                "description":"The historical unit price of the security compared to which to current price is stable. Expressed as monetary value.",
+                "example_sentence":"",
+                "in_tagset":false,
+                "name":"HistoricalPrice",
+                "on_subtype":"Stable",
+                "on_type":"SecurityValue",
+                "is_target":false
+            }
+        ],
+        "subtype_name":"Stable_SecurityValue"
+    }
+]
