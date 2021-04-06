@@ -32,8 +32,9 @@ from sentivent_webannoparser.util import flatten, count_avg, pickle_webanno_proj
 import os
 import multiprocessing
 import json
-from itertools import groupby
+from itertools import groupby, combinations_with_replacement
 from copy import copy
+from math import log
 
 
 @dataclass
@@ -85,7 +86,11 @@ class Element:
         if not hasattr(self, "in_sentence"):
             raise AttributeError(f"{self} does not have attribute 'in_sentence'.")
 
-        sen_ixs = [sen.element_id for sen in self.in_sentence]
+        try:
+            sen_ixs = [sen.element_id for sen in self.in_sentence]
+        except TypeError as e:
+            sen_ixs = [self.in_sentence.element_id]
+
         sen_procs = [
             s
             for i, s in enumerate(self.in_document.sentences_processed)
@@ -140,6 +145,8 @@ class Element:
         :param cross_sentence: Set to False: Do not replace by CanonicalReferent if the link crosses sentence boundary.
         :return:
         """
+        replaced_count = 0
+
         # replace the participant in their containers
         def replace_in_containers(myobj, replacing):
             containers = {
@@ -201,6 +208,8 @@ class Element:
                     if self in self.in_document.participants:
                         self.in_document.participants.remove(self)
 
+                    replaced_count += 1
+        return replaced_count
 
 @dataclass
 class Filler(Element):
@@ -237,6 +246,9 @@ class Participant(Element):
     canonical_referents: List[CanonicalReferent] = field(repr=False)
     link_id: int = field(repr=False)
     tokens: List = field(default=None, repr=False)
+
+    def get_extent_text(self):
+        return " ".join(t.text for t in sorted(list(set(self.tokens)), key=lambda x: x.index_sentence))
 
     def __hash__(self):
         return hash((self.element_id, self.text, self.begin, self.end))
@@ -387,6 +399,92 @@ class Event(Element):
             for t in self.get_extent_tokens(extent=extent, source_order=source_order)
         )
 
+    def _fix_false_discont(self):
+
+        fixed = [self.tokens]
+        new_discont = self.discontiguous_triggers[:]
+        idc = self.trigger_parts_idc
+        parts = self.trigger_parts
+
+        for i in range(len(idc)-1):
+            if idc[i][1] + 1 >= idc[i+1][0]: # check if adjacent and merge
+                if parts[i] not in fixed:
+                    fixed.append(parts[i])
+                if parts[i] in [ndc.tokens for ndc in new_discont]:
+                    new_discont = [dc for dc in new_discont if dc.tokens != parts[i]]
+                if parts[i+1] not in fixed:
+                    fixed.append(parts[i+1])
+                if parts[i+1] in [ndc.tokens for ndc in new_discont]:
+                    new_discont = [dc for dc in new_discont if dc.tokens != parts[i+1]]
+
+        self.tokens = sorted(list(set(i for l in fixed for i in l)), key=lambda x: x.index_sentence) # flatten, dedupe, and sort
+        self.discontiguous_triggers = new_discont
+        self.trigger_parts = sorted([self.tokens] + [d.tokens for d in self.discontiguous_triggers], key=lambda x: x[0].index_sentence)
+        self.trigger_parts_idc = [(part[0].index_sentence, part[-1].index_sentence) for part in self.trigger_parts]
+
+    def _generate_conti_combos(self, max_dist):
+
+        conti_combo = [self.trigger_parts[i:j+1] for i,j in combinations_with_replacement(range(len(self.trigger_parts)),2)]
+        conti_combo = [c for c in conti_combo if c[-1][-1].index_sentence - c[0][0].index_sentence < max_dist]
+        conti_combo_idc = [(c[0][0].index_sentence, c[-1][-1].index_sentence) for c in conti_combo]
+        conti_combo_tokens = [self.in_sentence[0].tokens[i[0]:i[1]+1] for i in conti_combo_idc]
+        return conti_combo_tokens
+
+
+    def _score_content_tokens(self, tokens):
+
+        # extract preproc token span
+        doc = tokens[0].get_processed_sentence()[0]
+
+        span_orig = doc[
+            tokens[0].index_sentence : tokens[-1].index_sentence + 1
+        ]
+
+        # generate and score candidates
+        score = 0
+        for t in span_orig:
+            parts_idc = set(t.index_sentence for p in self.trigger_parts for t in p)
+            if t.i in parts_idc:
+                if t.pos_ in ["ADJ", "VERB", "ADV", "NUM", "NOUN", "ADP"]:
+                    score += 1.0
+                elif t.pos_ in ["AUX", "PROPN"]:
+                    score += 0.5
+            # boost core annotation
+            # if t.i in set(t.index_sentence for t in self.tokens):
+            #     score += 0.5
+
+        return score
+
+    def preprocess_trigger(self,
+                           fix_false_discont=True,
+                           make_continuous_max_dist=0,
+                           truncate_to_len=False,
+                           ):
+
+        self.tokens_orig = self.tokens[:]
+        self.discontiguous_triggers_orig = self.discontiguous_triggers[:] if self.discontiguous_triggers else None
+        if self.discontiguous_triggers:
+            self.trigger_parts = sorted([self.tokens] + [d.tokens for d in self.discontiguous_triggers], key=lambda x: x[0].index_sentence)
+        else:
+            self.trigger_parts = [self.tokens]
+        self.trigger_parts_idc = [(part[0].index_sentence, part[-1].index_sentence) for part in self.trigger_parts]
+
+        if self.discontiguous_triggers and fix_false_discont: # no discontinuous preproc needed
+            # first fix annotation artifacts with adjacent discontinuous parts to make them continuous
+            self._fix_false_discont()
+
+        if self.discontiguous_triggers:  # generate all combinations of continual discont parts
+            print(f"-----Making discont parts. continuous: [{' ... '.join(' '.join(t.text for t in p) for p in self.trigger_parts)}]")
+            conti_combos = self._generate_conti_combos(make_continuous_max_dist)
+            conti_combos_scores = [self._score_content_tokens(tokens) for tokens in conti_combos]
+            # score by contentfullness scorer and get contentfullness/length ratio
+            conti_combos_scores_scaled = [(log(score))/(1+log(len(combo))) if score else 0 for combo, score in zip(conti_combos, conti_combos_scores)]
+            max_i = conti_combos_scores_scaled.index(max(conti_combos_scores_scaled))
+            for i, (combo, score, s_score) in enumerate(zip(conti_combos, conti_combos_scores, conti_combos_scores_scaled)):
+                prefix = " -> " if i == max_i else "    "
+                print(f"{prefix}{' '.join(t.text for t in combo)} |\tscore: {score}\tlen ratio: {s_score}")
+            self.tokens = conti_combos[max_i]
+
 
 @dataclass
 class SentimentExpression(Element):
@@ -397,6 +495,16 @@ class SentimentExpression(Element):
     targets: List = field(repr=False)
     tokens: List[Token] = field(default=None, repr=False)
     in_sentence: List[Sentence] = field(default=None, repr=False)
+
+    def __str__(self):
+        id = f"|{self.annotator_id[:3]}|{self.in_document.document_id}|s{self.in_sentence[0].element_id:02d}|"
+        se_text = f"{id} <{self.polarity_sentiment_scoped.upper()[:3]}> {self.get_extent_text()}"
+        spacing = len(se_text) * " "
+        tgt_text = [f"|s{t.in_sentence[0].element_id:02d}| {t.get_extent_text()}" for t in self.targets]
+        return f"{se_text} --> " + f"\n{spacing} └-> ".join(tgt_text)
+
+    def __hash__(self):
+        return hash((self.document_title, self.element_id, self.text, self.begin, self.end))
 
     def get_extent_tokens(self, extent=[], source_order=True):
         """
@@ -1241,7 +1349,7 @@ class WebannoProject:
     #     with open(fp, "wb") as self_out:
     #         dill.dump(self, self_out)
 
-    def get_events(self, subset=None):
+    def get_events(self, subset=""):
         '''
         Return all events in project or in subset of project.
         :param subset: "dev" for events in devset "test" for test set events.
@@ -1355,11 +1463,13 @@ class WebannoProject:
         Replaces all participant arguments in project with canonical referent links.
         :return:
         """
+        replaced_count = 0
         for doc in self.annotation_documents:
             for sen in doc.sentences:
                 for part in sen.participants:
-                    part.replace_by_canonical_referent(**kwargs)
+                    replaced_count += part.replace_by_canonical_referent(**kwargs) #this will replace in-place in project, but returns a count too.
 
+        return replaced_count
 
 def parse_main_iaa(main_dirp, iaa_dirp, opt_fp):
     """

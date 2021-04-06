@@ -333,7 +333,7 @@ def parse_to_dygiepp(project, typology):
 
     # replace arguments by canonical referent only if they are in same sentence
     if cmd_args.replace_canonical_referents:
-        project.replace_canonical_referents(cross_sentence=cmd_args.allow_cross_sentence)
+        project.replace_canonical_referents_sentiment(cross_sentence=cmd_args.allow_cross_sentence)
 
     ev_skipped_n = 0
     ev_total_n = 0
